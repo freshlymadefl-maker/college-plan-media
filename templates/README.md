@@ -27,3 +27,7 @@
   It also retries hourly. Check the result after ~1–2 min with `git pull`.
 - Segments: Seniors seg_ec20379a-5aff-4412-81da-eaf22a6a390a · Juniors seg_4696667f-dbfa-42a6-a0b5-2f4a0b9ae687 · 8th–10th seg_b407009e-e7b1-415f-953d-51cd3b15791f
 - Template with brand email theme: post_template_92da00b7-d6e0-447a-aded-93f586f22255
+- The API stores the body as one raw-HTML block, so make_queue_item.py converts the draft into inline-styled email HTML
+  (banner <img>, colored boxes, brand fonts). Don't use merge tags in the body (they aren't filled in there); the personal
+  referral link lives in the publication email footer. Use a unique "slug" in meta. To unschedule a post, queue
+  {"_action": "delete", "post_id": "post_..."} (file name starting with 0- so it runs first).
