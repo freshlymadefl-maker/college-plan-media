@@ -4,6 +4,8 @@ on:
   push:
     paths: ['newsletter/queue/*.json']
   workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'   # hourly retry of anything still queued
 permissions:
   contents: write
 concurrency: newsletter

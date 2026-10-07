@@ -7,7 +7,7 @@ import json, os, pathlib, sys, urllib.request, urllib.error
 PUB = "pub_851868ac-cd7b-4156-a1a0-dfac96c6e363"
 KEY = os.environ.get("BEEHIIV_API_KEY", "").strip()
 if not KEY:
-    print("BEEHIIV_API_KEY secret is missing"); sys.exit(1)
+    print("BEEHIIV_API_KEY secret is missing; leaving queue untouched"); sys.exit(0)
 
 root = pathlib.Path("newsletter")
 files = sorted(p for p in (root / "queue").glob("*.json"))

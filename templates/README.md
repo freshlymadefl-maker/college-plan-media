@@ -17,3 +17,13 @@
 ## Promo posts (templates/promo-posts.html)
 - pr1 = free Bright Futures cheat sheet (uses cheatsheet-page-1/2.png mockups; regenerate those with pdftoppm if the PDF changes). pr2 = newsletter "what you get, by grade".
 - Posted on Saturdays, alternating pr1 / pr2, 10:30am ET. Write a fresh caption each time; refresh the design every ~6 weeks (new headline, color variant or AI photo background) so it doesn't look repetitive.
+
+## Newsletter auto-send (beehiiv API via GitHub Actions)
+- Write `newsletter/drafts/<date>-<grade>.html` (body HTML, same structure as previous emails) and `<date>-<grade>.meta.json`
+  (name, title, subtitle, subject, preview, segment_id, scheduled_at in UTC, seo_title, seo_description, tags),
+  then `python3 scripts/make_queue_item.py <meta> <html>` -> `newsletter/queue/<name>.json`. Commit + push.
+- `.github/workflows/send-newsletter.yml` posts each queued file to the beehiiv Create Post API (status confirmed, scheduled)
+  using the repo secret BEEHIIV_API_KEY, then moves it to newsletter/sent/ (with beehiiv's response) or newsletter/failed/ (with the error).
+  It also retries hourly. Check the result after ~1–2 min with `git pull`.
+- Segments: Seniors seg_ec20379a-5aff-4412-81da-eaf22a6a390a · Juniors seg_4696667f-dbfa-42a6-a0b5-2f4a0b9ae687 · 8th–10th seg_b407009e-e7b1-415f-953d-51cd3b15791f
+- Template with brand email theme: post_template_92da00b7-d6e0-447a-aded-93f586f22255
