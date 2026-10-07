@@ -17,10 +17,15 @@ if not files:
 bad = 0
 for f in files:
     body = json.loads(f.read_text())
-    req = urllib.request.Request(
-        f"https://api.beehiiv.com/v2/publications/{PUB}/posts",
-        data=json.dumps(body).encode(), method="POST",
-        headers={"Authorization": f"Bearer {KEY}", "Content-Type": "application/json"})
+    if body.get("_action") == "delete":   # {"_action": "delete", "post_id": "post_..."} archives/unschedules a post
+        req = urllib.request.Request(
+            f"https://api.beehiiv.com/v2/publications/{PUB}/posts/{body['post_id']}", method="DELETE",
+            headers={"Authorization": f"Bearer {KEY}"})
+    else:
+        req = urllib.request.Request(
+            f"https://api.beehiiv.com/v2/publications/{PUB}/posts",
+            data=json.dumps(body).encode(), method="POST",
+            headers={"Authorization": f"Bearer {KEY}", "Content-Type": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             resp = json.loads(r.read() or b"{}")
