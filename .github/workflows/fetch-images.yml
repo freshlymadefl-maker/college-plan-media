@@ -1,0 +1,30 @@
+name: Fetch images
+# Downloads image URLs listed in fetch/*.txt (lines: "<dest path> <url>") into the repo.
+on:
+  push:
+    paths: ['fetch/*.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          shopt -s nullglob
+          for f in fetch/*.txt; do
+            while read -r dest url; do
+              [ -z "$dest" ] && continue
+              mkdir -p "$(dirname "$dest")"
+              curl -fsSL "$url" -o "$dest" && echo "got $dest"
+            done < "$f"
+            git rm -q "$f"
+          done
+      - name: Commit
+        run: |
+          git config user.name "College Plan"
+          git config user.email freshlymadefl@gmail.com
+          git add -A
+          git diff --cached --quiet || git commit -m "Fetch images" && git push
