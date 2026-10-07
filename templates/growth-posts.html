@@ -1,0 +1,98 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!--
+College Plan GROWTH post templates (1080x1350).
+sc1 = Scholarship of the week   ck1 = Monthly to-do list by grade   rk1 = Ranked list (top 5 + source; LAYOUT ONLY, sample text must be replaced with verified data)
+-->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --sky2:#D4E6F7; --gold:#B5A21F; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.s { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:var(--ink); background: linear-gradient(160deg, #F4F9FE 0%, var(--sky) 45%, var(--sky2) 100%); padding:100px 90px 0; }
+.s.dark { background: linear-gradient(160deg, #0E3359 0%, var(--navy) 60%, #081F38 100%); color:#fff; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:12px 26px; }
+h1 { font-family:'Poppins'; font-weight:700; font-size:80px; line-height:1.02; letter-spacing:-0.02em; color:var(--navy); margin-top:26px; }
+h1 .lt { color:var(--blue); }
+.dark h1 { color:#fff; }
+.dark h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; color:#F1E27A; letter-spacing:0; }
+.foot { position:absolute; left:90px; right:90px; bottom:62px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:44px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:25px; letter-spacing:.06em; color:var(--navy); }
+.dark .foot .sw { color:#fff; }
+.src { position:absolute; left:90px; right:90px; bottom:132px; font-size:20px; color:var(--muted); }
+.dark .src { color:#9FB6CF; }
+/* sc1 scholarship */
+.dyk { font-family:'Lora'; font-style:italic; font-size:40px; color:#C9DAEC; margin-top:30px; }
+.amt { margin-top:34px; background:var(--gold); color:#fff; border-radius:28px; padding:30px 38px; }
+.amt .k { font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.12em; opacity:.9; }
+.amt .v { font-family:'Poppins'; font-weight:700; font-size:60px; line-height:1.05; margin-top:6px; }
+.facts { margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.f { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:24px; padding:24px 26px; }
+.f .k { font-family:'Poppins'; font-weight:600; font-size:21px; letter-spacing:.12em; color:#F1E27A; }
+.f .v { font-size:26px; line-height:1.38; color:#E3EDF7; margin-top:8px; }
+/* ck1 checklist */
+.cg { margin-top:34px; display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.cc { background:#fff; border-radius:26px; padding:26px 28px; box-shadow:0 8px 24px rgba(11,42,74,.07); }
+.cc .g { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:20px; letter-spacing:.1em; color:#fff; background:var(--navy); border-radius:999px; padding:6px 16px; }
+.cc.b .g { background:var(--blue); } .cc.y .g { background:var(--gold); } .cc.m .g { background:#7A8DA3; }
+.cc ul { list-style:none; padding:0; margin-top:16px; }
+.cc li { font-size:25px; line-height:1.32; color:var(--ink); padding-left:42px; position:relative; margin:12px 0; }
+.cc li:before { content:""; position:absolute; left:0; top:3px; width:26px; height:26px; border:3px solid #9FB6CF; border-radius:8px; }
+/* rk1 ranked list */
+.rl { margin-top:40px; display:flex; flex-direction:column; gap:16px; }
+.rr { display:grid; grid-template-columns:90px 1fr auto; align-items:center; gap:24px; background:#fff; border-radius:24px; padding:22px 30px; box-shadow:0 8px 24px rgba(11,42,74,.07); }
+.rr .n { font-family:'Poppins'; font-weight:700; font-size:56px; color:var(--blue); line-height:1; }
+.rr:first-child { background:var(--navy); } .rr:first-child .n { color:#F1E27A; } .rr:first-child .t { color:#fff; } .rr:first-child .x { color:#F1E27A; }
+.rr .t { font-family:'Poppins'; font-weight:600; font-size:32px; color:var(--navy); }
+.rr .x { font-family:'Poppins'; font-weight:700; font-size:34px; color:var(--navy); }
+.ask { margin-top:26px; font-family:'Poppins'; font-weight:600; font-size:29px; color:var(--navy); }
+</style></head>
+<body>
+
+<!-- sc1 SCHOLARSHIP OF THE WEEK -->
+<div class="s dark" id="sc1">
+  <span class="pill">Scholarship of the week</span>
+  <p class="dyk">Did you know about…</p>
+  <h1 style="margin-top:8px">The <span class="g">Benacquisto</span> Scholarship</h1>
+  <div class="amt"><div class="k">WHAT IT CAN COVER</div><div class="v">Up to the full cost of attendance</div></div>
+  <div class="facts">
+    <div class="f"><div class="k">WHO</div><div class="v">National Merit Scholars with a standard Florida diploma</div></div>
+    <div class="f"><div class="k">WHERE</div><div class="v">Eligible Florida colleges, full-time, the fall after graduation</div></div>
+    <div class="f"><div class="k">HOW IT STARTS</div><div class="v">The PSAT/NMSQT in junior year. That's this month.</div></div>
+    <div class="f"><div class="k">TO RENEW</div><div class="v">Stay full-time and keep a 3.0 GPA</div></div>
+  </div>
+  <div class="src">Source: Florida Statutes s. 1009.893. Award is cost of attendance minus Bright Futures and National Merit awards, and depends on state funding.</div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">SEND TO A JUNIOR PARENT</span></div>
+</div>
+
+<!-- ck1 MONTHLY TO-DO LIST -->
+<div class="s" id="ck1">
+  <span class="pill">Your October to-do list</span>
+  <h1>Do these now, so nothing <span class="lt">piles up.</span></h1>
+  <div class="cg">
+    <div class="cc"><span class="g">12TH GRADE</span><ul><li>Finish early applications</li><li>Submit the FAFSA and FFAA</li><li>Ask for rec letters 2+ weeks ahead</li></ul></div>
+    <div class="cc b"><span class="g">11TH GRADE</span><ul><li>Take the PSAT/NMSQT</li><li>Start a rough college list</li><li>Pick winter or spring SAT/ACT dates</li></ul></div>
+    <div class="cc y"><span class="g">9TH–10TH</span><ul><li>Log service hours as you go</li><li>Check grades at progress reports</li><li>Try one club they actually like</li></ul></div>
+    <div class="cc m"><span class="g">8TH GRADE</span><ul><li>Ask which classes earn high school credit</li><li>Service hours count starting the summer after 8th</li></ul></div>
+  </div>
+  <p class="ask" style="margin-top:34px">Get this for your student's grade every week. Free newsletter, link in bio.</p>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">SAVE THIS ↓</span></div>
+</div>
+
+<!-- rk1 RANKED LIST (layout only: replace with verified data + source) -->
+<div class="s" id="rk1">
+  <span class="pill">Ranked</span>
+  <h1>Title of the <span class="lt">ranked list</span></h1>
+  <div class="rl">
+    <div class="rr"><div class="n">1</div><div class="t">Item one</div><div class="x">$00k</div></div>
+    <div class="rr"><div class="n">2</div><div class="t">Item two</div><div class="x">$00k</div></div>
+    <div class="rr"><div class="n">3</div><div class="t">Item three</div><div class="x">$00k</div></div>
+    <div class="rr"><div class="n">4</div><div class="t">Item four</div><div class="x">$00k</div></div>
+    <div class="rr"><div class="n">5</div><div class="t">Item five</div><div class="x">$00k</div></div>
+  </div>
+  <p class="ask">Did anything surprise you? Comment below 👇</p>
+  <div class="src">Source: name the dataset and year here.</div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">SHARE THIS</span></div>
+</div>
+
+</body></html>
