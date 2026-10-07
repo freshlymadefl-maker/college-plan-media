@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!--
+College Plan PHOTO post templates (1080x1350). Background photos live in /photos (AI-generated via beehiiv generate_image,
+pulled into the repo by .github/workflows/fetch-images.yml). Set the photo with style="--img:url(../photos/NAME.jpg)".
+ph1 = photo + quote (top headline over sky)      ph2 = photo + white headline card (carousel cover / tip)
+Rules: generic scenes only (no real school names, logos, mascots or recognizable landmarks); never label an AI photo as a real campus.
+-->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --gold:#B5A21F; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.ph { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; background: var(--img) center/cover no-repeat, var(--navy); }
+.ph .shade-top { position:absolute; inset:0; background: linear-gradient(180deg, rgba(8,31,56,.82) 0%, rgba(8,31,56,.55) 32%, rgba(8,31,56,0) 58%); }
+.ph .shade-bot { position:absolute; inset:0; background: linear-gradient(0deg, rgba(8,31,56,.75) 0%, rgba(8,31,56,0) 22%); }
+.ph .in { position:absolute; left:90px; right:90px; top:110px; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:12px 26px; }
+.q { font-family:'Lora'; font-style:italic; font-weight:500; font-size:76px; line-height:1.18; color:#fff; margin-top:36px; text-shadow:0 2px 24px rgba(0,0,0,.25); }
+.q .g { color:#F1E27A; }
+.q2 { font-size:32px; line-height:1.45; color:#E3EDF7; margin-top:30px; max-width:820px; }
+.foot { position:absolute; left:90px; right:90px; bottom:70px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:46px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:26px; color:#fff; letter-spacing:.06em; }
+/* ph2 card */
+.card { position:absolute; left:70px; right:70px; bottom:150px; background:#fff; border-radius:34px; padding:52px 56px 50px; box-shadow:0 20px 60px rgba(8,31,56,.3); }
+.card .pill { background:var(--sky); color:var(--navy); }
+.card h1 { font-family:'Poppins'; font-weight:700; font-size:72px; line-height:1.04; letter-spacing:-0.02em; color:var(--navy); margin-top:26px; }
+.card h1 .lt { color:var(--blue); }
+.card p { font-size:31px; line-height:1.42; color:var(--muted); margin-top:20px; }
+</style></head>
+<body>
+
+<!-- ph1 photo + quote -->
+<div class="ph" id="ph1" style="--img:url(../photos/campus-quad-01.jpg)">
+  <div class="shade-top"></div><div class="shade-bot"></div>
+  <div class="in">
+    <span class="pill">A reminder for October</span>
+    <p class="q">The group chat is not your student's <span class="g">admissions counselor.</span></p>
+    <p class="q2">Every family's timeline looks different. Know your own deadlines, and tune out the noise.</p>
+  </div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<!-- ph2 photo + white card -->
+<div class="ph" id="ph2" style="--img:url(../photos/florida-boardwalk-01.jpg)">
+  <div class="shade-bot"></div>
+  <div class="card">
+    <span class="pill">Senior fall</span>
+    <h1>One deadline at a time. <span class="lt">You've got this.</span></h1>
+    <p>Save our weekly "Don't miss" posts and you'll always know what's next.</p>
+  </div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">SAVE THIS ↓</span></div>
+</div>
+
+</body></html>
