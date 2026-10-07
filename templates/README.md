@@ -13,3 +13,7 @@
 - The workspace can't download from beehiiv directly. Write `fetch/<name>.txt` with a line `photos/<name>.jpg <asset url>`, commit + push; the GitHub Action (.github/workflows/fetch-images.yml) downloads it into /photos and commits (~40s). Then `git pull`.
 - Set the photo with style="--img:url(../photos/<name>.jpg)" on #ph1 (photo + quote) or #ph2 (photo + white card). Check readability after rendering.
 - When scheduling in Metricool, set instagramData.isAiGenerated = true for posts that use an AI photo.
+
+## Promo posts (templates/promo-posts.html)
+- pr1 = free Bright Futures cheat sheet (uses cheatsheet-page-1/2.png mockups; regenerate those with pdftoppm if the PDF changes). pr2 = newsletter "what you get, by grade".
+- Posted on Saturdays, alternating pr1 / pr2, 10:30am ET. Write a fresh caption each time; refresh the design every ~6 weeks (new headline, color variant or AI photo background) so it doesn't look repetitive.

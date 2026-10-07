@@ -1,0 +1,66 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- College Plan PROMO posts (1080x1350). pr1 = free cheat sheet (freebie), pr2 = newsletter "what you get". Re-use every few weeks with fresh captions. -->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --sky2:#D4E6F7; --gold:#B5A21F; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.s { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:var(--ink); background: linear-gradient(160deg, #F4F9FE 0%, var(--sky) 45%, var(--sky2) 100%); padding:110px 90px 0; }
+.s.dark { background: linear-gradient(160deg, #0E3359 0%, var(--navy) 60%, #081F38 100%); color:#fff; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:12px 26px; }
+h1 { font-family:'Poppins'; font-weight:700; font-size:88px; line-height:1.0; letter-spacing:-0.02em; color:#fff; margin-top:30px; }
+h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; color:#F1E27A; letter-spacing:0; }
+.sub { font-size:34px; line-height:1.4; color:#C9DAEC; margin-top:24px; max-width:860px; }
+.foot { position:absolute; left:90px; right:90px; bottom:70px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:46px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:26px; letter-spacing:.06em; color:var(--navy); }
+.dark .foot .sw { color:#fff; }
+/* pr1 mockup */
+.mock { position:absolute; left:0; right:0; top:610px; height:560px; }
+.mock img { position:absolute; width:400px; border-radius:10px; box-shadow:0 30px 70px rgba(0,0,0,.45); }
+.mock .a { left:150px; top:40px; transform:rotate(-7deg); }
+.mock .b { left:510px; top:10px; transform:rotate(5deg); }
+.free { position:absolute; right:60px; top:545px; width:180px; height:180px; border-radius:50%; background:var(--gold); color:#fff; font-family:'Poppins'; font-weight:700; font-size:46px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; line-height:1; transform:rotate(10deg); box-shadow:0 14px 34px rgba(0,0,0,.3); z-index:2; }
+.free small { display:block; font-size:22px; letter-spacing:.1em; font-weight:600; margin-top:6px; }
+.cta { position:absolute; left:90px; right:90px; bottom:150px; background:#fff; color:var(--navy); border-radius:22px; padding:26px 34px; font-family:'Poppins'; font-weight:600; font-size:32px; display:flex; justify-content:space-between; align-items:center; z-index:3; }
+.cta b { background:var(--navy); color:#fff; border-radius:999px; padding:10px 22px; font-size:24px; letter-spacing:.06em; }
+/* pr2 newsletter */
+.s:not(.dark) h1 { color:var(--navy); }
+.s:not(.dark) h1 .lt { color:var(--blue); }
+.list { margin-top:44px; display:flex; flex-direction:column; gap:18px; }
+.it { display:flex; gap:26px; align-items:center; background:#fff; border-radius:24px; padding:24px 30px; box-shadow:0 8px 24px rgba(11,42,74,.07); }
+.ic { flex:none; width:76px; height:76px; border-radius:20px; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-size:38px; }
+.it .t { font-family:'Poppins'; font-weight:600; font-size:31px; color:var(--navy); line-height:1.2; }
+.it .t small { display:block; font-family:'Inter'; font-weight:500; font-size:23px; color:var(--muted); margin-top:4px; }
+.grades { margin-top:30px; display:flex; flex-wrap:wrap; gap:12px; }
+.grades span { font-family:'Poppins'; font-weight:600; font-size:22px; color:var(--navy); background:#fff; border:2px solid #C9D8E8; border-radius:999px; padding:8px 18px; }
+.cta2 { position:absolute; left:90px; right:90px; bottom:150px; background:var(--navy); color:#fff; border-radius:22px; padding:26px 34px; font-family:'Poppins'; font-weight:600; font-size:31px; display:flex; justify-content:space-between; align-items:center; }
+.cta2 b { background:var(--gold); border-radius:999px; padding:10px 22px; font-size:24px; letter-spacing:.06em; }
+</style></head>
+<body>
+
+<div class="s dark" id="pr1">
+  <span class="pill">Free for Florida parents</span>
+  <h1>The Bright Futures <span class="g">cheat sheet.</span></h1>
+  <p class="sub">Every requirement for the Classes of 2027 and 2028, plus a grade-by-grade plan from 8th to 12th.</p>
+  <div class="free">FREE<small>PDF</small></div>
+  <div class="mock"><img class="a" src="cheatsheet-page-1.png"><img class="b" src="cheatsheet-page-2.png"></div>
+  <div class="cta"><span>Get it free: link in bio</span><b>@COLLEGE.PLAN</b></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">SAVE + SHARE</span></div>
+</div>
+
+<div class="s" id="pr2">
+  <span class="pill">Free weekly email</span>
+  <h1>Florida college planning, <span class="lt">by grade.</span></h1>
+  <div class="list">
+    <div class="it"><div class="ic">⏰</div><div class="t">This week's deadlines<small>Only the ones that matter for your student</small></div></div>
+    <div class="it"><div class="ic">🎓</div><div class="t">Bright Futures + scholarships<small>Requirement changes as they happen</small></div></div>
+    <div class="it"><div class="ic">✏️</div><div class="t">SAT, ACT, CLT and PSAT<small>Test dates and registration reminders</small></div></div>
+    <div class="it"><div class="ic">💡</div><div class="t">One quick tip or term<small>Explained in plain English</small></div></div>
+  </div>
+  <div class="grades"><span>8th grade</span><span>9th</span><span>10th</span><span>11th</span><span>12th</span></div>
+  <div class="cta2"><span>Sign up free: link in bio</span><b>+ FREE CHEAT SHEET</b></div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">@college.plan</span></div>
+</div>
+
+</body></html>
