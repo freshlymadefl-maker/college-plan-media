@@ -1,0 +1,8 @@
+# College Plan design templates
+
+- `carousel-example.html`: 7-slide Instagram carousel (1080x1350, 4:5). Each slide is a `<div class="s" id="sN">`.
+  Render each slide with Playwright: open the file, `page.locator('#sN').screenshot(...)` at viewport 1080x1350.
+  Reuse the CSS as-is; only change slide text/content. Fonts: Poppins (headings), Inter (body), Lora italic (accent).
+- Colors: navy #0B2A4A, blue #5B8DC9, sky #EAF3FB, gold #B5A21F.
+- `wordmark_navy.png` / `wordmark_white.png`: logo (must sit next to the HTML when rendering).
+- `cheatsheet.html`: Bright Futures cheat sheet PDF source.

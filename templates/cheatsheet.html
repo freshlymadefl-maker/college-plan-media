@@ -1,0 +1,123 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@page { size: Letter; margin: 0; }
+:root { --navy:#0B2A4A; --ink:#22344A; --muted:#55687E; --sky:#EAF3FB; --line:#C9D8E8; --gold:#A8981B; --goldbg:#F7F5E8; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: 'Inter', sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.45; }
+.page { width: 8.5in; height: 11in; padding: 0.55in 0.6in 0.5in; position: relative; page-break-after: always; overflow: hidden; }
+.page:last-child { page-break-after: auto; }
+.top { display:flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--navy); padding-bottom: 10px; }
+.top img { height: 30px; }
+.top .tag { font-family: 'Poppins'; font-size: 8pt; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+h1 { font-family: 'Poppins'; font-weight: 600; font-size: 27pt; line-height: 1.1; color: var(--navy); margin: 22px 0 6px; }
+h1 em { font-family: 'Lora'; font-style: italic; font-weight: 500; color: var(--gold); }
+.sub { font-size: 11.5pt; color: var(--muted); margin: 0 0 18px; max-width: 6.2in; }
+h2 { font-family: 'Poppins'; font-weight: 600; font-size: 13.5pt; color: var(--navy); margin: 18px 0 8px; display:flex; align-items:center; gap:10px; }
+h2 .n { display:inline-flex; width: 22px; height: 22px; border-radius: 50%; background: var(--navy); color:#fff; font-size: 10pt; align-items:center; justify-content:center; }
+.awards { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.card { background: var(--sky); border-radius: 10px; padding: 12px 14px; }
+.card .k { font-family:'Poppins'; font-weight:600; color: var(--navy); font-size: 11.5pt; }
+.card .big { font-family:'Poppins'; font-weight:600; font-size: 20pt; color: var(--navy); line-height:1.1; margin: 4px 0 2px; }
+.card p { margin: 0; color: var(--muted); font-size: 9.5pt; }
+table { width:100%; border-collapse: separate; border-spacing: 0; font-size: 9.8pt; margin-top: 4px; }
+th, td { padding: 7px 9px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { background: var(--navy); color:#fff; font-family:'Poppins'; font-weight: 500; font-size: 9pt; }
+thead th:first-child { border-top-left-radius: 8px; }
+thead th:last-child { border-top-right-radius: 8px; }
+thead th .cls { display:block; font-weight: 400; opacity: .8; font-size: 8pt; }
+tbody th { font-family:'Poppins'; font-weight:500; color: var(--navy); width: 22%; background: #F6F9FC; }
+td.new { background: #FBF8E6; font-weight: 600; color: var(--navy); }
+.note { font-size: 8.6pt; color: var(--muted); margin-top: 6px; }
+.note b { color: var(--navy); }
+.legend { display:inline-block; width:10px; height:10px; background:#FBF8E6; border:1px solid #E6DDA0; vertical-align: -1px; margin-right:4px; }
+.callout { background: var(--goldbg); border-left: 4px solid var(--gold); border-radius: 6px; padding: 10px 14px; margin-top: 14px; font-size: 9.8pt; }
+.callout b { color: var(--navy); }
+.foot { position:absolute; left: 0.6in; right: 0.6in; bottom: 0.38in; display:flex; justify-content: space-between; font-size: 8pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; }
+.foot b { color: var(--navy); white-space: nowrap; }
+.timeline { position: relative; margin-top: 6px; }
+.step { display:grid; grid-template-columns: 1.15in 1fr; gap: 14px; padding: 6px 0; font-size: 10pt; border-bottom: 1px dashed var(--line); }
+.step:last-child { border-bottom: none; }
+.when { font-family:'Poppins'; font-weight:600; color: var(--navy); font-size: 10.5pt; line-height: 1.25; }
+.when span { display:block; font-family:'Inter'; font-weight: 400; color: var(--muted); font-size: 8.5pt; }
+.step ul { margin: 0; padding-left: 16px; }
+.step li { margin: 1px 0; }
+.dl { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
+.dl > div { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.dl .d { font-family:'Poppins'; font-weight: 600; color: var(--navy); font-size: 10.5pt; }
+.dl p { margin: 3px 0 0; font-size: 9.3pt; color: var(--muted); }
+.cta { margin-top: 16px; background: var(--navy); color: #fff; border-radius: 12px; padding: 14px 18px; display:flex; align-items:center; justify-content: space-between; gap: 16px; }
+.cta img { height: 24px; }
+.cta .t { font-family:'Poppins'; font-weight: 600; font-size: 12pt; }
+.cta .s { font-size: 9.3pt; opacity: .85; }
+.cta .u { font-family:'Poppins'; font-weight: 600; background: var(--gold); color:#fff; padding: 7px 12px; border-radius: 999px; font-size: 9.5pt; white-space: nowrap; }
+</style></head>
+<body>
+
+<div class="page">
+  <div class="top"><img src="wordmark_navy.png" alt="College Plan"><div class="tag">Free parent guide · Updated October 2026</div></div>
+
+  <h1>The Florida Bright Futures <em>Cheat Sheet</em></h1>
+  <p class="sub">Everything parents of 8th–12th graders need to know about Florida's biggest college scholarship, on two pages.</p>
+
+  <h2><span class="n">1</span> The two main awards</h2>
+  <div class="awards">
+    <div class="card"><div class="k">Florida Academic Scholars (FAS)</div><div class="big">100% of tuition</div><p>The top award. Covers tuition and applicable fees at Florida public colleges and universities.</p></div>
+    <div class="card"><div class="k">Florida Medallion Scholars (FMS)</div><div class="big">75% of tuition</div><p>Covers 75% of tuition and applicable fees at Florida public colleges and universities.</p></div>
+  </div>
+  <p class="note">Bright Futures also offers <b>Gold Seal CAPE</b> and <b>Gold Seal Vocational</b> scholarships for career and technical programs. Award amounts at private Florida schools are different.</p>
+
+  <h2><span class="n">2</span> Requirements by graduating class</h2>
+  <table>
+    <thead><tr>
+      <th></th>
+      <th>Academic Scholars<span class="cls">Class of 2027</span></th>
+      <th>Academic Scholars<span class="cls">Class of 2028</span></th>
+      <th>Medallion Scholars<span class="cls">Class of 2027</span></th>
+      <th>Medallion Scholars<span class="cls">Class of 2028</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><th>Weighted GPA</th><td>3.5</td><td>3.5</td><td>3.0</td><td>3.0</td></tr>
+      <tr><th>SAT</th><td>1330</td><td class="new">1350</td><td>1190</td><td class="new">1200</td></tr>
+      <tr><th>ACT</th><td>29</td><td>29</td><td>24</td><td class="new">25</td></tr>
+      <tr><th>CLT</th><td>95</td><td class="new">96</td><td>82</td><td class="new">83</td></tr>
+      <tr><th>Service / work hours</th><td colspan="2">100 service hours, 100 work hours, or a combination</td><td colspan="2">75 service hours, or 100 work hours, or a combination totaling 100</td></tr>
+      <tr><th>Coursework</th><td colspan="4">16 college-prep credits: 4 English · 4 math (Algebra 1 or higher) · 3 natural science · 3 social science · 2 world language (same language)</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><span class="legend"></span>Highlighted scores went up for the Class of 2028. Only one test score is needed (SAT, ACT <i>or</i> CLT), not all three. <b>Classes of 2029–2031:</b> requirements haven't been published yet and have been rising, so plan for at least the Class of 2028 numbers.</p>
+
+  <div class="callout"><b>The "Bright Futures GPA" is not the report-card GPA.</b> It's recalculated using only those 16 core courses with Bright Futures' own weighting, so it can be higher or lower than what your student sees at school. Ask the school counselor for your student's Bright Futures evaluation.</div>
+
+  <div class="foot"><span>Requirements can change. Always confirm with your school counselor and <b>FloridaBrightFutures.gov</b>.</span><span><b>collegeplan.beehiiv.com</b></span></div>
+</div>
+
+<div class="page">
+  <div class="top"><img src="wordmark_navy.png" alt="College Plan"><div class="tag">The Florida Bright Futures Cheat Sheet</div></div>
+
+  <h2 style="margin-top:20px"><span class="n">3</span> What to do, grade by grade</h2>
+  <div class="timeline">
+    <div class="step"><div class="when">8th grade<span>and the summer after</span></div><ul><li>Service hours can start counting the <b>summer after 8th grade</b>. Hours before that don't count.</li><li>Ask the middle school which high school-credit courses your student is taking (like Algebra 1). Ask whether they'll count toward the 16 credits.</li></ul></div>
+    <div class="step"><div class="when">9th grade</div><ul><li>Find out which form your school uses for service hours, and start a simple log (date, organization, supervisor, hours).</li><li>Core class grades count toward the Bright Futures GPA from day one.</li><li>Plan for two years of the same world language before graduation.</li></ul></div>
+    <div class="step"><div class="when">10th grade</div><ul><li>Turn in service hours at the end of each school year instead of saving them for senior year.</li><li>Take the PSAT for practice and use the score report to spot weak areas.</li></ul></div>
+    <div class="step"><div class="when">11th grade</div><ul><li>Take the SAT, ACT or CLT. Many students test in winter or spring, then retake if needed.</li><li>Ask the counselor for a Bright Futures evaluation to see which award your student is on track for.</li><li>Check the hour total: 75 or 100 is the goal.</li></ul></div>
+    <div class="step"><div class="when">12th grade</div><ul><li>Submit the <b>Florida Financial Aid Application (FFAA)</b>. This is how your student actually applies for Bright Futures.</li><li>Finish all coursework, GPA and hour requirements by graduation.</li><li>Still short on a score? Keep testing. See the deadlines below.</li></ul></div>
+  </div>
+
+  <h2><span class="n">4</span> Deadlines you can't miss</h2>
+  <div class="dl">
+    <div><div class="d">FFAA: by August 31 after graduation</div><p>No FFAA, no Bright Futures, even if your student meets every requirement. Don't wait; complete it during senior year.</p></div>
+    <div><div class="d">Service hours: by graduation</div><p>Hours must be documented and turned in to the school before your student graduates.</p></div>
+    <div><div class="d">Coursework and GPA: by graduation</div><p>All academic requirements must be met by high school graduation.</p></div>
+    <div><div class="d">Test scores: tests through August 31</div><p>Scores from tests taken through August 31 after graduation are accepted for Bright Futures evaluation.</p></div>
+  </div>
+
+  <div class="cta">
+    <div><div class="t">Get what matters each week, by grade.</div><div class="s">Free weekly email for Florida parents: deadlines, Bright Futures updates, testing and one quick tip.</div></div>
+    <div class="u">collegeplan.beehiiv.com</div>
+  </div>
+
+  <div class="foot"><span>Sources: Florida DOE / Bright Futures program; Florida school district guidance (fall 2026). Not affiliated with the State of Florida.</span><span><b>College Plan</b></span></div>
+</div>
+
+</body></html>
