@@ -1,0 +1,45 @@
+{
+  "request": {
+    "title": "Juniors: PSAT month and new Bright Futures scores",
+    "subtitle": "Your weekly plan for the Class of 2028",
+    "body_content": "<figure data-type=\"imageBlock\" data-src=\"https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ea89b10c-b23c-40bc-90e9-e63135d94a03/upload_7e31c1e8e94b5772.jpg?t=1791402431\" data-alt=\"College Plan: Florida college planning, organized.\" data-width=\"100%\" data-align=\"center\"><figcaption></figcaption></figure><p>Hi {{first_name|there}},</p><p>Junior year is the most important testing year, and Florida just raised the bar for your student's class. Here's what matters for the Class of 2028 right now.</p><div data-type=\"section\" class=\"node-section\" data-background-color=\"#EAF3FB\" data-padding-top=\"16\" data-padding-bottom=\"16\" data-padding-left=\"16\" data-padding-right=\"16\" data-border-top-left-radius=\"8\" data-border-top-right-radius=\"8\" data-border-bottom-left-radius=\"8\" data-border-bottom-right-radius=\"8\" data-show-in-email=\"true\" data-show-on-website=\"true\"><h3>This week at a glance</h3><ul><li><p><strong>October:</strong> PSAT/NMSQT testing at schools (Oct 1\u201330)</p></li><li><p><strong>New:</strong> Higher Bright Futures SAT scores for the Class of 2028</p></li><li><p><strong>Nov 20:</strong> Register for the Dec 5 SAT</p></li></ul></div><h2>1. Bright Futures test scores are going up for your student's class</h2><p>The Florida Department of Education raised the SAT scores needed for Bright Futures, starting with the Class of 2028:</p><ul><li><p><strong>Florida Academic Scholars (100% tuition):</strong> SAT 1350, up from 1330</p></li><li><p><strong>Florida Medallion Scholars (75% tuition):</strong> SAT 1200, up from 1190</p></li></ul><p>Some ACT and CLT minimums changed too. Ask your school counselor for the official chart for your student's class.</p><p>What didn't change: a 3.5 weighted GPA plus 100 service hours for Academic Scholars, and a 3.0 weighted GPA plus 75 service hours for Medallion. Both also allow 100 paid work hours or a combination of work and service.</p><h2>2. It's PSAT month</h2><p>Many Florida high schools give the <strong>PSAT/NMSQT</strong> sometime between Oct 1 and Oct 30. For juniors, this is the test that counts for <strong>National Merit</strong> recognition. If your student has already taken it, the score report will show which skills to work on before the real SAT.</p><h2>3. Pick a first SAT date</h2><p>Having a plan beats cramming. Upcoming SAT dates:</p><ul><li><p><strong>Dec 5:</strong> register by Nov 20</p></li><li><p><strong>March 6, 2027:</strong> register by Feb 19</p></li></ul><p>Many students take their first official SAT in the winter or spring of junior year, then retake it if needed.</p><div data-type=\"section\" class=\"node-section\" data-background-color=\"#F7F5E8\" data-padding-top=\"16\" data-padding-bottom=\"16\" data-padding-left=\"16\" data-padding-right=\"16\" data-border-top-left-radius=\"8\" data-border-top-right-radius=\"8\" data-border-bottom-left-radius=\"8\" data-border-bottom-right-radius=\"8\" data-show-in-email=\"true\" data-show-on-website=\"true\"><h3>Term of the week: Weighted GPA</h3><p>A weighted GPA gives extra points for harder classes like Honors, AP, IB, AICE and dual enrollment. Bright Futures uses its own weighted GPA calculation, which can differ from the GPA on your student's report card. Ask the counselor for your student's \"Bright Futures GPA.\"</p></div><p>Requirements can change, so always confirm with your school counselor or the official Bright Futures site. Questions? Just hit reply. We read every email.</p><p>Talk soon,<br>The College Plan Team</p><hr><p><strong>P.S.</strong> Know another Florida parent who'd want this? Share your link below. When friends sign up, we'll send you free printables, starting with our Grade-by-Grade College Planning Checklist.</p><div class=\"node-referralProgram\"></div>",
+    "status": "confirmed",
+    "scheduled_at": "2026-10-08T10:30:00Z",
+    "post_template_id": "post_template_92da00b7-d6e0-447a-aded-93f586f22255",
+    "recipients": {
+      "web": {
+        "tier_ids": [
+          "free"
+        ]
+      },
+      "email": {
+        "include_segment_ids": [
+          "seg_4696667f-dbfa-42a6-a0b5-2f4a0b9ae687"
+        ]
+      }
+    },
+    "email_settings": {
+      "email_subject_line": "Juniors: Bright Futures scores just went up",
+      "email_preview_text": "What the new SAT targets mean for the Class of 2028, plus PSAT month.",
+      "display_title_in_email": false,
+      "display_subtitle_in_email": false
+    },
+    "web_settings": {
+      "display_thumbnail_on_web": false
+    },
+    "seo_settings": {
+      "default_title": "Bright Futures Class of 2028 Scores + PSAT Month for Juniors",
+      "default_description": "Florida raised Bright Futures test scores for the Class of 2028. The new SAT, ACT and CLT targets, plus what juniors should do during PSAT month."
+    },
+    "content_tags": [
+      "Juniors",
+      "Class of 2028"
+    ]
+  },
+  "response": {
+    "data": {
+      "id": "post_18fef794-776e-4330-b10b-218b741fe370",
+      "preview_url": "https://app.beehiiv.com/posts/post_18fef794-776e-4330-b10b-218b741fe370/preview"
+    }
+  }
+}
