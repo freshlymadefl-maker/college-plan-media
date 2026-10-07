@@ -1,0 +1,139 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!--
+College Plan weekly post templates (1080x1350). Render each #pN with Playwright.
+p1 = MON "Don't miss this week" deadlines
+p2 = TUE School stats card
+p3 = WED Deep-dive carousel cover (inner slides: see carousel-example.html)
+p4 = THU Reframe / quote
+p5 = FRI Myth vs. fact
+-->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --sky2:#D4E6F7; --gold:#B5A21F; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.s { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:var(--ink);
+     background: linear-gradient(160deg, #F4F9FE 0%, var(--sky) 45%, var(--sky2) 100%); padding: 120px 90px 190px; display:flex; flex-direction:column; justify-content:flex-start; }
+.s.dark { background: linear-gradient(160deg, #0E3359 0%, var(--navy) 60%, #081F38 100%); color:#fff; }
+.pill { align-self:flex-start; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase; color:var(--navy); background:#fff; border-radius:999px; padding:12px 26px; }
+.dark .pill { background: var(--gold); color:#fff; }
+h1 { font-family:'Poppins'; font-weight:700; font-size:84px; line-height:1.02; letter-spacing:-0.02em; color:var(--navy); margin-top:30px; }
+h1 .lt { color:var(--blue); }
+.dark h1 { color:#fff; }
+.serif { font-family:'Lora'; font-style:italic; font-weight:500; color:var(--gold); }
+.foot { position:absolute; left:90px; right:90px; bottom:70px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:46px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:26px; color:var(--navy); letter-spacing:.06em; }
+.dark .foot .sw { color:#fff; }
+.spark { position:absolute; }
+/* p1 deadlines */
+.dl { margin-top:44px; display:flex; flex-direction:column; gap:20px; }
+.dl .r { display:grid; grid-template-columns: 150px 1fr; gap:28px; align-items:center; background:#fff; border-radius:26px; padding:26px 30px; box-shadow:0 8px 24px rgba(11,42,74,.07); }
+.dl .d { background:var(--navy); color:#fff; border-radius:18px; text-align:center; padding:14px 0; font-family:'Poppins'; }
+.dl .d .m { font-size:22px; letter-spacing:.12em; font-weight:600; color:#C9DAEC; }
+.dl .d .n { font-size:56px; font-weight:700; line-height:1; margin-top:2px; }
+.dl .t { font-family:'Poppins'; font-weight:600; font-size:32px; color:var(--navy); line-height:1.2; }
+.dl .t small { display:block; font-family:'Inter'; font-weight:500; font-size:24px; color:var(--muted); margin-top:6px; }
+.tag { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:18px; letter-spacing:.1em; color:#fff; background:var(--blue); border-radius:999px; padding:5px 14px; margin-left:10px; vertical-align:4px; }
+.tag.g { background:var(--gold); }
+/* p2 stats */
+.school { font-family:'Poppins'; font-weight:700; font-size:120px; line-height:.95; letter-spacing:-0.03em; color:var(--navy); margin-top:30px; }
+.sub { font-size:34px; color:var(--muted); margin-top:16px; font-weight:500; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:46px; }
+.st { background:#fff; border-radius:26px; padding:30px 32px; box-shadow:0 8px 24px rgba(11,42,74,.07); }
+.st .v { font-family:'Poppins'; font-weight:700; font-size:66px; color:var(--navy); line-height:1; letter-spacing:-0.02em; }
+.st .k { font-size:25px; color:var(--muted); margin-top:10px; font-weight:500; }
+.st.hl { background:var(--navy); }
+.st.hl .v { color:#fff; } .st.hl .k { color:#C9DAEC; }
+.src { position:absolute; left:90px; right:90px; bottom:145px; font-size:21px; color:var(--muted); }
+/* p3 cover */
+.lede { font-size:38px; line-height:1.4; margin-top:34px; color:#3A4F66; max-width:860px; }
+.vs { display:flex; align-items:center; gap:26px; margin-top:60px; }
+.vs .b { flex:1; background:#fff; border-radius:28px; padding:40px 34px; text-align:center; box-shadow:0 8px 24px rgba(11,42,74,.07); }
+.vs .b .a { font-family:'Poppins'; font-weight:700; font-size:72px; color:var(--navy); }
+.vs .b .w { font-size:26px; color:var(--muted); margin-top:6px; }
+.vs .x { font-family:'Lora'; font-style:italic; font-size:56px; color:var(--gold); }
+/* p4 reframe */
+.q { font-family:'Lora'; font-style:italic; font-weight:500; font-size:74px; line-height:1.22; color:#fff; margin-top:70px; }
+.q .u { color:var(--gold); text-decoration: underline; text-decoration-thickness:6px; text-underline-offset:12px; }
+.q2 { font-size:34px; line-height:1.45; color:#C9DAEC; margin-top:48px; max-width:820px; }
+/* p5 myth/fact */
+.mf { margin-top:46px; display:flex; flex-direction:column; gap:24px; }
+.mf .c { border-radius:30px; padding:40px 42px; }
+.mf .my { background:#fff; border:3px dashed #C9D8E8; }
+.mf .fa { background:var(--navy); color:#fff; }
+.mf .l { font-family:'Poppins'; font-weight:700; font-size:28px; letter-spacing:.14em; }
+.mf .my .l { color:#B85C5C; } .mf .fa .l { color:var(--gold); }
+.mf .tx { font-family:'Poppins'; font-weight:600; font-size:44px; line-height:1.2; margin-top:12px; }
+.mf .my .tx { color:var(--navy); text-decoration: line-through; text-decoration-color: rgba(184,92,92,.6); text-decoration-thickness:4px; }
+.mf .fa p { font-size:30px; line-height:1.45; color:#C9DAEC; margin-top:14px; }
+.ask { margin-top:30px; font-family:'Poppins'; font-weight:600; font-size:30px; color:var(--navy); }
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="st" viewBox="0 0 100 100"><path d="M50 0 C53 35 65 47 100 50 C65 53 53 65 50 100 C47 65 35 53 0 50 C35 47 47 35 50 0Z" fill="#B5A21F"/></symbol>
+</defs></svg>
+
+<!-- p1 MON deadlines -->
+<div class="s" id="p1">
+  <svg class="spark" style="right:100px;top:100px" width="60" height="60"><use href="#st"/></svg>
+  <span class="pill">Don't miss · Oct 12–18</span>
+  <h1>This week's Florida college <span class="lt">deadlines</span></h1>
+  <div class="dl">
+    <div class="r"><div class="d"><div class="m">OCT</div><div class="n">15</div></div><div class="t">UF Early Decision &amp; FSU ED/EA due <span class="tag">SENIORS</span><small>FSU Early Action is for Florida residents</small></div></div>
+    <div class="r"><div class="d"><div class="m">OCT</div><div class="n">17</div></div><div class="t">Saturday PSAT/NMSQT option <span class="tag g">JUNIORS</span><small>Many schools test during the school day instead</small></div></div>
+    <div class="r"><div class="d"><div class="m">OCT</div><div class="n">22</div></div><div class="t">UF STARS due for Early Decision <span class="tag">SENIORS</span><small>Self-reported academic record</small></div></div>
+    <div class="r"><div class="d"><div class="m">OCT</div><div class="n">23</div></div><div class="t">Register for the Nov 7 SAT <span class="tag">SENIORS</span> <span class="tag g">JUNIORS</span><small>Late registration until Oct 27</small></div></div>
+  </div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">SAVE THIS ↓</span></div>
+</div>
+
+<!-- p2 TUE stats -->
+<div class="s" id="p2">
+  <span class="pill">Florida school stats</span>
+  <div class="school">UF</div>
+  <div class="sub">Who got in: Class of 2030 admitted students</div>
+  <div class="grid">
+    <div class="st"><div class="v">95,986</div><div class="k">applications (a UF record)</div></div>
+    <div class="st"><div class="v">19,012</div><div class="k">students admitted</div></div>
+    <div class="st hl"><div class="v">~20%</div><div class="k">admitted</div></div>
+    <div class="st"><div class="v">4.5–4.7</div><div class="k">middle 50% GPA</div></div>
+    <div class="st"><div class="v">1420–1520</div><div class="k">middle 50% SAT</div></div>
+    <div class="st"><div class="v">32–35</div><div class="k">middle 50% ACT</div></div>
+  </div>
+  <div class="src">Source: UF Office of Admissions freshman profile. Middle 50% of admitted students.</div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">SHARE WITH A SENIOR PARENT</span></div>
+</div>
+
+<!-- p3 WED carousel cover -->
+<div class="s" id="p3" style="justify-content:center">
+  <svg class="spark" style="right:110px;top:70px" width="150" height="150" viewBox="0 0 150 150"><path d="M20 140 C20 70 70 22 140 18" stroke="#B5A21F" stroke-width="12" fill="none" stroke-linecap="round"/></svg>
+  <svg class="spark" style="right:70px;top:190px" width="70" height="70"><use href="#st"/></svg>
+  <span class="pill">Financial aid, explained</span>
+  <h1 style="max-width:800px">Florida seniors need <span class="lt">two</span> aid forms, not one.</h1>
+  <div class="vs"><div class="b"><div class="a">FAFSA</div><div class="w">federal + college aid</div></div><div class="x">&amp;</div><div class="b"><div class="a">FFAA</div><div class="w">Bright Futures + state aid</div></div></div>
+  <p class="lede">Most parents only hear about one. Swipe for what each does and when to file.</p>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+
+<!-- p4 THU reframe -->
+<div class="s dark" id="p4" style="justify-content:center">
+  <svg class="spark" style="right:100px;top:110px" width="70" height="70"><use href="#st"/></svg>
+  <span class="pill">A reminder for October</span>
+  <p class="q">The group chat is not your student's <span class="u">admissions counselor.</span></p>
+  <p class="q2">Every family's college timeline looks different. Know your own deadlines, and tune out the noise.</p>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<!-- p5 FRI myth vs fact -->
+<div class="s" id="p5">
+  <span class="pill">Myth vs. fact</span>
+  <h1>Bright Futures edition</h1>
+  <div class="mf">
+    <div class="c my"><div class="l">MYTH</div><div class="tx">If my student qualifies, Bright Futures kicks in automatically.</div></div>
+    <div class="c fa"><div class="l">FACT</div><div class="tx">Students have to apply.</div><p>They must submit the Florida Financial Aid Application (FFAA) by August 31 after graduation. No FFAA, no Bright Futures, even with perfect scores.</p></div>
+  </div>
+  <p class="ask">Did you know this? Tell us in the comments 👇</p>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">SEND TO A SENIOR PARENT</span></div>
+</div>
+</body></html>

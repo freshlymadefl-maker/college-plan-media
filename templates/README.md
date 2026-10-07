@@ -6,3 +6,4 @@
 - Colors: navy #0B2A4A, blue #5B8DC9, sky #EAF3FB, gold #B5A21F.
 - `wordmark_navy.png` / `wordmark_white.png`: logo (must sit next to the HTML when rendering).
 - `cheatsheet.html`: Bright Futures cheat sheet PDF source.
+- `weekly-posts.html`: the 5 weekly post types (#p1 Mon deadlines, #p2 Tue school stats, #p3 Wed carousel cover, #p4 Thu reframe quote, #p5 Fri myth vs. fact). Same render method.
