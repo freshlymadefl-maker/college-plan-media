@@ -1,0 +1,80 @@
+<!doctype html><html><head><meta charset="utf-8"><title>College Planning Checklist</title><style>
+@page { size: Letter; margin: 0; }
+:root { --navy:#0B2A4A; --ink:#22344A; --muted:#55687E; --sky:#EAF3FB; --line:#C9D8E8; --gold:#A8981B; --goldbg:#F7F5E8; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: 'Inter', sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.45; }
+.page { width: 8.5in; height: 11in; padding: 0.55in 0.6in 0.5in; position: relative; page-break-after: always; overflow: hidden; }
+.page:last-child { page-break-after: auto; }
+.top { display:flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--navy); padding-bottom: 10px; }
+.top img { height: 30px; }
+.top .tag { font-family: 'Poppins'; font-size: 8pt; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+h1 { font-family: 'Poppins'; font-weight: 600; font-size: 27pt; line-height: 1.1; color: var(--navy); margin: 22px 0 6px; }
+h1 em { font-family: 'Lora'; font-style: italic; font-weight: 500; color: var(--gold); }
+.sub { font-size: 11.5pt; color: var(--muted); margin: 0 0 18px; max-width: 6.2in; }
+h2 { font-family: 'Poppins'; font-weight: 600; font-size: 13.5pt; color: var(--navy); margin: 18px 0 8px; display:flex; align-items:center; gap:10px; }
+h2 .n { display:inline-flex; width: 22px; height: 22px; border-radius: 50%; background: var(--navy); color:#fff; font-size: 10pt; align-items:center; justify-content:center; }
+.awards { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.card { background: var(--sky); border-radius: 10px; padding: 12px 14px; }
+.card .k { font-family:'Poppins'; font-weight:600; color: var(--navy); font-size: 11.5pt; }
+.card .big { font-family:'Poppins'; font-weight:600; font-size: 20pt; color: var(--navy); line-height:1.1; margin: 4px 0 2px; }
+.card p { margin: 0; color: var(--muted); font-size: 9.5pt; }
+table { width:100%; border-collapse: separate; border-spacing: 0; font-size: 9.8pt; margin-top: 4px; }
+th, td { padding: 7px 9px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { background: var(--navy); color:#fff; font-family:'Poppins'; font-weight: 500; font-size: 9pt; }
+thead th:first-child { border-top-left-radius: 8px; }
+thead th:last-child { border-top-right-radius: 8px; }
+thead th .cls { display:block; font-weight: 400; opacity: .8; font-size: 8pt; }
+tbody th { font-family:'Poppins'; font-weight:500; color: var(--navy); width: 22%; background: #F6F9FC; }
+td.new { background: #FBF8E6; font-weight: 600; color: var(--navy); }
+.note { font-size: 8.6pt; color: var(--muted); margin-top: 6px; }
+.note b { color: var(--navy); }
+.legend { display:inline-block; width:10px; height:10px; background:#FBF8E6; border:1px solid #E6DDA0; vertical-align: -1px; margin-right:4px; }
+.callout { background: var(--goldbg); border-left: 4px solid var(--gold); border-radius: 6px; padding: 10px 14px; margin-top: 14px; font-size: 9.8pt; }
+.callout b { color: var(--navy); }
+.foot { position:absolute; left: 0.6in; right: 0.6in; bottom: 0.38in; display:flex; justify-content: space-between; font-size: 8pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; }
+.foot b { color: var(--navy); white-space: nowrap; }
+.timeline { position: relative; margin-top: 6px; }
+.step { display:grid; grid-template-columns: 1.15in 1fr; gap: 14px; padding: 6px 0; font-size: 10pt; border-bottom: 1px dashed var(--line); }
+.step:last-child { border-bottom: none; }
+.when { font-family:'Poppins'; font-weight:600; color: var(--navy); font-size: 10.5pt; line-height: 1.25; }
+.when span { display:block; font-family:'Inter'; font-weight: 400; color: var(--muted); font-size: 8.5pt; }
+.step ul { margin: 0; padding-left: 16px; }
+.step li { margin: 1px 0; }
+.dl { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
+.dl > div { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.dl .d { font-family:'Poppins'; font-weight: 600; color: var(--navy); font-size: 10.5pt; }
+.dl p { margin: 3px 0 0; font-size: 9.3pt; color: var(--muted); }
+.cta { margin-top: 16px; background: var(--navy); color: #fff; border-radius: 12px; padding: 14px 18px; display:flex; align-items:center; justify-content: space-between; gap: 16px; }
+.cta img { height: 24px; }
+.cta .t { font-family:'Poppins'; font-weight: 600; font-size: 12pt; }
+.cta .s { font-size: 9.3pt; opacity: .85; }
+.cta .u { font-family:'Poppins'; font-weight: 600; background: var(--gold); color:#fff; padding: 7px 12px; border-radius: 999px; font-size: 9.5pt; white-space: nowrap; }
+
+.cols { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.box { border:1px solid var(--line); border-radius:10px; padding:10px 13px; }
+.box h3 { font-family:'Poppins'; font-weight:600; font-size:11pt; color:var(--navy); margin:0 0 4px; }
+.box ul, .chk { margin:0; padding:0; list-style:none; }
+.chk li, .box li { position:relative; padding-left:20px; margin:5px 0; font-size:10.3pt; }
+.chk li:before, .box li:before { content:""; position:absolute; left:0; top:2px; width:11px; height:11px; border:1.5px solid #8FA7C0; border-radius:3px; }
+.box.q li:before { border-radius:50%; width:6px; height:6px; top:6px; left:3px; background:var(--blue); border:none; }
+.grade { display:grid; grid-template-columns:1.05in 1fr; gap:14px; padding:8px 0; border-bottom:1px dashed var(--line); }
+.grade:last-child { border-bottom:none; }
+table.trk td, table.trk th { height:30px; font-size:8.6pt; padding:5px 6px; }
+table.trk tbody td { border-right:1px solid var(--line); }
+table.trk thead th { font-size:8.3pt; }
+table.trk.apps td { height:36px; }
+table.trk.apps th:first-child { width:17%; }
+.lines { border-bottom:1px solid var(--line); height:24px; }
+</style></head><body><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Referral reward · Florida parents</div></div>
+<h1>The 8th–12th Grade <em>College Planning Checklist</em></h1>
+<p class="sub">Check things off one year at a time, so senior year isn’t a scramble. Built for Florida families.</p>
+<div class="grade"><div class="when">8th grade<span>and the summer after</span></div><ul class="chk"><li>Ask which middle school courses earn high school credit (like Algebra 1 or a world language)</li><li>Plan a 9th-grade schedule with the right level of challenge for your student</li><li>Start a service-hour log: hours for Bright Futures can count starting the summer after 8th grade</li><li>Make one folder (paper or digital) for awards, report cards and certificates</li></ul></div>
+<div class="grade"><div class="when">9th grade<span>grades start to count</span></div><ul class="chk"><li>Know that core-course grades count toward the Bright Futures GPA from day one</li><li>Find out your school’s service-hour form and turn hours in every year</li><li>Plan for two years of the same world language before graduation</li><li>Try a club, job, or activity your student actually enjoys</li><li>Save copies of report cards and awards in the folder</li></ul></div>
+<div class="grade"><div class="when">10th grade<span>explore</span></div><ul class="chk"><li>Take the PSAT 10 or another practice test if your school offers it</li><li>Ask the counselor about dual enrollment, AP, IB or AICE options and eligibility</li><li>Plan a summer that builds something: a job, volunteering, a program or a project</li><li>Keep logging and turning in service hours</li></ul></div>
+<div class="foot"><span>Requirements change. Confirm with your school counselor and official sources.</span><span><b>collegeplan.beehiiv.com</b></span></div></div>
+<div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">The 8th–12th Grade College Planning Checklist</div></div>
+<div style="height:14px"></div>
+<div class="grade"><div class="when">11th grade<span>the big year</span></div><ul class="chk"><li>Take the PSAT/NMSQT in October (the National Merit qualifier)</li><li>Take the SAT, ACT or CLT in winter or spring, and leave room to retest</li><li>Ask the counselor for a Bright Futures evaluation to see where your student stands</li><li>Build a first college list: reach, target and likely schools</li><li>Visit a few campuses (see our Campus Visit Kit)</li><li>In spring, ask two teachers for recommendation letters for senior year</li><li>Over the summer, brainstorm and draft the main essay</li></ul></div>
+<div class="grade"><div class="when">12th grade<span>apply + pay for it</span></div><ul class="chk"><li>Write down every school’s deadlines and requirements (see our Senior Application Tracker)</li><li>Complete self-reported academic records where required (like UF’s STARS or the SSAR)</li><li>Submit the FAFSA as soon as you can once it opens</li><li>Submit the Florida Financial Aid Application (FFAA): it’s how students apply for Bright Futures</li><li>Apply for scholarships every month, not just in spring</li><li>Compare financial aid offers side by side before choosing</li><li>Finish service hours and requirements before graduation. The FFAA final deadline is Aug 31 after graduation</li></ul></div>
+<div class="callout"><b>Tip:</b> Put one 20-minute “college check-in” on the family calendar each month. Small steps beat a senior-year pile-up.</div>
+<div class="foot"><span>A thank-you from <b>College Plan</b> for sharing us with another Florida family.</span><span><b>collegeplan.beehiiv.com</b></span></div></div></body></html>
