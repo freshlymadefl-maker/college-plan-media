@@ -1,0 +1,29 @@
+name: Send newsletter
+# Any JSON dropped into newsletter/queue/ is created + scheduled in beehiiv via the API.
+on:
+  push:
+    paths: ['newsletter/queue/*.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: newsletter
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Schedule queued emails in beehiiv
+        id: send
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+        run: python3 scripts/send_newsletter.py
+        continue-on-error: true
+      - name: Commit results
+        run: |
+          git config user.name "College Plan"
+          git config user.email freshlymadefl@gmail.com
+          git add -A newsletter
+          git diff --cached --quiet || (git commit -m "Newsletter send results" && git push)
+      - name: Fail if any email failed
+        if: steps.send.outcome == 'failure'
+        run: exit 1
