@@ -1,0 +1,12 @@
+{"background_color":"#EAF3FB","content_background_color":"#FFFFFF","border_radius":12,"padding_top":28,
+"paragraph_font_family":"Inter","paragraph_color":"#2A3D54","paragraph_font_size":16,
+"h1_font_family":"Poppins","h1_font_color":"#0B2A4A","h2_font_family":"Poppins","h2_font_color":"#0B2A4A","h2_font_size":21,
+"h3_font_family":"Poppins","h3_font_color":"#0B2A4A","h4_font_family":"Poppins","h4_font_color":"#0B2A4A",
+"list_font_family":"Inter","list_font_color":"#2A3D54",
+"inline_link_color":"#0B2A4A","inline_link_underline_color":"#B5A21F","inline_link_italic":false,"inline_link_bold":true,
+"button_background_color":"#0B2A4A","button_border_color":"#0B2A4A","button_font_family":"Poppins",
+"image_padding_top":0,"image_padding_bottom":12,
+"content_break_color":"#B5A21F","content_break_thickness":2,"content_break_width":30,
+"quote_border_color":"#0B2A4A","quote_2_border_color":"#0B2A4A",
+"header_title_font_family":"Poppins","header_title_font_color":"#0B2A4A","header_byline_font_family":"Inter","header_byline_font_color":"#5E7186","header_byline_accent_color":"#0B2A4A","header_byline_show_date":"true","header_byline_show_read_online":"true",
+"footer_background_color":"#FFFFFF","footer_font_family":"Inter","footer_font_color":"#5E7186"}
