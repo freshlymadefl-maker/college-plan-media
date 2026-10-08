@@ -35,8 +35,6 @@ desktop: {
   }
  ],
  "iframes": [
-  "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
-  "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   null,
   null,
   "https://app.birdie.so/snippet/bridge.html?v=1"
@@ -81,11 +79,8 @@ mobile: {
   }
  ],
  "iframes": [
-  "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
-  "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   null,
   null,
-  "https://js.px-cloud.net/?t=d-xeciohc34-1791475057050&v=fb72d057-c330-11f1-8983-60f38cc83e0d&h=Y29sbGVnZXBsYW4uYmVlaGlpdi5jb20%3D&a=PXeBumDLwe",
   "https://app.birdie.so/snippet/bridge.html?v=1"
  ]
 }
