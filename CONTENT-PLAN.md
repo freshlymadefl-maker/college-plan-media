@@ -100,21 +100,17 @@ Queue (in order, skip ones already in the Guides log):
 - 2026-10-07: Florida Bright Futures Requirements for the Classes of 2027 and 2028 — /p/florida-bright-futures-requirements-2027-2028
 
 ## Log (newest first — the weekly routine appends here)
+- 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
 - 2026-12-04/09/11/17 8:30pm: decision-day posts already scheduled (UCF, USF, UF ED, FSU) — instagram/2026-12-decisions/. Re-verify each release date the week before; if a date moves, update the post in Metricool.
 - 2026-10-18 Sun 12pm: TRIAL REEL — Bright Futures checker demo (instagram/2026-10-tools/checker-reel.mp4)
-- 2026-10-15 Thu 12pm: tool promo — Bright Futures checker (tl2); 8:15am Story ts3 (Hillsborough info session tonight)
+- 2026-10-15 Thu: 8:15am Story ts3 (Hillsborough info session tonight)
 - 2026-10-14 Wed 12pm: COUNTY #1 — Hillsborough dual enrollment carousel (cy1–cy5). Next county post ~Oct 28: Pasco (Pasco-Hernando State College).
 - 2026-10-12 Mon 8:15am: Story ts2 (checker)
 - 2026-10-11 Sun 12pm: tool promo — deadline calendar (tl1)
 - 2026-10-10 Sat 8:15am: Story ts1 (calendar)
 - 2026-10-09 Fri 12pm: REEL — Bright Futures checker demo
 - 2026-10-09 Fri: fun — text thread (college essay 'the title')
-- 2026-10-18 Sun: promo newsletter (pr2)
-- 2026-10-17 Sat: scholarship — Benacquisto
-- 2026-10-16 Fri: myth vs fact — Bright Futures FFAA
-- 2026-10-15 Thu: photo quote — group chat
-- 2026-10-14 Wed: carousel — FAFSA vs FFAA (Rotation A #2)
-- 2026-10-13 Tue: UF stats; Reel — 4 things before October ends
+- 2026-10-13 Tue: Reel — 4 things before October ends (UF stats moved to Oct 8 blast)
 - 2026-10-12 Mon: deadlines Oct 15–23
 - 2026-10-11 Sun: October to-do list (ck1)
 - 2026-10-10 Sat: promo cheat sheet (pr1)
