@@ -8,6 +8,7 @@ body { background:#888; }
 .h { width:1080px; height:1920px; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; }
 .sky  { background:linear-gradient(150deg,#CFE6FD 0%,#A3CEF7 50%,#7FB6EE 100%); }
 .sun  { background:linear-gradient(150deg,#FFF0A8 0%,#FFE070 50%,#FFCF3D 100%); }
+.peach{ background:linear-gradient(150deg,#FFE2D3 0%,#FFC3A6 50%,#FFA57F 100%); }
 .sea  { background:linear-gradient(150deg,#C9F5E5 0%,#9BE6CB 50%,#6FD6B2 100%); }
 .blob { position:absolute; width:760px; height:760px; border-radius:50%; display:none; }
 svg.ic { position:relative; width:440px; height:440px; fill:none; stroke:#0B2A4A; stroke-width:7.5; stroke-linecap:round; stroke-linejoin:round; }
@@ -55,4 +56,42 @@ svg.ic .w { fill:#FFFFFF; }
 <svg class="spark2" viewBox="0 0 24 24"><path d="M12 0 C13 8 16 11 24 12 C16 13 13 16 12 24 C11 16 8 13 0 12 C8 11 11 8 12 0Z"/></svg>
 </div>
 
+<div class="h peach" id="hl-newsletter"><div class="blob"></div>
+<svg class="ic" viewBox="0 0 100 100">
+  <rect x="12" y="30" width="76" height="54" rx="11" class="w"/>
+  <path d="M14 36 L50 62 L86 36"/>
+  <path d="M50 18 C46 10 34 12 36 21 C37 27 50 33 50 33 C50 33 63 27 64 21 C66 12 54 10 50 18Z" class="f" transform="translate(50 26) scale(.8) translate(-50 -26) translate(0 -12)"/>
+</svg>
+<svg class="spark" viewBox="0 0 24 24"><path d="M12 0 C13 8 16 11 24 12 C16 13 13 16 12 24 C11 16 8 13 0 12 C8 11 11 8 12 0Z"/></svg>
+<svg class="spark2" viewBox="0 0 24 24"><path d="M12 0 C13 8 16 11 24 12 C16 13 13 16 12 24 C11 16 8 13 0 12 C8 11 11 8 12 0Z"/></svg>
+</div>
+
+
+<!-- ns1: newsletter Story to post manually with a LINK sticker in the dashed spot, then save to the Newsletter highlight -->
+<style>
+.ns { width:1080px; height:1920px; position:relative; overflow:hidden; background:linear-gradient(165deg,#FFF3EC 0%,#FFE2D3 45%,#FFC9AE 100%); font-family:'Inter',sans-serif; color:#2A3D54; padding:270px 90px 0; }
+.ns .pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:28px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:#0B2A4A; border-radius:999px; padding:14px 30px; }
+.ns h1 { font-family:'Poppins'; font-weight:700; font-size:96px; line-height:1.02; letter-spacing:-.02em; color:#0B2A4A; margin-top:34px; }
+.ns h1 em { font-family:'Lora'; font-weight:500; color:#C2562E; letter-spacing:0; }
+.ns .list { margin-top:50px; display:flex; flex-direction:column; gap:22px; }
+.ns .it { display:flex; gap:26px; align-items:center; background:rgba(255,255,255,.85); border-radius:26px; padding:26px 32px; font-family:'Poppins'; font-weight:600; font-size:36px; color:#0B2A4A; }
+.ns .it span { font-size:44px; }
+.ns .gift { margin-top:34px; font-size:34px; line-height:1.4; color:#5E4A3F; }
+.ns .gift b { color:#0B2A4A; }
+.ns .slot { position:absolute; left:240px; right:240px; top:1430px; height:130px; border:5px dashed rgba(11,42,74,.35); border-radius:30px; display:flex; align-items:center; justify-content:center; font-family:'Poppins'; font-weight:600; font-size:30px; color:rgba(11,42,74,.45); }
+.ns .arrow { position:absolute; left:0; right:0; top:1340px; text-align:center; font-family:'Poppins'; font-weight:700; font-size:40px; color:#0B2A4A; }
+</style>
+<div class="ns" id="ns1">
+  <span class="pill">Free weekly email</span>
+  <h1>Florida college planning, <em>in your inbox.</em></h1>
+  <div class="list">
+    <div class="it"><span>⏰</span>Deadlines for your student's grade</div>
+    <div class="it"><span>🎓</span>Bright Futures + scholarships</div>
+    <div class="it"><span>💡</span>One quick tip, in plain English</div>
+  </div>
+  <p class="gift">🎁 Sign up and get our <b>Bright Futures cheat sheet</b> free.</p>
+  <div class="arrow">Tap the link 👇</div>
+  <div class="slot">link sticker here</div>
+</div>
+<div class="ns" id="ns1-clean" style="display:none"></div>
 </body></html>
