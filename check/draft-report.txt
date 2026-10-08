@@ -1,8 +1,8 @@
 desktop: {
  "nav": [
   " -> /",
-  "Deadline Calendar -> /#cp-cal-root",
-  "Bright Futures Checker -> /#cp-bf-root",
+  "Deadline Calendar -> /#calendar",
+  "Bright Futures Checker -> /#bright-futures-checker",
   "Guides -> /t/guides",
   "Log in -> null",
   "Subscribe -> null",
@@ -27,8 +27,8 @@ errors: []
 mobile: {
  "nav": [
   " -> /",
-  "Deadline Calendar -> /#cp-cal-root",
-  "Bright Futures Checker -> /#cp-bf-root",
+  "Deadline Calendar -> /#calendar",
+  "Bright Futures Checker -> /#bright-futures-checker",
   "Guides -> /t/guides",
   "Log in -> null",
   "Subscribe -> null",
