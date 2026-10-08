@@ -59,3 +59,8 @@
 
 ## Newsletter on beehiiv Lite
 The send API is Enterprise-only, so the Sunday routine saves emails and guides as drafts and reminds the owner to click Schedule.
+
+## Website "Follow along" Instagram grid
+- tools/social-feed.js (embedded on the home page, pinned to a commit on jsDelivr) reads social/feed.json from raw.githubusercontent.com, so feed updates show within minutes.
+- A daily scheduled task (9:17pm ET) pulls the latest Instagram posts from Metricool, runs scripts/update_social_feed.py, and saves images to social/img/ via the Fetch images action (Instagram image links expire).
+- If you change social-feed.js, update the commit hash in the home page embed.
