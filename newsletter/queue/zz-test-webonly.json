@@ -1,2 +1,0 @@
-{"title": "TEST web-only (will be deleted)", "body_content": "<p>test</p>", "status": "confirmed", "scheduled_at": "2027-06-01T12:00:00Z",
- "recipients": {"web": {"tier_ids": ["free"]}, "email": {"tier_ids": []}}, "web_settings": {"slug": "test-webonly-delete-me", "hide_from_feed": true}}
