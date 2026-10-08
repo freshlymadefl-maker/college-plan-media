@@ -52,3 +52,10 @@
 2. Merge spelled letters back into words (FFAA, GPA) and write templates/reel/<name>.words.js as `window.WORDS=[...]`.
 3. Copy templates/reel/voiceover-reel.html, point its <script src> at the .words.js, edit CFG.sections (chip + title per section; `match` = the word after "Number", or a word that starts the CTA) and CFG.end.
 4. Render: `cd templates/reel && python3 render-fast.py <page>.html <out>.mp4 <audio secs + 2.5> 24 ../../tts/out/<name>.mp3` (~5 min for 40s; run it in the background). Backgrounds are pre-cropped in templates/reel/bg/. Uses AI photos -> isAiGenerated true.
+
+## Paid product posts (Roadmaps)
+- `product-posts.html`: sr1..sr5 Senior Year Roadmap carousel, fr1..fr5 Freshman Roadmap carousel (1080x1350), rs1..rs3 Stories (1080x1920). Page images come from `products/pages/{sr,fr}-NN.png` (`pdftoppm -png -r 150` of the PDFs; re-run after rebuilding a PDF).
+- `reel/roadmaps-reel.html`: voiceover product Reel, scenes keyed to word indices in roadmaps.words.js.
+
+## Newsletter on beehiiv Lite
+The send API is Enterprise-only, so the Sunday routine saves emails and guides as drafts and reminds the owner to click Schedule.

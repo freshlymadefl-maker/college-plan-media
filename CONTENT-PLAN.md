@@ -105,6 +105,8 @@ Status: LIVE since 2026-10-08 (Stripe connected).
 - Freshman Roadmap: Plan Now, Don't Cram Later: $12, https://collegeplan.beehiiv.com/products/freshman-roadmap (product d98d8883-f0fe-4b35-b864-47118ecd7dac). PDF products/Freshman-Roadmap-Plan-Now-Dont-Cram-Later.pdf, card products/freshman.png
 - If a PDF is rebuilt, update the product with save_product(file_url = jsDelivr link pinned to the new commit).
 - Rebuild with: python3 templates/products/build.py (check every date against official sources first; refresh the Senior Roadmap each August for the new class).
+- Website: home page section "Printable Roadmaps" (anchor /#roadmaps) + a "New: printable roadmaps" link under the hero signup.
+- Promo assets: templates/product-posts.html (sr1-5, fr1-5 carousels; rs1-3 Stories), templates/reel/roadmaps-reel.html (voiceover). Renders in instagram/2026-10-roadmaps/.
 - Once live: soft-mention in emails at most once a week (seniors email → Senior Roadmap; early email → Freshman Roadmap), one promo post every other week, never pushy. Free resources stay free.
 
 ## Newsletter sending (beehiiv Lite plan)
@@ -115,6 +117,7 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - 2026-10-07: Florida Bright Futures Requirements for the Classes of 2027 and 2028 — /p/florida-bright-futures-requirements-2027-2028
 
 ## Log (newest first — the weekly routine appends here)
+- 2026-10-08: Roadmaps launch scheduled: Story Oct 8 9pm; voiceover Reel Oct 12 12pm; Senior carousel Oct 13 7:30pm + Story 8:45pm; Freshman carousel Oct 15 7:30pm + Story 8:45pm.
 - 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
 - 2026-12-04/09/11/17 8:30pm: decision-day posts already scheduled (UCF, USF, UF ED, FSU) — instagram/2026-12-decisions/. Re-verify each release date the week before; if a date moves, update the post in Metricool.
 - 2026-10-10 Sat 4pm: VOICEOVER REEL #1 — 3 Bright Futures mistakes (instagram/2026-10-tools/vo-bf-mistakes.mp4)
