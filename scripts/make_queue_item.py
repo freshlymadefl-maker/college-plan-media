@@ -30,6 +30,8 @@ def to_email_html(html: str) -> str:
     # lives in the publication email footer instead ({{rp_refer_url}}). Drop the editor-only node here.
     html = re.sub(r'<div[^>]*class="node-referralProgram"[^>]*>\s*</div>', '', html)
     html = html.replace("Share your link below.", "Your personal share link is at the bottom of this email.")
+    # one referral mention only: it lives in the email footer, so drop any P.S./divider in the body
+    html = re.sub(r'<hr[^>]*>\s*<p[^>]*>\s*<strong>P\.S\.</strong>.*?</p>', '', html, flags=re.S)
     # typography
     html = re.sub(r'<h2>', f'<h2 style="font-family:{HFONT};color:{NAVY};font-size:21px;line-height:1.3;margin:26px 0 6px">', html)
     html = re.sub(r'<h3>', f'<h3 style="font-family:{HFONT};color:{NAVY};font-size:17px;line-height:1.3;margin:4px 0 6px">', html)
