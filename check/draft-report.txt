@@ -35,6 +35,7 @@ desktop: {
   }
  ],
  "iframes": [
+  "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   null,
   null,
   "https://app.birdie.so/snippet/bridge.html?v=1"
@@ -79,6 +80,7 @@ mobile: {
   }
  ],
  "iframes": [
+  "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   null,
   null,
   "https://app.birdie.so/snippet/bridge.html?v=1"
