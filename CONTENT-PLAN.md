@@ -59,6 +59,23 @@ Templates: templates/fun-posts.html — fn1 text thread, fn2 parent "post" quote
 - Other reshare formats to rotate in: "Senior year parent bingo" card, "This or that" (comment your pick), a 1–10 "parent stress meter" scale, "Things nobody tells you about junior year" lists, POV-style Reels ("POV: it's 11:58pm and the portal is loading").
 Rules: original jokes only (never copy memes, tweets or other accounts), warm not mean (laugh with teens, never at a real kid), no fake engagement numbers, tie it back to a real college-planning moment, caption ends with a tag/share ask ("Tag a senior parent", "Send this to your co-parent").
 
+## Website tools (promote them often)
+- Bright Futures Checker: collegeplan.beehiiv.com/bright-futures-checker (tools/bright-futures-checker.js — update thresholds when FL DOE publishes new classes)
+- Florida College Deadline Calendar: collegeplan.beehiiv.com/calendar (subscribable .ics built from calendar/events.json by scripts/build_ics.py)
+- Saturday promo rotation now cycles: cheat sheet (pr1) → newsletter (pr2) → deadline calendar → Bright Futures checker. Build the tool promos in the pr1/pr2 style ("Add every Florida college deadline to your phone" / "Is your student on track for Bright Futures? Check in 30 seconds"). Captions: "Link in bio" (the bio link is the website home page).
+- Mention the calendar in the Monday deadlines caption at least every other week, and the checker in Bright Futures posts.
+
+## Calendar upkeep (every Sunday)
+Add any newly verified Florida deadlines to calendar/events.json (official source URL required; Florida public universities' EA/RD/materials/decision dates, SAT/ACT/CLT dates and registration deadlines from College Board/ACT, FAFSA/FFAA, Bright Futures, Florida scholarship deadlines). Remove nothing that's still upcoming. Run python3 scripts/build_ics.py, commit, push.
+
+## Big moments (celebration / community posts — schedule the evening of)
+- Dec 4: UCF Early Action decisions · Dec 9: USF Early Action decisions · Dec 11: UF Early Decision decisions · Dec 17: FSU ED/EA decisions → "Drop your senior's good news below 🎉" (warm, celebrate every outcome; add a kind line for deferrals/denials)
+- May 1: College Decision Day → "Where is your senior headed? 🎓" · Late May/June: graduation congrats post
+- Re-verify each date the week before. Add new moments as they're announced.
+
+## County and school-specific posts (1 every other week; local posts get shared in local group chats)
+Rotate counties: Hillsborough (start here), Pasco, Pinellas, Polk, Orange, Miami-Dade, Broward, Palm Beach, Duval, Seminole, Lee, Brevard. Topics: dual enrollment partner college and how to sign up, district college/career fair dates, magnet/AICE/IB program deadlines, district scholarship programs. Verify on the district or college website; name the county in the headline ("Hillsborough parents: ...").
+
 ## "Comment a word" posts (manual DMs for now)
 - 1–2 posts a week end with "Comment GUIDE and we'll DM you the free cheat sheet" (or another word that fits: LIST, CHECKLIST, DATES). Use it on the Saturday post and at most one other post.
 - The owner replies by hand using an Instagram saved reply, so keep the keyword set small: GUIDE (cheat sheet + newsletter link) is the default.
