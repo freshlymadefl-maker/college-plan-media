@@ -1,0 +1,85 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Faceless VOICEOVER Reel (1080x1920). Driven by window.setT(ms). Needs <name>.words.js (window.WORDS = cleaned word timings from the TTS action) and section markers in CFG.
+     Render: python3 render-reel.py voiceover-reel.html out.mp4 <secs> 30, then mux the mp3 with ffmpeg. -->
+<style>
+:root { --navy:#0B2A4A; --gold:#B5A21F; --gold2:#F1E27A; }
+* { box-sizing:border-box; margin:0; }
+body { width:1080px; height:1920px; overflow:hidden; background:#0B2A4A; font-family:'Inter',sans-serif; }
+.bg { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; will-change:transform,opacity; }
+.shade { position:absolute; inset:0; background:linear-gradient(180deg,rgba(8,31,56,.78) 0%,rgba(8,31,56,.25) 30%,rgba(8,31,56,.25) 55%,rgba(8,31,56,.85) 100%); }
+.top { position:absolute; left:70px; right:70px; top:250px; text-align:center; }
+.chip { display:inline-block; font-family:'Poppins'; font-weight:700; font-size:34px; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:14px 34px; }
+.title { margin-top:26px; font-family:'Poppins'; font-weight:700; font-size:78px; line-height:1.05; color:#fff; text-shadow:0 4px 24px rgba(0,0,0,.35); }
+.title em { font-family:'Lora'; font-weight:500; color:var(--gold2); }
+.cap { position:absolute; left:60px; right:60px; top:1020px; text-align:center; font-family:'Poppins'; font-weight:800; font-size:92px; line-height:1.12; color:#fff; text-shadow:0 6px 30px rgba(0,0,0,.55); }
+.cap span { display:inline-block; margin:0 6px; }
+.cap span.on { color:var(--gold2); }
+.foot { position:absolute; left:0; right:0; bottom:330px; text-align:center; }
+.foot img { height:62px; opacity:.95; }
+.end { position:absolute; inset:0; background:linear-gradient(165deg,#0E3359 0%,#0B2A4A 55%,#081F38 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 90px; opacity:0; }
+.end h2 { font-family:'Poppins'; font-weight:700; font-size:96px; line-height:1.05; color:#fff; }
+.end h2 em { font-family:'Lora'; font-weight:500; color:var(--gold2); }
+.end p { font-size:42px; color:#C9DAEC; margin-top:30px; }
+.end .cta { margin-top:60px; background:#fff; color:var(--navy); font-family:'Poppins'; font-weight:700; font-size:46px; border-radius:24px; padding:30px 54px; }
+.end img { margin-top:70px; height:62px; }
+</style></head>
+<body>
+<div class="bg" id="bg0" style="background-image:url(bg/campus-quad-01.jpg)"></div>
+<div class="bg" id="bg1" style="background-image:url(bg/florida-boardwalk-01.jpg)"></div>
+<div class="bg" id="bg2" style="background-image:url(bg/website-hero-raw.jpg)"></div>
+<div class="bg" id="bg3" style="background-image:url(bg/campus-quad-01.jpg);background-position:30% center"></div>
+<div class="shade"></div>
+<div class="top"><span class="chip" id="chip">Florida parents</span><div class="title" id="title"></div></div>
+<div class="cap" id="cap"></div>
+<div class="foot"><img src="../wordmark_white.png"></div>
+<div class="end" id="end"><h2 id="endh"></h2><p id="endp"></p><div class="cta" id="endc"></div><img src="../wordmark_white.png"></div>
+<script src="bf-mistakes.words.js"></script>
+<script>
+// ---- per-video config ----
+const CFG = {
+  words: 'bf-mistakes.words.json',
+  sections: [ // start word index is found by matching "startsWith" words; chip + title shown at top
+    { match: null,        chip: 'Florida parents', title: '3 Bright Futures <em>mistakes</em>' },
+    { match: 'one',       chip: 'Mistake #1',      title: '"It\'s <em>automatic</em>"' },
+    { match: 'two',       chip: 'Mistake #2',      title: 'Waiting on <em>service hours</em>' },
+    { match: 'three',     chip: 'Mistake #3',      title: 'The <em>wrong</em> GPA' },
+    { match: 'Want',      chip: 'Free tool',       title: 'Is your student <em>on track?</em>' },
+  ],
+  end: { h: 'Check yours <em>free.</em>', p: 'Bright Futures checker for Florida parents', cta: 'Link in bio', hold: 2200 },
+};
+let W = [], starts = [], total = 0;
+function load(){ W = window.WORDS;
+  starts = CFG.sections.map((s,i) => { if (!s.match) return 0; const k = W.findIndex((w,j) => j>0 && w.w.replace(/[^\w]/g,'') === s.match && (s.match==='Want' || W[j-1].w==='Number')); return k<0?0:(s.match==='Want'?k:k-1); });
+  total = W[W.length-1].t + W[W.length-1].d;
+  document.getElementById('endh').innerHTML = CFG.end.h; document.getElementById('endp').textContent = CFG.end.p; document.getElementById('endc').textContent = CFG.end.cta; }
+load();
+// caption chunks: up to 3 words, never crossing a section start
+const chunks = []; { let cur = [];
+  W.forEach((w,i) => { if (starts.includes(i) && cur.length) { chunks.push(cur); cur = []; } cur.push(i); if (cur.length === 3) { chunks.push(cur); cur = []; } });
+  if (cur.length) chunks.push(cur); }
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+window.setT = function(t){
+  // section
+  let si = 0; starts.forEach((s,i) => { if (W[s] && t >= W[s].t - 150) si = i; });
+  const sec = CFG.sections[si];
+  document.getElementById('chip').textContent = sec.chip; document.getElementById('title').innerHTML = sec.title;
+  // backgrounds: one per section (cycled), crossfade 600ms, slow zoom
+  for (let b=0; b<4; b++) {
+    const el = document.getElementById('bg'+b); const mine = (si % 4) === b;
+    const st = W[starts[si]] ? W[starts[si]].t - 150 : 0; const a = mine ? clamp((t - st)/600 + (si===0?1:0)) : 0;
+    el.style.opacity = a; el.style.transform = `scale(${1.04 + 0.06*clamp((t-st)/9000)})`;
+  }
+  // caption
+  let ci = -1; chunks.forEach((c,i) => { if (t >= W[c[0]].t - 60) ci = i; });
+  const cap = document.getElementById('cap');
+  if (ci >= 0) { const c = chunks[ci]; const lastEnd = W[c[c.length-1]].t + W[c[c.length-1]].d;
+    let cur = -1; c.forEach(i => { if (t >= W[i].t - 40) cur = i; });
+    cap.innerHTML = c.map(i => `<span class="${i === cur ? 'on' : ''}">${W[i].w.replace(/[.,]$/,'')}</span>`).join(' ');
+    cap.style.opacity = (ci === chunks.length-1 && t > lastEnd + 300) ? 0 : 1; }
+  // end card after the voice finishes
+  const e = clamp((t - total - 150)/400); const end = document.getElementById('end'); end.style.opacity = e;
+};
+setT(0);
+</script>
+</body></html>

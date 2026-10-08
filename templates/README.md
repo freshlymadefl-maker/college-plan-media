@@ -46,3 +46,9 @@
 ## Email header banners
 - Every email's header is set automatically by scripts/make_queue_item.py from the segment: brand/email/seniors.jpg, juniors.jpg, early.jpg (8th–10th), general.jpg. Source: templates/email-banners.html.
 - Don't pick a banner in the draft; whatever figure is first gets replaced. scripts/send_newsletter.py downloads every image before sending: a broken header stops that email (it lands in newsletter/failed/), a broken inline image is removed.
+
+## Voiceover Reels (faceless, AI voice + word-by-word captions)
+1. Write the script to tts/<name>.txt (optional first lines `voice: en-US-AvaNeural`, `rate: +6%`). Spell acronyms with spaces (F F A A, G P A) so the voice reads them right. Commit + push; the "Text to speech" GitHub Action writes tts/out/<name>.mp3 + <name>.words.json (~1 min).
+2. Merge spelled letters back into words (FFAA, GPA) and write templates/reel/<name>.words.js as `window.WORDS=[...]`.
+3. Copy templates/reel/voiceover-reel.html, point its <script src> at the .words.js, edit CFG.sections (chip + title per section; `match` = the word after "Number", or a word that starts the CTA) and CFG.end.
+4. Render: `cd templates/reel && python3 render-fast.py <page>.html <out>.mp4 <audio secs + 2.5> 24 ../../tts/out/<name>.mp3` (~5 min for 40s; run it in the background). Backgrounds are pre-cropped in templates/reel/bg/. Uses AI photos -> isAiGenerated true.
