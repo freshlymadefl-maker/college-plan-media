@@ -1,0 +1,29 @@
+desktop: {
+ "nav": [],
+ "calRoot": false,
+ "calRendered": false,
+ "calItems": [],
+ "bfRoot": false,
+ "bfRendered": false,
+ "scripts": [],
+ "imgs": [],
+ "iframes": [
+  null
+ ]
+}
+errors: ["Failed to load resource: the server responded with a status of 404 ()"]
+
+mobile: {
+ "nav": [],
+ "calRoot": false,
+ "calRendered": false,
+ "calItems": [],
+ "bfRoot": false,
+ "bfRendered": false,
+ "scripts": [],
+ "imgs": [],
+ "iframes": [
+  null
+ ]
+}
+errors: ["Failed to load resource: the server responded with a status of 404 ()"]
