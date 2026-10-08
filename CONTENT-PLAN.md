@@ -10,7 +10,7 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 | Tue | 7:30pm | Florida school stats (GPA / SAT / ACT / acceptance) | weekly-posts #p2 |
 | Wed | 7:30pm | Deep-dive carousel (rotation A) | #p3 + inner slides / ph2 cover |
 | Thu | 7:30pm | Photo quote / reframe | photo-posts #ph1 |
-| Fri | 12:00pm | **Reel** (rotation R) | reel template |
+| Fri | 12:00pm | **VOICEOVER Reel** (at least 1/week, owner loves these: AI voice + word-by-word captions, 25–40s) | reel/voiceover-reel.html (see templates/README.md "Voiceover Reels") |
 | Fri | 7:30pm | Engagement / list post (rotation B) | #p5, growth-posts #rk1, ph2 |
 | Sat | 10:30am | Scholarship of the week | growth-posts #sc1 |
 | Sun | 7:30pm | Rotation C | ck1 / pr1 / pr2 |
@@ -41,6 +41,9 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 2. Free cheat sheet promo (pr1)
 3. Newsletter promo (pr2)
 4. "Week ahead" or seasonal photo post (ph2)
+
+## Voiceover Reels (at least one every week — Friday 12pm)
+Faceless, AI voice (en-US-AvaNeural) + big word-by-word captions over soft Florida photos, gold section chips, end card pointing to a tool or the newsletter. Formats that work: "3 [Bright Futures/FAFSA/application] mistakes Florida parents make", "What [UF/FSU/UCF] actually looks for", "Explain [dual enrollment/STARS/the FFAA] in 30 seconds", "If your student is a junior, do these 3 things this month". Script 70–110 words, spell acronyms with spaces for the voice (F F A A), every fact verified. Caption repeats the key points in text + "sound on". isAiGenerated true. A second voiceover can replace a trial Reel when it's a strong topic.
 
 ## Trial Reels
 Trial Reels are shown only to non-followers first, so use them to test new hooks/formats. Keep the two regular Reels for the strongest ideas. Instagram may move a trial Reel to the profile later if it performs.
@@ -102,6 +105,7 @@ Queue (in order, skip ones already in the Guides log):
 ## Log (newest first — the weekly routine appends here)
 - 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
 - 2026-12-04/09/11/17 8:30pm: decision-day posts already scheduled (UCF, USF, UF ED, FSU) — instagram/2026-12-decisions/. Re-verify each release date the week before; if a date moves, update the post in Metricool.
+- 2026-10-10 Sat 4pm: VOICEOVER REEL #1 — 3 Bright Futures mistakes (instagram/2026-10-tools/vo-bf-mistakes.mp4)
 - 2026-10-18 Sun 12pm: TRIAL REEL — Bright Futures checker demo (instagram/2026-10-tools/checker-reel.mp4)
 - 2026-10-15 Thu: 8:15am Story ts3 (Hillsborough info session tonight)
 - 2026-10-14 Wed 12pm: COUNTY #1 — Hillsborough dual enrollment carousel (cy1–cy5). Next county post ~Oct 28: Pasco (Pasco-Hernando State College).
