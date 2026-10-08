@@ -1,0 +1,82 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Bright Futures checker demo Reel (1080x1920, 15s). Driven by window.setT(ms); render with render-reel.py (it calls setT each frame). -->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --gold:#B5A21F; --gold2:#F1E27A; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { width:1080px; height:1920px; overflow:hidden; font-family:'Inter',sans-serif; background:linear-gradient(165deg,#0E3359 0%,var(--navy) 55%,#081F38 100%); color:#fff; }
+.top { position:absolute; left:80px; right:80px; top:250px; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:26px; letter-spacing:.14em; text-transform:uppercase; background:var(--gold); border-radius:999px; padding:12px 26px; }
+h1 { font-family:'Poppins'; font-weight:700; font-size:84px; line-height:1.03; letter-spacing:-.02em; margin-top:26px; }
+h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; color:var(--gold2); letter-spacing:0; }
+.card { position:absolute; left:70px; right:70px; top:690px; background:#fff; color:var(--ink); border-radius:36px; padding:44px; box-shadow:0 40px 90px rgba(0,0,0,.4); }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.f small { display:block; font-family:'Poppins'; font-weight:600; font-size:24px; color:var(--navy); margin-bottom:10px; }
+.f .box { height:84px; border:3px solid #C9D8E8; border-radius:18px; background:#F7FAFD; font-size:38px; padding:0 22px; display:flex; align-items:center; color:var(--ink); }
+.f .box.on { border-color:var(--blue); background:#fff; box-shadow:0 0 0 6px rgba(91,141,201,.18); }
+.f .box .ph { color:#A9B7C6; }
+.caret { display:inline-block; width:3px; height:42px; background:var(--navy); margin-left:3px; }
+.btn { margin-top:30px; height:100px; border-radius:20px; background:var(--navy); color:#fff; font-family:'Poppins'; font-weight:600; font-size:38px; display:flex; align-items:center; justify-content:center; }
+.res { margin-top:28px; border-radius:24px; padding:30px 34px; background:var(--sky); border:3px solid #C9D8E8; overflow:hidden; }
+.res h3 { font-family:'Poppins'; font-size:44px; color:var(--navy); line-height:1.15; }
+.res p { font-size:31px; margin-top:10px; line-height:1.4; }
+.res ul { margin-top:10px; padding-left:36px; font-size:32px; line-height:1.5; }
+.tap { position:absolute; width:110px; height:110px; border-radius:50%; background:rgba(241,226,122,.55); border:4px solid var(--gold2); pointer-events:none; }
+.end { position:absolute; inset:0; background:linear-gradient(165deg,#0E3359 0%,var(--navy) 55%,#081F38 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 90px; }
+.end h2 { font-family:'Poppins'; font-weight:700; font-size:92px; line-height:1.05; }
+.end h2 .g { font-family:'Lora'; font-style:italic; font-weight:500; color:var(--gold2); }
+.end p { font-size:40px; color:#C9DAEC; margin-top:30px; line-height:1.4; }
+.end .cta { margin-top:60px; background:#fff; color:var(--navy); font-family:'Poppins'; font-weight:700; font-size:44px; border-radius:24px; padding:30px 50px; }
+.end img { margin-top:70px; height:60px; }
+</style></head>
+<body>
+<div class="top" id="top">
+  <span class="pill">Free tool</span>
+  <h1>Is your student on track for <span class="g">Bright Futures?</span></h1>
+</div>
+<div class="card" id="card">
+  <div class="grid">
+    <div class="f"><small>Graduating class</small><div class="box" id="b0"></div></div>
+    <div class="f"><small>Bright Futures GPA</small><div class="box" id="b1"></div></div>
+    <div class="f"><small>Best SAT score</small><div class="box" id="b2"></div></div>
+    <div class="f"><small>Service hours</small><div class="box" id="b3"></div></div>
+  </div>
+  <div class="btn" id="btn">Check my student</div>
+  <div class="res" id="res">
+    <h3>✅ On track for Medallion Scholars</h3>
+    <p>75% of tuition at Florida public colleges. To reach Academic Scholars (100%):</p>
+    <ul><li>Raise the SAT to 1350 (100 to go)</li><li>Log 20 more service or work hours</li></ul>
+  </div>
+</div>
+<div class="tap" id="tap"></div>
+<div class="end" id="end">
+  <h2>Check yours <span class="g">in 30 seconds.</span></h2>
+  <p>Free for Florida parents. Classes of 2027 and 2028.</p>
+  <div class="cta">Link in bio</div>
+  <img src="../wordmark_white.png">
+</div>
+<script>
+const fields=[{id:'b0',ph:'Select',val:'Class of 2028',t0:1600,t1:1900},{id:'b1',ph:'e.g. 3.6',val:'3.6',t0:2300,t1:2900},{id:'b2',ph:'e.g. 1250',val:'1250',t0:3300,t1:4200},{id:'b3',ph:'e.g. 60',val:'80',t0:4600,t1:5200}];
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)), ease=x=>1-Math.pow(1-clamp(x),3);
+window.setT=function(t){
+  const top=document.getElementById('top'), card=document.getElementById('card');
+  const a=ease(t/700); top.style.opacity=a; top.style.transform=`translateY(${(1-a)*40}px)`;
+  const c=ease((t-300)/700); card.style.opacity=c; card.style.transform=`translateY(${(1-c)*60}px)`;
+  fields.forEach((f,i)=>{
+    const el=document.getElementById(f.id); const active=t>=f.t0-150 && t<f.t1+250;
+    el.className='box'+(active?' on':'');
+    if(t<f.t0){ el.innerHTML=`<span class="ph">${f.ph}</span>`; return; }
+    const n=f.id==='b0'?f.val.length:Math.round(clamp((t-f.t0)/(f.t1-f.t0))*f.val.length);
+    el.innerHTML=f.val.slice(0,n)+(active&&f.id!=='b0'&&Math.floor(t/400)%2===0?'<span class="caret"></span>':'');
+  });
+  const btn=document.getElementById('btn'), tap=document.getElementById('tap');
+  const press=t>5900&&t<6300; btn.style.transform=press?'scale(.96)':'none'; btn.style.background=press?'#123B66':'';
+  if(t>5500&&t<6700){ const r=btn.getBoundingClientRect(); const k=clamp((t-5500)/400); tap.style.display='block'; tap.style.left=(r.left+r.width/2-55)+'px'; tap.style.top=(r.top+r.height/2-55+ (1-k)*120)+'px'; tap.style.opacity=t>6300?clamp(1-(t-6300)/400):1; }
+  else tap.style.display='none';
+  const res=document.getElementById('res'); const rr=ease((t-6500)/700);
+  res.style.opacity=rr; res.style.maxHeight=(rr*600)+'px'; res.style.marginTop=(rr*28)+'px'; res.style.padding=rr>0?`${30*rr}px 34px`:'0 34px'; res.style.borderWidth=rr>0?'3px':'0';
+  const e=ease((t-12000)/600); const end=document.getElementById('end'); end.style.opacity=e; end.style.display=e>0?'flex':'none';
+};
+setT(0);
+</script>
+</body></html>

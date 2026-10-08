@@ -1,0 +1,275 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- College Plan TOOL + COMMUNITY posts.
+  Feed (1080x1350): tl1 calendar promo · tl2 Bright Futures checker promo · dd1 decision-day celebration (set data-school / text) ·
+  cy1..cy5 county carousel (Hillsborough dual enrollment; reuse the layout for other counties).
+  Stories (1080x1920): ts1 calendar · ts2 checker · ts3 county reminder. -->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --sky2:#D4E6F7; --gold:#B5A21F; --gold2:#F1E27A; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.s { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:var(--ink); background:linear-gradient(160deg,#F4F9FE 0%,var(--sky) 45%,var(--sky2) 100%); padding:100px 90px 0; }
+.st { width:1080px; height:1920px; padding:270px 90px 0; }
+.dark { background:linear-gradient(160deg,#0E3359 0%,var(--navy) 60%,#081F38 100%); color:#fff; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:12px 26px; }
+h1 { font-family:'Poppins'; font-weight:700; font-size:80px; line-height:1.02; letter-spacing:-0.02em; color:var(--navy); margin-top:28px; }
+.dark h1 { color:#fff; }
+h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; letter-spacing:0; color:var(--blue); }
+.dark h1 .g { color:var(--gold2); }
+.sub { font-size:32px; line-height:1.4; color:var(--muted); margin-top:22px; max-width:880px; }
+.dark .sub { color:#C9DAEC; }
+.foot { position:absolute; left:90px; right:90px; bottom:64px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:44px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:25px; letter-spacing:.06em; color:var(--navy); }
+.dark .foot .sw { color:#fff; }
+.st .foot { bottom:330px; }
+.cta { z-index:5; position:absolute; left:90px; right:90px; bottom:140px; border-radius:22px; padding:26px 34px; font-family:'Poppins'; font-weight:600; font-size:31px; display:flex; justify-content:space-between; align-items:center; background:var(--navy); color:#fff; }
+.cta b { background:var(--gold); color:#fff; border-radius:999px; padding:10px 22px; font-size:23px; letter-spacing:.06em; }
+.dark .cta { background:#fff; color:var(--navy); }
+.st .cta { bottom:420px; }
+.st .res h3 { font-size:46px; }
+.st .res p { font-size:34px; }
+.st .btn { font-size:34px; padding:24px; }
+.st .card { padding:40px; }
+
+/* phone mockup */
+.phone { position:absolute; width:470px; height:760px; border-radius:64px; background:#0A1A2C; padding:16px; box-shadow:0 40px 90px rgba(0,0,0,.45); }
+.screen { width:100%; height:100%; border-radius:50px; background:#fff; overflow:hidden; padding:58px 26px 0; position:relative; }
+.screen:before { content:""; position:absolute; top:16px; left:50%; width:130px; height:34px; margin-left:-65px; background:#0A1A2C; border-radius:20px; }
+.calhead { font-family:'Poppins'; font-weight:700; font-size:30px; color:var(--navy); display:flex; justify-content:space-between; align-items:baseline; }
+.calhead span { font-family:'Inter'; font-weight:500; font-size:17px; color:var(--muted); }
+.ev { display:grid; grid-template-columns:68px 1fr; gap:14px; align-items:center; background:#F3F7FB; border-left:6px solid var(--gold); border-radius:12px; padding:11px 12px; margin-top:12px; }
+.ev .d { background:var(--navy); color:#fff; border-radius:10px; text-align:center; font-family:'Poppins'; line-height:1.05; padding:6px 0; }
+.ev .d small { display:block; font-size:13px; letter-spacing:.1em; color:#C9DAEC; }
+.ev .d b { font-size:25px; }
+.ev .t { font-family:'Poppins'; font-weight:600; font-size:19px; color:var(--navy); line-height:1.2; }
+.ev .t small { display:block; font-family:'Inter'; font-weight:500; font-size:15px; color:var(--muted); margin-top:2px; }
+.notif { position:absolute; width:520px; background:rgba(255,255,255,.97); border-radius:26px; padding:20px 24px; box-shadow:0 24px 60px rgba(0,0,0,.35); display:flex; gap:16px; align-items:center; }
+.notif .ic { flex:none; width:58px; height:58px; border-radius:14px; background:var(--gold); color:#fff; font-size:30px; display:flex; align-items:center; justify-content:center; }
+.notif .t { font-family:'Poppins'; font-weight:600; font-size:22px; color:var(--navy); line-height:1.25; }
+.notif .t small { display:block; font-family:'Inter'; font-weight:500; font-size:18px; color:var(--muted); }
+
+/* checker result mock */
+.card { background:#fff; border-radius:28px; box-shadow:0 18px 50px rgba(11,42,74,.12); padding:34px 38px; }
+.inputs { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.in { background:#F3F7FB; border:2px solid #D6E2EE; border-radius:16px; padding:14px 18px; }
+.in small { display:block; font-family:'Poppins'; font-weight:600; font-size:18px; color:var(--muted); letter-spacing:.04em; }
+.in b { font-family:'Poppins'; font-size:32px; color:var(--navy); }
+.res { margin-top:22px; border-radius:20px; padding:24px 28px; background:var(--sky); border:2px solid #C9D8E8; }
+.res h3 { font-family:'Poppins'; font-size:38px; color:var(--navy); line-height:1.15; }
+.res p { font-size:28px; color:var(--ink); margin-top:8px; line-height:1.35; }
+.res ul { margin-top:12px; padding-left:34px; font-size:29px; line-height:1.45; color:var(--ink); }
+.btn { margin-top:20px; background:var(--navy); color:#fff; border-radius:16px; text-align:center; font-family:'Poppins'; font-weight:600; font-size:28px; padding:18px; }
+
+/* decision day */
+.dd { text-align:center; padding-top:150px; }
+.dd .conf { position:absolute; inset:0; pointer-events:none; }
+.dd .conf i { position:absolute; display:block; width:18px; height:34px; border-radius:4px; opacity:.9; }
+.dd h1 { font-size:104px; margin-top:40px; }
+.dd .school { font-family:'Poppins'; font-weight:700; font-size:42px; letter-spacing:.12em; color:var(--gold2); text-transform:uppercase; margin-top:34px; }
+.dd .sub { margin:30px auto 0; font-size:36px; max-width:820px; }
+.dd .kind { position:absolute; left:110px; right:110px; bottom:190px; background:rgba(255,255,255,.08); border:2px solid rgba(255,255,255,.18); border-radius:24px; padding:26px 30px; font-size:28px; line-height:1.4; color:#DCE7F3; }
+.dd .kind b { color:#fff; font-family:'Poppins'; font-weight:600; }
+
+/* county carousel */
+.cy h1 { font-size:74px; }
+.loc { display:inline-flex; gap:10px; align-items:center; font-family:'Poppins'; font-weight:600; font-size:26px; color:var(--navy); background:#fff; border:2px solid #C9D8E8; border-radius:999px; padding:10px 22px; margin-left:12px; }
+.dark .loc { color:#fff; background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.25); }
+.rows { margin-top:48px; display:flex; flex-direction:column; gap:24px; }
+.cy .row { padding:34px 34px; }
+.cy .row .t { font-size:35px; }
+.cy .row .t small { font-size:26px; }
+.cy .row .ic { width:88px; height:88px; font-size:40px; }
+.row { display:flex; gap:24px; align-items:flex-start; background:#fff; border-radius:24px; padding:24px 30px; box-shadow:0 8px 24px rgba(11,42,74,.07); }
+.row .ic { flex:none; width:72px; height:72px; border-radius:20px; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-size:34px; font-family:'Poppins'; font-weight:700; }
+.row .t { font-family:'Poppins'; font-weight:600; font-size:30px; color:var(--navy); line-height:1.2; }
+.row .t small { display:block; font-family:'Inter'; font-weight:500; font-size:23px; color:var(--muted); margin-top:5px; line-height:1.35; }
+table.sc { width:100%; border-collapse:separate; border-spacing:0 14px; margin-top:6px; font-size:29px; }
+table.sc td { padding:24px 16px !important; }
+table.sc th { text-align:left; font-family:'Poppins'; font-weight:600; font-size:20px; letter-spacing:.06em; color:var(--muted); padding:0 14px; }
+table.sc td { background:#fff; padding:16px 14px; font-family:'Poppins'; font-weight:600; color:var(--navy); }
+table.sc td:first-child { border-radius:14px 0 0 14px; }
+table.sc td:last-child { border-radius:0 14px 14px 0; }
+.note { font-size:25px; color:var(--muted); margin-top:16px; line-height:1.4; }
+.big { font-family:'Poppins'; font-weight:700; color:var(--navy); }
+.swipe { position:absolute; right:90px; bottom:150px; font-family:'Poppins'; font-weight:600; font-size:28px; color:var(--navy); }
+.dark .swipe { color:var(--gold2); }
+.src { position:absolute; left:90px; right:90px; bottom:130px; font-size:19px; color:var(--muted); }
+</style></head>
+<body>
+
+<!-- ===== tl1: deadline calendar promo ===== -->
+<div class="s dark" id="tl1">
+  <span class="pill">New · Free tool</span>
+  <h1>Every Florida college deadline, <span class="g">on your phone.</span></h1>
+  <p class="sub" style="font-size:31px">UF, FSU, UCF, USF, SAT dates, the FFAA and more. One tap to add. It updates itself.</p>
+  <div class="phone" style="right:80px;top:560px;height:600px;transform:rotate(4deg)">
+    <div class="screen">
+      <div class="calhead">October <span>Florida College Deadlines</span></div>
+      <div class="ev"><div class="d"><small>OCT</small><b>15</b></div><div class="t">UF Early Decision due<small>Seniors</small></div></div>
+      <div class="ev"><div class="d"><small>OCT</small><b>15</b></div><div class="t">FSU ED &amp; EA due<small>Seniors</small></div></div>
+      <div class="ev"><div class="d"><small>OCT</small><b>15</b></div><div class="t">UCF Early Action due<small>Seniors</small></div></div>
+      <div class="ev"><div class="d"><small>OCT</small><b>23</b></div><div class="t">Register for Nov 7 SAT<small>Seniors &amp; juniors</small></div></div>
+      <div class="ev"><div class="d"><small>NOV</small><b>1</b></div><div class="t">UF Early Action due<small>Seniors</small></div></div>
+      <div class="ev"><div class="d"><small>NOV</small><b>2</b></div><div class="t">USF Early Action due<small>Seniors</small></div></div>
+    </div>
+  </div>
+  <div class="notif" style="left:70px;top:850px;width:470px;transform:rotate(-3deg)"><div class="ic">⏰</div><div class="t">Tomorrow: UF Early Decision due<small>Florida College Deadlines</small></div></div>
+  <div class="cta" style="bottom:150px"><span>Add it free: link in bio</span><b>iPHONE · GOOGLE · OUTLOOK</b></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">SAVE + SHARE</span></div>
+</div>
+
+<!-- ===== tl2: Bright Futures checker promo ===== -->
+<div class="s" id="tl2">
+  <span class="pill">Free tool · 30 seconds</span>
+  <h1>Is your student on track for <span class="g">Bright Futures?</span></h1>
+  <div class="card" style="margin-top:56px">
+    <div class="inputs">
+      <div class="in"><small>CLASS</small><b>2028</b></div>
+      <div class="in"><small>BF GPA</small><b>3.6</b></div>
+      <div class="in"><small>SAT</small><b>1250</b></div>
+      <div class="in"><small>SERVICE HOURS</small><b>80</b></div>
+    </div>
+    <div class="res">
+      <h3>✅ On track for Medallion Scholars</h3>
+      <p>75% of tuition at Florida public colleges. To reach Academic Scholars (100%):</p>
+      <ul><li>Raise the SAT to 1350 (100 to go)</li><li>Log 20 more service or work hours</li></ul>
+    </div>
+  </div>
+  <div class="cta" style="bottom:140px"><span>Check yours free: link in bio</span><b>CLASS OF 2027 + 2028</b></div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<!-- ===== ts1: calendar story ===== -->
+<div class="s st dark" id="ts1">
+  <span class="pill">New · Free</span>
+  <h1 style="font-size:92px">Never miss a Florida college <span class="g">deadline.</span></h1>
+  <p class="sub">Add every date to your phone in one tap. Reminders the day before.</p>
+  <div class="phone" style="left:305px;top:830px;transform:rotate(-3deg);height:620px">
+    <div class="screen">
+      <div class="calhead">Coming up <span></span></div>
+      <div class="ev"><div class="d"><small>OCT</small><b>15</b></div><div class="t">UF Early Decision due<small>Seniors</small></div></div>
+      <div class="ev"><div class="d"><small>OCT</small><b>23</b></div><div class="t">Register for Nov 7 SAT<small>Seniors &amp; juniors</small></div></div>
+      <div class="ev"><div class="d"><small>NOV</small><b>1</b></div><div class="t">UF Early Action due<small>Seniors</small></div></div>
+      <div class="ev"><div class="d"><small>NOV</small><b>2</b></div><div class="t">USF Early Action due<small>Seniors</small></div></div>
+    </div>
+  </div>
+  <div class="cta" style="bottom:330px"><span>Tap our profile → link in bio</span><b>FREE</b></div>
+</div>
+
+<!-- ===== ts2: checker story ===== -->
+<div class="s st" id="ts2">
+  <span class="pill">Free tool</span>
+  <h1 style="font-size:96px">Bright Futures: <span class="g">on track or not?</span></h1>
+  <p class="sub">Enter GPA, test score and hours. See which award your student is on track for, and exactly what's missing.</p>
+  <div class="card" style="margin-top:60px">
+    <div class="res" style="margin-top:0">
+      <h3>✅ On track for Medallion Scholars</h3>
+      <p>To reach Academic Scholars: raise the SAT to 1350 and log 20 more hours.</p>
+    </div>
+    <div class="btn">Check my student</div>
+  </div>
+  <div class="cta" style="bottom:330px"><span>Tap our profile → link in bio</span><b>30 SEC</b></div>
+</div>
+
+<!-- ===== dd1: decision day ===== -->
+<div class="s dark dd" id="dd1">
+  <div class="conf" id="conf"></div>
+  <span class="pill">Decision day</span>
+  <div class="school" id="dd-school">UCF Early Action</div>
+  <h1>Drop your senior's <span class="g">good news</span> below 🎉</h1>
+  <p class="sub">We want to cheer for every acceptance, big or small.</p>
+  <div class="kind"><b>Deferred or not this time?</b> That's one chapter, not the whole story. Florida has amazing options, and the right fit is still out there. 💙</div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<!-- ===== cy1-cy5: Hillsborough dual enrollment carousel ===== -->
+<div class="s dark cy" id="cy1">
+  <span class="pill">Local</span><span class="loc">📍 Hillsborough County</span>
+  <h1 style="margin-top:60px;font-size:88px">Free college classes <span class="g">in high school.</span></h1>
+  <p class="sub" style="font-size:36px;margin-top:34px">How dual enrollment works with Hillsborough College, and the spring 2027 deadlines coming up fast.</p>
+  <div class="rows" style="margin-top:60px">
+    <div class="row" style="background:rgba(255,255,255,.08);box-shadow:none"><div class="ic" style="background:var(--gold)">$0</div><div class="t" style="color:#fff">Tuition, fees and textbooks<small style="color:#C9DAEC">Free for public school students</small></div></div>
+    <div class="row" style="background:rgba(255,255,255,.08);box-shadow:none"><div class="ic" style="background:var(--gold)">2×</div><div class="t" style="color:#fff">High school + college credit<small style="color:#C9DAEC">One class, counted twice</small></div></div>
+    <div class="row" style="background:rgba(255,255,255,.08);box-shadow:none"><div class="ic" style="background:var(--gold);font-size:26px;line-height:1;text-align:center">NOV<br>6</div><div class="t" style="color:#fff">Spring paperwork deadline<small style="color:#C9DAEC">Save this before you forget 📌</small></div></div>
+  </div>
+  <div class="swipe">Swipe →</div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">SAVE + SHARE</span></div>
+</div>
+
+<div class="s cy" id="cy2">
+  <span class="pill">The basics</span>
+  <h1>What is <span class="g">dual enrollment?</span></h1>
+  <div class="rows">
+    <div class="row"><div class="ic">🎓</div><div class="t">Real college classes<small>College courses through Hillsborough College, while still in high school</small></div></div>
+    <div class="row"><div class="ic">2×</div><div class="t">Counts twice<small>Earns high school credit and college credit at the same time</small></div></div>
+    <div class="row"><div class="ic">$0</div><div class="t">Free for public school students<small>No tuition or fees, and textbooks are provided</small></div></div>
+    <div class="row"><div class="ic">⭐</div><div class="t">Boosts the Bright Futures GPA<small>Academic dual enrollment classes get the same extra weight as AP and honors</small></div></div>
+  </div>
+  <div class="src">Sources: Hillsborough College dual enrollment page (hcfl.edu) · Fla. Stat. 1007.271 · Bright Futures Student Handbook</div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<div class="s cy" id="cy3">
+  <span class="pill">Who qualifies</span>
+  <h1>Hillsborough College <span class="g">requirements</span></h1>
+  <div class="rows" style="margin-top:34px">
+    <div class="row"><div class="ic">3.0</div><div class="t">3.0 unweighted high school GPA<small>Keep a 3.0 in high school and a 2.0 at HC to stay in</small></div></div>
+  </div>
+  <p class="big" style="font-size:30px;margin-top:34px">Plus a qualifying score on one test:</p>
+  <table class="sc">
+    <tr><th>TEST</th><th>READING / WRITING</th><th>MATH</th></tr>
+    <tr><td>Digital SAT or PSAT</td><td>490 R&amp;W</td><td>480</td></tr>
+    <tr><td>ACT</td><td>19 Reading · 17 English</td><td>19</td></tr>
+    <tr><td>PERT</td><td>106 Reading · 103 Writing</td><td>114</td></tr>
+  </table>
+  <p class="note">Scores must be less than 2 years old. The first PERT is free. College Algebra needs a higher math score. Up to 10 credit hours per term.</p>
+  <div class="src">Source: hcfl.edu dual enrollment and early admissions page. Confirm with your school counselor.</div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<div class="s cy" id="cy4">
+  <span class="pill">Spring 2027 dates</span>
+  <h1>Save <span class="g">these dates</span> 📌</h1>
+  <div class="rows">
+    <div class="row"><div class="ic" style="font-size:22px;line-height:1">OCT<br>15</div><div class="t">Free online info sessions<small>Oct 15 at 6:30pm · Oct 17 at 11:30am · Oct 27 at 6:30pm</small></div></div>
+    <div class="row" style="border:3px solid var(--gold)"><div class="ic" style="background:var(--gold);font-size:22px;line-height:1">NOV<br>6</div><div class="t">Paperwork deadline, 11:59pm<small>Late paperwork isn't accepted</small></div></div>
+    <div class="row"><div class="ic" style="font-size:22px;line-height:1">NOV<br>9</div><div class="t">Registration opens for new students<small>Register by Monday, Dec 7</small></div></div>
+    <div class="row"><div class="ic" style="font-size:22px;line-height:1">JAN<br>11</div><div class="t">Spring classes begin<small>Monday, Jan 11, 2027</small></div></div>
+  </div>
+  <div class="src">Source: Hillsborough College dual enrollment page (hcfl.edu).</div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<div class="s dark cy" id="cy5">
+  <span class="pill">How to start</span>
+  <h1>5 steps to <span class="g">sign up</span></h1>
+  <div class="rows">
+    <div class="row" style="background:rgba(255,255,255,.08);box-shadow:none"><div class="ic" style="background:var(--gold)">1</div><div class="t" style="color:#fff">Talk to the school counselor<small style="color:#C9DAEC">They confirm eligibility and which classes fit</small></div></div>
+    <div class="row" style="background:rgba(255,255,255,.08);box-shadow:none"><div class="ic" style="background:var(--gold)">2</div><div class="t" style="color:#fff">Apply online to Hillsborough College<small style="color:#C9DAEC">A one-time dual enrollment application</small></div></div>
+    <div class="row" style="background:rgba(255,255,255,.08);box-shadow:none"><div class="ic" style="background:var(--gold)">3</div><div class="t" style="color:#fff">Take the PERT or send scores<small style="color:#C9DAEC">SAT, PSAT or ACT scores work too</small></div></div>
+    <div class="row" style="background:rgba(255,255,255,.08);box-shadow:none"><div class="ic" style="background:var(--gold)">4</div><div class="t" style="color:#fff">Submit term paperwork by Nov 6<small style="color:#C9DAEC">Including the student/parent agreement</small></div></div>
+    <div class="row" style="background:rgba(255,255,255,.08);box-shadow:none"><div class="ic" style="background:var(--gold)">5</div><div class="t" style="color:#fff">Register once approved<small style="color:#C9DAEC">Watch for the approval email</small></div></div>
+  </div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">SEND TO A HILLSBOROUGH PARENT</span></div>
+</div>
+
+<!-- ===== ts3: county reminder story ===== -->
+<div class="s st" id="ts3">
+  <span class="pill">Tonight</span><span class="loc">📍 Hillsborough</span>
+  <h1 style="font-size:92px;margin-top:50px">Free dual enrollment <span class="g">info session</span></h1>
+  <p class="sub" style="font-size:38px">Hillsborough College · online · 6:30pm</p>
+  <div class="card" style="margin-top:60px">
+    <p class="big" style="font-size:44px">Can't make it?</p>
+    <p style="font-size:36px;margin-top:14px;line-height:1.4">More sessions Oct 17 at 11:30am and Oct 27 at 6:30pm. Spring paperwork is due <b>Nov 6</b>.</p>
+  </div>
+  <div class="cta" style="bottom:330px"><span>Details on hcfl.edu</span><b>SHARE</b></div>
+</div>
+
+<script>
+// confetti for dd1
+const c=document.getElementById('conf'), cols=['#B5A21F','#F1E27A','#5B8DC9','#FFFFFF','#9CC3EA'];
+let seed=7; const r=()=>{seed=(seed*9301+49297)%233280;return seed/233280;};
+for(let i=0;i<70;i++){const e=document.createElement('i');const top=60+r()*1100;const x=r()<.5?r()*120:950+r()*110;e.style.left=x+'px';e.style.top=top+'px';e.style.background=cols[i%5];e.style.transform='rotate('+(r()*180)+'deg)';c.appendChild(e);}
+</script>
+</body></html>

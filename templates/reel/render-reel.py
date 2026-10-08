@@ -9,7 +9,7 @@ with sync_playwright() as p:
     pg.goto('file://' + os.path.abspath(src)); pg.wait_for_timeout(1000)
     pg.evaluate("document.getAnimations().forEach(a=>a.pause())")
     for i in range(int(secs*fps)):
-        pg.evaluate(f"document.getAnimations().forEach(a=>a.currentTime={i*1000/fps})")
+        pg.evaluate(f"document.getAnimations().forEach(a=>a.currentTime={i*1000/fps}); window.setT && window.setT({i*1000/fps})")
         pg.screenshot(path=f'{tmp}/f{i:04d}.png')
     b.close()
 # silent AAC track so Instagram treats it as a normal video
