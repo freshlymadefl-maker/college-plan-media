@@ -60,8 +60,8 @@ Templates: templates/fun-posts.html — fn1 text thread, fn2 parent "post" quote
 Rules: original jokes only (never copy memes, tweets or other accounts), warm not mean (laugh with teens, never at a real kid), no fake engagement numbers, tie it back to a real college-planning moment, caption ends with a tag/share ask ("Tag a senior parent", "Send this to your co-parent").
 
 ## Website tools (promote them often)
-- Bright Futures Checker: collegeplan.beehiiv.com/bright-futures-checker (tools/bright-futures-checker.js — update thresholds when FL DOE publishes new classes)
-- Florida College Deadline Calendar: collegeplan.beehiiv.com/calendar (subscribable .ics built from calendar/events.json by scripts/build_ics.py)
+- Bright Futures Checker: collegeplan.beehiiv.com/#bright-futures-checker (home page embed; tools/bright-futures-checker.js — update thresholds when FL DOE publishes new classes)
+- Florida College Deadline Calendar: collegeplan.beehiiv.com/#calendar (home page embed; subscribable .ics built from calendar/events.json by scripts/build_ics.py)
 - Saturday promo rotation now cycles: cheat sheet (pr1) → newsletter (pr2) → deadline calendar → Bright Futures checker. Build the tool promos in the pr1/pr2 style ("Add every Florida college deadline to your phone" / "Is your student on track for Bright Futures? Check in 30 seconds"). Captions: "Link in bio" (the bio link is the website home page).
 - Mention the calendar in the Monday deadlines caption at least every other week, and the checker in Bright Futures posts.
 
