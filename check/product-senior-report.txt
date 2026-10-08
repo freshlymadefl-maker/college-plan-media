@@ -1,0 +1,91 @@
+desktop: {
+ "nav": [
+  " -> /",
+  "Deadline Calendar -> /#calendar",
+  "Bright Futures Checker -> /#bright-futures-checker",
+  "Guides -> /t/guides",
+  "Log in -> null",
+  "Subscribe -> null",
+  " -> /"
+ ],
+ "calRoot": false,
+ "calRendered": false,
+ "calItems": [],
+ "bfRoot": false,
+ "bfRendered": false,
+ "scripts": [],
+ "imgs": [
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 161.390625,
+   "ht": 54,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"desktop\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:54px;--max-width:162px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpar"
+  },
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 0,
+   "ht": 0,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
+  },
+  {
+   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/2ff2d481-787d-4f19-b181-62598650a7aa/senior.png\" alt=\"Florida Senior Year Roadmap: Class of 2027\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;box-shadow:none;border-color:#E5E7EB;border-width:1px 1px 1px 1px;border-style:solid;border",
+   "w": 800,
+   "ht": 450,
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/2ff2d481-787d-4f19-b181-62598650a7aa/senior.png 2x\"><source media=\"(max-width: 360px)\" src"
+  }
+ ],
+ "iframes": [
+  null,
+  null,
+  "https://js.stripe.com/v3/controller-with-preconnect-990107755f9c2f10be87aa658d7e5783.html#__shared_params__[version]=clover&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%226bf3663a-878f-4162-802f-2c316cea9f5f%22%2C%22assignments%22%3A%7B%7D%2C%22unqualifiedExperiments%22%3A%7B%22react_version_18_v3%22%3A0.25%7D%7D&apiKey=pk_live_51IekcQKHPFAlBzyyGNBguT5BEI7NEBqrTxJhsYN1FI1lQb9iWxU5U2OXfi744NEMx5p7EDXh08YXrudrZkkG9bGc00ZCrkXrxL&apiVersion=2025-09-30.clover&stripeAccount=acct_1UOJERGz6FjMOF2z&stripeJsId=6bf3663a-878f-4162-802f-2c316cea9f5f&stripeObjId=sobj-0327f899-bfa3-44cc-9c07-d010c69acad0&firstStripeInstanceCreatedLatency=21&controllerCount=1&isCheckout=false&stripeJsLoadTime=1791475219326.7&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=NA&mids[sid]=NA&referrer=https%3A%2F%2Fcollegeplan.beehiiv.com%2Fproducts%2Fflorida-senior-year-roadmap&controllerId=__privateStripeController2351",
+  "https://app.birdie.so/snippet/bridge.html?v=1",
+  "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fcollegeplan.beehiiv.com%2Fproducts%2Fflorida-senior-year-roadmap&title=Florida%20Senior%20Year%20Roadmap%3A%20Class%20of%202027%20%7C%20College%20Plan&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=clover"
+ ]
+}
+errors: []
+
+mobile: {
+ "nav": [
+  " -> /",
+  "Deadline Calendar -> /#calendar",
+  "Bright Futures Checker -> /#bright-futures-checker",
+  "Guides -> /t/guides",
+  "Log in -> null",
+  "Subscribe -> null",
+  " -> /"
+ ],
+ "calRoot": false,
+ "calRendered": false,
+ "calItems": [],
+ "bfRoot": false,
+ "bfRendered": false,
+ "scripts": [],
+ "imgs": [
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 0,
+   "ht": 0,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"desktop\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:54px;--max-width:162px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpar"
+  },
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 131.5,
+   "ht": 44,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
+  },
+  {
+   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/2ff2d481-787d-4f19-b181-62598650a7aa/senior.png\" alt=\"Florida Senior Year Roadmap: Class of 2027\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;box-shadow:none;border-color:#E5E7EB;border-width:1px 1px 1px 1px;border-style:solid;border",
+   "w": 358,
+   "ht": 201.375,
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/2ff2d481-787d-4f19-b181-62598650a7aa/senior.png 2x\"><source media=\"(max-width: 360px)\" src"
+  }
+ ],
+ "iframes": [
+  null,
+  null,
+  "https://js.stripe.com/v3/controller-with-preconnect-990107755f9c2f10be87aa658d7e5783.html#__shared_params__[version]=clover&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%22829e5ba4-c023-4f0d-a823-6e9b700164ab%22%2C%22assignments%22%3A%7B%22react_version_18_v3%22%3A%7B%22variant%22%3A%22control%22%2C%22population%22%3A0.25%7D%7D%2C%22unqualifiedExperiments%22%3A%7B%7D%7D&apiKey=pk_live_51IekcQKHPFAlBzyyGNBguT5BEI7NEBqrTxJhsYN1FI1lQb9iWxU5U2OXfi744NEMx5p7EDXh08YXrudrZkkG9bGc00ZCrkXrxL&apiVersion=2025-09-30.clover&stripeAccount=acct_1UOJERGz6FjMOF2z&stripeJsId=829e5ba4-c023-4f0d-a823-6e9b700164ab&stripeObjId=sobj-c2da4320-aa92-4c5d-b5fc-87fda38b87d3&firstStripeInstanceCreatedLatency=26&controllerCount=1&isCheckout=false&stripeJsLoadTime=1791475226914.7&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=NA&mids[sid]=NA&referrer=https%3A%2F%2Fcollegeplan.beehiiv.com%2Fproducts%2Fflorida-senior-year-roadmap&controllerId=__privateStripeController9121",
+  "https://app.birdie.so/snippet/bridge.html?v=1",
+  "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fcollegeplan.beehiiv.com%2Fproducts%2Fflorida-senior-year-roadmap&title=Florida%20Senior%20Year%20Roadmap%3A%20Class%20of%202027%20%7C%20College%20Plan&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=clover"
+ ]
+}
+errors: []
