@@ -1,0 +1,453 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//College Plan//Florida College Deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Florida College Deadlines (College Plan)
+X-WR-TIMEZONE:America/New_York
+X-WR-CALDESC:Florida college deadlines for parents of 8th-12th graders. A
+ lways confirm on the official site. collegeplan.beehiiv.com
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:5544606ce4746a11@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:UF Early Decision application due
+DESCRIPTION:For: Seniors. Binding. STARS self-reported record due Oct 22.
+  Confirm here: https://admissions.ufl.edu/ | More Florida deadlines ever
+ y week: collegeplan.beehiiv.com
+URL:https://admissions.ufl.edu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UF Early Decision application due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0dacc29013d29e76@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:FSU Early Decision & Early Action applications due
+DESCRIPTION:For: Seniors. Early Action is for Florida residents. Decision
+ s Dec 17. Confirm here: https://admissions.fsu.edu/ | More Florida deadl
+ ines every week: collegeplan.beehiiv.com
+URL:https://admissions.fsu.edu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FSU Early Decision & Early Action applications due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1a05fd2f28d452eb@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:UCF Early Action application due
+DESCRIPTION:For: Seniors. Materials due Nov 15\; decisions Dec 4. Confirm
+  on ucf.edu. Confirm here: https://www.ucf.edu/admissions/undergraduate/
+ question/when-is-the-application-deadline/ | More Florida deadlines ever
+ y week: collegeplan.beehiiv.com
+URL:https://www.ucf.edu/admissions/undergraduate/question/when-is-the-app
+ lication-deadline/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UCF Early Action application due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:afea4cf75be48afc@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Saturday PSAT/NMSQT option
+DESCRIPTION:For: Juniors. Many schools give the PSAT/NMSQT during the sch
+ ool day instead (Oct 1–30). It's the National Merit qualifier. Confirm
+  here: https://satsuite.collegeboard.org/psat-nmsqt | More Florida deadl
+ ines every week: collegeplan.beehiiv.com
+URL:https://satsuite.collegeboard.org/psat-nmsqt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Saturday PSAT/NMSQT option
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:89a038dc035dc725@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:UF STARS due (Early Decision applicants)
+DESCRIPTION:For: Seniors. Self-reported academic record. Confirm here: ht
+ tps://admissions.ufl.edu/ | More Florida deadlines every week: collegepl
+ an.beehiiv.com
+URL:https://admissions.ufl.edu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UF STARS due (Early Decision applicants)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:27a0fefcc11e6472@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Register for the Nov 7 SAT
+DESCRIPTION:For: Seniors & Juniors. Late registration until Oct 27. Confi
+ rm here: https://satsuite.collegeboard.org/sat/dates-deadlines | More Fl
+ orida deadlines every week: collegeplan.beehiiv.com
+URL:https://satsuite.collegeboard.org/sat/dates-deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Register for the Nov 7 SAT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fea2ea187f29041e@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:UF Early Action application due
+DESCRIPTION:For: Seniors. Non-binding. STARS due Nov 8. Confirm here: htt
+ ps://admissions.ufl.edu/ | More Florida deadlines every week: collegepla
+ n.beehiiv.com
+URL:https://admissions.ufl.edu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UF Early Action application due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2bcf87a167193df0@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:USF Early Action application due
+DESCRIPTION:For: Seniors. Materials due Nov 16\; decisions Dec 9. Confirm
+  here: https://usf.edu/admissions/freshmen/admission-information/dates-d
+ eadlines.aspx | More Florida deadlines every week: collegeplan.beehiiv.c
+ om
+URL:https://usf.edu/admissions/freshmen/admission-information/dates-deadl
+ ines.aspx
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: USF Early Action application due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ec907b2dff2e2be2@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:SAT test day
+DESCRIPTION:For: Seniors & Juniors. Confirm here: https://satsuite.colleg
+ eboard.org/sat/dates-deadlines | More Florida deadlines every week: coll
+ egeplan.beehiiv.com
+URL:https://satsuite.collegeboard.org/sat/dates-deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: SAT test day
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ce64f96947609b8e@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:UF STARS due (Early Action applicants)
+DESCRIPTION:For: Seniors. Self-reported academic record. Confirm here: ht
+ tps://admissions.ufl.edu/ | More Florida deadlines every week: collegepl
+ an.beehiiv.com
+URL:https://admissions.ufl.edu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UF STARS due (Early Action applicants)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2a53a0f2a29ac0dc@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:UCF Early Action materials due
+DESCRIPTION:For: Seniors. Confirm here: https://www.ucf.edu/admissions/un
+ dergraduate/question/when-is-the-application-deadline/ | More Florida de
+ adlines every week: collegeplan.beehiiv.com
+URL:https://www.ucf.edu/admissions/undergraduate/question/when-is-the-app
+ lication-deadline/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UCF Early Action materials due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7ed6d6e14431c71a@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:USF Early Action materials due
+DESCRIPTION:For: Seniors. Includes STARS. Confirm here: https://usf.edu/a
+ dmissions/freshmen/admission-information/dates-deadlines.aspx | More Flo
+ rida deadlines every week: collegeplan.beehiiv.com
+URL:https://usf.edu/admissions/freshmen/admission-information/dates-deadl
+ ines.aspx
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: USF Early Action materials due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:85852d59c33901c9@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Register for the Dec 5 SAT
+DESCRIPTION:For: Seniors & Juniors. Late registration until Nov 24. Confi
+ rm here: https://satsuite.collegeboard.org/sat/dates-deadlines | More Fl
+ orida deadlines every week: collegeplan.beehiiv.com
+URL:https://satsuite.collegeboard.org/sat/dates-deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Register for the Dec 5 SAT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:661990f02f67a5eb@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:UCF Early Action decisions released
+DESCRIPTION:For: Seniors. Confirm here: https://www.ucf.edu/admissions/un
+ dergraduate/question/when-is-the-application-deadline/ | More Florida de
+ adlines every week: collegeplan.beehiiv.com
+URL:https://www.ucf.edu/admissions/undergraduate/question/when-is-the-app
+ lication-deadline/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UCF Early Action decisions released
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4a4e32cc7e0873e2@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:SAT test day
+DESCRIPTION:For: Seniors & Juniors. Confirm here: https://satsuite.colleg
+ eboard.org/sat/dates-deadlines | More Florida deadlines every week: coll
+ egeplan.beehiiv.com
+URL:https://satsuite.collegeboard.org/sat/dates-deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: SAT test day
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c9c84b565698e8f2@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:USF Early Action decisions released
+DESCRIPTION:For: Seniors. Confirm here: https://usf.edu/admissions/freshm
+ en/admission-information/dates-deadlines.aspx | More Florida deadlines e
+ very week: collegeplan.beehiiv.com
+URL:https://usf.edu/admissions/freshmen/admission-information/dates-deadl
+ ines.aspx
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: USF Early Action decisions released
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:92c80f2ccf984516@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:UF Early Decision decisions released
+DESCRIPTION:For: Seniors. Confirm here: https://admissions.ufl.edu/ | Mor
+ e Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://admissions.ufl.edu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UF Early Decision decisions released
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:046fe1ba881d36b4@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:USF Regular Decision application due
+DESCRIPTION:For: Seniors. Materials due Jan 15 (also the merit scholarshi
+ p date). Confirm here: https://usf.edu/admissions/freshmen/admission-inf
+ ormation/dates-deadlines.aspx | More Florida deadlines every week: colle
+ geplan.beehiiv.com
+URL:https://usf.edu/admissions/freshmen/admission-information/dates-deadl
+ ines.aspx
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: USF Regular Decision application due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6ca4916a81e8d166@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:FSU Early Decision & Early Action decisions released
+DESCRIPTION:For: Seniors. Confirm here: https://admissions.fsu.edu/ | Mor
+ e Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://admissions.fsu.edu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FSU Early Decision & Early Action decisions release
+ d
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9fa47c4ab63fab81@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:USF Regular Decision materials due
+DESCRIPTION:For: Seniors. Submit by today for automatic merit scholarship
+  consideration. Confirm here: https://usf.edu/admissions/freshmen/admiss
+ ion-information/dates-deadlines.aspx | More Florida deadlines every week
+ : collegeplan.beehiiv.com
+URL:https://usf.edu/admissions/freshmen/admission-information/dates-deadl
+ ines.aspx
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: USF Regular Decision materials due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:686cd8935daa8033@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:USF Regular Decision decisions released
+DESCRIPTION:For: Seniors. Confirm here: https://usf.edu/admissions/freshm
+ en/admission-information/dates-deadlines.aspx | More Florida deadlines e
+ very week: collegeplan.beehiiv.com
+URL:https://usf.edu/admissions/freshmen/admission-information/dates-deadl
+ ines.aspx
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: USF Regular Decision decisions released
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c66caebcc64b80f9@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:Register for the Mar 6 SAT
+DESCRIPTION:For: Juniors. Confirm here: https://satsuite.collegeboard.org
+ /sat/dates-deadlines | More Florida deadlines every week: collegeplan.be
+ ehiiv.com
+URL:https://satsuite.collegeboard.org/sat/dates-deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Register for the Mar 6 SAT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:915d27f3614bca9b@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:SAT test day
+DESCRIPTION:For: Juniors. Confirm here: https://satsuite.collegeboard.org
+ /sat/dates-deadlines | More Florida deadlines every week: collegeplan.be
+ ehiiv.com
+URL:https://satsuite.collegeboard.org/sat/dates-deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: SAT test day
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:14d5dee798694b5d@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:UCF Regular Decision application & materials due
+DESCRIPTION:For: Seniors. Confirm here: https://www.ucf.edu/admissions/un
+ dergraduate/question/when-is-the-application-deadline/ | More Florida de
+ adlines every week: collegeplan.beehiiv.com
+URL:https://www.ucf.edu/admissions/undergraduate/question/when-is-the-app
+ lication-deadline/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UCF Regular Decision application & materials due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e7d1117d0ed54444@collegeplan
+DTSTAMP:20261008T020446Z
+DTSTART;VALUE=DATE:20270831
+DTEND;VALUE=DATE:20270901
+SUMMARY:FFAA final deadline for the Class of 2027 (Bright Futures)
+DESCRIPTION:For: Seniors. No FFAA\, no Bright Futures. Don't wait until n
+ ow\; file it during senior year. Confirm here: https://www.floridastuden
+ tfinancialaidsg.org/ | More Florida deadlines every week: collegeplan.be
+ ehiiv.com
+URL:https://www.floridastudentfinancialaidsg.org/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FFAA final deadline for the Class of 2027 (Bright F
+ utures)
+END:VALARM
+END:VEVENT
+END:VCALENDAR
