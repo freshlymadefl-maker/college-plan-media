@@ -1,0 +1,22 @@
+name: Make QR codes
+# qr/<name>.txt contains a URL -> flyers/<name>.png (navy QR). The .txt is removed after.
+on:
+  push:
+    paths: ['qr/*.txt']
+permissions:
+  contents: write
+jobs:
+  qr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install "qrcode[pil]"
+      - run: |
+          mkdir -p flyers
+          for f in qr/*.txt; do
+            n=$(basename "$f" .txt)
+            python3 -c "import qrcode,sys;q=qrcode.QRCode(box_size=20,border=1,error_correction=qrcode.constants.ERROR_CORRECT_M);q.add_data(open(sys.argv[1]).read().strip());q.make(fit=True);q.make_image(fill_color='#0B2A4A',back_color='white').save(sys.argv[2])" "$f" "flyers/$n.png"
+            git rm -q "$f"
+          done
+          git config user.name "College Plan"; git config user.email freshlymadefl@gmail.com
+          git add -A; git diff --cached --quiet || (git commit -m "QR codes" && git push)
