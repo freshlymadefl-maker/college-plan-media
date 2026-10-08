@@ -100,9 +100,10 @@ Queue (in order, skip ones already in the Guides log):
 10. Florida state scholarships and grants list (FSAG, First Generation Matching Grant, José Martí, Rosewood, Mary McLeod Bethune ...)
 
 ## Paid products (beehiiv Digital Products, file download)
-Status: PDFs done and fact-checked; WAITING on owner to connect Stripe in beehiiv (save_product fails until then).
-- Florida Senior Year Roadmap, Class of 2027: products/Florida-Senior-Year-Roadmap-Class-of-2027.pdf, card products/senior.png, $15, slug florida-senior-year-roadmap
-- Freshman Roadmap: Plan Now, Don't Cram Later: products/Freshman-Roadmap-Plan-Now-Dont-Cram-Later.pdf, card products/freshman.png, $12, slug freshman-roadmap
+Status: LIVE since 2026-10-08 (Stripe connected).
+- Florida Senior Year Roadmap, Class of 2027: $15, https://collegeplan.beehiiv.com/products/florida-senior-year-roadmap (product f11db4ac-7fa9-493e-b584-ca483fb9c7cf). PDF products/Florida-Senior-Year-Roadmap-Class-of-2027.pdf, card products/senior.png
+- Freshman Roadmap: Plan Now, Don't Cram Later: $12, https://collegeplan.beehiiv.com/products/freshman-roadmap (product d98d8883-f0fe-4b35-b864-47118ecd7dac). PDF products/Freshman-Roadmap-Plan-Now-Dont-Cram-Later.pdf, card products/freshman.png
+- If a PDF is rebuilt, update the product with save_product(file_url = jsDelivr link pinned to the new commit).
 - Rebuild with: python3 templates/products/build.py (check every date against official sources first; refresh the Senior Roadmap each August for the new class).
 - Once live: soft-mention in emails at most once a week (seniors email → Senior Roadmap; early email → Freshman Roadmap), one promo post every other week, never pushy. Free resources stay free.
 
