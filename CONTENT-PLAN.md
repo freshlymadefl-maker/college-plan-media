@@ -74,6 +74,7 @@ Add any newly verified Florida deadlines to calendar/events.json (official sourc
 - Re-verify each date the week before. Add new moments as they're announced.
 
 ## County and school-specific posts (1 every other week; local posts get shared in local group chats)
+Template: templates/tool-posts.html #cy1–#cy5 (swap county, college, facts). Note: Hillsborough's college is now "Hillsborough College" (hcfl.edu), not HCC.
 Rotate counties: Hillsborough (start here), Pasco, Pinellas, Polk, Orange, Miami-Dade, Broward, Palm Beach, Duval, Seminole, Lee, Brevard. Topics: dual enrollment partner college and how to sign up, district college/career fair dates, magnet/AICE/IB program deadlines, district scholarship programs. Verify on the district or college website; name the county in the headline ("Hillsborough parents: ...").
 
 ## "Comment a word" posts (manual DMs for now)
@@ -99,6 +100,14 @@ Queue (in order, skip ones already in the Guides log):
 - 2026-10-07: Florida Bright Futures Requirements for the Classes of 2027 and 2028 — /p/florida-bright-futures-requirements-2027-2028
 
 ## Log (newest first — the weekly routine appends here)
+- 2026-12-04/09/11/17 8:30pm: decision-day posts already scheduled (UCF, USF, UF ED, FSU) — instagram/2026-12-decisions/. Re-verify each release date the week before; if a date moves, update the post in Metricool.
+- 2026-10-18 Sun 12pm: TRIAL REEL — Bright Futures checker demo (instagram/2026-10-tools/checker-reel.mp4)
+- 2026-10-15 Thu 12pm: tool promo — Bright Futures checker (tl2); 8:15am Story ts3 (Hillsborough info session tonight)
+- 2026-10-14 Wed 12pm: COUNTY #1 — Hillsborough dual enrollment carousel (cy1–cy5). Next county post ~Oct 28: Pasco (Pasco-Hernando State College).
+- 2026-10-12 Mon 8:15am: Story ts2 (checker)
+- 2026-10-11 Sun 12pm: tool promo — deadline calendar (tl1)
+- 2026-10-10 Sat 8:15am: Story ts1 (calendar)
+- 2026-10-09 Fri 12pm: REEL — Bright Futures checker demo
 - 2026-10-09 Fri: fun — text thread (college essay 'the title')
 - 2026-10-18 Sun: promo newsletter (pr2)
 - 2026-10-17 Sat: scholarship — Benacquisto

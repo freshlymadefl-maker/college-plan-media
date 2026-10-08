@@ -35,3 +35,10 @@
 ## Stories (templates/story-posts.html, 1080x1920)
 - st1 deadline countdown · st2 "Did you know?" · st3 photo + one-line reminder · st4 "New post" teaser using that day's post PNG.
 - Keep text out of the top 250px and bottom 300px. Schedule in Metricool with instagramData type STORY + facebookData type STORY and NO text field.
+
+## Tool, county and decision-day posts (templates/tool-posts.html)
+- tl1 deadline calendar promo · tl2 Bright Futures checker promo (feed) · ts1/ts2 matching Stories · ts3 county "tonight" Story.
+- cy1–cy5 county carousel (Hillsborough dual enrollment; swap content for other counties).
+- dd1 decision-day celebration: set #dd-school text per school before rendering.
+- Render one element at a time (hide the other top-level divs first) or tall Stories come out cropped.
+- Reels driven by JS: templates/reel/checker-reel.html defines window.setT(ms); render-reel.py calls it every frame.
