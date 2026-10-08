@@ -6,7 +6,7 @@ Collecting aiohttp<4.0.0,>=3.8.0 (from edge-tts)
 Requirement already satisfied: certifi>=2023.11.17 in /usr/lib/python3/dist-packages (from edge-tts) (2023.11.17)
 Collecting tabulate<1.0.0,>=0.4.4 (from edge-tts)
   Downloading tabulate-0.10.0-py3-none-any.whl.metadata (40 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 kB 2.2 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 kB 3.1 MB/s eta 0:00:00
 Requirement already satisfied: typing-extensions<5.0.0,>=4.1.0 in /usr/lib/python3/dist-packages (from edge-tts) (4.10.0)
 Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.8.0->edge-tts)
   Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
@@ -21,22 +21,22 @@ Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.8.0->edge-tts)
   Downloading propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (25 kB)
 Collecting yarl<2.0,>=1.25.1 (from aiohttp<4.0.0,>=3.8.0->edge-tts)
   Downloading yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (111 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.6/111.6 kB 5.9 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.6/111.6 kB 9.0 MB/s eta 0:00:00
 Requirement already satisfied: idna>=2.0 in /usr/lib/python3/dist-packages (from yarl<2.0,>=1.25.1->aiohttp<4.0.0,>=3.8.0->edge-tts) (3.6)
 Downloading edge_tts-7.2.8-py3-none-any.whl (31 kB)
 Downloading aiohttp-3.14.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 25.4 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 39.1 MB/s eta 0:00:00
 Downloading tabulate-0.10.0-py3-none-any.whl (39 kB)
 Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
 Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
 Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (242 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 242.4/242.4 kB 74.3 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 242.4/242.4 kB 76.9 MB/s eta 0:00:00
 Downloading multidict-6.9.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (336 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 336.9/336.9 kB 93.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 336.9/336.9 kB 83.9 MB/s eta 0:00:00
 Downloading propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (250 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.4/250.4 kB 77.9 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.4/250.4 kB 33.4 MB/s eta 0:00:00
 Downloading yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (117 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.0/117.0 kB 43.3 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.0/117.0 kB 41.3 MB/s eta 0:00:00
 Installing collected packages: tabulate, propcache, multidict, frozenlist, aiohappyeyeballs, yarl, aiosignal, aiohttp, edge-tts
 Successfully installed aiohappyeyeballs-2.7.1 aiohttp-3.14.4 aiosignal-1.4.0 edge-tts-7.2.8 frozenlist-1.8.0 multidict-6.9.1 propcache-0.5.4 tabulate-0.10.0 yarl-1.25.1
-bf-mistakes en-US-AvaNeural 112 words
+bf-mistakes en-US-AvaNeural 123 words
