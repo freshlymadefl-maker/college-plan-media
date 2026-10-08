@@ -1,0 +1,31 @@
+desktop: {
+ "nav": [],
+ "calRoot": false,
+ "calRendered": false,
+ "calItems": [],
+ "bfRoot": false,
+ "bfRendered": false,
+ "scripts": [],
+ "iframes": [
+  null,
+  null,
+  "https://app.birdie.so/snippet/bridge.html?v=1"
+ ]
+}
+errors: []
+
+mobile: {
+ "nav": [],
+ "calRoot": false,
+ "calRendered": false,
+ "calItems": [],
+ "bfRoot": false,
+ "bfRendered": false,
+ "scripts": [],
+ "iframes": [
+  null,
+  null,
+  "https://app.birdie.so/snippet/bridge.html?v=1"
+ ]
+}
+errors: []
