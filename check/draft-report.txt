@@ -28,10 +28,10 @@ desktop: {
    "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
   },
   {
-   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/publication/logo/851868ac-cd7b-4156-a1a0-dfac96c6e363/upload_3189a6b534ad8117.png\" alt=\"Florida Bright Futures Requirements for the Classes of 2027 and 2028\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;border-color:#E5E7EB;border-radius:8px;aspect-ratio:1.5\">",
-   "w": 300,
-   "ht": 200,
-   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/publication/logo/851868ac-cd7b-4156-a1a0-dfac96c6e363/upload_3189a6b534ad8117.png 2x\"><source media=\"(max-width: 360px"
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-faded.jpg\" alt=\"background\" class=\"undefined block\" style=\"position:absolute;object-fit:cover;object-position:center;width:100%;height:100%\">",
+   "w": 1280,
+   "ht": 781.015625,
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-faded.jpg 2x\"><source media=\"(max-width: 360px)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan"
   }
  ],
  "iframes": [
@@ -74,10 +74,10 @@ mobile: {
    "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
   },
   {
-   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/publication/logo/851868ac-cd7b-4156-a1a0-dfac96c6e363/upload_3189a6b534ad8117.png\" alt=\"Florida Bright Futures Requirements for the Classes of 2027 and 2028\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;border-color:#E5E7EB;border-radius:8px;aspect-ratio:1.5\">",
-   "w": 300,
-   "ht": 200,
-   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/publication/logo/851868ac-cd7b-4156-a1a0-dfac96c6e363/upload_3189a6b534ad8117.png 2x\"><source media=\"(max-width: 360px"
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-faded.jpg\" alt=\"background\" class=\"undefined block\" style=\"position:absolute;object-fit:cover;object-position:center;width:100%;height:100%\">",
+   "w": 390,
+   "ht": 793.03125,
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-faded.jpg 2x\"><source media=\"(max-width: 360px)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan"
   }
  ],
  "iframes": [
@@ -85,7 +85,6 @@ mobile: {
   "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   null,
   null,
-  "https://js.px-cloud.net/?t=d-bc07gxrg9-1791428447800&v=75f02488-c2c4-11f1-999b-21846addd225&h=Y29sbGVnZXBsYW4uYmVlaGlpdi5jb20%3D&a=PXeBumDLwe",
   "https://app.birdie.so/snippet/bridge.html?v=1"
  ]
 }
