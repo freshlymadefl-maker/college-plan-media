@@ -20,7 +20,7 @@ function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return {"&":"
 function render(f){
   var p=(f.posts||[]); var n=p.length>=8?8:(p.length>=4?4:p.length); p=p.slice(0,n);
   var h='<style>'+css+'</style><div id="cp-soc">';
-  if(p.length){h+='<div class="g">'+p.map(function(x){return '<a class="t" href="'+esc(x.url)+'" target="_blank" rel="noopener" title="'+esc(x.caption)+'"><img loading="lazy" src="'+BASE+esc(x.img)+'" alt="'+esc(x.caption)+'" onerror="this.parentNode.style.display=\'none\'"><span class="d">'+esc(x.label)+'</span></a>';}).join("")+'</div>';}
+  if(p.length){h+='<div class="g">'+p.map(function(x){return '<a class="t" href="'+esc(x.url)+'" target="_blank" rel="noopener" title="'+esc(x.caption)+'"><img src="'+BASE+esc(x.img)+'" alt="'+esc(x.caption)+'" onerror="this.parentNode.style.display=\'none\'"><span class="d">'+esc(x.label)+'</span></a>';}).join("")+'</div>';}
   h+='<div class="b"><a class="ig" href="'+esc(f.instagram||"https://www.instagram.com/college.plan/")+'" target="_blank" rel="noopener">'+IG+'Follow @college.plan</a><a class="fb" href="'+esc(f.facebook||"https://www.facebook.com/1362425533621807")+'" target="_blank" rel="noopener">'+FB+'Facebook</a></div></div>';
   root.innerHTML=h;
 }
