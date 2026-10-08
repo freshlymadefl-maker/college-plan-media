@@ -52,6 +52,13 @@ Trial Reels are shown only to non-followers first, so use them to test new hooks
 ## Scholarship of the week (Saturday)
 Prefer scholarships with an upcoming deadline or that Florida families miss. Mix Florida state programs (Benacquisto, FSAG, José Martí, Rosewood, Mary McLeod Bethune, First Generation Matching Grant, Children of deceased/disabled veterans, Florida Prepaid Project STARS) and national ones with real deadlines (verify the current cycle on the official site). Always: amount, who qualifies, deadline, official source.
 
+## Relatable / funny posts (2 a week — built for shares and tags)
+Templates: templates/fun-posts.html — fn1 text thread, fn2 parent "post" quote card, fn3 "what they say vs. what it means", fn4 phone-notes list.
+- Thursday alternates: photo quote (ph1) one week, a fun post the next.
+- Friday Rotation B includes fun formats every other week.
+- Other reshare formats to rotate in: "Senior year parent bingo" card, "This or that" (comment your pick), a 1–10 "parent stress meter" scale, "Things nobody tells you about junior year" lists, POV-style Reels ("POV: it's 11:58pm and the portal is loading").
+Rules: original jokes only (never copy memes, tweets or other accounts), warm not mean (laugh with teens, never at a real kid), no fake engagement numbers, tie it back to a real college-planning moment, caption ends with a tag/share ask ("Tag a senior parent", "Send this to your co-parent").
+
 ## "Comment a word" posts (manual DMs for now)
 - 1–2 posts a week end with "Comment GUIDE and we'll DM you the free cheat sheet" (or another word that fits: LIST, CHECKLIST, DATES). Use it on the Saturday post and at most one other post.
 - The owner replies by hand using an Instagram saved reply, so keep the keyword set small: GUIDE (cheat sheet + newsletter link) is the default.
@@ -75,6 +82,7 @@ Queue (in order, skip ones already in the Guides log):
 - 2026-10-07: Florida Bright Futures Requirements for the Classes of 2027 and 2028 — /p/florida-bright-futures-requirements-2027-2028
 
 ## Log (newest first — the weekly routine appends here)
+- 2026-10-09 Fri: fun — text thread (college essay 'the title')
 - 2026-10-18 Sun: promo newsletter (pr2)
 - 2026-10-17 Sat: scholarship — Benacquisto
 - 2026-10-16 Fri: myth vs fact — Bright Futures FFAA
