@@ -45,6 +45,7 @@ mobile: {
   "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   null,
   null,
+  "https://js.px-cloud.net/?t=d-mmdogw24d-1791427077580&v=45759328-c2c1-11f1-a6df-49bbe64cc50f&h=Y29sbGVnZXBsYW4uYmVlaGlpdi5jb20%3D&a=PXeBumDLwe",
   "https://app.birdie.so/snippet/bridge.html?v=1"
  ]
 }
