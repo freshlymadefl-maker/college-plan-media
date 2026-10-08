@@ -1,0 +1,211 @@
+<!doctype html><html><head><meta charset="utf-8"><title>The Freshman Roadmap</title><style>
+@page { size: Letter; margin: 0; }
+:root { --navy:#0B2A4A; --ink:#22344A; --muted:#55687E; --sky:#EAF3FB; --line:#C9D8E8; --gold:#A8981B; --goldbg:#F7F5E8; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: 'Inter', sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.45; }
+.page { width: 8.5in; height: 11in; padding: 0.55in 0.6in 0.5in; position: relative; page-break-after: always; overflow: hidden; }
+.page:last-child { page-break-after: auto; }
+.top { display:flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--navy); padding-bottom: 10px; }
+.top img { height: 30px; }
+.top .tag { font-family: 'Poppins'; font-size: 8pt; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+h1 { font-family: 'Poppins'; font-weight: 600; font-size: 27pt; line-height: 1.1; color: var(--navy); margin: 22px 0 6px; }
+h1 em { font-family: 'Lora'; font-style: italic; font-weight: 500; color: var(--gold); }
+.sub { font-size: 11.5pt; color: var(--muted); margin: 0 0 18px; max-width: 6.2in; }
+h2 { font-family: 'Poppins'; font-weight: 600; font-size: 13.5pt; color: var(--navy); margin: 18px 0 8px; display:flex; align-items:center; gap:10px; }
+h2 .n { display:inline-flex; width: 22px; height: 22px; border-radius: 50%; background: var(--navy); color:#fff; font-size: 10pt; align-items:center; justify-content:center; }
+.awards { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.card { background: var(--sky); border-radius: 10px; padding: 12px 14px; }
+.card .k { font-family:'Poppins'; font-weight:600; color: var(--navy); font-size: 11.5pt; }
+.card .big { font-family:'Poppins'; font-weight:600; font-size: 20pt; color: var(--navy); line-height:1.1; margin: 4px 0 2px; }
+.card p { margin: 0; color: var(--muted); font-size: 9.5pt; }
+table { width:100%; border-collapse: separate; border-spacing: 0; font-size: 9.8pt; margin-top: 4px; }
+th, td { padding: 7px 9px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { background: var(--navy); color:#fff; font-family:'Poppins'; font-weight: 500; font-size: 9pt; }
+thead th:first-child { border-top-left-radius: 8px; }
+thead th:last-child { border-top-right-radius: 8px; }
+thead th .cls { display:block; font-weight: 400; opacity: .8; font-size: 8pt; }
+tbody th { font-family:'Poppins'; font-weight:500; color: var(--navy); width: 22%; background: #F6F9FC; }
+td.new { background: #FBF8E6; font-weight: 600; color: var(--navy); }
+.note { font-size: 8.6pt; color: var(--muted); margin-top: 6px; }
+.note b { color: var(--navy); }
+.legend { display:inline-block; width:10px; height:10px; background:#FBF8E6; border:1px solid #E6DDA0; vertical-align: -1px; margin-right:4px; }
+.callout { background: var(--goldbg); border-left: 4px solid var(--gold); border-radius: 6px; padding: 10px 14px; margin-top: 14px; font-size: 9.8pt; }
+.callout b { color: var(--navy); }
+.foot { position:absolute; left: 0.6in; right: 0.6in; bottom: 0.38in; display:flex; justify-content: space-between; font-size: 8pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; }
+.foot b { color: var(--navy); white-space: nowrap; }
+.timeline { position: relative; margin-top: 6px; }
+.step { display:grid; grid-template-columns: 1.15in 1fr; gap: 14px; padding: 6px 0; font-size: 10pt; border-bottom: 1px dashed var(--line); }
+.step:last-child { border-bottom: none; }
+.when { font-family:'Poppins'; font-weight:600; color: var(--navy); font-size: 10.5pt; line-height: 1.25; }
+.when span { display:block; font-family:'Inter'; font-weight: 400; color: var(--muted); font-size: 8.5pt; }
+.step ul { margin: 0; padding-left: 16px; }
+.step li { margin: 1px 0; }
+.dl { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
+.dl > div { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.dl .d { font-family:'Poppins'; font-weight: 600; color: var(--navy); font-size: 10.5pt; }
+.dl p { margin: 3px 0 0; font-size: 9.3pt; color: var(--muted); }
+.cta { margin-top: 16px; background: var(--navy); color: #fff; border-radius: 12px; padding: 14px 18px; display:flex; align-items:center; justify-content: space-between; gap: 16px; }
+.cta img { height: 24px; }
+.cta .t { font-family:'Poppins'; font-weight: 600; font-size: 12pt; }
+.cta .s { font-size: 9.3pt; opacity: .85; }
+.cta .u { font-family:'Poppins'; font-weight: 600; background: var(--gold); color:#fff; padding: 7px 12px; border-radius: 999px; font-size: 9.5pt; white-space: nowrap; }
+
+.cols { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.box { border:1px solid var(--line); border-radius:10px; padding:10px 13px; }
+.box h3 { font-family:'Poppins'; font-weight:600; font-size:11pt; color:var(--navy); margin:0 0 4px; }
+.box p { margin:2px 0; font-size:9.6pt; }
+.chk { margin:0; padding:0; list-style:none; }
+.chk li { position:relative; padding-left:20px; margin:4px 0; font-size:10pt; }
+.chk li:before { content:""; position:absolute; left:0; top:2px; width:11px; height:11px; border:1.5px solid #8FA7C0; border-radius:3px; }
+.month { display:grid; grid-template-columns:1.05in 1fr; gap:14px; padding:7px 0; border-bottom:1px dashed var(--line); }
+.month:last-child { border-bottom:none; }
+table.trk td, table.trk th { height:28px; font-size:8.5pt; padding:5px 6px; }
+table.trk tbody td { border-right:1px solid var(--line); }
+table.dates td, table.dates th { font-size:9pt; padding:5px 8px; }
+table.dates td:first-child { font-family:'Poppins'; font-weight:600; color:var(--navy); white-space:nowrap; width:1.05in; }
+.lines { border-bottom:1px solid var(--line); height:24px; }
+.cover { background: linear-gradient(160deg,#0E3359 0%,#0B2A4A 60%,#081F38 100%); color:#fff; padding:0.9in 0.8in; }
+.cover .pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:9pt; letter-spacing:.16em; text-transform:uppercase; background:#B5A21F; color:#fff; border-radius:999px; padding:7px 14px; }
+.cover h1 { color:#fff; font-size:40pt; margin:28px 0 10px; line-height:1.04; }
+.cover h1 em { color:#F1E27A; }
+.cover .lead { font-size:14pt; color:#C9DAEC; max-width:5.8in; line-height:1.45; }
+.cover .inside { margin-top:40px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.18); border-radius:14px; padding:18px 22px; }
+.cover .inside h3 { font-family:'Poppins'; font-size:11pt; letter-spacing:.12em; text-transform:uppercase; color:#F1E27A; margin:0 0 8px; }
+.cover .inside ol { margin:0; padding-left:20px; columns:2; column-gap:28px; font-size:10.5pt; line-height:1.7; color:#E6EEF7; }
+.cover .brand { position:absolute; left:0.8in; right:0.8in; bottom:0.7in; display:flex; justify-content:space-between; align-items:flex-end; font-size:9pt; color:#9FB6CF; }
+.cover .brand img { height:34px; }
+.big2 { font-family:'Poppins'; font-weight:600; font-size:15pt; color:var(--navy); margin:0; }
+.tag2 { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:8pt; letter-spacing:.1em; text-transform:uppercase; color:#fff; background:var(--navy); border-radius:999px; padding:3px 9px; margin-right:6px; }
+.grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+.grid4 .box h3 { font-size:10.5pt; }
+.grid4 .box li { font-size:9pt; }
+.src { font-size:8pt; color:var(--muted); line-height:1.5; }
+/* roomier sizing for the paid guides */
+.page:not(.cover) { font-size:11.4pt; }
+.page h1 { font-size:30pt; margin-top:26px; }
+.page .sub { font-size:12.5pt; margin-bottom:20px; }
+.page h2 { font-size:15pt; margin:24px 0 10px; }
+.chk li { font-size:11pt; margin:5px 0; padding-left:24px; }
+.chk li:before { width:13px; height:13px; top:3px; }
+.box { padding:14px 16px; }
+.box h3 { font-size:12.5pt; margin-bottom:6px; }
+.box p { font-size:10.8pt; line-height:1.5; }
+.cols { gap:14px; }
+.month { padding:8px 0; grid-template-columns:1.2in 1fr; }
+table.tight td, table.tight th { padding:5px 9px; font-size:9.8pt; }
+table.dates.sm td, table.dates.sm th { font-size:9pt; padding:4px 8px; }
+.when { font-size:12pt; }
+.when span { font-size:9.5pt; }
+.callout { font-size:11pt; padding:13px 16px; margin-top:18px; }
+table.dates td, table.dates th { font-size:10pt; padding:7px 9px; }
+table.trk td, table.trk th { height:34px; font-size:9pt; }
+table th, table td { font-size:10.4pt; padding:9px 10px; }
+.grid4 .box li { font-size:10pt; }
+.grid4 .box h3 { font-size:11.5pt; }
+.note { font-size:9.6pt; }
+.lines { height:30px; }
+.small .box p { font-size:9.8pt; line-height:1.4; }
+.small .box { padding:10px 13px; }
+.cover .lead { font-size:16pt; }
+.cover h1 { font-size:46pt; }
+.cover .inside { margin-top:56px; padding:24px 28px; }
+.cover .inside ol { font-size:12pt; line-height:1.9; }
+</style></head><body><div class="page cover"><span class="pill">Class of 2030 · Florida</span><h1>The Freshman <em>Roadmap</em></h1><p class="lead">Plan now, don't cram later. Small steps in 9th grade make senior year calm instead of chaotic. A four-year plan built for Florida families.</p>
+<div class="inside"><h3>What's inside</h3><ol><li>Why 9th grade matters</li><li>Florida graduation requirements</li><li>Bright Futures, explained early</li><li>The four-year game plan</li><li>9th grade month by month</li><li>Four-year course planner</li><li>Service hour log</li><li>Activities + awards log</li><li>Dual enrollment, AP, IB + AICE</li><li>A peek at 10th–12th</li></ol></div>
+<div class="brand"><img src="../wordmark_white.png" alt="College Plan"><span>For personal use by the purchasing family. Please don't share or resell.<br>Not affiliated with the State of Florida or any university.</span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>Why 9th grade <em>matters</em></h1>
+<p class="sub">Most families start thinking about college in junior year. By then, half of the high school record is already written.</p>
+<div class="cols">
+<div class="box"><h3>Grades count from day one</h3><p>Every core course in 9th grade goes into the GPA colleges see and into the <b>Bright Futures GPA</b>. A rough first semester is fixable, but easier to avoid.</p></div>
+<div class="box"><h3>Courses build on each other</h3><p>Math, science and world language follow a sequence. Choices in 9th grade decide which advanced courses are open in 11th and 12th.</p></div>
+<div class="box"><h3>Hours add up slowly</h3><p>Bright Futures asks for volunteer or paid work hours <b>earned during high school</b>. A few hours a month starting now is easy. 100 hours in senior spring is not.</p></div>
+<div class="box"><h3>Habits beat cramming</h3><p>A weekly check of grades, a simple log for hours and awards, and one family check-in a month. That's the whole system.</p></div>
+</div>
+<h2><span class="n">✓</span> Do these in the first month</h2>
+<ul class="chk"><li>Find the school counselor’s name and email, and save them in your phone</li><li>Log in to the parent portal and learn where grades show up</li><li>Ask the counselor how your district counts Bright Futures service hours (and whether the summer before 9th grade counts)</li><li>Start the service hour log (page 8) and the activities log (page 9)</li><li>Put a 20-minute “college check-in” on the family calendar once a month</li></ul>
+<div class="callout"><b>The mindset:</b> You're not choosing a college in 9th grade. You're keeping doors open, so in 12th grade your student gets to choose.</div>
+<div class="foot"><span>Requirements change. Confirm with your school counselor.</span><span><b>College Plan · 2</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>Florida graduation <em>requirements</em></h1>
+<p class="sub">The standard 24-credit diploma, for students entering 9th grade in 2026&#8209;27.</p>
+<table class="tight"><thead><tr><th>Subject</th><th>Credits</th><th>Notes</th></tr></thead><tbody>
+<tr><th>English</th><td>4</td><td>English 1–4</td></tr>
+<tr><th>Math</th><td>4</td><td>Must include Algebra 1 and Geometry</td></tr>
+<tr><th>Science</th><td>3</td><td>Must include Biology 1; two must have a lab</td></tr>
+<tr><th>Social studies</th><td>3</td><td>World History, U.S. History, U.S. Government (½) and Economics (½)</td></tr>
+<tr><th>Arts</th><td>1</td><td>Fine or performing arts, speech and debate, or career and technical/practical arts</td></tr>
+<tr><th>PE</th><td>1</td><td>Includes health</td></tr>
+<tr><th>Personal financial literacy</th><td>½</td><td>Required for students entering 9th grade in 2023–24 and later</td></tr>
+<tr><th>Electives</th><td>7½</td><td></td></tr>
+</tbody></table>
+<h2 style="margin-top:14px"><span class="n">!</span> Tests and GPA</h2>
+<ul class="chk"><li>Pass the Grade 10 English Language Arts test (or earn a concordant score)</li><li>Pass the Algebra 1 end-of-course exam (or earn a comparative score)</li><li>End-of-course exams in Algebra 1, Geometry, Biology 1 and U.S. History count for <b>30%</b> of the course grade</li><li>Take the U.S. Government civic literacy test (taking it is required; passing is not)</li><li>Graduate with at least a 2.0 unweighted GPA</li></ul>
+<h2 style="margin-top:14px"><span class="n">★</span> Worth knowing</h2>
+<div class="cols small">
+<div class="box"><h3>Scholar designation</h3><p>Extra recognition on the diploma: Algebra 2 and statistics (or equally rigorous courses), chemistry or physics plus one more equally rigorous science, 2 credits of one world language, at least one AP, IB, AICE or dual enrollment course, and passing the Geometry, Biology 1 and U.S. History end-of-course exams.</p></div>
+<div class="box"><h3>18-credit option (ACCEL)</h3><p>Florida also has an 18-credit accelerated diploma option with no PE requirement and fewer electives. Ask the counselor whether it fits your student.</p></div>
+</div>
+<div class="foot"><span>Sources: Fla. Stat. 1003.4282 and 1003.4285; FLDOE graduation requirements.</span><span><b>College Plan · 3</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>Bright Futures, <em>explained early</em></h1>
+<p class="sub">It can pay 75% to 100% of tuition and applicable fees at Florida public colleges and universities. Here's what your student needs, and what to start now.</p>
+<div class="cols">
+<div class="box"><h3>The 16 core credits</h3><p>The Bright Futures GPA only uses these: 4 English, 4 math (Algebra 1 or higher), 3 natural science, 3 social science and <b>2 credits of the same world language</b>.</p></div>
+<div class="box"><h3>Weighted courses help</h3><p>Honors, AP, IB, AICE and academic dual enrollment courses add 0.5 per year-long course (0.25 per semester) to the Bright Futures GPA.</p></div>
+<div class="box"><h3>Volunteer or work hours</h3><p>Academic Scholars: 100 volunteer hours, 100 paid work hours or a combination. Medallion: 75 volunteer hours, 100 paid work hours or a combination totaling 100. Hours must be earned during high school, documented, and signed by your student, a parent and the organization. Your district approves which activities count.</p></div>
+<div class="box"><h3>A test score, later</h3><p>Scores for the Class of 2030 aren't published yet. For the Class of 2028, Academic Scholars need SAT 1350, ACT 29 or CLT 96, and Medallion needs SAT 1200, ACT 25 or CLT 83, plus a 3.5 or 3.0 weighted GPA. Requirements have been rising.</p></div>
+</div>
+<h2><span class="n">✓</span> Bright Futures to-dos for 9th grade</h2>
+<ul class="chk"><li>Get your district’s service hour form and approved activity list</li><li>Log hours as they happen and turn them in at the end of every school year</li><li>Start a world language your student can continue for two years</li><li>Choose honors or advanced classes where your student is ready for them</li><li>Remember the last step, years from now: the FFAA in senior year. Bright Futures is never automatic</li></ul>
+<div class="foot"><span>Source: Florida Bright Futures Student Handbook 2026–27 (FloridaBrightFutures.gov).</span><span><b>College Plan · 4</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>The four-year <em>game plan</em></h1>
+<p class="sub">One small focus per year. This is the “don't cram later” part.</p>
+<div class="grid4">
+<div class="box"><h3>9th: build habits</h3><ul class="chk"><li>Strong grades in core classes</li><li>Start the hour log</li><li>Begin a world language</li><li>Try 1–2 activities</li><li>Spring: PSAT 8/9 if your school offers it</li></ul></div>
+<div class="box"><h3>10th: go deeper</h3><ul class="chk"><li>Add rigor where ready (honors, AP, AICE, IB)</li><li>Spring: PSAT 10 if offered</li><li>Ask about dual enrollment</li><li>Keep logging hours</li><li>Summer job, program or project</li></ul></div>
+<div class="box"><h3>11th: the big year</h3><ul class="chk"><li>Fall: PSAT/NMSQT (the National Merit qualifier)</li><li>Winter or spring: SAT, ACT or CLT</li><li>Bright Futures evaluation</li><li>Build a college list, visit campuses</li><li>Ask teachers for recs in spring if schools require them</li></ul></div>
+<div class="box"><h3>12th: apply + pay</h3><ul class="chk"><li>Early deadlines start mid-October</li><li>FAFSA in the fall</li><li>FFAA for Bright Futures</li><li>Scholarships monthly</li><li>Compare aid, then decide by May 1</li></ul></div>
+</div>
+<h2><span class="n">✎</span> Our family's goals</h2>
+<div class="cols">
+<div><p class="big2" style="font-size:11pt">By the end of 9th grade, we want…</p><div class="lines"></div><div class="lines"></div><div class="lines"></div><div class="lines"></div></div>
+<div><p class="big2" style="font-size:11pt">Interests to explore…</p><div class="lines"></div><div class="lines"></div><div class="lines"></div><div class="lines"></div></div>
+</div>
+<div class="callout"><b>Keep it light:</b> The goal is steady progress, not a résumé factory. One meaningful activity beats five your student doesn't care about.</div>
+<div class="foot"><span>PSAT 8/9 and PSAT 10 are offered in the spring at many schools. Ask your school.</span><span><b>College Plan · 5</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>9th grade, <em>month by month</em></h1>
+<p class="sub">About 20 minutes a month. Check them off as you go.</p>
+<div class="month"><div class="when">Aug – Sept<span>settle in</span></div><ul class="chk"><li>Save the counselor’s contact info and log in to the parent portal</li><li>Ask how your district handles Bright Futures service hours</li><li>Start the hour log and the activities log</li><li>Help your student pick one or two activities to try</li></ul></div>
+<div class="month"><div class="when">Oct – Nov<span>first check</span></div><ul class="chk"><li>Review progress reports together. Catch slipping grades early</li><li>Find tutoring or teacher help hours if a class is hard</li><li>Look for a volunteer opportunity your student would actually enjoy</li></ul></div>
+<div class="month"><div class="when">Dec – Jan<span>mid-year</span></div><ul class="chk"><li>Look at first-semester grades: what worked, what didn’t?</li><li>Turn in any hours your school wants logged mid-year</li><li>Update the activities log with awards and roles</li></ul></div>
+<div class="month"><div class="when">Feb – Mar<span>plan 10th grade</span></div><ul class="chk"><li>Course selection for 10th grade: talk about honors and advanced options</li><li>Keep the world language going for a second year</li><li>Ask the counselor about dual enrollment timing</li></ul></div>
+<div class="month"><div class="when">Apr – May<span>finish strong</span></div><ul class="chk"><li>Spring tests: PSAT 8/9 if your school offers it, and end-of-course exams</li><li>Turn in all service hours for the year</li><li>Plan a summer that builds something: a job, volunteering, a program or a project</li></ul></div>
+<div class="month"><div class="when">Summer<span>recharge + grow</span></div><ul class="chk"><li>Volunteer or work (ask your district if summer hours count)</li><li>Read for fun</li><li>Update both logs before school starts</li></ul></div>
+<div class="foot"><span>Small steps every month beat a senior-year scramble.</span><span><b>College Plan · 6</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>Four-year <em>course planner</em></h1>
+<p class="sub">Sketch the plan in pencil with your counselor. Check it each spring at course selection.</p>
+<table class="trk"><thead><tr><th>Subject</th><th>9th grade</th><th>10th grade</th><th>11th grade</th><th>12th grade</th></tr></thead><tbody><tr><th style="height:58px">English</th><td></td><td></td><td></td><td></td></tr><tr><th style="height:58px">Math</th><td></td><td></td><td></td><td></td></tr><tr><th style="height:58px">Science</th><td></td><td></td><td></td><td></td></tr><tr><th style="height:58px">Social studies</th><td></td><td></td><td></td><td></td></tr><tr><th style="height:58px">World language</th><td></td><td></td><td></td><td></td></tr><tr><th style="height:58px">Arts / PE / electives</th><td></td><td></td><td></td><td></td></tr><tr><th style="height:58px">Advanced (Honors, AP, AICE, IB, DE)</th><td></td><td></td><td></td><td></td></tr></tbody></table>
+<h2><span class="n">✓</span> Quick checks</h2>
+<ul class="chk"><li>Algebra 1 and Geometry are on the plan</li><li>Biology 1 and at least two lab sciences</li><li>Two years of the <b>same</b> world language (for Bright Futures)</li><li>Personal financial literacy (½ credit)</li><li>Room for at least one advanced or dual enrollment course</li></ul>
+<div class="foot"><span>Bright Futures uses 16 core credits. Ask the counselor to check the plan.</span><span><b>College Plan · 7</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>Service hour <em>log</em></h1>
+<p class="sub">Write it down the same day. Every entry must be documented and signed by your student, a parent and the organization. Use your district's official form when you turn hours in.</p>
+<table class="trk"><thead><tr><th>Date</th><th>Organization</th><th>What we did</th><th>Hours</th><th>Contact + phone</th><th>Signed?</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<p class="note">Running total: ________ hours. Goal: 100 (or 75 for Medallion volunteer hours). Paid work hours can count too.</p>
+<div class="foot"><span>Your district approves which activities count. Ask before you start.</span><span><b>College Plan · 8</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>Activities + <em>awards log</em></h1>
+<p class="sub">Future applications will ask about activities, awards and jobs. This log turns senior-year guesswork into copy and paste.</p>
+<table class="trk"><thead><tr><th>Activity, award or job</th><th>Grade(s)</th><th>Role / what I did</th><th>Hours per week</th><th>Proud of</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<div class="foot"><span>Include jobs, family responsibilities and personal projects too.</span><span><b>College Plan · 9</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Freshman Roadmap · Plan now, don’t cram later</div></div>
+<h1>Dual enrollment, AP, <em>IB + AICE</em></h1>
+<p class="sub">Four ways to take college-level work in high school. AP, IB, AICE and academic (college-credit) dual enrollment courses earn extra weight in the Bright Futures GPA.</p>
+<div class="cols">
+<div class="box"><h3>Dual enrollment</h3><p>Real college classes through a Florida college or university, counting for high school and college credit. Public school students pay no tuition or fees, and course materials are free. Open to grades 6–12. College-credit courses need a 3.0 unweighted GPA plus a qualifying placement test score; career certificate courses need a 2.0.</p></div>
+<div class="box"><h3>AP (Advanced Placement)</h3><p>College-level courses taught at your high school, with an exam in May. A qualifying score can earn college credit.</p></div>
+<div class="box"><h3>IB (International Baccalaureate)</h3><p>A full two-year diploma program in 11th and 12th grade at participating schools, often with pre-IB courses in 9th and 10th.</p></div>
+<div class="box"><h3>AICE (Cambridge)</h3><p>A program of advanced courses and exams offered at many Florida high schools, with its own AICE diploma.</p></div>
+</div>
+<h2 style="margin-top:12px"><span class="n">?</span> Questions for the counselor</h2>
+<ul class="chk"><li>Which of these does our school offer, and when can my student start?</li><li>Which college is our district’s dual enrollment partner, and what are its deadlines?</li><li>Which placement tests count (PERT, SAT, ACT, PSAT)?</li><li>How do these choices fit the four-year course plan?</li></ul>
+<h2 style="margin-top:12px"><span class="n">→</span> A peek at what's next</h2>
+<ul class="chk"><li><b>10th:</b> add rigor where ready, PSAT 10 in spring, keep logging hours</li><li><b>11th:</b> PSAT/NMSQT in the fall, SAT/ACT/CLT, college list and visits</li><li><b>12th:</b> applications from mid-October, FAFSA and FFAA, scholarships, decide by May 1</li></ul>
+<p class="src" style="margin-top:6px">Sources: Fla. Stat. 1007.271 (dual enrollment), 1003.4282 and 1003.4285 (graduation), Florida Bright Futures Student Handbook 2026–27, College Board. This roadmap is for planning help and isn't official advice; confirm with your school counselor. College Plan is not affiliated with the State of Florida or any school. © 2026 College Plan.</p>
+<div class="foot"><span>collegeplan.beehiiv.com</span><span><b>College Plan · 10</b></span></div></div></body></html>

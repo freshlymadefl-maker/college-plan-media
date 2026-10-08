@@ -1,0 +1,196 @@
+<!doctype html><html><head><meta charset="utf-8"><title>The Florida Senior Year Roadmap</title><style>
+@page { size: Letter; margin: 0; }
+:root { --navy:#0B2A4A; --ink:#22344A; --muted:#55687E; --sky:#EAF3FB; --line:#C9D8E8; --gold:#A8981B; --goldbg:#F7F5E8; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: 'Inter', sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.45; }
+.page { width: 8.5in; height: 11in; padding: 0.55in 0.6in 0.5in; position: relative; page-break-after: always; overflow: hidden; }
+.page:last-child { page-break-after: auto; }
+.top { display:flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--navy); padding-bottom: 10px; }
+.top img { height: 30px; }
+.top .tag { font-family: 'Poppins'; font-size: 8pt; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+h1 { font-family: 'Poppins'; font-weight: 600; font-size: 27pt; line-height: 1.1; color: var(--navy); margin: 22px 0 6px; }
+h1 em { font-family: 'Lora'; font-style: italic; font-weight: 500; color: var(--gold); }
+.sub { font-size: 11.5pt; color: var(--muted); margin: 0 0 18px; max-width: 6.2in; }
+h2 { font-family: 'Poppins'; font-weight: 600; font-size: 13.5pt; color: var(--navy); margin: 18px 0 8px; display:flex; align-items:center; gap:10px; }
+h2 .n { display:inline-flex; width: 22px; height: 22px; border-radius: 50%; background: var(--navy); color:#fff; font-size: 10pt; align-items:center; justify-content:center; }
+.awards { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.card { background: var(--sky); border-radius: 10px; padding: 12px 14px; }
+.card .k { font-family:'Poppins'; font-weight:600; color: var(--navy); font-size: 11.5pt; }
+.card .big { font-family:'Poppins'; font-weight:600; font-size: 20pt; color: var(--navy); line-height:1.1; margin: 4px 0 2px; }
+.card p { margin: 0; color: var(--muted); font-size: 9.5pt; }
+table { width:100%; border-collapse: separate; border-spacing: 0; font-size: 9.8pt; margin-top: 4px; }
+th, td { padding: 7px 9px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { background: var(--navy); color:#fff; font-family:'Poppins'; font-weight: 500; font-size: 9pt; }
+thead th:first-child { border-top-left-radius: 8px; }
+thead th:last-child { border-top-right-radius: 8px; }
+thead th .cls { display:block; font-weight: 400; opacity: .8; font-size: 8pt; }
+tbody th { font-family:'Poppins'; font-weight:500; color: var(--navy); width: 22%; background: #F6F9FC; }
+td.new { background: #FBF8E6; font-weight: 600; color: var(--navy); }
+.note { font-size: 8.6pt; color: var(--muted); margin-top: 6px; }
+.note b { color: var(--navy); }
+.legend { display:inline-block; width:10px; height:10px; background:#FBF8E6; border:1px solid #E6DDA0; vertical-align: -1px; margin-right:4px; }
+.callout { background: var(--goldbg); border-left: 4px solid var(--gold); border-radius: 6px; padding: 10px 14px; margin-top: 14px; font-size: 9.8pt; }
+.callout b { color: var(--navy); }
+.foot { position:absolute; left: 0.6in; right: 0.6in; bottom: 0.38in; display:flex; justify-content: space-between; font-size: 8pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; }
+.foot b { color: var(--navy); white-space: nowrap; }
+.timeline { position: relative; margin-top: 6px; }
+.step { display:grid; grid-template-columns: 1.15in 1fr; gap: 14px; padding: 6px 0; font-size: 10pt; border-bottom: 1px dashed var(--line); }
+.step:last-child { border-bottom: none; }
+.when { font-family:'Poppins'; font-weight:600; color: var(--navy); font-size: 10.5pt; line-height: 1.25; }
+.when span { display:block; font-family:'Inter'; font-weight: 400; color: var(--muted); font-size: 8.5pt; }
+.step ul { margin: 0; padding-left: 16px; }
+.step li { margin: 1px 0; }
+.dl { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
+.dl > div { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.dl .d { font-family:'Poppins'; font-weight: 600; color: var(--navy); font-size: 10.5pt; }
+.dl p { margin: 3px 0 0; font-size: 9.3pt; color: var(--muted); }
+.cta { margin-top: 16px; background: var(--navy); color: #fff; border-radius: 12px; padding: 14px 18px; display:flex; align-items:center; justify-content: space-between; gap: 16px; }
+.cta img { height: 24px; }
+.cta .t { font-family:'Poppins'; font-weight: 600; font-size: 12pt; }
+.cta .s { font-size: 9.3pt; opacity: .85; }
+.cta .u { font-family:'Poppins'; font-weight: 600; background: var(--gold); color:#fff; padding: 7px 12px; border-radius: 999px; font-size: 9.5pt; white-space: nowrap; }
+
+.cols { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.box { border:1px solid var(--line); border-radius:10px; padding:10px 13px; }
+.box h3 { font-family:'Poppins'; font-weight:600; font-size:11pt; color:var(--navy); margin:0 0 4px; }
+.box p { margin:2px 0; font-size:9.6pt; }
+.chk { margin:0; padding:0; list-style:none; }
+.chk li { position:relative; padding-left:20px; margin:4px 0; font-size:10pt; }
+.chk li:before { content:""; position:absolute; left:0; top:2px; width:11px; height:11px; border:1.5px solid #8FA7C0; border-radius:3px; }
+.month { display:grid; grid-template-columns:1.05in 1fr; gap:14px; padding:7px 0; border-bottom:1px dashed var(--line); }
+.month:last-child { border-bottom:none; }
+table.trk td, table.trk th { height:28px; font-size:8.5pt; padding:5px 6px; }
+table.trk tbody td { border-right:1px solid var(--line); }
+table.dates td, table.dates th { font-size:9pt; padding:5px 8px; }
+table.dates td:first-child { font-family:'Poppins'; font-weight:600; color:var(--navy); white-space:nowrap; width:1.05in; }
+.lines { border-bottom:1px solid var(--line); height:24px; }
+.cover { background: linear-gradient(160deg,#0E3359 0%,#0B2A4A 60%,#081F38 100%); color:#fff; padding:0.9in 0.8in; }
+.cover .pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:9pt; letter-spacing:.16em; text-transform:uppercase; background:#B5A21F; color:#fff; border-radius:999px; padding:7px 14px; }
+.cover h1 { color:#fff; font-size:40pt; margin:28px 0 10px; line-height:1.04; }
+.cover h1 em { color:#F1E27A; }
+.cover .lead { font-size:14pt; color:#C9DAEC; max-width:5.8in; line-height:1.45; }
+.cover .inside { margin-top:40px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.18); border-radius:14px; padding:18px 22px; }
+.cover .inside h3 { font-family:'Poppins'; font-size:11pt; letter-spacing:.12em; text-transform:uppercase; color:#F1E27A; margin:0 0 8px; }
+.cover .inside ol { margin:0; padding-left:20px; columns:2; column-gap:28px; font-size:10.5pt; line-height:1.7; color:#E6EEF7; }
+.cover .brand { position:absolute; left:0.8in; right:0.8in; bottom:0.7in; display:flex; justify-content:space-between; align-items:flex-end; font-size:9pt; color:#9FB6CF; }
+.cover .brand img { height:34px; }
+.big2 { font-family:'Poppins'; font-weight:600; font-size:15pt; color:var(--navy); margin:0; }
+.tag2 { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:8pt; letter-spacing:.1em; text-transform:uppercase; color:#fff; background:var(--navy); border-radius:999px; padding:3px 9px; margin-right:6px; }
+.grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+.grid4 .box h3 { font-size:10.5pt; }
+.grid4 .box li { font-size:9pt; }
+.src { font-size:8pt; color:var(--muted); line-height:1.5; }
+/* roomier sizing for the paid guides */
+.page:not(.cover) { font-size:11.4pt; }
+.page h1 { font-size:30pt; margin-top:26px; }
+.page .sub { font-size:12.5pt; margin-bottom:20px; }
+.page h2 { font-size:15pt; margin:24px 0 10px; }
+.chk li { font-size:11pt; margin:5px 0; padding-left:24px; }
+.chk li:before { width:13px; height:13px; top:3px; }
+.box { padding:14px 16px; }
+.box h3 { font-size:12.5pt; margin-bottom:6px; }
+.box p { font-size:10.8pt; line-height:1.5; }
+.cols { gap:14px; }
+.month { padding:8px 0; grid-template-columns:1.2in 1fr; }
+table.tight td, table.tight th { padding:5px 9px; font-size:9.8pt; }
+table.dates.sm td, table.dates.sm th { font-size:9pt; padding:4px 8px; }
+.when { font-size:12pt; }
+.when span { font-size:9.5pt; }
+.callout { font-size:11pt; padding:13px 16px; margin-top:18px; }
+table.dates td, table.dates th { font-size:10pt; padding:7px 9px; }
+table.trk td, table.trk th { height:34px; font-size:9pt; }
+table th, table td { font-size:10.4pt; padding:9px 10px; }
+.grid4 .box li { font-size:10pt; }
+.grid4 .box h3 { font-size:11.5pt; }
+.note { font-size:9.6pt; }
+.lines { height:30px; }
+.small .box p { font-size:9.8pt; line-height:1.4; }
+.small .box { padding:10px 13px; }
+.cover .lead { font-size:16pt; }
+.cover h1 { font-size:46pt; }
+.cover .inside { margin-top:56px; padding:24px 28px; }
+.cover .inside ol { font-size:12pt; line-height:1.9; }
+</style></head><body><div class="page cover"><span class="pill">Class of 2027 · Florida</span><h1>The Florida Senior Year <em>Roadmap</em></h1><p class="lead">Every deadline, form and step for senior year, month by month, so nothing slips through the cracks. Made for Florida families.</p>
+<div class="inside"><h3>What's inside</h3><ol><li>Senior year at a glance</li><li>Key dates: UF, FSU, UCF, USF, FIU, FAU</li><li>SAT and ACT dates for 2026–27</li><li>Month-by-month checklist</li><li>Bright Futures: the senior checklist</li><li>FAFSA + FFAA step by step</li><li>Application tracker</li><li>Scholarship tracker</li><li>Compare aid offers</li><li>Questions for financial aid offices</li></ol></div>
+<div class="brand"><img src="../wordmark_white.png" alt="College Plan"><span>For personal use by the purchasing family. Please don't share or resell.<br>Not affiliated with the State of Florida or any university.</span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<h1>Senior year <em>at a glance</em></h1>
+<p class="sub">Five things decide how smoothly senior year goes. Everything else in this roadmap supports these.</p>
+<div class="cols">
+<div class="box"><h3>1. Know every deadline</h3><p>Early deadlines at Florida universities start <b>October 15</b>. Write each school's dates in the tracker (page 8) the first week of school.</p></div>
+<div class="box"><h3>2. File two aid forms</h3><p>The <b>FAFSA</b> (federal aid) and the <b>FFAA</b> (Florida's form for Bright Futures and state aid). They are separate. You need both.</p></div>
+<div class="box"><h3>3. Lock in Bright Futures</h3><p>GPA, test score, service or work hours, then the FFAA. Ask the counselor for a Bright Futures evaluation in the fall.</p></div>
+<div class="box"><h3>4. Ask early, follow up</h3><p>Check which schools want recommendation letters (UF and UCF don't use them). If needed, ask teachers <b>3–4 weeks</b> ahead. Check every portal weekly.</p></div>
+</div>
+<div class="box" style="margin-top:12px"><h3>5. Compare real costs before May 1</h3><p>Acceptance letters arrive first, then aid offers. Compare what you'd actually pay at each school (page 10) before paying a deposit. UF, FSU, FIU and FAU list <b>May 1</b> as the deposit deadline for Early Action and regular admits. Early Decision deposits are due much sooner.</p></div>
+<h2><span class="n">✓</span> This month's quick wins</h2>
+<ul class="chk"><li>Make a list of every school your student is applying to, with the plan for each (Early Decision, Early Action or regular)</li><li>Create StudentAid.gov accounts for your student and each parent who must be a FAFSA contributor (usually one)</li><li>Find the school counselor’s email and ask for a Bright Futures evaluation</li><li>Put one 20-minute “college check-in” on the family calendar every week this fall</li></ul>
+<div class="callout"><b>How to use this roadmap:</b> Read it once now. Then each month, open the month-by-month checklist (pages 4–5), check things off, and update the trackers. Use pencil, because dates and plans change.</div>
+<div class="foot"><span>Dates change. Always confirm on each school’s official admissions site.</span><span><b>College Plan · 2</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<h1>Key dates for <em>Florida seniors</em></h1>
+<p class="sub">From each university's 2026–27 freshman deadline page and the federal and state aid calendars. Some school pages don't print a year, so double-check before you rely on a date.</p>
+<table class="dates sm"><thead><tr><th>Date</th><th>What's due</th></tr></thead><tbody><tr><td>Sept 23, 2026</td><td>The 2027–28 FAFSA opened (uses 2025 tax information)</td></tr><tr><td>Oct 1</td><td>FFAA opens (Florida’s application for Bright Futures and state aid)</td></tr><tr><td>Oct 15</td><td>UF Early Decision (binding) · FSU Early Decision and Early Action (EA for Florida residents) · UCF Early Action · FAU Early Action</td></tr><tr><td>Oct 22</td><td>UF STARS self-reported record due (ED) · FSU and FAU early materials due</td></tr><tr><td>Nov 1</td><td>UF Early Action (STARS due Nov 8)</td></tr><tr><td>Nov 2</td><td>USF Early Action · FIU Early Action (FIU: all documents due the same day)</td></tr><tr><td>Nov 15–16</td><td>UCF early materials due (Nov 15) · USF early materials due (Nov 16)</td></tr><tr><td>Dec 1</td><td>FSU regular deadline</td></tr><tr><td>Dec 4–17</td><td>Early decisions arrive: UCF and FAU (Dec 4), USF (Dec 9), FIU (Dec 10), UF ED (Dec 11), FSU (Dec 17)</td></tr><tr><td>Dec 16</td><td>USF regular deadline · FIU regular deadline</td></tr><tr><td>Jan 8, 2027</td><td>UF Early Decision admits: confirm and pay the non-refundable $200 deposit, or the admission is canceled</td></tr><tr><td>Jan 15</td><td>UF regular deadline (STARS Jan 22) · FSU Early Decision deposit due · USF regular materials and scholarship deadline · FAU merit scholarship deadline</td></tr><tr><td>Jan 22</td><td>UF Early Action decisions</td></tr><tr><td>Feb–Mar</td><td>Regular decisions: USF (Feb 10), FSU (Feb 18), UF (Mar 19). Rolling deadlines: FSU and USF (Mar 1), FIU final (Mar 2), FAU (Mar 12)</td></tr><tr><td>May 1</td><td>UCF regular deadline · Deposit deadline (Early Action and regular admits) at UF, FSU, FIU and FAU</td></tr><tr><td>Aug 31, 2027</td><td>FFAA final deadline · Last test date that counts for Bright Futures</td></tr></tbody></table>
+<div class="callout" style="margin-top:10px"><b>Early Decision is binding.</b> If admitted Early Decision (UF and FSU both offer it this year), your student commits to attend. Early Action is not binding. When in doubt, choose Early Action.</div>
+<div class="foot"><span>Sources: admissions.ufl.edu, admissions.fsu.edu, ucf.edu, usf.edu, admissions.fiu.edu, fau.edu, studentaid.gov, FloridaBrightFutures.gov.</span><span><b>College Plan · 3</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<h1>Month by <em>month</em></h1>
+<p class="sub">Check off each item as you go. If you're starting late, begin with the current month and use “Key dates” to catch up.</p>
+<div class="month"><div class="when">Aug – Sept<span>set the plan</span></div><ul class="chk"><li>Finalize the college list and each school’s plan (ED, EA or regular)</li><li>If a school wants recommendation letters (UF and UCF don’t), ask teachers 3–4 weeks before the deadline</li><li>Create StudentAid.gov accounts for your student and each parent contributor</li><li>Draft the main essay and list each school’s supplemental essays</li><li>Register for a fall SAT or ACT if your student needs a higher score</li></ul></div>
+<div class="month"><div class="when">October<span>early deadlines</span></div><ul class="chk"><li>File the FAFSA (it opened Sept 23) and save the confirmation</li><li>File the FFAA once it opens Oct 1</li><li>Submit applications due Oct 15, then complete UF STARS or other self-reported records</li><li>Ask the counselor for a Bright Futures evaluation</li><li>Check every portal for missing items</li></ul></div>
+<div class="month"><div class="when">November<span>keep it moving</span></div><ul class="chk"><li>Submit Nov 1–2 Early Action applications (UF, USF, FIU)</li><li>Send official test scores to schools that require them</li><li>Turn in early materials by each school’s deadline</li><li>Retake the SAT or ACT if needed for Bright Futures or admissions</li></ul></div>
+<div class="month"><div class="when">December<span>decisions start</span></div><ul class="chk"><li>Watch for early decisions (they start Dec 4 at UCF and FAU)</li><li>Submit regular applications (FSU Dec 1, USF and FIU Dec 16)</li><li>Apply for at least two scholarships</li><li>Celebrate every win, and take a breath after any “no”</li></ul></div>
+<div class="foot"><span>Dates change. Confirm on each school’s official site.</span><span><b>College Plan · 4</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<div style="height:10px"></div>
+<div class="month"><div class="when">January<span>regular round</span></div><ul class="chk"><li>Submit UF’s regular application (Jan 15) and STARS (Jan 22)</li><li>Check scholarship deadlines (USF and FAU merit: Jan 15)</li><li>Review the FAFSA Submission Summary for errors</li><li>Send mid-year grades if a school asks for them</li></ul></div>
+<div class="month"><div class="when">Feb – March<span>finish strong</span></div><ul class="chk"><li>Track regular decisions in the application tracker</li><li>Make sure service or work hours are documented and turned in (your district sets the deadline)</li><li>Spring and summer test dates still count for Bright Futures (tests taken through Aug 31)</li><li>Keep grades up: admission offers can depend on final grades</li></ul></div>
+<div class="month"><div class="when">April<span>compare + choose</span></div><ul class="chk"><li>Compare aid offers side by side (page 10)</li><li>Visit admitted-student days at your top choices</li><li>Ask financial aid offices about anything unclear in an offer</li><li>Decide as a family</li></ul></div>
+<div class="month"><div class="when">May<span>commit</span></div><ul class="chk"><li>Pay the deposit by the school’s deadline (often May 1)</li><li>Let the other schools know your student won’t be attending</li><li>Sign up for orientation and housing at the chosen school</li></ul></div>
+<div class="month"><div class="when">June – Aug<span>last steps</span></div><ul class="chk"><li>Request the final transcript be sent to the chosen school</li><li>If the FFAA isn’t done, submit it by Aug 31, 2027</li><li>Last Bright Futures test chances: June 5 SAT, June 12 and July 10 ACT, Aug 28 SAT (anticipated). Tests count through Aug 31, 2027</li></ul></div>
+<h2 style="margin-top:14px"><span class="n">✎</span> Test dates for 2026–27</h2>
+<div class="cols"><div><table class="dates sm"><thead><tr><th>SAT date</th><th>Register by</th></tr></thead><tbody><tr><td>Nov 7, 2026</td><td>Oct 23</td></tr><tr><td>Dec 5, 2026</td><td>Nov 20</td></tr><tr><td>Mar 6, 2027</td><td>Feb 19</td></tr><tr><td>May 1, 2027</td><td>Apr 16</td></tr><tr><td>June 5, 2027</td><td>May 21</td></tr></tbody></table></div>
+<div><table class="dates sm"><thead><tr><th>ACT date</th><th>Register by</th></tr></thead><tbody><tr><td>Oct 17, 2026</td><td>Sept 11</td></tr><tr><td>Dec 12, 2026</td><td>Nov 6</td></tr><tr><td>Feb 27, 2027</td><td>Jan 22</td></tr><tr><td>Apr 10, 2027</td><td>Mar 5</td></tr><tr><td>June 12, 2027</td><td>May 7</td></tr><tr><td>July 10, 2027</td><td>June 4</td></tr></tbody></table></div></div>
+<div class="foot"><span>Test dates: College Board and ACT (2026–27). Late registration costs extra.</span><span><b>College Plan · 5</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<h1>Bright Futures: <em>the senior checklist</em></h1>
+<p class="sub">Bright Futures is Florida's biggest scholarship. Requirements for the Class of 2027:</p>
+<table class="tight"><thead><tr><th></th><th>Florida Academic Scholars</th><th>Florida Medallion Scholars</th></tr></thead><tbody>
+<tr><th>Pays</th><td>100% of tuition and applicable fees at Florida public colleges and universities</td><td>75% of tuition and applicable fees at Florida public universities (100% for an associate degree at a Florida College System school)</td></tr>
+<tr><th>Bright Futures GPA</th><td>3.50 weighted</td><td>3.00 weighted</td></tr>
+<tr><th>Test score (one of)</th><td>SAT 1330 · ACT 29 · CLT 95</td><td>SAT 1190 · ACT 24 · CLT 82</td></tr>
+<tr><th>Hours</th><td>100 volunteer hours, 100 paid work hours, or a combination totaling 100</td><td>75 volunteer hours, 100 paid work hours, or a combination totaling 100</td></tr>
+</tbody></table>
+<p class="note">The Bright Futures GPA uses 16 core credits: 4 English, 4 math (Algebra 1 or higher), 3 natural science, 3 social science and 2 credits of the same world language. Honors, AP, IB, AICE and academic dual enrollment courses earn extra weight.</p>
+<h2 style="margin-top:16px"><span class="n">1</span> This fall</h2>
+<ul class="chk"><li>Ask the counselor for a Bright Futures evaluation: where does your student stand on GPA, test score and hours?</li><li>If a score is short, register for the next SAT, ACT or CLT. Students can test as many times as they want</li><li>Count documented hours. Each one must be signed by your student, a parent and the organization, plus any reflection your district requires</li></ul>
+<h2 style="margin-top:12px"><span class="n">2</span> Apply: the FFAA</h2>
+<ul class="chk"><li>Submit the Florida Financial Aid Application (FFAA). It opens Oct 1 of senior year</li><li>Final deadline: <b>Aug 31, 2027</b>, with no exceptions. File it in the fall and save the confirmation</li></ul>
+<h2 style="margin-top:12px"><span class="n">3</span> Before graduation</h2>
+<ul class="chk"><li>Turn in all hours by your district’s deadline</li><li>Finish the 16 core credits with the GPA you need (tests taken by Aug 31, 2027 still count)</li></ul>
+<div class="callout" style="margin-top:10px"><b>Not automatic:</b> Even a student who meets every requirement gets nothing without the FFAA. Mid-year graduates have different deadlines; ask the counselor.</div>
+<div class="foot"><span>Source: Florida Bright Futures Student Handbook 2026–27 and FAS/FMS requirements (FloridaBrightFutures.gov).</span><span><b>College Plan · 6</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<h1>FAFSA + FFAA, <em>step by step</em></h1>
+<p class="sub">Two forms, two purposes. Do both in the fall of senior year.</p>
+<div class="cols">
+<div class="box"><h3>FAFSA (federal)</h3><p>Opens the door to Pell Grants, work-study, federal loans and many colleges' own aid, plus Florida need-based grants. The 2027–28 FAFSA opened Sept 23, 2026 and uses <b>2025</b> tax information.</p></div>
+<div class="box"><h3>FFAA (Florida)</h3><p>Florida's application for Bright Futures and other state scholarships and grants. Opens Oct 1 of senior year. Final deadline Aug 31 after graduation.</p></div>
+</div>
+<h2><span class="n">1</span> FAFSA checklist</h2>
+<ul class="chk"><li>Your student and each parent contributor create a StudentAid.gov account (usually one parent; both if married parents filed taxes separately)</li><li>Gather your 2025 federal tax return and any untaxed income records</li><li>Your student starts the FAFSA and invites the parent as a “contributor”</li><li>Every contributor gives consent to share tax information. Without it, no federal aid</li><li>List every college your student is applying to</li><li>Submit, then save the confirmation and review the FAFSA Submission Summary</li><li>Check each college’s financial aid priority date. Many are earlier than you’d expect</li></ul>
+<h2><span class="n">2</span> FFAA checklist</h2>
+<ul class="chk"><li>Your student completes the FFAA on Florida’s student financial aid website</li><li>Use your student’s legal name and Social Security number exactly as the school has them</li><li>Submit and save the confirmation</li><li>If your student graduates mid-year, the deadline is Dec 31</li></ul>
+<h2><span class="n">3</span> Also check</h2>
+<ul class="chk"><li>Does any school on the list require the CSS Profile? (Mostly private colleges.)</li><li>Does any school require a separate scholarship application?</li><li>Are there county or local scholarships through your high school?</li></ul>
+<div class="foot"><span>Sources: studentaid.gov (2027–28 FAFSA), FloridaBrightFutures.gov (FFAA).</span><span><b>College Plan · 7</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<h1>Application <em>tracker</em></h1>
+<p class="sub">One row per school. Write each deadline one week early: portals get slow on deadline day.</p>
+<table class="trk"><thead><tr><th>School</th><th>Plan<br>(ED/EA/RD)</th><th>Deadline</th><th>Essays</th><th>Self-report<br>(e.g. STARS)</th><th>Scores sent</th><th>Recs<br>(if required)</th><th>Submitted ✓</th><th>Decision</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<div class="foot"><span>Update weekly. Check every portal for missing items.</span><span><b>College Plan · 8</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<h1>Scholarship <em>tracker</em></h1>
+<p class="sub">Apply for a couple every month instead of a pile in spring. Local scholarships often have fewer applicants.</p>
+<table class="trk"><thead><tr><th>Scholarship</th><th>Amount</th><th>Deadline</th><th>What it needs</th><th>Submitted ✓</th><th>Result</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<div class="callout"><b>Where to look:</b> your high school's counseling office, each university's scholarship page, your county's education foundation, employers, churches and community groups.</div>
+<div class="foot"><span>Never pay to apply for a scholarship.</span><span><b>College Plan · 9</b></span></div></div><div class="page"><div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">Florida Senior Year Roadmap · Class of 2027</div></div>
+<h1>Compare <em>aid offers</em></h1>
+<p class="sub">Aid letters look different at every school. Put them side by side before paying a deposit.</p>
+<table class="trk"><thead><tr><th></th><th>School 1</th><th>School 2</th><th>School 3</th></tr></thead><tbody><tr><th>Cost of attendance (tuition, fees, housing, food, books)</th><td></td><td></td><td></td></tr><tr><th>Bright Futures</th><td></td><td></td><td></td></tr><tr><th>Grants (free money)</th><td></td><td></td><td></td></tr><tr><th>Scholarships (free money)</th><td></td><td></td><td></td></tr><tr><th>Total free money</th><td></td><td></td><td></td></tr><tr><th>Cost minus free money</th><td></td><td></td><td></td></tr><tr><th>Loans offered</th><td></td><td></td><td></td></tr><tr><th>Work-study</th><td></td><td></td><td></td></tr><tr><th>What we would actually pay per year</th><td></td><td></td><td></td></tr></tbody></table>
+<h2><span class="n">?</span> Questions to ask each financial aid office</h2>
+<ul class="chk"><li>Is this aid renewable every year? What GPA or credits does it require?</li><li>How does Bright Futures combine with your scholarships?</li><li>Will this offer change if we have new information (like a job change)?</li><li>When is the deposit due, and is it refundable?</li></ul>
+<p class="src" style="margin-top:16px">This roadmap is for planning help only and isn't official advice. Requirements and dates can change; confirm with your school counselor, each university and FloridaBrightFutures.gov. College Plan is not affiliated with the State of Florida or any university. © 2026 College Plan.</p>
+<div class="foot"><span>collegeplan.beehiiv.com</span><span><b>College Plan · 10</b></span></div></div></body></html>
