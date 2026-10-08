@@ -47,7 +47,7 @@ p1 = f"""<div class="page">{top('Referral reward · Florida parents')}
 {g('8th grade', 'and the summer after', [
  'Ask which middle school courses earn high school credit (like Algebra 1 or a world language)',
  'Plan a 9th-grade schedule with the right level of challenge for your student',
- 'Start a service-hour log: hours for Bright Futures can count starting the summer after 8th grade',
+ 'Start a service-hour log: Bright Futures hours count during high school (ask your district whether the summer before 9th grade counts)',
  'Make one folder (paper or digital) for awards, report cards and certificates'])}
 {g('9th grade', 'grades start to count', [
  'Know that core-course grades count toward the Bright Futures GPA from day one',
