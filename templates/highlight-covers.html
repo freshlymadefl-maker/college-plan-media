@@ -95,28 +95,22 @@ svg.ic .w { fill:#FFFFFF; }
 </div>
 <div class="ns" id="ns1-clean" style="display:none"></div>
 
-<!-- tl-story: Tools Story to post manually with LINK stickers in the two dashed spots, then save to the Tools highlight -->
+<!-- tl-story: evergreen first slide for the Tools highlight (tool Stories get added after it) -->
 <style>
-.tsy { background:linear-gradient(165deg,#EEFCF6 0%,#CDF3E4 45%,#A4E8CF 100%); }
+.tsy { background:linear-gradient(165deg,#EEFCF6 0%,#CDF3E4 45%,#A4E8CF 100%); display:flex; flex-direction:column; align-items:center; text-align:center; padding:0 90px; }
+.tsy .icw { margin-top:430px; width:300px; height:300px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 20px 50px rgba(19,121,91,.18); }
+.tsy .icw svg { width:190px; height:190px; fill:none; stroke:#0B2A4A; stroke-width:7.5; stroke-linecap:round; stroke-linejoin:round; }
+.tsy h1 { font-size:104px; margin-top:70px; }
 .tsy h1 em { color:#13795B; }
-.tcard { background:rgba(255,255,255,.9); border-radius:30px; padding:34px 36px 30px; margin-top:34px; }
-.tcard .hd { display:flex; gap:22px; align-items:center; font-family:'Poppins'; font-weight:700; font-size:42px; color:#0B2A4A; }
-.tcard .hd span { font-size:52px; }
-.tcard p { font-size:31px; line-height:1.4; color:#41546A; margin-top:12px; }
-.tcard .slot2 { margin:24px auto 0; width:520px; height:110px; border:5px dashed rgba(11,42,74,.3); border-radius:26px; display:flex; align-items:center; justify-content:center; font-family:'Poppins'; font-weight:600; font-size:27px; color:rgba(11,42,74,.42); }
+.tsy .sub { font-size:40px; line-height:1.4; color:#41546A; margin-top:34px; max-width:820px; }
+.tsy .tap { margin-top:80px; display:inline-flex; gap:16px; align-items:center; background:#0B2A4A; color:#fff; font-family:'Poppins'; font-weight:600; font-size:36px; border-radius:999px; padding:22px 44px; }
+.tsy .bio { margin-top:30px; font-family:'Poppins'; font-weight:600; font-size:30px; color:#13795B; letter-spacing:.04em; }
 </style>
-<div class="ns tsy" id="tl-story" style="padding-top:250px">
-  <span class="pill">Free tools</span>
-  <h1 style="font-size:90px">Made for <em>Florida parents.</em></h1>
-  <div class="tcard">
-    <div class="hd"><span>⏰</span>Deadline Calendar</div>
-    <p>Every Florida college deadline on your phone, with a reminder the day before.</p>
-    <div class="slot2">link sticker here</div>
-  </div>
-  <div class="tcard">
-    <div class="hd"><span>🎓</span>Bright Futures Checker</div>
-    <p>See if your student is on track, and exactly what's missing.</p>
-    <div class="slot2">link sticker here</div>
-  </div>
+<div class="ns tsy" id="tl-story">
+  <div class="icw"><svg viewBox="0 0 100 100"><rect x="26" y="14" width="48" height="74" rx="11"/><path d="M43 22 H57"/><path d="M37 46 l7 7 l14 -15"/><path d="M38 66 H62 M38 75 H54"/></svg></div>
+  <h1>Free <em>tools</em></h1>
+  <p class="sub">Simple, free tools that make Florida college planning easier for parents.</p>
+  <div class="tap">Tap to see each one →</div>
+  <div class="bio">ALL TOOLS: LINK IN BIO</div>
 </div>
 </body></html>
