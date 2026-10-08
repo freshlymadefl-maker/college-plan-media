@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Roadmaps product Reel (1080x1920), voiceover tts/out/roadmaps.mp3. Scenes switch on word indices from roadmaps.words.js.
+     Render: python3 render-fast.py roadmaps-reel.html ../../instagram/2026-10-roadmaps/roadmaps-reel.mp4 32.5 24 ../../tts/out/roadmaps.mp3 -->
+<style>
+:root { --navy:#0B2A4A; --gold:#B5A21F; --gold2:#F1E27A; --blue:#5B8DC9; }
+* { box-sizing:border-box; margin:0; }
+body { width:1080px; height:1920px; overflow:hidden; background:linear-gradient(165deg,#0E3359 0%,#0B2A4A 55%,#081F38 100%); font-family:'Inter',sans-serif; position:relative; }
+.top { position:absolute; left:70px; right:70px; top:250px; text-align:center; }
+.chip { display:inline-block; font-family:'Poppins'; font-weight:700; font-size:32px; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:14px 34px; }
+.title { margin-top:24px; font-family:'Poppins'; font-weight:700; font-size:76px; line-height:1.05; color:#fff; }
+.title em { font-family:'Lora'; font-weight:500; color:var(--gold2); }
+.stage { position:absolute; left:0; right:0; top:560px; height:820px; }
+.pg { position:absolute; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 40px 90px rgba(0,0,0,.55); will-change:transform,opacity; }
+.pg img { display:block; width:100%; }
+.cap { position:absolute; left:60px; right:60px; top:1420px; text-align:center; font-family:'Poppins'; font-weight:800; font-size:66px; line-height:1.12; color:#fff; text-shadow:0 6px 30px rgba(0,0,0,.5); }
+.cap span { display:inline-block; margin:0 6px; }
+.cap span.on { color:var(--gold2); }
+.foot { position:absolute; left:0; right:0; bottom:250px; text-align:center; }
+.foot img { height:58px; opacity:.95; }
+.big { position:absolute; left:80px; right:80px; top:640px; text-align:center; font-family:'Poppins'; font-weight:700; font-size:120px; line-height:1.02; color:#fff; }
+.big em { font-family:'Lora'; font-weight:500; color:var(--gold2); }
+.prices { position:absolute; left:90px; right:90px; top:620px; display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+.prices .c { background:#fff; border-radius:28px; padding:26px 26px 30px; text-align:center; }
+.prices img { width:100%; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,.2); }
+.prices b { display:block; font-family:'Poppins'; font-size:64px; color:var(--navy); margin-top:18px; line-height:1; }
+.prices small { display:block; font-size:26px; color:#5E7186; margin-top:8px; }
+.linkbtn { position:absolute; left:50%; top:1300px; transform:translateX(-50%); background:var(--gold); color:#fff; font-family:'Poppins'; font-weight:700; font-size:46px; border-radius:999px; padding:22px 56px; white-space:nowrap; }
+</style></head>
+<body>
+<div class="top"><span class="chip" id="chip"></span><div class="title" id="title"></div></div>
+<div class="stage" id="stage"></div>
+<div class="big" id="big" style="opacity:0">Plan now.<br><em>Don't cram<br>later.</em></div>
+<div id="end" style="opacity:0">
+  <div class="prices">
+    <div class="c"><img src="../products/pages/sr-01.png"><b>$15</b><small>Senior Year Roadmap</small></div>
+    <div class="c"><img src="../products/pages/fr-01.png"><b>$12</b><small>Freshman Roadmap</small></div>
+  </div>
+  <div class="linkbtn">Link in bio</div>
+</div>
+<div class="cap" id="cap"></div>
+<div class="foot"><img src="../wordmark_white.png"></div>
+<script src="roadmaps.words.js"></script>
+<script>
+const W = window.WORDS;
+const P = n => '../products/pages/' + n + '.png';
+// pages: [src, x(center px), y(top px within stage), width, rotation]
+const SCENES = [
+  { w:0,  chip:'New',              title:'Printable <em>roadmaps</em>',            pages:[[P('sr-01'),330,40,440,-6],[P('fr-01'),750,40,440,6]] },
+  { w:10, chip:'For seniors',      title:'Senior Year <em>Roadmap</em>',           pages:[[P('sr-01'),540,0,600,-2]] },
+  { w:15, chip:'Class of 2027',    title:'Every <em>deadline</em>',                pages:[[P('sr-03'),540,0,620,2]] },
+  { w:20, chip:'Step by step',     title:'FAFSA <em>+ FFAA</em>',                  pages:[[P('sr-07'),540,0,620,-2]] },
+  { w:31, chip:'Stay organized',   title:'Trackers <em>for it all</em>',          pages:[[P('sr-08'),270,60,420,-7],[P('sr-10'),810,60,420,7],[P('sr-09'),540,20,460,0]] },
+  { w:39, chip:'8th + 9th grade',  title:'The Freshman <em>Roadmap</em>',          pages:[[P('fr-01'),540,0,600,2]] },
+  { w:47, chip:'Start early',      title:'Bright Futures <em>explained</em>',     pages:[[P('fr-04'),540,0,620,-2]] },
+  { w:51, chip:'9th to 12th',      title:'A four-year <em>game plan</em>',        pages:[[P('fr-05'),540,0,620,2]] },
+  { w:55, chip:'Keep track',       title:'Hours + <em>activities logs</em>',      pages:[[P('fr-08'),330,40,440,-6],[P('fr-09'),750,40,440,6]] },
+  { w:62, chip:'Our motto',        title:'', pages:[], big:true },
+  { w:67, chip:'Instant PDF',      title:'Get <em>yours</em>', pages:[], end:true },
+];
+const starts = SCENES.map(s => s.w === 0 ? 0 : W[s.w].t - 200);
+const stage = document.getElementById('stage');
+// build page elements per scene
+SCENES.forEach((s,si) => { s.els = s.pages.map(([src,x,y,w,r]) => { const d = document.createElement('div'); d.className='pg';
+  d.style.cssText = `width:${w}px;left:${x-w/2}px;top:${y}px;opacity:0`; d.innerHTML = `<img src="${src}">`; d.dataset.r = r; stage.appendChild(d); return d; }); });
+// captions: up to 3 words, break at scene starts
+const sceneWord = new Set(SCENES.map(s=>s.w)); const chunks = []; { let cur=[];
+  W.forEach((w,i)=>{ if (sceneWord.has(i) && cur.length){chunks.push(cur);cur=[];} cur.push(i); const nx=W[i+1]; if (cur.length===3 || (nx && nx.t-(w.t+w.d)>300) || w.w.length>11 && cur.length===2){chunks.push(cur);cur=[];} }); if(cur.length) chunks.push(cur); }
+const total = W[W.length-1].t + W[W.length-1].d;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)); const ease=x=>1-Math.pow(1-x,3);
+window.setT = function(t){
+  let si=0; starts.forEach((s,i)=>{ if(t>=s) si=i; }); const sc=SCENES[si];
+  document.getElementById('chip').textContent = sc.chip; document.getElementById('title').innerHTML = sc.title;
+  SCENES.forEach((s,i)=>{ const local=t-starts[i]; const on=i===si;
+    s.els.forEach((el,k)=>{ const a = on ? ease(clamp((local-k*120)/450)) : 0; const r=+el.dataset.r;
+      el.style.opacity = a; el.style.transform = `translateY(${(1-a)*120}px) rotate(${r*(0.6+0.4*a)}deg) scale(${0.96+0.04*a+0.02*clamp(local/4000)})`; }); });
+  const big=document.getElementById('big'); const bl=t-starts[9]; big.style.opacity = si===9 ? ease(clamp(bl/350)) : 0; big.style.transform=`scale(${0.94+0.06*ease(clamp(bl/600))})`;
+  const end=document.getElementById('end'); end.style.opacity = si===10 ? ease(clamp((t-starts[10])/400)) : 0;
+  let ci=-1; chunks.forEach((c,i)=>{ if(t>=W[c[0]].t-60) ci=i; }); const cap=document.getElementById('cap');
+  if (ci>=0){ const c=chunks[ci]; let cur=-1; c.forEach(i=>{ if(t>=W[i].t-40) cur=i; });
+    cap.innerHTML = c.map(i=>`<span class="${i===cur?'on':''}">${W[i].w.replace(/[.,]$/,'')}</span>`).join(' ');
+    cap.style.opacity = t > total + 300 ? 0 : 1; }
+};
+setT(0);
+</script>
+</body></html>

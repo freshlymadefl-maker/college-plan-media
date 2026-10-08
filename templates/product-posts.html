@@ -1,0 +1,188 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- College Plan PAID PRODUCT posts (Roadmaps). Page images: products/pages/{sr,fr}-NN.png (pdftoppm -r 150 of the PDFs).
+  Feed 1080x1350: sr1..sr5 Senior Year Roadmap carousel · fr1..fr5 Freshman Roadmap carousel.
+  Stories 1080x1920: rs1 both roadmaps launch · rs2 senior · rs3 freshman.
+  Render one element at a time (hide the other top-level divs first). -->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --sky2:#D4E6F7; --gold:#B5A21F; --gold2:#F1E27A; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.s { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:var(--ink); background:linear-gradient(160deg,#F4F9FE 0%,var(--sky) 45%,var(--sky2) 100%); padding:96px 90px 0; }
+.st { height:1920px; padding:260px 90px 0; }
+.dark { background:linear-gradient(160deg,#0E3359 0%,var(--navy) 60%,#081F38 100%); color:#fff; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:12px 26px; }
+.pill.ghost { background:#fff; color:var(--navy); }
+h1 { font-family:'Poppins'; font-weight:700; font-size:84px; line-height:1.02; letter-spacing:-0.02em; color:var(--navy); margin-top:26px; }
+.dark h1 { color:#fff; }
+h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; letter-spacing:0; color:var(--blue); }
+.dark h1 .g { color:var(--gold2); }
+.sub { font-size:32px; line-height:1.4; color:var(--muted); margin-top:22px; max-width:880px; }
+.dark .sub { color:#C9DAEC; }
+.foot { position:absolute; left:90px; right:90px; bottom:60px; display:flex; justify-content:space-between; align-items:center; z-index:6; }
+.foot img { height:44px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:25px; letter-spacing:.06em; color:var(--navy); }
+.dark .foot .sw { color:#fff; }
+.st .foot { bottom:300px; }
+/* page mockups */
+.pg { position:absolute; background:#fff; border-radius:8px; box-shadow:0 30px 70px rgba(8,31,56,.35), 0 4px 12px rgba(8,31,56,.18); overflow:hidden; }
+.pg img { display:block; width:100%; }
+.dark .pg { box-shadow:0 34px 80px rgba(0,0,0,.55); }
+.tag { position:absolute; z-index:5; font-family:'Poppins'; font-weight:700; font-size:26px; color:var(--navy); background:var(--gold2); border-radius:999px; padding:12px 26px; box-shadow:0 10px 30px rgba(0,0,0,.25); }
+/* crop window: zoom into part of a page */
+.crop { position:absolute; border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 30px 70px rgba(8,31,56,.3); }
+.crop img { position:absolute; }
+/* CTA list */
+.list { margin-top:44px; display:grid; gap:20px; }
+.list div { display:flex; gap:20px; align-items:center; font-size:34px; color:#fff; font-weight:500; }
+.list div:before { content:"✓"; flex:none; width:52px; height:52px; border-radius:50%; background:var(--gold); color:#fff; font-weight:700; font-size:30px; display:flex; align-items:center; justify-content:center; }
+.price { position:absolute; left:90px; right:90px; bottom:150px; background:#fff; border-radius:28px; padding:30px 40px; display:flex; justify-content:space-between; align-items:center; z-index:5; }
+.price .p { font-family:'Poppins'; font-weight:700; font-size:72px; color:var(--navy); line-height:1; }
+.price .p small { display:block; font-family:'Inter'; font-weight:500; font-size:24px; color:var(--muted); margin-top:8px; }
+.price b { font-family:'Poppins'; font-weight:700; font-size:30px; background:var(--gold); color:#fff; border-radius:999px; padding:18px 30px; }
+.st .price { bottom:420px; }
+.swipe { font-family:'Poppins'; font-weight:600; font-size:26px; color:var(--navy); }
+.dark .swipe { color:var(--gold2); }
+.lbl { position:absolute; font-family:'Poppins'; font-weight:700; color:#fff; text-align:center; }
+.lbl small { display:block; font-family:'Inter'; font-weight:500; color:#C9DAEC; }
+</style></head>
+<body>
+
+<!-- ============ SENIOR ROADMAP ============ -->
+<div class="s dark" id="sr1">
+  <span class="pill">New · Class of 2027</span>
+  <h1>Senior year,<br><span class="g">mapped out.</span></h1>
+  <p class="sub">The Florida Senior Year Roadmap: every date, checklist and tracker in one printable plan.</p>
+  <div class="pg" style="width:400px;left:120px;top:640px;transform:rotate(-8deg)"><img src="products/pages/sr-04.png"></div>
+  <div class="pg" style="width:400px;left:560px;top:630px;transform:rotate(7deg)"><img src="products/pages/sr-03.png"></div>
+  <div class="pg" style="width:460px;left:310px;top:590px;transform:rotate(-1deg);z-index:3"><img src="products/pages/sr-01.png"></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">Swipe →</span></div>
+</div>
+
+<div class="s" id="sr2">
+  <span class="pill">What's inside</span>
+  <h1>Every Florida date<br><span class="g">on one page.</span></h1>
+  <p class="sub">FAFSA, FFAA, early deadlines, deposit dates and the Bright Futures test deadline.</p>
+  <div class="crop" style="left:90px;right:90px;top:620px;height:600px">
+    <img src="products/pages/sr-03.png" style="width:900px;left:0;top:-30px">
+  </div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="swipe">Swipe →</span></div>
+</div>
+
+<div class="s" id="sr3">
+  <span class="pill">What's inside</span>
+  <h1>A to-do list for<br><span class="g">every month.</span></h1>
+  <p class="sub">From fall applications through graduation, with SAT and ACT dates built in.</p>
+  <div class="crop" style="left:90px;right:90px;top:620px;height:600px">
+    <img src="products/pages/sr-04.png" style="width:900px;left:0;top:-30px">
+  </div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="swipe">Swipe →</span></div>
+</div>
+
+<div class="s" id="sr4">
+  <span class="pill">What's inside</span>
+  <h1>Trackers that keep<br><span class="g">it all organized.</span></h1>
+  <p class="sub">Applications, scholarships, and a worksheet to compare aid offers side by side.</p>
+  <div class="pg" style="width:380px;left:70px;top:700px;transform:rotate(-7deg)"><img src="products/pages/sr-08.png"></div>
+  <div class="pg" style="width:380px;left:630px;top:700px;transform:rotate(7deg)"><img src="products/pages/sr-10.png"></div>
+  <div class="pg" style="width:400px;left:340px;top:660px;z-index:3"><img src="products/pages/sr-09.png"></div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="swipe">Swipe →</span></div>
+</div>
+
+<div class="s dark" id="sr5">
+  <span class="pill">The Florida Senior Year Roadmap</span>
+  <h1>One plan for<br><span class="g">the whole year.</span></h1>
+  <div class="list">
+    <div>10 printable pages</div>
+    <div>Key dates for the Class of 2027</div>
+    <div>Month-by-month checklist</div>
+    <div>FAFSA + FFAA step by step</div>
+    <div>Application, scholarship and aid trackers</div>
+  </div>
+  <div class="price"><div class="p">$15<small>Instant PDF download</small></div><b>Link in bio</b></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<!-- ============ FRESHMAN ROADMAP ============ -->
+<div class="s dark" id="fr1">
+  <span class="pill">New · 8th &amp; 9th grade parents</span>
+  <h1>Plan now,<br><span class="g">don't cram later.</span></h1>
+  <p class="sub">The Freshman Roadmap: a four-year plan for Florida families, starting in 9th grade.</p>
+  <div class="pg" style="width:400px;left:120px;top:640px;transform:rotate(-8deg)"><img src="products/pages/fr-05.png"></div>
+  <div class="pg" style="width:400px;left:560px;top:630px;transform:rotate(7deg)"><img src="products/pages/fr-04.png"></div>
+  <div class="pg" style="width:460px;left:310px;top:590px;transform:rotate(-1deg);z-index:3"><img src="products/pages/fr-01.png"></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">Swipe →</span></div>
+</div>
+
+<div class="s" id="fr2">
+  <span class="pill">What's inside</span>
+  <h1>Bright Futures,<br><span class="g">explained early.</span></h1>
+  <p class="sub">The requirements, the special Bright Futures GPA, and why 9th grade grades count.</p>
+  <div class="crop" style="left:90px;right:90px;top:620px;height:600px">
+    <img src="products/pages/fr-04.png" style="width:900px;left:0;top:-30px">
+  </div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="swipe">Swipe →</span></div>
+</div>
+
+<div class="s" id="fr3">
+  <span class="pill">What's inside</span>
+  <h1>A four-year<br><span class="g">game plan.</span></h1>
+  <p class="sub">What to focus on in 9th, 10th, 11th and 12th grade, plus a 9th grade month-by-month.</p>
+  <div class="crop" style="left:90px;right:90px;top:620px;height:600px">
+    <img src="products/pages/fr-05.png" style="width:900px;left:0;top:-30px">
+  </div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="swipe">Swipe →</span></div>
+</div>
+
+<div class="s" id="fr4">
+  <span class="pill">What's inside</span>
+  <h1>Planners that grow<br><span class="g">with your student.</span></h1>
+  <p class="sub">A four-year course planner, a service hour log and an activities log.</p>
+  <div class="pg" style="width:380px;left:70px;top:700px;transform:rotate(-7deg)"><img src="products/pages/fr-07.png"></div>
+  <div class="pg" style="width:380px;left:630px;top:700px;transform:rotate(7deg)"><img src="products/pages/fr-09.png"></div>
+  <div class="pg" style="width:400px;left:340px;top:660px;z-index:3"><img src="products/pages/fr-08.png"></div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="swipe">Swipe →</span></div>
+</div>
+
+<div class="s dark" id="fr5">
+  <span class="pill">The Freshman Roadmap</span>
+  <h1>Start high school<br><span class="g">with a plan.</span></h1>
+  <div class="list">
+    <div>10 printable pages</div>
+    <div>Florida graduation requirements</div>
+    <div>Bright Futures explained early</div>
+    <div>Four-year game plan</div>
+    <div>Course planner, service hour + activities logs</div>
+  </div>
+  <div class="price"><div class="p">$12<small>Instant PDF download</small></div><b>Link in bio</b></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<!-- ============ STORIES ============ -->
+<div class="s st dark" id="rs1">
+  <span class="pill">New</span>
+  <h1>Printable roadmaps<br><span class="g">for Florida parents.</span></h1>
+  <div class="pg" style="width:420px;left:90px;top:760px;transform:rotate(-4deg)"><img src="products/pages/sr-01.png"></div>
+  <div class="pg" style="width:420px;left:570px;top:760px;transform:rotate(4deg)"><img src="products/pages/fr-01.png"></div>
+  <div class="lbl" style="left:90px;width:420px;top:1340px;font-size:36px">Seniors · $15<small style="font-size:26px">Class of 2027</small></div>
+  <div class="lbl" style="left:570px;width:420px;top:1340px;font-size:36px">Freshmen · $12<small style="font-size:26px">8th &amp; 9th grade</small></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">Link in bio ↗</span></div>
+</div>
+
+<div class="s st dark" id="rs2">
+  <span class="pill">Class of 2027</span>
+  <h1>Every senior date<br><span class="g">in one plan.</span></h1>
+  <div class="pg" style="width:560px;left:260px;top:720px;transform:rotate(-3deg)"><img src="products/pages/sr-03.png"></div>
+  <div class="price"><div class="p">$15<small>Senior Year Roadmap · PDF</small></div><b>Link in bio</b></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<div class="s st dark" id="rs3">
+  <span class="pill">8th &amp; 9th grade</span>
+  <h1>Plan now,<br><span class="g">don't cram later.</span></h1>
+  <div class="pg" style="width:560px;left:260px;top:720px;transform:rotate(3deg)"><img src="products/pages/fr-05.png"></div>
+  <div class="price"><div class="p">$12<small>Freshman Roadmap · PDF</small></div><b>Link in bio</b></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+</body></html>
