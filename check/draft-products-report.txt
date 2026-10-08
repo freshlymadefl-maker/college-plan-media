@@ -28,16 +28,15 @@ desktop: {
    "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
   },
   {
-   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/83fd36ff-3190-44d4-b4a3-09ccc0a9a0d9/freshman.png\" alt=\"The Freshman Roadmap: Plan Now, Don't Cram Later\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;border-color:transparent;border-radius:8px;aspect-ratio:1.5\">",
+   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/598b06c2-d5ae-4582-8079-06aefa9d1ac9/freshman-w.png\" alt=\"The Freshman Roadmap: Plan Now, Don't Cram Later\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;border-color:transparent;border-radius:8px;aspect-ratio:1.5\">",
    "w": 300,
    "ht": 200,
-   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/83fd36ff-3190-44d4-b4a3-09ccc0a9a0d9/freshman.png 2x\"><source media=\"(max-width: 360px)\" s"
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/598b06c2-d5ae-4582-8079-06aefa9d1ac9/freshman-w.png 2x\"><source media=\"(max-width: 360px)\""
   }
  ],
  "iframes": [
   null,
   null,
-  "https://js.px-cloud.net/?t=d-f05u9ggcv-1791475380000&v=bbbcfa32-c331-11f1-9d88-a17ad7274726&h=Y29sbGVnZXBsYW4uYmVlaGlpdi5jb20%3D&a=PXeBumDLwe",
   "https://app.birdie.so/snippet/bridge.html?v=1"
  ]
 }
@@ -73,10 +72,10 @@ mobile: {
    "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
   },
   {
-   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/83fd36ff-3190-44d4-b4a3-09ccc0a9a0d9/freshman.png\" alt=\"The Freshman Roadmap: Plan Now, Don't Cram Later\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;border-color:transparent;border-radius:8px;aspect-ratio:1.5\">",
+   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/598b06c2-d5ae-4582-8079-06aefa9d1ac9/freshman-w.png\" alt=\"The Freshman Roadmap: Plan Now, Don't Cram Later\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;border-color:transparent;border-radius:8px;aspect-ratio:1.5\">",
    "w": 300,
    "ht": 200,
-   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/83fd36ff-3190-44d4-b4a3-09ccc0a9a0d9/freshman.png 2x\"><source media=\"(max-width: 360px)\" s"
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/product_variant_asset/asset/598b06c2-d5ae-4582-8079-06aefa9d1ac9/freshman-w.png 2x\"><source media=\"(max-width: 360px)\""
   }
  ],
  "iframes": [
