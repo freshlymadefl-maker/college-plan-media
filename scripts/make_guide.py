@@ -16,6 +16,9 @@ cta = (f'<div style="background:{NAVY};border-radius:12px;padding:22px 24px;marg
        f'<a href="https://collegeplan.beehiiv.com" style="display:inline-block;background:#B5A21F;color:#ffffff;font-family:{HFONT};font-weight:600;'
        f'text-decoration:none;padding:12px 22px;border-radius:8px">Sign up free</a></div>')
 html = html.replace("<!--CTA-->", cta) if "<!--CTA-->" in html else html + cta
+html += ('<p style="text-align:center;font-size:15px;margin:22px 0 0">📱 Quick Florida college tips every day: follow '
+         '<a href="https://www.instagram.com/college.plan/"><strong>@college.plan</strong> on Instagram</a> and '
+         '<a href="https://www.facebook.com/1362425533621807"><strong>Facebook</strong></a>.</p>')
 body = {
     "title": meta["title"], "subtitle": meta.get("subtitle", ""), "body_content": html, "status": "confirmed",
     "recipients": {"web": {"tier_ids": ["free"]}, "email": {"tier_ids": ["premium"]}},

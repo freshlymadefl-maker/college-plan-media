@@ -24,10 +24,10 @@ def doc(title, body):
 def top(tag):
     return f'<div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">{tag}</div></div>'
 
-FOOT = '<div class="foot"><span>A thank-you from <b>College Plan</b> for sharing us with another Florida family.</span><span><b>collegeplan.beehiiv.com</b></span></div>'
+FOOT = '<div class="foot"><span>A thank-you from <b>College Plan</b> for sharing us with another Florida family.</span><span><b>collegeplan.beehiiv.com</b> · <b>@college.plan</b></span></div>'
 
 def foot(text):
-    return f'<div class="foot"><span>{text}</span><span><b>collegeplan.beehiiv.com</b></span></div>'
+    return f'<div class="foot"><span>{text}</span><span><b>collegeplan.beehiiv.com</b> · <b>@college.plan</b></span></div>'
 
 def g(when, sub, items):
     lis = ''.join(f'<li>{i}</li>' for i in items)

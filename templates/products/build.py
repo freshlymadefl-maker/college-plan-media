@@ -72,7 +72,7 @@ def top(tag):
     return f'<div class="top"><img src="../wordmark_navy.png" alt="College Plan"><div class="tag">{tag}</div></div>'
 
 def foot(text, n):
-    return f'<div class="foot"><span>{text}</span><span><b>College Plan · {n}</b></span></div>'
+    return f'<div class="foot"><span>{text}</span><span><b>@college.plan</b> · {n}</span></div>'
 
 def chk(items):
     return '<ul class="chk">' + ''.join(f'<li>{i}</li>' for i in items) + '</ul>'
