@@ -31,6 +31,7 @@ jobs:
                   calItems: [...document.querySelectorAll('#cal-list li .t')].map(e => e.textContent).slice(0, 3),
                   bfRoot: !!document.getElementById('cp-bf-root'), bfRendered: !!document.getElementById('cp-bf'),
                   scripts: [...document.querySelectorAll('script[src*="jsdelivr"]')].map(s => s.src),
+                  imgs: [...document.querySelectorAll('img')].slice(0,3).map(i => ({h: i.outerHTML.slice(0,400), w: i.getBoundingClientRect().width, ht: i.getBoundingClientRect().height, parent: i.parentElement.outerHTML.slice(0,300)})),
                   iframes: [...document.querySelectorAll('iframe')].map(i => i.src || i.getAttribute('srcdoc')?.slice(0, 120))
                 }));
                 if (info.bfRendered) {
