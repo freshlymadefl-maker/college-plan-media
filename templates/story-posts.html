@@ -1,0 +1,70 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- College Plan STORY templates (1080x1920, Instagram/Facebook Stories). Keep text inside the safe zone:
+     nothing important in the top 250px or bottom 300px (Instagram covers them with UI).
+st1 = deadline countdown   st2 = "Did you know?" fact   st3 = photo + one-line tip / quote   st4 = "New post" teaser (uses a post PNG) -->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --sky2:#D4E6F7; --gold:#B5A21F; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.st { width:1080px; height:1920px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:var(--ink); padding:300px 90px 0; }
+.light { background: linear-gradient(165deg, #F4F9FE 0%, var(--sky) 50%, var(--sky2) 100%); }
+.dark { background: linear-gradient(165deg, #0E3359 0%, var(--navy) 60%, #081F38 100%); color:#fff; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:30px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:14px 30px; }
+h1 { font-family:'Poppins'; font-weight:700; font-size:104px; line-height:1.0; letter-spacing:-0.02em; color:var(--navy); margin-top:40px; }
+.dark h1 { color:#fff; }
+h1 .lt { color:var(--blue); } .dark h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; color:#F1E27A; letter-spacing:0; }
+.big { white-space:nowrap; font-family:'Poppins'; font-weight:700; font-size:250px; line-height:.9; color:var(--navy); letter-spacing:-0.04em; margin-top:40px; }
+.big small { display:block; font-size:60px; letter-spacing:.12em; color:var(--blue); margin-top:10px; }
+.txt { font-size:46px; line-height:1.4; margin-top:40px; color:#3A4F66; }
+.dark .txt { color:#C9DAEC; }
+.card { background:#fff; border-radius:36px; padding:44px 48px; margin-top:50px; box-shadow:0 12px 40px rgba(11,42,74,.10); font-size:44px; line-height:1.35; color:var(--ink); }
+.card b { font-family:'Poppins'; color:var(--navy); }
+.foot { position:absolute; left:90px; right:90px; bottom:320px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:58px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:34px; letter-spacing:.06em; color:var(--navy); }
+.dark .foot .sw { color:#fff; }
+/* st3 photo */
+.photo { background: var(--img) center/cover no-repeat, var(--navy); color:#fff; }
+.photo .shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,31,56,.85) 0%, rgba(8,31,56,.55) 38%, rgba(8,31,56,0) 62%, rgba(8,31,56,.75) 100%); }
+.photo .in { position:relative; }
+.photo h1 { color:#fff; font-family:'Lora'; font-style:italic; font-weight:500; font-size:92px; line-height:1.15; letter-spacing:0; }
+.photo h1 .g { color:#F1E27A; }
+/* st4 teaser */
+.teaser { margin:50px auto 0; width:620px; border-radius:28px; overflow:hidden; box-shadow:0 30px 70px rgba(0,0,0,.35); transform:rotate(-2deg); }
+.teaser img { width:100%; display:block; }
+</style></head>
+<body>
+
+<div class="st light" id="st1">
+  <span class="pill">Deadline countdown</span>
+  <div class="big">OCT 15<small>THIS THURSDAY</small></div>
+  <div class="card"><b>UF Early Decision</b> and <b>FSU Early Decision/Early Action</b> applications are due.</div>
+  <p class="txt">Seniors: confirm which plan you're using for each school this weekend.</p>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">SHARE WITH A SENIOR PARENT</span></div>
+</div>
+
+<div class="st dark" id="st2">
+  <span class="pill">Did you know?</span>
+  <h1>Bright Futures hours start counting <span class="g">the summer after 8th grade.</span></h1>
+  <p class="txt">Hours from before that don't count. Start a simple log now: date, organization, supervisor, hours.</p>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<div class="st photo" id="st3" style="--img:url(../photos/florida-boardwalk-01.jpg)">
+  <div class="shade"></div>
+  <div class="in">
+    <span class="pill">Friday reminder</span>
+    <h1>You don't have to do it all this week. <span class="g">Just the next thing.</span></h1>
+  </div>
+  <div class="foot"><img src="wordmark_white.png"><span class="sw" style="color:#fff">@college.plan</span></div>
+</div>
+
+<div class="st light" id="st4">
+  <span class="pill">New post</span>
+  <h1>Two aid forms, <span class="lt">not one.</span></h1>
+  <div class="teaser"><img src="../instagram/2026-10-14-fafsa-ffaa/p3.png"></div>
+  <div class="foot"><img src="wordmark_navy.png"><span class="sw">TAP OUR PROFILE ↑</span></div>
+</div>
+
+</body></html>

@@ -31,3 +31,7 @@
   (banner <img>, colored boxes, brand fonts). Don't use merge tags in the body (they aren't filled in there); the personal
   referral link lives in the publication email footer. Use a unique "slug" in meta. To unschedule a post, queue
   {"_action": "delete", "post_id": "post_..."} (file name starting with 0- so it runs first).
+
+## Stories (templates/story-posts.html, 1080x1920)
+- st1 deadline countdown · st2 "Did you know?" · st3 photo + one-line reminder · st4 "New post" teaser using that day's post PNG.
+- Keep text out of the top 250px and bottom 300px. Schedule in Metricool with instagramData type STORY + facebookData type STORY and NO text field.
