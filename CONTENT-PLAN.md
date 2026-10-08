@@ -116,7 +116,12 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - 2026-10-08: Bright Futures guide re-created as a draft (slug florida-bright-futures-requirements-2027-2028-6ad3), owner to publish web-only
 - 2026-10-07: Florida Bright Futures Requirements for the Classes of 2027 and 2028 — /p/florida-bright-futures-requirements-2027-2028
 
+## TikTok (connected 2026-10-08)
+- A separate Sunday 3:23pm task cross-posts the coming week's Instagram feed posts and Reels to TikTok (2-4 hours after Instagram, max 3/day, photo posts get TikTok auto-music).
+- TikTok needs a title on every post. Metricool can't add music to videos, so silent videos get a voiceover first (tts/ + ffmpeg, saved in tiktok/).
+
 ## Log (newest first — the weekly routine appends here)
+- 2026-10-08: TikTok launch batch: 17 posts Oct 8-17 (4 videos, 13 photo posts/carousels).
 - 2026-10-08: Roadmaps launch scheduled: Story Oct 8 9pm; voiceover Reel Oct 12 12pm; Senior carousel Oct 13 7:30pm + Story 8:45pm; Freshman carousel Oct 15 7:30pm + Story 8:45pm.
 - 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
 - 2026-12-04/09/11/17 8:30pm: decision-day posts already scheduled (UCF, USF, UF ED, FSU) — instagram/2026-12-decisions/. Re-verify each release date the week before; if a date moves, update the post in Metricool.
