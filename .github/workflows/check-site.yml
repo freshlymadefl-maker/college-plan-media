@@ -1,0 +1,53 @@
+name: Check live site
+# check/<name>.txt contains a URL -> check/<name>-desktop.png, -mobile.png and -report.txt
+on:
+  push:
+    paths: ['check/*.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  shot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i playwright@1.47.2 && npx playwright install --with-deps chromium
+      - run: |
+          cat > shot.js <<'JS'
+          const { chromium } = require('playwright');
+          const fs = require('fs');
+          (async () => {
+            const b = await chromium.launch();
+            for (const f of fs.readdirSync('check').filter(x => x.endsWith('.txt') && !x.endsWith('-report.txt'))) {
+              const url = fs.readFileSync('check/' + f, 'utf8').trim(), n = f.replace('.txt', '');
+              const rep = [];
+              for (const [tag, vp] of [['desktop', {width: 1280, height: 900}], ['mobile', {width: 390, height: 844}]]) {
+                const p = await b.newPage({viewport: vp});
+                const errs = []; p.on('console', m => { if (m.type() === 'error') errs.push(m.text()); }); p.on('pageerror', e => errs.push(String(e)));
+                await p.goto(url, {waitUntil: 'networkidle', timeout: 60000}); await p.waitForTimeout(4000);
+                const info = await p.evaluate(() => ({
+                  nav: [...document.querySelectorAll('nav a, header a')].map(a => a.textContent.trim() + ' -> ' + a.getAttribute('href')).filter(s => s.length > 4),
+                  calRoot: !!document.getElementById('cp-cal-root'), calRendered: !!document.getElementById('cp-cal'),
+                  calItems: [...document.querySelectorAll('#cal-list li .t')].map(e => e.textContent).slice(0, 3),
+                  bfRoot: !!document.getElementById('cp-bf-root'), bfRendered: !!document.getElementById('cp-bf'),
+                  scripts: [...document.querySelectorAll('script[src*="jsdelivr"]')].map(s => s.src),
+                  iframes: [...document.querySelectorAll('iframe')].map(i => i.src || i.getAttribute('srcdoc')?.slice(0, 120))
+                }));
+                if (info.bfRendered) {
+                  await p.fill('#bf-gpa', '3.7'); await p.fill('#bf-score', '1360'); await p.fill('#bf-svc', '100');
+                  await p.click('#bf-go'); await p.waitForTimeout(500);
+                  info.bfResult = await p.textContent('#bf-res').catch(() => null);
+                }
+                rep.push(tag + ': ' + JSON.stringify(info, null, 1) + '\nerrors: ' + JSON.stringify(errs.slice(0, 10)));
+                await p.screenshot({path: `check/${n}-${tag}.png`, fullPage: true});
+                await p.close();
+              }
+              fs.writeFileSync(`check/${n}-report.txt`, rep.join('\n\n'));
+              fs.unlinkSync('check/' + f);
+            }
+            await b.close();
+          })();
+          JS
+          node shot.js
+          git config user.name "College Plan"; git config user.email freshlymadefl@gmail.com
+          git add -A check; git diff --cached --quiet || (git commit -m "Site check" && git pull --rebase && git push)
