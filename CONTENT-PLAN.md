@@ -2,7 +2,7 @@
 
 Goal right now: **followers**. Instagram's strongest signals for reaching new people are **sends (DM shares)**, **saves**, and **Reel watch time**. Every post should be something a parent would send to another parent or save for later. Florida-specific, verified, original, no athletics.
 
-## Weekly calendar (7 feed posts + 2 Reels)
+## Weekly calendar (7 feed posts + 4 Reels + 7 Stories)
 | Day | Time (ET) | Slot | Template |
 |---|---|---|---|
 | Mon | 7:30pm | "Don't miss" deadlines | weekly-posts #p1 |
@@ -14,6 +14,9 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 | Fri | 7:30pm | Engagement / list post (rotation B) | #p5, growth-posts #rk1, ph2 |
 | Sat | 10:30am | Scholarship of the week | growth-posts #sc1 |
 | Sun | 7:30pm | Rotation C | ck1 / pr1 / pr2 |
+| Thu | 12:00pm | **Trial Reel** (rotation R; shown to non-followers first) | reel template, instagramData type TRIAL_REEL |
+| Sun | 12:00pm | **Trial Reel** (rotation R) | reel template, instagramData type TRIAL_REEL |
+| Daily | 8:15am | **Story** (rotate st1 deadline countdown / st2 did-you-know / st3 photo reminder; on Wed add an st4 'New post' teaser at 7:45pm) | templates/story-posts.html |
 
 ## Rotation A — Wednesday carousels (cycle in order, then repeat with new angles)
 1. What admissions looks for now ("It's not 2002 anymore": holistic review, essays, rigor, self-reported grades like UF STARS, test policies — verify each school)
@@ -38,6 +41,9 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 2. Free cheat sheet promo (pr1)
 3. Newsletter promo (pr2)
 4. "Week ahead" or seasonal photo post (ph2)
+
+## Trial Reels
+Trial Reels are shown only to non-followers first, so use them to test new hooks/formats. Keep the two regular Reels for the strongest ideas. Instagram may move a trial Reel to the profile later if it performs.
 
 ## Rotation R — Reels (10–15s, hook in first 2s, big text, end with "Save this + follow")
 - "X things to do before [month] ends" · "Florida deadline this week" · "Did you know (scholarship)" · school stat reveal ("UF's middle 50% SAT is…") · myth vs fact flip · "Things I wish I knew in 9th grade" style lists (written as College Plan, no personal persona)
