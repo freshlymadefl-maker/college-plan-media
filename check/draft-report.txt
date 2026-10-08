@@ -14,6 +14,26 @@ desktop: {
  "bfRoot": false,
  "bfRendered": false,
  "scripts": [],
+ "imgs": [
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 161.390625,
+   "ht": 54,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"desktop\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:54px;--max-width:162px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpar"
+  },
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 0,
+   "ht": 0,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
+  },
+  {
+   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/publication/logo/851868ac-cd7b-4156-a1a0-dfac96c6e363/upload_3189a6b534ad8117.png\" alt=\"Florida Bright Futures Requirements for the Classes of 2027 and 2028\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;border-color:#E5E7EB;border-radius:8px;aspect-ratio:1.5\">",
+   "w": 300,
+   "ht": 200,
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/publication/logo/851868ac-cd7b-4156-a1a0-dfac96c6e363/upload_3189a6b534ad8117.png 2x\"><source media=\"(max-width: 360px"
+  }
+ ],
  "iframes": [
   "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
@@ -40,11 +60,32 @@ mobile: {
  "bfRoot": false,
  "bfRendered": false,
  "scripts": [],
+ "imgs": [
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 0,
+   "ht": 0,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"desktop\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:54px;--max-width:162px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpar"
+  },
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 131.5,
+   "ht": 44,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
+  },
+  {
+   "h": "<img class=\"_11n66oe2\" src=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/publication/logo/851868ac-cd7b-4156-a1a0-dfac96c6e363/upload_3189a6b534ad8117.png\" alt=\"Florida Bright Futures Requirements for the Classes of 2027 and 2028\" fetchpriority=\"high\" loading=\"eager\" style=\"--object-fit:cover;border-color:#E5E7EB;border-radius:8px;aspect-ratio:1.5\">",
+   "w": 300,
+   "ht": 200,
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://media.beehiiv.com/cdn-cgi/image/format=auto,width=720,fit=scale-down,onerror=redirect/uploads/publication/logo/851868ac-cd7b-4156-a1a0-dfac96c6e363/upload_3189a6b534ad8117.png 2x\"><source media=\"(max-width: 360px"
+  }
+ ],
  "iframes": [
   "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   "<html>\n    <head>\n      <script src=\"https://unpkg.com/@tailwindcss/browser@4\"></script>\n      <script>\n        function",
   null,
   null,
+  "https://js.px-cloud.net/?t=d-bc07gxrg9-1791428447800&v=75f02488-c2c4-11f1-999b-21846addd225&h=Y29sbGVnZXBsYW4uYmVlaGlpdi5jb20%3D&a=PXeBumDLwe",
   "https://app.birdie.so/snippet/bridge.html?v=1"
  ]
 }
