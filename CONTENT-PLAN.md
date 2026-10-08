@@ -99,7 +99,18 @@ Queue (in order, skip ones already in the Guides log):
 9. Self-reported grades in Florida (UF STARS, SSAR): what they are and when they're due
 10. Florida state scholarships and grants list (FSAG, First Generation Matching Grant, José Martí, Rosewood, Mary McLeod Bethune ...)
 
+## Paid products (beehiiv Digital Products, file download)
+Status: PDFs done and fact-checked; WAITING on owner to connect Stripe in beehiiv (save_product fails until then).
+- Florida Senior Year Roadmap, Class of 2027: products/Florida-Senior-Year-Roadmap-Class-of-2027.pdf, card products/senior.png, $15, slug florida-senior-year-roadmap
+- Freshman Roadmap: Plan Now, Don't Cram Later: products/Freshman-Roadmap-Plan-Now-Dont-Cram-Later.pdf, card products/freshman.png, $12, slug freshman-roadmap
+- Rebuild with: python3 templates/products/build.py (check every date against official sources first; refresh the Senior Roadmap each August for the new class).
+- Once live: soft-mention in emails at most once a week (seniors email → Senior Roadmap; early email → Freshman Roadmap), one promo post every other week, never pushy. Free resources stay free.
+
+## Newsletter sending (beehiiv Lite plan)
+The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the guide as DRAFTS and reminds the owner to click Schedule/Publish. Switch back to auto-send if the plan is upgraded (Scale or higher).
+
 ## Guides log (newest first)
+- 2026-10-08: Bright Futures guide re-created as a draft (slug florida-bright-futures-requirements-2027-2028-6ad3), owner to publish web-only
 - 2026-10-07: Florida Bright Futures Requirements for the Classes of 2027 and 2028 — /p/florida-bright-futures-requirements-2027-2028
 
 ## Log (newest first — the weekly routine appends here)
