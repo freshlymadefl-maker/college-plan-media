@@ -1,0 +1,19 @@
+name: Text to speech
+# tts/<name>.txt -> tts/out/<name>.mp3 + <name>.words.json (word timings for captions)
+on:
+  push:
+    paths: ['tts/*.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install edge-tts==7.0.2
+      - run: python3 scripts/tts.py
+      - run: |
+          git config user.name "College Plan"; git config user.email freshlymadefl@gmail.com
+          git add -A tts
+          git diff --cached --quiet || (git commit -m "TTS audio" && git pull --rebase && git push)
