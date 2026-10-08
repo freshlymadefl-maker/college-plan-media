@@ -1,0 +1,91 @@
+desktop: {
+ "nav": [
+  " -> /",
+  "Deadline Calendar -> /#calendar",
+  "Bright Futures Checker -> /#bright-futures-checker",
+  "Guides -> /t/guides",
+  "Log in -> null",
+  "Subscribe -> null",
+  " -> /"
+ ],
+ "calRoot": false,
+ "calRendered": false,
+ "calItems": [],
+ "bfRoot": false,
+ "bfRendered": false,
+ "scripts": [],
+ "imgs": [
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 161.390625,
+   "ht": 54,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"desktop\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:54px;--max-width:162px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpar"
+  },
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 0,
+   "ht": 0,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
+  },
+  {
+   "h": "<img src=\"https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ea89b10c-b23c-40bc-90e9-e63135d94a03/upload_7e31c1e8e94b5772.jpg?t=1791402431\" alt=\"College Plan\" width=\"590\" style=\"display:block;width:100%;max-width:590px;height:auto;border:0;border-radius:10px;margin:0 0 18px\">",
+   "w": 590,
+   "ht": 147.5,
+   "parent": "<div style=\"font-family:Inter, Helvetica, Arial, sans-serif;color:#2A3D54;max-width:590px;margin:0 auto\"><img src=\"https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ea89b10c-b23c-40bc-90e9-e63135d94a03/upload_7e31c1e8e94b5772.jpg?t=1791402431\" alt=\"College Plan\" width=\"590\" style"
+  }
+ ],
+ "iframes": [
+  null,
+  "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fcollegeplan.beehiiv.com",
+  null,
+  null,
+  "https://app.birdie.so/snippet/bridge.html?v=1"
+ ]
+}
+errors: []
+
+mobile: {
+ "nav": [
+  " -> /",
+  "Deadline Calendar -> /#calendar",
+  "Bright Futures Checker -> /#bright-futures-checker",
+  "Guides -> /t/guides",
+  "Log in -> null",
+  "Subscribe -> null",
+  " -> /"
+ ],
+ "calRoot": false,
+ "calRendered": false,
+ "calItems": [],
+ "bfRoot": false,
+ "bfRendered": false,
+ "scripts": [],
+ "imgs": [
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 0,
+   "ht": 0,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"desktop\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:54px;--max-width:162px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpar"
+  },
+  {
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/logo-wide.png\" alt=\"Logo\" class=\"_1ma1r0qx\" fetchpriority=\"high\" loading=\"eager\">",
+   "w": 131.5,
+   "ht": 44,
+   "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
+  },
+  {
+   "h": "<img src=\"https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ea89b10c-b23c-40bc-90e9-e63135d94a03/upload_7e31c1e8e94b5772.jpg?t=1791402431\" alt=\"College Plan\" width=\"590\" style=\"display:block;width:100%;max-width:590px;height:auto;border:0;border-radius:10px;margin:0 0 18px\">",
+   "w": 278,
+   "ht": 69.5,
+   "parent": "<div style=\"font-family:Inter, Helvetica, Arial, sans-serif;color:#2A3D54;max-width:590px;margin:0 auto\"><img src=\"https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ea89b10c-b23c-40bc-90e9-e63135d94a03/upload_7e31c1e8e94b5772.jpg?t=1791402431\" alt=\"College Plan\" width=\"590\" style"
+  }
+ ],
+ "iframes": [
+  null,
+  "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fcollegeplan.beehiiv.com",
+  null,
+  null,
+  "https://app.birdie.so/snippet/bridge.html?v=1"
+ ]
+}
+errors: []
