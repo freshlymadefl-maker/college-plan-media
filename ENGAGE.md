@@ -28,4 +28,4 @@
 - On a FAFSA post: "Florida parents, the FFAA is the state form for Bright Futures, and it's a separate application from the FAFSA."
 - On a parenting-teens post: "So true. Small monthly check-ins helped us way more than one big senior-year push."
 - On a local school/district post: "Thanks for sharing! Juniors: PSAT/NMSQT this month is also the National Merit qualifier."
-- On a scholarship post: "Love this. Saving for our junior. Do you know if it's open to Florida residents?"
+- On a scholarship post: "Saving this! Florida families: double-check the residency rules before applying, some are state-specific."
