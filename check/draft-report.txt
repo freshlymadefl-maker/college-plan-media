@@ -28,10 +28,10 @@ desktop: {
    "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
   },
   {
-   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-faded.jpg\" alt=\"background\" class=\"undefined block\" style=\"position:absolute;object-fit:cover;object-position:center;width:100%;height:100%\">",
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-cool.jpg\" alt=\"background\" class=\"undefined block\" style=\"position:absolute;object-fit:cover;object-position:center;width:100%;height:100%\">",
    "w": 1280,
    "ht": 781.015625,
-   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-faded.jpg 2x\"><source media=\"(max-width: 360px)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan"
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-cool.jpg 2x\"><source media=\"(max-width: 360px)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-"
   }
  ],
  "iframes": [
@@ -74,10 +74,10 @@ mobile: {
    "parent": "<a element=\"[object Object]\" controlbyselected=\"false\" screen=\"mobile\" class=\"_1ma1r0qw _1ma1r0qo\" aria-label=\"Logo\" style=\"--width:100%;--height:44px;--max-width:132px;--min-width:min(36px, var(--height));--padding:0px;--border-radius:8px;--hover-border-radius:8px;--hover-background-color:transpare"
   },
   {
-   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-faded.jpg\" alt=\"background\" class=\"undefined block\" style=\"position:absolute;object-fit:cover;object-position:center;width:100%;height:100%\">",
+   "h": "<img src=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-cool.jpg\" alt=\"background\" class=\"undefined block\" style=\"position:absolute;object-fit:cover;object-position:center;width:100%;height:100%\">",
    "w": 390,
    "ht": 793.03125,
-   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-faded.jpg 2x\"><source media=\"(max-width: 360px)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan"
+   "parent": "<picture><source media=\"(max-width: 360px) and (min-resolution: 2dppx)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/website-hero-cool.jpg 2x\"><source media=\"(max-width: 360px)\" srcset=\"https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-"
   }
  ],
  "iframes": [
