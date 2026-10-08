@@ -46,6 +46,28 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 ## Scholarship of the week (Saturday)
 Prefer scholarships with an upcoming deadline or that Florida families miss. Mix Florida state programs (Benacquisto, FSAG, José Martí, Rosewood, Mary McLeod Bethune, First Generation Matching Grant, Children of deceased/disabled veterans, Florida Prepaid Project STARS) and national ones with real deadlines (verify the current cycle on the official site). Always: amount, who qualifies, deadline, official source.
 
+## "Comment a word" posts (manual DMs for now)
+- 1–2 posts a week end with "Comment GUIDE and we'll DM you the free cheat sheet" (or another word that fits: LIST, CHECKLIST, DATES). Use it on the Saturday post and at most one other post.
+- The owner replies by hand using an Instagram saved reply, so keep the keyword set small: GUIDE (cheat sheet + newsletter link) is the default.
+- Mention in the Sunday report which posts use a comment word, so the owner knows to watch those comments.
+
+## Google guides (web-only articles on collegeplan.beehiiv.com, 1 per week, published Wednesday)
+Built with scripts/make_guide.py (no email is sent). Evergreen, search-style titles. Update an existing guide instead of repeating a topic.
+Queue (in order, skip ones already in the Guides log):
+1. FAFSA vs. FFAA: Florida's two financial aid forms explained
+2. Florida public university application deadlines 2026–27 (all 12 schools: EA/ED/regular, self-report dates)
+3. University of Florida admission stats (Class of 2030) — then one per school: FSU, UCF, USF, FIU, FAU, UNF, UWF, FGCU, New College, FAMU, FPU
+4. Florida dual enrollment explained (who qualifies, cost, how credits transfer)
+5. Bright Futures service hours: what counts and how to log them
+6. The Benacquisto Scholarship explained
+7. SAT vs. ACT vs. CLT for Florida students
+8. AP vs. IB vs. AICE vs. dual enrollment in Florida
+9. Self-reported grades in Florida (UF STARS, SSAR): what they are and when they're due
+10. Florida state scholarships and grants list (FSAG, First Generation Matching Grant, José Martí, Rosewood, Mary McLeod Bethune ...)
+
+## Guides log (newest first)
+- 2026-10-07: Florida Bright Futures Requirements for the Classes of 2027 and 2028 — /p/florida-bright-futures-requirements-2027-2028
+
 ## Log (newest first — the weekly routine appends here)
 - 2026-10-18 Sun: promo newsletter (pr2)
 - 2026-10-17 Sat: scholarship — Benacquisto
