@@ -1,0 +1,72 @@
+<div id="cp-bf" style="font-family:Inter,Helvetica,Arial,sans-serif;color:#1F2D3D;max-width:640px;margin:0 auto;">
+<style>
+#cp-bf *{box-sizing:border-box}
+#cp-bf .card{background:#fff;border:1px solid #D6E2EE;border-radius:16px;padding:20px 20px 22px}
+#cp-bf h3{font-family:Poppins,Helvetica,Arial,sans-serif;color:#0B2A4A;font-size:22px;margin:0 0 4px}
+#cp-bf p.sub{color:#5E7186;margin:0 0 16px;font-size:15px}
+#cp-bf .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#cp-bf label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#0B2A4A}
+#cp-bf input,#cp-bf select{font:16px Inter,Helvetica,Arial,sans-serif;padding:10px 12px;border:1px solid #C9D8E8;border-radius:10px;background:#F7FAFD;color:#1F2D3D;width:100%}
+#cp-bf .hint{font-weight:400;color:#5E7186;font-size:12px}
+#cp-bf button{margin-top:16px;width:100%;background:#0B2A4A;color:#fff;border:0;border-radius:10px;padding:14px;font:600 16px Poppins,Helvetica,Arial,sans-serif;cursor:pointer}
+#cp-bf .res{margin-top:18px;border-radius:14px;padding:18px 18px 16px;display:none}
+#cp-bf .res.on{display:block}
+#cp-bf .res h4{font-family:Poppins,Helvetica,Arial,sans-serif;margin:0 0 8px;font-size:19px}
+#cp-bf .res ul{margin:8px 0 0;padding-left:20px}
+#cp-bf .res li{margin:4px 0}
+#cp-bf .fas{background:#0B2A4A;color:#fff}
+#cp-bf .fms{background:#EAF3FB;color:#0B2A4A;border:1px solid #C9D8E8}
+#cp-bf .no{background:#F7F5E8;color:#3A3416;border:1px solid #E6DDA0}
+#cp-bf .fine{font-size:12px;color:#5E7186;margin-top:14px;line-height:1.45}
+#cp-bf .cta{display:inline-block;margin-top:12px;background:#B5A21F;color:#fff;text-decoration:none;font:600 15px Poppins,Helvetica,Arial,sans-serif;padding:10px 16px;border-radius:8px}
+@media (max-width:520px){#cp-bf .grid{grid-template-columns:1fr}}
+</style>
+<div class="card">
+  <h3>Bright Futures Checker</h3>
+  <p class="sub">See which Florida Bright Futures award your student is on track for, and what's still missing.</p>
+  <div class="grid">
+    <label>Graduating class
+      <select id="bf-class"><option value="2027">Class of 2027 (seniors)</option><option value="2028" selected>Class of 2028 (juniors)</option><option value="2029">Class of 2029 or later</option></select></label>
+    <label>Bright Futures GPA <span class="hint">Weighted, 16 core courses. Ask the counselor.</span>
+      <input id="bf-gpa" type="number" step="0.01" min="0" max="6" placeholder="e.g. 3.6"></label>
+    <label>Best test
+      <select id="bf-test"><option value="SAT">SAT</option><option value="ACT">ACT</option><option value="CLT">CLT</option></select></label>
+    <label>Best score <span class="hint">Leave blank if not tested yet</span>
+      <input id="bf-score" type="number" min="0" max="1600" placeholder="e.g. 1250"></label>
+    <label>Service hours
+      <input id="bf-svc" type="number" min="0" placeholder="e.g. 60"></label>
+    <label>Paid work hours
+      <input id="bf-work" type="number" min="0" placeholder="e.g. 0"></label>
+  </div>
+  <button type="button" id="bf-go">Check my student</button>
+  <div class="res" id="bf-res" aria-live="polite"></div>
+  <p class="fine">Based on published requirements for the Classes of 2027 and 2028 (Florida Department of Education, FloridaBrightFutures.gov). Classes of 2029 and later aren't published yet, so we use the Class of 2028 numbers. Students also need the 16 required core credits and must submit the Florida Financial Aid Application (FFAA) by August 31 after graduation. This is an estimate, not an official evaluation; confirm with your school counselor.</p>
+</div>
+<script>
+(function(){
+  var T={2027:{FAS:{SAT:1330,ACT:29,CLT:95},FMS:{SAT:1190,ACT:24,CLT:82}},2028:{FAS:{SAT:1350,ACT:29,CLT:96},FMS:{SAT:1200,ACT:25,CLT:83}}};
+  function num(id){var v=parseFloat(document.getElementById(id).value);return isNaN(v)?null:v;}
+  document.getElementById('bf-go').addEventListener('click',function(){
+    var cls=document.getElementById('bf-class').value, t=T[cls==='2027'?2027:2028], test=document.getElementById('bf-test').value;
+    var gpa=num('bf-gpa'), sc=num('bf-score'), svc=num('bf-svc')||0, work=num('bf-work')||0, out=document.getElementById('bf-res');
+    function gaps(level){
+      var g=[], need=t[level][test];
+      if(gpa===null) g.push('Enter the Bright Futures GPA (ask the counselor for a Bright Futures evaluation).');
+      else if(gpa < (level==='FAS'?3.5:3.0)) g.push('Raise the Bright Futures GPA from '+gpa.toFixed(2)+' to '+(level==='FAS'?'3.50':'3.00')+'.');
+      if(sc===null) g.push('Take the '+test+' (needed: '+need+').');
+      else if(sc<need) g.push('Raise the '+test+' score from '+sc+' to '+need+' ('+(need-sc)+' to go).');
+      if(level==='FAS'){ if(svc+work<100) g.push('Log '+(100-svc-work)+' more service or work hours (100 total).'); }
+      else { if(!(svc>=75 || svc+work>=100)) g.push('Log '+Math.max(0,75-svc)+' more service hours (75 service, or 100 service + work combined).'); }
+      return g;
+    }
+    var fas=gaps('FAS'), fms=gaps('FMS'), h='';
+    if(!fas.length){ out.className='res on fas'; h='<h4>On track for Florida Academic Scholars 🎉</h4><p>That covers 100% of tuition and applicable fees at Florida public colleges and universities. Keep the core courses on track and file the FFAA senior year.</p>'; }
+    else if(!fms.length){ out.className='res on fms'; h='<h4>On track for Florida Medallion Scholars</h4><p>That covers 75% of tuition and applicable fees at Florida public colleges and universities. To reach Academic Scholars (100%):</p><ul><li>'+fas.join('</li><li>')+'</li></ul>'; }
+    else { out.className='res on no'; h='<h4>Not on track yet, and that\'s OK</h4><p>To reach Medallion Scholars (75% of tuition):</p><ul><li>'+fms.join('</li><li>')+'</li></ul>'; }
+    if(cls==='2029') h+='<p style="margin-top:10px;font-size:14px">Class of 2029+: requirements aren\'t published yet and have been rising, so treat these as minimums.</p>';
+    h+='<a class="cta" href="https://collegeplan.beehiiv.com" target="_top">Get Florida deadlines for your student\'s grade (free)</a>';
+    out.innerHTML=h;
+  });
+})();
+</script>
+</div>
