@@ -11,8 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install edge-tts==7.0.2
-      - run: python3 scripts/tts.py
+      - run: |
+          mkdir -p tts/out
+          (pip install edge-tts && python3 scripts/tts.py) > tts/out/log.txt 2>&1 || true
+          tail -30 tts/out/log.txt
       - run: |
           git config user.name "College Plan"; git config user.email freshlymadefl@gmail.com
           git add -A tts
