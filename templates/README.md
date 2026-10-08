@@ -42,3 +42,7 @@
 - dd1 decision-day celebration: set #dd-school text per school before rendering.
 - Render one element at a time (hide the other top-level divs first) or tall Stories come out cropped.
 - Reels driven by JS: templates/reel/checker-reel.html defines window.setT(ms); render-reel.py calls it every frame.
+
+## Email header banners
+- Every email's header is set automatically by scripts/make_queue_item.py from the segment: brand/email/seniors.jpg, juniors.jpg, early.jpg (8th–10th), general.jpg. Source: templates/email-banners.html.
+- Don't pick a banner in the draft; whatever figure is first gets replaced. scripts/send_newsletter.py downloads every image before sending: a broken header stops that email (it lands in newsletter/failed/), a broken inline image is removed.

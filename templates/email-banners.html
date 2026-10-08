@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Email header banners (1200x360, shown at 590px wide). One per segment; scripts/make_queue_item.py picks by segment. -->
+<style>
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.b { width:1200px; height:360px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:#fff;
+     background:linear-gradient(120deg,#0E3359 0%,#0B2A4A 60%,#081F38 100%); padding:0 70px; display:flex; align-items:center; justify-content:space-between; }
+.b:before { content:""; position:absolute; right:-120px; top:-160px; width:560px; height:560px; border-radius:50%; background:radial-gradient(circle,#5B8DC9 0%,rgba(91,141,201,0) 70%); opacity:.35; }
+.left img { height:78px; display:block; }
+.left p { margin-top:20px; font-size:30px; color:#C9DAEC; }
+.right { position:relative; text-align:right; }
+.right .pill { display:inline-block; font-family:'Poppins'; font-weight:700; font-size:34px; letter-spacing:.08em; text-transform:uppercase; background:#B5A21F; color:#fff; border-radius:999px; padding:16px 34px; }
+.right .sub { margin-top:16px; font-family:'Lora'; font-style:italic; font-size:34px; color:#F1E27A; }
+</style></head><body>
+<div class="b" id="seniors"><div class="left"><img src="wordmark_white.png"><p>Your weekly Florida college plan</p></div><div class="right"><span class="pill">Seniors</span><div class="sub">12th grade</div></div></div>
+<div class="b" id="juniors"><div class="left"><img src="wordmark_white.png"><p>Your weekly Florida college plan</p></div><div class="right"><span class="pill">Juniors</span><div class="sub">11th grade</div></div></div>
+<div class="b" id="early"><div class="left"><img src="wordmark_white.png"><p>Your weekly Florida college plan</p></div><div class="right"><span class="pill">8th–10th</span><div class="sub">Getting a head start</div></div></div>
+<div class="b" id="general"><div class="left"><img src="wordmark_white.png"><p>Your weekly Florida college plan</p></div><div class="right"><span class="pill">Florida</span><div class="sub">College planning, simplified</div></div></div>
+</body></html>

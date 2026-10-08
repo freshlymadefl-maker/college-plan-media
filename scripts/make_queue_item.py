@@ -14,10 +14,28 @@ FONT = "Inter, Helvetica, Arial, sans-serif"
 HFONT = "Poppins, Helvetica, Arial, sans-serif"
 
 
-def to_email_html(html: str) -> str:
+BANNERS = {  # one clean, tested header per segment (templates/email-banners.html -> brand/email/*.jpg)
+    "seg_ec20379a-5aff-4412-81da-eaf22a6a390a": "seniors",
+    "seg_4696667f-dbfa-42a6-a0b5-2f4a0b9ae687": "juniors",
+    "seg_b407009e-e7b1-415f-953d-51cd3b15791f": "early",
+}
+RAW = "https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/main/brand/email/"
+
+
+def banner_img(segment_id):
+    name = BANNERS.get(segment_id, "general")
+    return (f'<img src="{RAW}{name}.jpg" alt="College Plan: your weekly Florida college plan" width="590" '
+            f'style="display:block;width:100%;max-width:590px;height:auto;border:0;border-radius:10px;margin:0 0 18px">')
+
+
+def to_email_html(html: str, segment_id: str = "") -> str:
     html = re.sub(r'\s*data-node-hash="[^"]*"', '', html)
     html = html.replace("{{first_name|there}}", "there")  # merge-tag fallbacks aren't parsed in raw HTML
-    # banner image
+    # header banner: always our own tested banner for the segment (the first figure in the draft is the header)
+    html, n = re.subn(r'<figure[^>]*>.*?</figure>', lambda m: banner_img(segment_id), html, count=1, flags=re.S)
+    if not n:
+        html = banner_img(segment_id) + html
+    # any other figures -> plain images
     html = re.sub(r'<figure[^>]*data-src="([^"]+)"[^>]*?(?:data-alt="([^"]*)")?[^>]*>.*?</figure>',
                   lambda m: f'<img src="{m.group(1)}" alt="{m.group(2) or "College Plan"}" width="590" '
                             f'style="display:block;width:100%;max-width:590px;height:auto;border:0;border-radius:10px;margin:0 0 18px">',
@@ -49,7 +67,7 @@ def slugify(s):
 
 if __name__ == "__main__":
     meta = json.loads(pathlib.Path(sys.argv[1]).read_text())
-    html = to_email_html(pathlib.Path(sys.argv[2]).read_text())
+    html = to_email_html(pathlib.Path(sys.argv[2]).read_text(), meta["segment_id"])
     body = {
         "title": meta["title"],
         "subtitle": meta.get("subtitle", ""),
