@@ -3,20 +3,22 @@
 Goal right now: **followers**. Instagram's strongest signals for reaching new people are **sends (DM shares)**, **saves**, and **Reel watch time**. Every post should be something a parent would send to another parent or save for later. Florida-specific, verified, original, no athletics.
 
 ## Weekly calendar (7 feed posts + 4 Reels + 7 Stories)
+Owner's rule (Oct 9): feed posts go out in the MORNING at 7:00am; Reels go out in the EVENING at 6:00pm. Nothing at midday or 7:30pm anymore (decision-day posts keep their release-night times).
 | Day | Time (ET) | Slot | Template |
 |---|---|---|---|
-| Mon | 7:30pm | "Don't miss" deadlines | weekly-posts #p1 |
-| Tue | 12:00pm | **Reel** (rotation R) | reel/reel-template.html |
-| Tue | 7:30pm | Florida school stats (GPA / SAT / ACT / acceptance) | weekly-posts #p2 |
-| Wed | 7:30pm | Deep-dive carousel (rotation A) | #p3 + inner slides / ph2 cover |
-| Thu | 7:30pm | Photo quote / reframe | photo-posts #ph1 |
-| Fri | 12:00pm | **VOICEOVER Reel** (at least 1/week, owner loves these: AI voice + word-by-word captions, 25–40s) | reel/voiceover-reel.html (see templates/README.md "Voiceover Reels") |
-| Fri | 7:30pm | Engagement / list post (rotation B) | #p5, growth-posts #rk1, ph2 |
-| Sat | 10:30am | Scholarship of the week | growth-posts #sc1 |
-| Sun | 7:30pm | Rotation C | ck1 / pr1 / pr2 |
-| Thu | 12:00pm | **Trial Reel** (rotation R; shown to non-followers first) | reel template, instagramData type TRIAL_REEL |
-| Sun | 12:00pm | **Trial Reel** (rotation R) | reel template, instagramData type TRIAL_REEL |
-| Daily | 8:15am | **Story** (rotate st1 deadline countdown / st2 did-you-know / st3 photo reminder; on Wed add an st4 'New post' teaser at 7:45pm) | templates/story-posts.html |
+| Mon | 7:00am | "Don't miss" deadlines | weekly-posts #p1 |
+| Tue | 7:00am | Florida school stats (GPA / SAT / ACT / acceptance) | weekly-posts #p2 |
+| Tue | 6:00pm | **Reel** (rotation R) | reel/reel-template.html |
+| Wed | 7:00am | Deep-dive carousel (rotation A) | #p3 + inner slides / ph2 cover |
+| Thu | 7:00am | Photo quote / reframe | photo-posts #ph1 |
+| Thu | 6:00pm | **Trial Reel** (rotation R; shown to non-followers first) | reel template, instagramData type TRIAL_REEL |
+| Fri | 7:00am | Engagement / list post (rotation B) | #p5, growth-posts #rk1, ph2 |
+| Fri | 6:00pm | **VOICEOVER Reel** (at least 1/week, owner loves these: AI voice + word-by-word captions, 25–40s) | reel/voiceover-reel.html (see templates/README.md "Voiceover Reels") |
+| Sat | 7:00am | Scholarship of the week | growth-posts #sc1 |
+| Sun | 7:00am | Rotation C | ck1 / pr1 / pr2 |
+| Sun | 6:00pm | **Trial Reel** (rotation R) | reel template, instagramData type TRIAL_REEL |
+| Daily | 8:15am | **Story** (rotate st1 deadline countdown / st2 did-you-know / st3 photo reminder; on Wed add an st4 'New post' teaser at 7:30am, right after the carousel) | templates/story-posts.html |
+| TikTok | 9:30am / 8:00pm | Cross-posts: ~2.5h after the Instagram post they copy (morning ones ~9:30am, evening ones ~8:00pm), max 3/day | weekly TikTok task |
 
 ## Rotation A — Wednesday carousels (cycle in order, then repeat with new angles)
 1. What admissions looks for now ("It's not 2002 anymore": holistic review, essays, rigor, self-reported grades like UF STARS, test policies — verify each school)
@@ -42,7 +44,7 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 3. Newsletter promo (pr2)
 4. "Week ahead" or seasonal photo post (ph2)
 
-## Voiceover Reels (at least one every week — Friday 12pm)
+## Voiceover Reels (at least one every week — Friday 6pm)
 Faceless, AI voice (en-US-AvaNeural) + big word-by-word captions over soft Florida photos, gold section chips, end card pointing to a tool or the newsletter. Formats that work: "3 [Bright Futures/FAFSA/application] mistakes Florida parents make", "What [UF/FSU/UCF] actually looks for", "Explain [dual enrollment/STARS/the FFAA] in 30 seconds", "If your student is a junior, do these 3 things this month". Script 70–110 words, spell acronyms with spaces for the voice (F F A A), every fact verified. Caption repeats the key points in text + "sound on". isAiGenerated true. A second voiceover can replace a trial Reel when it's a strong topic.
 
 ## Trial Reels
@@ -124,6 +126,7 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - 2026-10-08: TikTok launch batch: 17 posts Oct 8-17 (4 videos, 13 photo posts/carousels).
 - 2026-10-08: Roadmaps launch scheduled: Story Oct 8 9pm; voiceover Reel Oct 12 12pm; Senior carousel Oct 13 7:30pm + Story 8:45pm; Freshman carousel Oct 15 7:30pm + Story 8:45pm.
 - 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
+- 2026-10-09: RESCHEDULED everything pending Oct 9–18 to the new times (feed 7:00am, Reels/trial Reels 6:00pm, roadmap teaser Stories 7:30am, Oct 14 checker Story 6pm, TikToks 9:30am/11am/8pm). Oct 9 essay joke post went at 10:00am (morning had passed). Older Log lines below still show the original times.
 - 2026-12-04/09/11/17 8:30pm: decision-day posts already scheduled (UCF, USF, UF ED, FSU) — instagram/2026-12-decisions/. Re-verify each release date the week before; if a date moves, update the post in Metricool.
 - 2026-10-10 Sat 4pm: VOICEOVER REEL #1 — 3 Bright Futures mistakes (instagram/2026-10-tools/vo-bf-mistakes.mp4)
 - 2026-10-18 Sun 12pm: TRIAL REEL — Bright Futures checker demo (instagram/2026-10-tools/checker-reel.mp4)

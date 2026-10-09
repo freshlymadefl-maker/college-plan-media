@@ -1,4 +1,4 @@
-# Daily engagement list (10–15 min, around the 7:30pm post)
+# Daily engagement list (10–15 min, within an hour of the 7:00am post, plus a quick check after the 6:00pm Reel)
 
 1. Reply to every comment on our newest post within an hour (a question back keeps the thread going).
 2. Leave 5–10 genuinely helpful comments on recent posts from the accounts below. Add something useful (a deadline, a tip, a "here's what helped"), never "check out our page".
