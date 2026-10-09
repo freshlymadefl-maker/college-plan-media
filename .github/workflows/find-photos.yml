@@ -1,0 +1,26 @@
+name: Find photos
+# Searches Wikimedia Commons for freely licensed photos listed in photoreq/*.txt
+# (lines: "<slug> | <search terms> | <max>") and saves them to photos/commons/<slug>/ with credits.json + contact.jpg.
+on:
+  push:
+    paths: ['photoreq/*.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - name: Search and download
+        run: python3 scripts/commons_photos.py
+      - name: Commit
+        run: |
+          git config user.name "College Plan"
+          git config user.email freshlymadefl@gmail.com
+          git add -A
+          git diff --cached --quiet || git commit -m "Find photos" && git push

@@ -1,0 +1,4 @@
+uf-stadium | Ben Hill Griffin Stadium | 6
+fsu-stadium | Doak Campbell Stadium | 6
+uf-campus | University of Florida campus | 6
+fsu-campus | Florida State University campus | 6
