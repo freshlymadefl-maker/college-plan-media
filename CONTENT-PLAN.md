@@ -74,6 +74,12 @@ Trial Reels are shown only to non-followers first, so use them to test new hooks
 - "X things to do before [month] ends" · "Florida deadline this week" · "Did you know (scholarship)" · school stat reveal ("UF's middle 50% SAT is…") · myth vs fact flip · "Things I wish I knew in 9th grade" style lists (written as College Plan, no personal persona)
 - Render: `python3 templates/reel/render-reel.py file.html out.mp4 13 30` (~1.5 min). Schedule as instagramData type REEL (showReelOnFeed true) + facebookData type REEL.
 
+## Music on Instagram Reels (Oct 9)
+Every Instagram Reel or trial Reel WITHOUT a voiceover gets an Instagram library track, attached through Metricool: instagramData.audioConfiguration {"audioId": "<numeric id>"}. (Our rendered Reels have a silent audio track, so the music is the only sound.) To find a track, send a search term as audioId (e.g. "upbeat acoustic", "happy instrumental", "chill lofi"). Metricool rejects it with a list of candidate tracks; pick an upbeat, warm INSTRUMENTAL and retry with its numeric audioId. Rotate tracks; don't reuse the same one two weeks running. Tracks used so far: 989564276265815 Dancing In The Sun (Instrumental), Giulio Cercato (Oct 13 Reel); 1375070527788441 Cool Water (Instrumental), Afro Sound Machine (Oct 18 trial Reel). Other good candidates: 1274149560124013 Heros Journey (Instrumental), 209500281934992 Droplets Of Light, 948458014167219 Dandelion (Instrumental).
+- Never add music to voiceover Reels (it would fight the voice).
+- Only Instagram gets the track. Facebook Reels and TikTok videos keep the video's own (silent) audio. TikTok photo posts get autoAddMusic.
+- Carousels can't get music through Metricool or the Instagram API, so scheduled carousels go out without it.
+
 ## Scholarship of the week (Saturday)
 Prefer scholarships with an upcoming deadline or that Florida families miss. Mix Florida state programs (Benacquisto, FSAG, José Martí, Rosewood, Mary McLeod Bethune, First Generation Matching Grant, Children of deceased/disabled veterans, Florida Prepaid Project STARS) and national ones with real deadlines (verify the current cycle on the official site). Always: amount, who qualifies, deadline, official source.
 
