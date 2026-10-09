@@ -2,23 +2,43 @@
 
 Goal right now: **followers**. Instagram's strongest signals for reaching new people are **sends (DM shares)**, **saves**, and **Reel watch time**. Every post should be something a parent would send to another parent or save for later. Florida-specific, verified, original, no athletics.
 
-## Weekly calendar (7 feed posts + 4 Reels + 7 Stories)
+## Weekly calendar (7 feed posts + 6 Reels + 7 Stories)
 Owner's rule (Oct 9): feed posts go out in the MORNING at 7:00am; Reels go out in the EVENING at 6:00pm. Nothing at midday or 7:30pm anymore (decision-day posts keep their release-night times).
+**Spacing rule:** max ONE feed post per day and at least 4 hours between any two Instagram posts (Stories excepted). Never batch-post several feed posts in one sitting again (the Oct 8 launch blast split reach 8 ways). A big moment gets its own day, or replaces that day's slot.
 | Day | Time (ET) | Slot | Template |
 |---|---|---|---|
-| Mon | 7:00am | "Don't miss" deadlines | weekly-posts #p1 |
-| Tue | 7:00am | Florida school stats (GPA / SAT / ACT / acceptance) | weekly-posts #p2 |
+| Mon | 7:00am | "Don't miss" deadlines (CAROUSEL) | weekly-posts #p1 |
+| Mon | 6:00pm | **Carousel remix Reel** — last week's best carousel (most saves + shares in Metricool) turned into a 10–15s Reel | reel/reel-template.html |
+| Tue | 7:00am | Florida school stats (CAROUSEL: hook cover → stats → what it means) | weekly-posts #p2 |
 | Tue | 6:00pm | **Reel** (rotation R) | reel/reel-template.html |
-| Wed | 7:00am | Deep-dive carousel (rotation A) | #p3 + inner slides / ph2 cover |
-| Thu | 7:00am | Photo quote / reframe | photo-posts #ph1 |
+| Wed | 7:00am | Deep-dive CAROUSEL (rotation A) | #p3 + inner slides / ph2 cover |
+| Wed | 6:00pm | **Reel** (rotation R, or a 2nd carousel remix if one clearly won) | reel/reel-template.html |
+| Thu | 7:00am | Photo quote / reframe or fun post (single image is fine) | photo-posts #ph1 / fun-posts |
 | Thu | 6:00pm | **Trial Reel** (rotation R; shown to non-followers first) | reel template, instagramData type TRIAL_REEL |
-| Fri | 7:00am | Engagement / list post (rotation B) | #p5, growth-posts #rk1, ph2 |
+| Fri | 7:00am | Engagement / list post (rotation B, CAROUSEL when it's a list) | #p5, growth-posts #rk1, ph2 |
 | Fri | 6:00pm | **VOICEOVER Reel** (at least 1/week, owner loves these: AI voice + word-by-word captions, 25–40s) | reel/voiceover-reel.html (see templates/README.md "Voiceover Reels") |
 | Sat | 7:00am | Scholarship of the week | growth-posts #sc1 |
 | Sun | 7:00am | Rotation C | ck1 / pr1 / pr2 |
 | Sun | 6:00pm | **Trial Reel** (rotation R) | reel template, instagramData type TRIAL_REEL |
 | Daily | 8:15am | **Story** (rotate st1 deadline countdown / st2 did-you-know / st3 photo reminder; on Wed add an st4 'New post' teaser at 7:30am, right after the carousel) | templates/story-posts.html |
 | TikTok | 9:30am / 8:00pm | Cross-posts: ~2.5h after the Instagram post they copy (morning ones ~9:30am, evening ones ~8:00pm), max 3/day | weekly TikTok task |
+
+## Format mix: carousels for followers, Reels for reach (checked Oct 2026)
+Industry benchmarks (Socialinsider/Metricool/Buffer roundups, 2026) agree: carousels get the highest engagement rate (~9–10% vs ~6–7% for Reels), ~2x the saves, 2–3x the DM shares and ~3x the profile visits of Reels. Reels reach 3–5x more accounts, mostly non-followers. So: carousels turn viewers into followers, Reels bring in new viewers. Keep BOTH — 4–5 carousels + 6 Reels a week — and recycle every winning carousel into a Reel (Monday remix slot). For an account under ~5K followers, lean on Reels for reach; never drop the carousels.
+Instagram (per Adam Mosseri) may re-show a carousel to people who scrolled past, starting on SLIDE 2. So slide 2 must work as a second cover.
+
+## Carousel rules (the cover decides everything)
+Cover slide (slide 1) must pass the "would a Florida parent stop scrolling?" test:
+1. ONE big line, max ~8 words, readable at thumbnail size. Lead with the payoff or the stakes, not the topic. ("Bright Futures just got harder to get" beats "Bright Futures update".)
+2. Make it specific to them: a grade/class year ("Class of 2028 parents"), a Florida name (UF, Bright Futures, FFAA, their county), or a number/$ ("100% of tuition", "3 mistakes", "Oct 15").
+3. Open a loop the swipe closes: a mistake, a myth, a surprising stat, "what nobody tells you", "before [deadline]".
+4. A clear swipe cue: an arrow/"Swipe →" chip, or an element running off the right edge.
+5. No clutter: wordmark small, no paragraphs, high contrast; photo covers need a dark overlay behind the text.
+Slide 2 = second cover (it's what re-shown carousels open on): restate the hook as a promise ("Here's exactly what changed for the Class of 2028") plus the first useful fact. Middle slides: one idea per slide, big text, numbered. Last slide: save/send ask + "Free newsletter, link in bio". Aim for 6–10 slides. Write 3 cover options for every carousel and pick the strongest; note the runner-up in the Log so a later Reel or trial Reel can test it.
+Note: Instagram suggests carousels with music can reach more people, but Metricool cannot attach music to carousels, so scheduled carousels go out without it. That is fine.
+
+## Collab posts
+See COLLABS.md (who to pitch, offers, DM templates, tracker). When a partner has agreed (listed as "Agreed" in the COLLABS.md tracker with a verified @handle), build the Collab post in that week's matching feed slot and schedule it with instagramData.collaborators [{"username":"<handle>","deleted":false}]. Put "with @handle" on the cover slide. Never add a collaborator who hasn't agreed.
 
 ## Rotation A — Wednesday carousels (cycle in order, then repeat with new angles)
 1. What admissions looks for now ("It's not 2002 anymore": holistic review, essays, rigor, self-reported grades like UF STARS, test policies — verify each school)
@@ -126,6 +146,7 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - 2026-10-08: TikTok launch batch: 17 posts Oct 8-17 (4 videos, 13 photo posts/carousels).
 - 2026-10-08: Roadmaps launch scheduled: Story Oct 8 9pm; voiceover Reel Oct 12 12pm; Senior carousel Oct 13 7:30pm + Story 8:45pm; Freshman carousel Oct 15 7:30pm + Story 8:45pm.
 - 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
+- 2026-10-09: PLAN CHANGE: 6 Reels/week (added Mon 6pm carousel-remix Reel + Wed 6pm Reel), carousel cover rules, spacing rule (1 feed post/day), Collab outreach started (COLLABS.md).
 - 2026-10-09: RESCHEDULED everything pending Oct 9–18 to the new times (feed 7:00am, Reels/trial Reels 6:00pm, roadmap teaser Stories 7:30am, Oct 14 checker Story 6pm, TikToks 9:30am/11am/8pm). Oct 9 essay joke post went at 10:00am (morning had passed). Older Log lines below still show the original times.
 - 2026-12-04/09/11/17 8:30pm: decision-day posts already scheduled (UCF, USF, UF ED, FSU) — instagram/2026-12-decisions/. Re-verify each release date the week before; if a date moves, update the post in Metricool.
 - 2026-10-10 Sat 4pm: VOICEOVER REEL #1 — 3 Bright Futures mistakes (instagram/2026-10-tools/vo-bf-mistakes.mp4)
