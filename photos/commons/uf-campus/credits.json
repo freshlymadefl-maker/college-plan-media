@@ -1,0 +1,65 @@
+{
+ "query": "University of Florida campus",
+ "photos": [
+  {
+   "file": "1.jpg",
+   "title": "File:UFHistoricBuildingBuckmanHall.JPG",
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f1/UFHistoricBuildingBuckmanHall.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:UFHistoricBuildingBuckmanHall.JPG",
+   "artist": "Douglas Whitaker at en.wikipedia",
+   "license": "CC BY 2.5",
+   "width": 1600,
+   "height": 2400
+  },
+  {
+   "file": "2.jpg",
+   "title": "File:Gville UF Auditorium04.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Gville_UF_Auditorium04.jpg/1920px-Gville_UF_Auditorium04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Gville_UF_Auditorium04.jpg",
+   "artist": "Ebyabe",
+   "license": "CC BY-SA 3.0",
+   "width": 2448,
+   "height": 3264
+  },
+  {
+   "file": "3.jpg",
+   "title": "File:UF Buckman Face.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/UF_Buckman_Face.jpg/1920px-UF_Buckman_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:UF_Buckman_Face.jpg",
+   "artist": "William M",
+   "license": "CC BY-SA 3.0",
+   "width": 3888,
+   "height": 2592
+  },
+  {
+   "file": "4.jpg",
+   "title": "File:Historic Landscape Plan - University of Florida Campus, Plaza of the Americas, University of Florida Campus Quad Bounded by West University Avenue, US 441-Southwest 13th HALS FL-5 (sheet 1 of 1).png",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Historic_Landscape_Plan_-_University_of_Florida_Campus%2C_Plaza_of_the_Americas%2C_University_of_Florida_Campus_Quad_Bounded_by_West_University_Avenue%2C_US_441-Southwest_13th_HALS_FL-5_%28sheet_1_of_1%29.png/1920px-thumbnail.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Historic_Landscape_Plan_-_University_of_Florida_Campus,_Plaza_of_the_Americas,_University_of_Florida_Campus_Quad_Bounded_by_West_University_Avenue,_US_441-Southwest_13th_HALS_FL-5_(sheet_1_of_1).png",
+   "artist": "Lugano, Brenda W., creator",
+   "license": "Public domain",
+   "width": 14400,
+   "height": 9600
+  },
+  {
+   "file": "5.jpg",
+   "title": "File:Gville UF Buckman Hall01.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Gville_UF_Buckman_Hall01.jpg/1920px-Gville_UF_Buckman_Hall01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Gville_UF_Buckman_Hall01.jpg",
+   "artist": "Ebyabe",
+   "license": "CC BY-SA 3.0",
+   "width": 3264,
+   "height": 2448
+  },
+  {
+   "file": "6.jpg",
+   "title": "File:Historic University of Florida Campus.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Historic_University_of_Florida_Campus.jpg/1920px-Historic_University_of_Florida_Campus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Historic_University_of_Florida_Campus.jpg",
+   "artist": "University of Florida Archives",
+   "license": "CC BY-SA 2.0",
+   "width": 2117,
+   "height": 1634
+  }
+ ]
+}

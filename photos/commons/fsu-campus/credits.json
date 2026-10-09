@@ -1,0 +1,65 @@
+{
+ "query": "Florida State University campus",
+ "photos": [
+  {
+   "file": "1.jpg",
+   "title": "File:Florida State University residence halls.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Florida_State_University_residence_halls.JPG/1920px-Florida_State_University_residence_halls.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Florida_State_University_residence_halls.JPG",
+   "artist": "Sirberus at English Wikipedia",
+   "license": "Public domain",
+   "width": 2048,
+   "height": 1536
+  },
+  {
+   "file": "2.jpg",
+   "title": "File:Landford Green Sign of Florida State University.jpg",
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/75/Landford_Green_Sign_of_Florida_State_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:Landford_Green_Sign_of_Florida_State_University.jpg",
+   "artist": "Looking for an A",
+   "license": "CC BY-SA 4.0",
+   "width": 1920,
+   "height": 1280
+  },
+  {
+   "file": "3.jpg",
+   "title": "File:Legacy Fountain of Florida State University.jpg",
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Legacy_Fountain_of_Florida_State_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:Legacy_Fountain_of_Florida_State_University.jpg",
+   "artist": "Looking for an A",
+   "license": "CC BY-SA 4.0",
+   "width": 1920,
+   "height": 1280
+  },
+  {
+   "file": "4.jpg",
+   "title": "File:Landford Green of Florida State University.jpg",
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Landford_Green_of_Florida_State_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:Landford_Green_of_Florida_State_University.jpg",
+   "artist": "Looking for an A",
+   "license": "CC BY-SA 4.0",
+   "width": 1920,
+   "height": 1280
+  },
+  {
+   "file": "5.jpg",
+   "title": "File:Landis Green of Florida State University.jpg",
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Landis_Green_of_Florida_State_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:Landis_Green_of_Florida_State_University.jpg",
+   "artist": "Looking for an A",
+   "license": "CC BY-SA 4.0",
+   "width": 1920,
+   "height": 1280
+  },
+  {
+   "file": "6.jpg",
+   "title": "File:Gray Street entrance to Florida State University.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Gray_Street_entrance_to_Florida_State_University.jpg/1920px-Gray_Street_entrance_to_Florida_State_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Gray_Street_entrance_to_Florida_State_University.jpg",
+   "artist": "The Bushranger",
+   "license": "CC BY-SA 4.0",
+   "width": 3220,
+   "height": 2399
+  }
+ ]
+}
