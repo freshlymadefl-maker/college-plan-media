@@ -1,15 +1,45 @@
 {
- "query": "UF Health Shands Hospital Gainesville",
+ "query": "Shands Hospital University of Florida",
  "photos": [
   {
    "file": "1.jpg",
-   "title": "File:Shands Childrens and Cancer Hospitals at Sunset.jpg",
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Shands_Childrens_and_Cancer_Hospitals_at_Sunset.jpg/1920px-Shands_Childrens_and_Cancer_Hospitals_at_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "page": "https://commons.wikimedia.org/wiki/File:Shands_Childrens_and_Cancer_Hospitals_at_Sunset.jpg",
-   "artist": "SSyntaxin",
-   "license": "CC BY-SA 4.0",
-   "width": 3622,
-   "height": 2340
+   "title": "File:UF Shands Hill.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/UF_Shands_Hill.jpg/1920px-UF_Shands_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:UF_Shands_Hill.jpg",
+   "artist": "William M",
+   "license": "CC BY-SA 3.0",
+   "width": 3888,
+   "height": 2592
+  },
+  {
+   "file": "2.jpg",
+   "title": "File:UF Shands ARB.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/UF_Shands_ARB.jpg/1920px-UF_Shands_ARB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:UF_Shands_ARB.jpg",
+   "artist": "William M",
+   "license": "CC BY-SA 3.0",
+   "width": 4444,
+   "height": 4433
+  },
+  {
+   "file": "3.jpg",
+   "title": "File:UF Shands.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/UF_Shands.jpg/1920px-UF_Shands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:UF_Shands.jpg",
+   "artist": "WillMcC",
+   "license": "CC BY-SA 3.0",
+   "width": 3888,
+   "height": 2592
+  },
+  {
+   "file": "4.jpg",
+   "title": "File:UF ShandsMedicalPlaza.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/UF_ShandsMedicalPlaza.jpg/1920px-UF_ShandsMedicalPlaza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:UF_ShandsMedicalPlaza.jpg",
+   "artist": "WillMcC",
+   "license": "CC BY-SA 3.0",
+   "width": 3888,
+   "height": 2592
   }
  ]
 }

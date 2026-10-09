@@ -1,4 +1,85 @@
 {
- "query": "Florida International University Modesto Maidique campus",
- "photos": []
+ "query": "Florida International University",
+ "photos": [
+  {
+   "file": "1.jpg",
+   "title": "File:Florida International University, Deuxieme Maison.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Florida_International_University%2C_Deuxieme_Maison.JPG/1920px-Florida_International_University%2C_Deuxieme_Maison.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Florida_International_University,_Deuxieme_Maison.JPG",
+   "artist": "Unknown",
+   "license": "CC BY 3.0",
+   "width": 2816,
+   "height": 2112
+  },
+  {
+   "file": "2.jpg",
+   "title": "File:FIU ChemistryPhysics.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/FIU_ChemistryPhysics.JPG/1920px-FIU_ChemistryPhysics.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FIU_ChemistryPhysics.JPG",
+   "artist": "Comayagua99 (talk)",
+   "license": "CC BY-SA 3.0",
+   "width": 2816,
+   "height": 2112
+  },
+  {
+   "file": "3.jpg",
+   "title": "File:Entry gate, Florida International University.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Entry_gate%2C_Florida_International_University.JPG/1920px-Entry_gate%2C_Florida_International_University.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Entry_gate,_Florida_International_University.JPG",
+   "artist": "Unknown",
+   "license": "CC BY 3.0",
+   "width": 2816,
+   "height": 2112
+  },
+  {
+   "file": "4.jpg",
+   "title": "File:Spice Florida 2019.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Spice_Florida_2019.jpg/1920px-Spice_Florida_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Spice_Florida_2019.jpg",
+   "artist": "Jean Laurenceau",
+   "license": "CC BY-SA 4.0",
+   "width": 2560,
+   "height": 3590
+  },
+  {
+   "file": "5.jpg",
+   "title": "File:FIU wow.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/FIU_wow.JPG/1920px-FIU_wow.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FIU_wow.JPG",
+   "artist": "Comayagua99 (talk)",
+   "license": "CC BY-SA 3.0",
+   "width": 2816,
+   "height": 2112
+  },
+  {
+   "file": "6.jpg",
+   "title": "File:FIU students walking.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/FIU_students_walking.jpg/1920px-FIU_students_walking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FIU_students_walking.jpg",
+   "artist": "Eduardo Merille",
+   "license": "CC BY-SA 2.0",
+   "width": 2844,
+   "height": 3612
+  },
+  {
+   "file": "7.jpg",
+   "title": "File:FIU Worlds Ahead.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/FIU_Worlds_Ahead.jpg/1920px-FIU_Worlds_Ahead.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FIU_Worlds_Ahead.jpg",
+   "artist": "Eduardo Merille",
+   "license": "CC BY-SA 2.0",
+   "width": 3319,
+   "height": 2393
+  },
+  {
+   "file": "8.jpg",
+   "title": "File:FIU students walking to class.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/FIU_students_walking_to_class.jpg/1920px-FIU_students_walking_to_class.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FIU_students_walking_to_class.jpg",
+   "artist": "Eduardo Merille",
+   "license": "CC BY-SA 2.0",
+   "width": 3434,
+   "height": 3612
+  }
+ ]
 }

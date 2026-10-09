@@ -1,5 +1,5 @@
 {
- "query": "USF Health Morsani College of Medicine",
+ "query": "University of South Florida health",
  "photos": [
   {
    "file": "1.jpg",
@@ -10,6 +10,36 @@
    "license": "CC BY-SA 4.0",
    "width": 2790,
    "height": 3446
+  },
+  {
+   "file": "2.jpg",
+   "title": "File:USF Health Byrd Alzheimer's Institute.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/USF_Health_Byrd_Alzheimer%27s_Institute.jpg/1920px-USF_Health_Byrd_Alzheimer%27s_Institute.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:USF_Health_Byrd_Alzheimer%27s_Institute.jpg",
+   "artist": "LittleT889",
+   "license": "CC BY-SA 4.0",
+   "width": 2206,
+   "height": 1848
+  },
+  {
+   "file": "3.jpg",
+   "title": "File:NB HCR 581; USF Health; Skyway.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/NB_HCR_581%3B_USF_Health%3B_Skyway.jpg/1920px-NB_HCR_581%3B_USF_Health%3B_Skyway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:NB_HCR_581;_USF_Health;_Skyway.jpg",
+   "artist": "DanTD",
+   "license": "CC BY-SA 4.0",
+   "width": 3648,
+   "height": 2736
+  },
+  {
+   "file": "4.jpg",
+   "title": "File:NB HCR 581; USF Health; Schimberg Library Entrance.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/NB_HCR_581%3B_USF_Health%3B_Schimberg_Library_Entrance.jpg/1920px-NB_HCR_581%3B_USF_Health%3B_Schimberg_Library_Entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:NB_HCR_581;_USF_Health;_Schimberg_Library_Entrance.jpg",
+   "artist": "DanTD",
+   "license": "CC BY-SA 4.0",
+   "width": 3648,
+   "height": 2736
   }
  ]
 }
