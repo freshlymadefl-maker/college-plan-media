@@ -1,0 +1,65 @@
+{
+ "query": "Florida Atlantic University Boca Raton campus",
+ "photos": [
+  {
+   "file": "1.jpg",
+   "title": "File:Green-ribbon-school-2019.jpg",
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/54/Green-ribbon-school-2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:Green-ribbon-school-2019.jpg",
+   "artist": "Florida Atlantic University",
+   "license": "Public domain",
+   "width": 1440,
+   "height": 960
+  },
+  {
+   "file": "2.jpg",
+   "title": "File:FAU Alumni Center.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/FAU_Alumni_Center.JPG/1920px-FAU_Alumni_Center.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FAU_Alumni_Center.JPG",
+   "artist": "Kmgcoolguy4",
+   "license": "CC BY-SA 3.0",
+   "width": 3264,
+   "height": 2448
+  },
+  {
+   "file": "3.jpg",
+   "title": "File:Innovation Village Apartments.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Innovation_Village_Apartments.jpg/1920px-Innovation_Village_Apartments.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Innovation_Village_Apartments.jpg",
+   "artist": "Owl2Doc",
+   "license": "CC BY-SA 3.0",
+   "width": 2048,
+   "height": 1536
+  },
+  {
+   "file": "4.jpg",
+   "title": "File:FAU Sean Stein Pavilion.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/FAU_Sean_Stein_Pavilion.JPG/1920px-FAU_Sean_Stein_Pavilion.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FAU_Sean_Stein_Pavilion.JPG",
+   "artist": "Kmgcoolguy4",
+   "license": "CC BY-SA 3.0",
+   "width": 3264,
+   "height": 2448
+  },
+  {
+   "file": "5.jpg",
+   "title": "File:FAU Parliament Hall.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/FAU_Parliament_Hall.JPG/1920px-FAU_Parliament_Hall.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FAU_Parliament_Hall.JPG",
+   "artist": "Kmgcoolguy4",
+   "license": "CC BY-SA 3.0",
+   "width": 3264,
+   "height": 2448
+  },
+  {
+   "file": "6.jpg",
+   "title": "File:FAU SE Wimberly Library.JPG",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/FAU_SE_Wimberly_Library.JPG/1920px-FAU_SE_Wimberly_Library.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:FAU_SE_Wimberly_Library.JPG",
+   "artist": "Kmgcoolguy4",
+   "license": "CC BY-SA 3.0",
+   "width": 3264,
+   "height": 2448
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "query": "University of South Florida Tampa campus",
+ "photos": [
+  {
+   "file": "1.jpg",
+   "title": "File:USF Marshall Center Running of the Bulls.JPG",
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e9/USF_Marshall_Center_Running_of_the_Bulls.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:USF_Marshall_Center_Running_of_the_Bulls.JPG",
+   "artist": "Rick DeBow",
+   "license": "Public domain",
+   "width": 1831,
+   "height": 1160
+  },
+  {
+   "file": "2.jpg",
+   "title": "File:USF Tampa Library inside.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/USF_Tampa_Library_inside.jpg/1920px-USF_Tampa_Library_inside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:USF_Tampa_Library_inside.jpg",
+   "artist": "Librarian vz",
+   "license": "CC BY-SA 4.0",
+   "width": 3264,
+   "height": 2448
+  },
+  {
+   "file": "3.jpg",
+   "title": "File:Dr. Cora Dunkley & Lucia Gonzalez.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Dr._Cora_Dunkley_%26_Lucia_Gonzalez.jpg/1920px-Dr._Cora_Dunkley_%26_Lucia_Gonzalez.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Dr._Cora_Dunkley_%26_Lucia_Gonzalez.jpg",
+   "artist": "AKL121",
+   "license": "CC BY-SA 4.0",
+   "width": 3024,
+   "height": 4032
+  },
+  {
+   "file": "4.jpg",
+   "title": "File:Bahmue ROCI Japan, 1987.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Bahmue_ROCI_Japan%2C_1987.jpg/1920px-Bahmue_ROCI_Japan%2C_1987.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Bahmue_ROCI_Japan,_1987.jpg",
+   "artist": "Polarbearabi",
+   "license": "CC0",
+   "width": 3024,
+   "height": 4032
+  },
+  {
+   "file": "5.jpg",
+   "title": "File:IotaDormUSF-January1993.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/IotaDormUSF-January1993.jpg/1920px-IotaDormUSF-January1993.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:IotaDormUSF-January1993.jpg",
+   "artist": "Formulanone",
+   "license": "CC BY-SA 3.0",
+   "width": 2937,
+   "height": 2020
+  },
+  {
+   "file": "6.jpg",
+   "title": "File:USF Sarasota.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/USF_Sarasota.jpg/1920px-USF_Sarasota.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:USF_Sarasota.jpg",
+   "artist": "Alaska Miller",
+   "license": "CC BY-SA 4.0",
+   "width": 3697,
+   "height": 2773
+  }
+ ]
+}
