@@ -1,0 +1,5 @@
+fiu-campus | Florida International University | 8
+fau-housing | Florida Atlantic University dormitory | 4
+uf-health | Shands Hospital University of Florida | 4
+usf-health | University of South Florida health | 4
+ucf-greek | UCF fraternity sorority | 4
