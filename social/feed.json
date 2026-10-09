@@ -1,38 +1,70 @@
 {
- "updated": "2026-10-08T16:45Z",
+ "updated": "2026-10-09T12:39Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
   {
-   "url": "https://www.instagram.com/p/DeNCKHxz2L4/",
-   "img": "social/img/DeNCKHxz2L4.jpg",
-   "date": "20261007184550",
-   "label": "Oct 7",
-   "caption": "You do not have to figure out college in 9th grade. You just want to avoid accidentally closing doors.",
+   "url": "https://www.instagram.com/p/DeQHwWtCB-Q/",
+   "img": "social/img/DeQHwWtCB-Q.jpg",
+   "date": "20261008233213",
+   "label": "Oct 8",
+   "caption": "\ud83d\udea8 Bright Futures update for the Class of 2028",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
+  {
+   "url": "https://www.instagram.com/p/DePOXjUiA15/",
+   "img": "social/img/DePOXjUiA15.jpg",
+   "date": "20261008151102",
+   "label": "Oct 8",
+   "caption": "Hi, Florida parents \ud83d\udc4b Welcome to College Plan.",
    "type": "FEED_IMAGE"
   },
   {
-   "url": "https://www.instagram.com/p/DeNCGBuTLIe/",
-   "img": "social/img/DeNCGBuTLIe.jpg",
-   "date": "20261007184509",
-   "label": "Oct 7",
-   "caption": "Florida families have some really valuable programs and requirements worth understanding before senior year.",
+   "url": "https://www.instagram.com/p/DePN6TciOTo/",
+   "img": "social/img/DePN6TciOTo.jpg",
+   "date": "20261008150647",
+   "label": "Oct 8",
+   "caption": "Most Florida parents hear about the FAFSA. Fewer hear about the FFAA, and that's the one that unlocks Bright Futures. \ud83d\udc40",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
+  {
+   "url": "https://www.instagram.com/p/DePMEsDCML9/",
+   "img": "social/img/DePMEsDCML9.jpg",
+   "date": "20261008145059",
+   "label": "Oct 8",
+   "caption": "\"Does my kid even qualify for Bright Futures?\" \ud83e\udd14",
    "type": "FEED_IMAGE"
   },
   {
-   "url": "https://www.instagram.com/p/DeNB-XCTxZQ/",
-   "img": "social/img/DeNB-XCTxZQ.jpg",
-   "date": "20261007184407",
-   "label": "Oct 7",
-   "caption": "The goal is not to collect activities just to make a r\u00e9sum\u00e9 look full.",
+   "url": "https://www.instagram.com/p/DePK7elCBQe/",
+   "img": "social/img/DePK7elCBQe.jpg",
+   "date": "20261008144045",
+   "label": "Oct 8",
+   "caption": "Florida School Spotlight: UF \ud83d\udc0a",
    "type": "FEED_IMAGE"
   },
   {
-   "url": "https://www.instagram.com/p/DeM8f-9RKdF/",
-   "img": "social/img/DeM8f-9RKdF.jpg",
-   "date": "20261007175615",
-   "label": "Oct 7",
-   "caption": "9th grade may feel early, but this is when a lot of the foundation gets built.",
+   "url": "https://www.instagram.com/p/DePJ2noCDhO/",
+   "img": "social/img/DePJ2noCDhO.jpg",
+   "date": "20261008143124",
+   "label": "Oct 8",
+   "caption": "October is loud. \ud83d\udce3",
+   "type": "FEED_IMAGE"
+  },
+  {
+   "url": "https://www.instagram.com/p/DePIpXdiFFt/",
+   "img": "social/img/DePIpXdiFFt.jpg",
+   "date": "20261008142048",
+   "label": "Oct 8",
+   "caption": "Myth or fact? \ud83e\udd14",
+   "type": "FEED_IMAGE"
+  },
+  {
+   "url": "https://www.instagram.com/p/DePHf9PiLNl/",
+   "img": "social/img/DePHf9PiLNl.jpg",
+   "date": "20261008141047",
+   "label": "Oct 8",
+   "caption": "Scholarship of the week \ud83c\udf93 Most Florida parents have never heard of this one.",
    "type": "FEED_IMAGE"
   }
  ]
