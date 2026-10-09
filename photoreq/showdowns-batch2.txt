@@ -1,0 +1,11 @@
+ucf-campus | University of Central Florida campus | 6
+ucf-student-union | UCF Student Union Orlando | 4
+usf-campus | University of South Florida Tampa campus | 6
+usf-health | USF Health Morsani College of Medicine | 4
+uf-health | UF Health Shands Hospital Gainesville | 4
+fiu-campus | Florida International University Modesto Maidique campus | 6
+fau-campus | Florida Atlantic University Boca Raton campus | 6
+fiu-housing | Florida International University residence hall | 4
+fau-housing | Florida Atlantic University residence hall | 4
+fsu-greek | Florida State University fraternity house | 4
+ucf-greek | University of Central Florida Greek Park | 4
