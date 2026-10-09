@@ -4,7 +4,7 @@ Writes templates/weeks/showdown-<name>.html and instagram/<folder>/sd1..sd6.png 
 Config keys: folder, pill, question, a{name,short,place,color,cover,photo,big,bigsmall,bullets[],source,vote},
 b{...same}, second{photo,pill,title,lead}, vote_note, credits (list of strings), not_affiliated (e.g. "UF or FSU").
 Photo paths are relative to the repo root (photos/commons/<slug>/<n>.jpg). Styles: templates/showdown-style.css.html."""
-import json, sys, os, html, pathlib
+import json, sys, os, html, pathlib, re
 from playwright.sync_api import sync_playwright
 root = pathlib.Path(__file__).resolve().parent.parent
 cfg = json.load(open(sys.argv[1])); name = pathlib.Path(sys.argv[1]).stem
@@ -35,6 +35,18 @@ body = f'''
 <p>Deadlines, Bright Futures and campus life for Florida families. Free newsletter, link in bio.</p></div>
 <div class="credits">Photos via Wikimedia Commons, text added: {e('; '.join(cfg['credits']))}. College Plan is not affiliated with {e(cfg['not_affiliated'])}.</div>
 <div class="foot"><img src="../wordmark_white.png"><span style="font-family:'Poppins';font-weight:600;font-size:26px">@college.plan</span></div></div>'''
+def dd(n, pos, w, rot): return f'<img class="dd" src="../doodles/{n}.svg" style="{pos};width:{w}px;transform:rotate({rot}deg)">'
+DOODLES = cfg.get("doodles", {
+ "sd1": [dd("star-orange","left:50px;top:420px",92,-14), dd("burst-gold","right:50px;top:430px",96,10), dd("dots-coral","left:470px;top:860px",60,0)],
+ "sd2": [dd("plus-coral","right:70px;top:66px",64,8)],
+ "sd3": [dd("star-gold","right:70px;top:58px",76,12)],
+ "sd4": [dd("heart-coral","right:70px;top:58px",76,-10)],
+ "sd5": [dd("star-gold","left:70px;top:70px",110,-12), dd("burst-mist","right:60px;top:90px",130,0), dd("heart-orange","left:120px;bottom:190px",120,-8), dd("plus-coral","right:150px;bottom:230px",70,14), dd("squiggle-gold","left:400px;bottom:250px",220,0)],
+ "sd6": [dd("star-navy","left:80px;top:80px",0,0).replace('width:0px','display:none'), dd("star-orange","right:80px;top:70px",100,15), dd("heart-gold","left:90px;top:640px",120,-10), dd("burst-gold","right:110px;top:640px",120,0), dd("dots-coral","left:480px;top:690px",60,0)],
+})
+for sid, items in DOODLES.items():
+    body = re.sub(rf'(<div class="s[^"]*" id="{sid}">)', lambda m: m.group(1) + "".join(items), body, count=1)
+css = css.replace("</style>", ".dd{position:absolute;pointer-events:none;z-index:5}</style>")
 out_html = root / "templates/weeks" / f"showdown-{name}.html"; out_html.parent.mkdir(parents=True, exist_ok=True)
 out_html.write_text(f'<!doctype html><html><head><meta charset="utf-8">{css}</head><body>{body}</body></html>')
 out = root / "instagram" / cfg["folder"]; out.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,57 @@
+{
+ "folder": "sample-showdown-uf-fsu",
+ "question": "Best game day in Florida?",
+ "vote_q": "Which game day wins?",
+ "vote_note": "Tag a senior who's deciding between them, or a parent who'd argue with you. 😄",
+ "not_affiliated": "UF or FSU",
+ "a": {
+  "label": "The Swamp",
+  "sub": "UF · Gainesville",
+  "cover": "photos/commons/uf-stadium/4.jpg",
+  "name": "University of Florida",
+  "short": "The Swamp",
+  "place": "Ben Hill Griffin Stadium · Gainesville",
+  "color": "#2F6FD6",
+  "photo": "photos/commons/uf-stadium/5.jpg",
+  "big": "88,548",
+  "bigsmall": "seats",
+  "bullets": [
+   "\"Mr. Two Bits\" cheer before every home game",
+   "\"We Are the Boys\": fans link arms and sway after the 3rd quarter",
+   "The Gator Chomp"
+  ],
+  "source": "floridagators.com, UF Student Life",
+  "vote": "SWAMP"
+ },
+ "b": {
+  "label": "Doak",
+  "sub": "FSU · Tallahassee",
+  "cover": "photos/commons/fsu-stadium/2.jpg",
+  "name": "Florida State University",
+  "short": "Doak Campbell Stadium",
+  "place": "Tallahassee",
+  "color": "#9B2335",
+  "photo": "photos/commons/fsu-stadium/3.jpg",
+  "big": "67,277",
+  "bigsmall": "seats",
+  "bullets": [
+   "Before every home game, Osceola rides Renegade and plants a flaming spear at midfield",
+   "A tradition since 1978, done with the Seminole Tribe of Florida's permission"
+  ],
+  "source": "seminoles.com",
+  "vote": "DOAK"
+ },
+ "second": {
+  "photo": "photos/commons/uf-stadium/6.jpg",
+  "pill": "Seniors, settle this",
+  "title": "Two packed stadiums. One vote. 🏟️",
+  "lead": "Touring schools this fall? Game day is a big part of campus life. Here's what each one brings, then tell us your pick."
+ },
+ "credits": [
+  "\"Ben Hill Griffin Stadium During 'I Won't Back Down' Tradition\" by GATORFAN2525 (CC BY-SA 4.0)",
+  "\"Ben Hill Griffin Stadium\" by Berniestew (public domain)",
+  "\"Doak Campbell Stadium fireworks\" by SeminoleNation (CC BY-SA 4.0)",
+  "\"Doak Campbell Stadium - FSU\" by Melizabethi123 (CC BY-SA 3.0)",
+  "\"Ben Hill Griffin Stadium during Soccer Match\" by UFHoops06 at English Wikipedia (CC BY 3.0)"
+ ]
+}
