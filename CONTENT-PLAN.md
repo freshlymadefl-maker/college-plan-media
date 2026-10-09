@@ -33,8 +33,8 @@ Instagram (per Adam Mosseri) may re-show a carousel to people who scrolled past,
 ## First comment (Oct 9 — owner request)
 Every feed post and Reel gets a scheduled first comment from @college.plan via Metricool's firstCommentText field. It goes up the moment the post publishes and gives people an easy place to jump in. Make it a short, playful prompt that matches the post, never a repeat of the caption: Showdowns repeat the vote words plus a bonus question ("Vote here 👇 SWAMP or DOAK? Bonus points for your best game-day memory 🏟️"); quizzes say "No peeking! Drop your score 👇"; info posts ask one easy question ("What grade is your student in? 👇"); GUIDE posts say "Comment GUIDE here and we'll DM you the cheat sheet 📩". Never invent fake replies or pretend to be a parent. (Metricool can't schedule replies to other people's comments, since those don't exist yet. The owner replies by hand.)
 
-## Guess the Florida campus (fun quiz format, Oct 9)
-templates/weeks/2026-10-09-guess-the-campus.html: cover → 3 rounds (one real Commons photo each + 4 choices, no name or sign visible in the photo) → answers slide → "comment your score" slide with credits. Use about once a month in the Thursday or Sunday slot, or as a bonus evening post. Each round's answer comes from the photo's Commons title/description.
+## Guess the Florida campus (fun quiz format — owner: keep it to ONE photo)
+templates/weeks/2026-10-09-guess-the-campus-v2.html: 3 slides only: (1) cover "Guess the Florida campus" over a BLURRED version of the photo with a big "?", (2) the real Commons photo (no name, sign or logo visible) + "Which campus is this?" + 4 choices A–D, (3) "Comment your guess" with the 4 choices + "answer in our Story tomorrow" + credits. No answer slide. Next day at 12:00pm, post an answer Story (1080x1920, #ans in the same file). First comment: "Lock in your guess 👇 A, B, C or D?". Use about once a month in the Thursday or Sunday slot, or as a bonus evening post. The answer comes from the photo's Commons title/description.
 
 ## Carousel rules (the cover decides everything)
 Cover slide (slide 1) must pass the "would a Florida parent stop scrolling?" test:
@@ -179,7 +179,7 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - 2026-10-08: TikTok launch batch: 17 posts Oct 8-17 (4 videos, 13 photo posts/carousels).
 - 2026-10-08: Roadmaps launch scheduled: Story Oct 8 9pm; voiceover Reel Oct 12 12pm; Senior carousel Oct 13 7:30pm + Story 8:45pm; Freshman carousel Oct 15 7:30pm + Story 8:45pm.
 - 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
-- 2026-10-09 Fri 6pm: BONUS QUIZ — Guess the Florida campus (UF Auditorium, FSU Legacy Fountain, FAU Parliament Hall) instagram/2026-10-09-guess-the-campus/. First comments added to all 5 Showdowns + this quiz.
+- 2026-10-09 Fri 6pm: BONUS QUIZ — Guess the Florida campus, simplified to one photo (UF University Auditorium); answer Story Oct 10 12pm instagram/2026-10-09-guess-the-campus/. First comments added to all 5 Showdowns + this quiz.
 - 2026-11-13 Fri 7am: SHOWDOWN — FSU vs UCF Greek life (NOLES/KNIGHTS) instagram/2026-11-13-showdown-fsu-ucf/
 - 2026-11-06 Fri 7am: SHOWDOWN — UF vs USF future doctors (GATORS/BULLS; USF 7-year B.S./M.D.) instagram/2026-11-06-showdown-uf-usf/
 - 2026-10-30 Fri 7am: SHOWDOWN — FIU vs FAU dorm life (PANTHERS/OWLS) instagram/2026-10-30-showdown-fiu-fau/
