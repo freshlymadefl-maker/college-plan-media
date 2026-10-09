@@ -1,0 +1,110 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!--
+College Plan SCHOOL SHOWDOWN carousel (1080x1350): sd1 cover (split photo) · sd2 second cover · sd3/sd4 school slides · sd5 vote · sd6 save + credits.
+REAL photos only from photos/commons/<slug>/ (freely licensed via the "Find photos" action; credit every photo on the last slide AND in the caption).
+Every fact on a school slide must come from that school's official site (name the source on the slide). No logos as graphics, no recruiting/athlete content.
+Sample content below: UF vs FSU game day (Oct 2026).
+-->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --gold:#B5A21F; --ink:#2A3D54; --muted:#5E7186; --a:#2F6FD6; --b:#9B2335; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.s { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; background:var(--navy); color:#fff; }
+.bg { position:absolute; inset:0; background:var(--img) center/cover no-repeat; }
+.shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,31,56,.82) 0%, rgba(8,31,56,.35) 38%, rgba(8,31,56,.35) 60%, rgba(8,31,56,.9) 100%); }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:12px 26px; }
+.foot { position:absolute; left:80px; right:80px; bottom:60px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:44px; }
+.swipe { font-family:'Poppins'; font-weight:700; font-size:30px; background:#fff; color:var(--navy); border-radius:999px; padding:14px 30px; }
+.src { position:absolute; left:80px; right:80px; bottom:128px; font-size:21px; color:#C9D6E4; }
+/* sd1 split cover */
+.split { position:absolute; inset:0; display:flex; }
+.split > div { flex:1; background:var(--img) center/cover no-repeat; }
+.split > div:first-child { border-right:10px solid #fff; }
+.vs { position:absolute; left:50%; top:52%; transform:translate(-50%,-50%); width:170px; height:170px; border-radius:50%; background:var(--gold); color:#fff; font-family:'Poppins'; font-weight:800; font-size:76px; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 40px rgba(0,0,0,.45); border:8px solid #fff; }
+.cover-top { position:absolute; left:70px; right:70px; top:90px; text-align:center; }
+.cover-top h1 { font-family:'Poppins'; font-weight:800; font-size:96px; line-height:1.0; letter-spacing:-0.02em; margin-top:28px; text-shadow:0 4px 30px rgba(0,0,0,.5); }
+.labels { position:absolute; left:0; right:0; bottom:200px; display:flex; }
+.labels div { flex:1; text-align:center; font-family:'Poppins'; font-weight:700; font-size:52px; text-shadow:0 3px 20px rgba(0,0,0,.7); }
+.labels small { display:block; font-family:'Inter'; font-weight:500; font-size:28px; color:#E3EDF7; margin-top:4px; }
+/* text slides */
+.in { position:absolute; left:80px; right:80px; top:100px; }
+.in h2 { font-family:'Poppins'; font-weight:800; font-size:80px; line-height:1.02; letter-spacing:-0.02em; margin-top:26px; text-shadow:0 3px 24px rgba(0,0,0,.45); }
+.in p.lead { font-size:36px; line-height:1.4; color:#E3EDF7; margin-top:26px; max-width:880px; }
+.stat { position:absolute; left:80px; right:80px; bottom:190px; background:rgba(255,255,255,.96); color:var(--navy); border-radius:30px; padding:40px 48px; }
+.stat .big { font-family:'Poppins'; font-weight:800; font-size:92px; line-height:1; }
+.stat .big small { font-size:34px; font-weight:600; color:var(--muted); margin-left:12px; }
+.stat ul { list-style:none; padding:0; margin-top:22px; }
+.stat li { font-size:31px; line-height:1.35; color:var(--ink); padding-left:44px; position:relative; margin-top:12px; }
+.stat li::before { content:"✓"; position:absolute; left:0; top:0; font-weight:800; color:var(--blue); }
+/* vote slide */
+.solid { background:linear-gradient(160deg, var(--navy) 0%, #12406E 100%); }
+.vote { position:absolute; left:80px; right:80px; top:120px; text-align:center; }
+.vote h2 { font-family:'Poppins'; font-weight:800; font-size:88px; line-height:1.02; margin-top:30px; }
+.choices { display:flex; gap:36px; margin-top:70px; }
+.choices div { flex:1; background:#fff; color:var(--navy); border-radius:30px; padding:46px 20px; font-family:'Poppins'; font-weight:800; font-size:62px; }
+.choices div small { display:block; font-family:'Inter'; font-weight:500; font-size:28px; color:var(--muted); margin-top:10px; }
+.vote p { font-size:36px; line-height:1.4; color:#E3EDF7; margin-top:60px; }
+.credits { position:absolute; left:80px; right:80px; bottom:140px; font-size:20px; line-height:1.45; color:#AFC2D6; }
+</style></head>
+<body>
+
+<!-- sd1 cover -->
+<div class="s" id="sd1">
+  <div class="split"><div style="--img:url(../photos/commons/uf-stadium/4.jpg)"></div><div style="--img:url(../photos/commons/fsu-stadium/2.jpg)"></div></div>
+  <div class="shade"></div>
+  <div class="cover-top"><span class="pill">Florida school showdown</span><h1>Best game day in Florida?</h1></div>
+  <div class="vs">VS</div>
+  <div class="labels"><div>The Swamp<small>UF · Gainesville</small></div><div>Doak<small>FSU · Tallahassee</small></div></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="swipe">Vote at the end →</span></div>
+</div>
+
+<!-- sd2 second cover (re-shown carousels can open here) -->
+<div class="s" id="sd2">
+  <div class="bg" style="--img:url(../photos/commons/uf-stadium/6.jpg)"></div><div class="shade"></div>
+  <div class="in"><span class="pill">Seniors, settle this</span>
+    <h2>Two packed stadiums. One vote. 🏟️</h2>
+    <p class="lead">Touring schools this fall? Game day is a big part of campus life. Here's what each one brings, then tell us your pick.</p></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="swipe">Swipe →</span></div>
+</div>
+
+<!-- sd3 school A -->
+<div class="s" id="sd3">
+  <div class="bg" style="--img:url(../photos/commons/uf-stadium/5.jpg)"></div><div class="shade"></div>
+  <div class="in"><span class="pill" style="background:var(--a)">University of Florida</span><h2>The Swamp</h2>
+    <p class="lead">Ben Hill Griffin Stadium · Gainesville</p></div>
+  <div class="stat"><div class="big">88,548<small>seats</small></div>
+    <ul><li>"Mr. Two Bits" cheer before every home game</li><li>"We Are the Boys": fans link arms and sway after the 3rd quarter</li><li>The Gator Chomp</li></ul></div>
+  <div class="foot" style="bottom:50px"><span style="font-size:21px;color:#C9D6E4">Sources: floridagators.com, UF Student Life</span><span class="swipe">→</span></div>
+</div>
+
+<!-- sd4 school B -->
+<div class="s" id="sd4">
+  <div class="bg" style="--img:url(../photos/commons/fsu-stadium/3.jpg)"></div><div class="shade"></div>
+  <div class="in"><span class="pill" style="background:var(--b)">Florida State University</span><h2>Doak Campbell Stadium</h2>
+    <p class="lead">Tallahassee</p></div>
+  <div class="stat"><div class="big">67,277<small>seats</small></div>
+    <ul><li>Before every home game, Osceola rides Renegade and plants a flaming spear at midfield</li><li>A tradition since 1978, done with the Seminole Tribe of Florida's permission</li></ul></div>
+  <div class="foot" style="bottom:50px"><span style="font-size:21px;color:#C9D6E4">Source: seminoles.com</span><span class="swipe">→</span></div>
+</div>
+
+<!-- sd5 vote -->
+<div class="s solid" id="sd5">
+  <div class="vote"><span class="pill">Your vote</span>
+    <h2>Which game day wins?</h2>
+    <div class="choices"><div>SWAMP<small>comment it 👇</small></div><div>DOAK<small>comment it 👇</small></div></div>
+    <p>Tag a senior who's deciding between them, or a parent who'd argue with you. 😄</p></div>
+  <div class="foot"><img src="wordmark_white.png"><span class="swipe">→</span></div>
+</div>
+
+<!-- sd6 save + credits -->
+<div class="s solid" id="sd6">
+  <div class="vote"><span class="pill">Next showdown?</span>
+    <h2>Save this + follow for more Florida matchups</h2>
+    <p>Deadlines, Bright Futures and campus life for Florida families. Free newsletter, link in bio.</p></div>
+  <div class="credits">Photos via Wikimedia Commons, text added: "Ben Hill Griffin Stadium During 'I Won't Back Down' Tradition" by GATORFAN2525 (CC BY-SA 4.0); "Ben Hill Griffin Stadium" by Berniestew (public domain); "Doak Campbell Stadium fireworks" by SeminoleNation (CC BY-SA 4.0); "Doak Campbell Stadium - FSU" by Melizabethi123 (CC BY-SA 3.0); "Ben Hill Griffin Stadium during Soccer Match" by UFHoops06 at English Wikipedia (CC BY 3.0). College Plan is not affiliated with UF or FSU.</div>
+  <div class="foot"><img src="wordmark_white.png"><span style="font-family:'Poppins';font-weight:600;font-size:26px">@college.plan</span></div>
+</div>
+
+</body></html>

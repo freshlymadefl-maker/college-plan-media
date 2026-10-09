@@ -2,6 +2,9 @@
 
 Goal right now: **followers**. Instagram's strongest signals for reaching new people are **sends (DM shares)**, **saves**, and **Reel watch time**. Every post should be something a parent would send to another parent or save for later. Florida-specific, verified, original, no athletics.
 
+## What makes College Plan different (owner, Oct 9) — every post should hit at least two
+1. **Funny + relatable** (parents laugh, tag, send). 2. **Educational** (save-worthy). 3. **Florida-specific** (Bright Futures, FFAA, our schools, our counties). 4. **Time-sensitive** (what's due now). Growth = engagement + entertainment: every feed post ends with ONE easy action (vote, comment a word, tag, send, save). Lots of pages cover college planning; ours wins by being the fun, Florida, right-now one.
+
 ## Weekly calendar (7 feed posts + 6 Reels + 7 Stories)
 Owner's rule (Oct 9): feed posts go out in the MORNING at 7:00am; Reels go out in the EVENING at 6:00pm. Nothing at midday or 7:30pm anymore (decision-day posts keep their release-night times).
 **Spacing rule:** max ONE feed post per day and at least 4 hours between any two Instagram posts (Stories excepted). Never batch-post several feed posts in one sitting again (the Oct 8 launch blast split reach 8 ways). A big moment gets its own day, or replaces that day's slot.
@@ -13,9 +16,9 @@ Owner's rule (Oct 9): feed posts go out in the MORNING at 7:00am; Reels go out i
 | Tue | 6:00pm | **Reel** (rotation R) | reel/reel-template.html |
 | Wed | 7:00am | Deep-dive CAROUSEL (rotation A) | #p3 + inner slides / ph2 cover |
 | Wed | 6:00pm | **Reel** (rotation R, or a 2nd carousel remix if one clearly won) | reel/reel-template.html |
-| Thu | 7:00am | Photo quote / reframe or fun post (single image is fine) | photo-posts #ph1 / fun-posts |
+| Thu | 7:00am | Photo quote / reframe, fun post, or a Rotation B list/engagement post (rotate) | photo-posts #ph1 / fun-posts / #p5 |
 | Thu | 6:00pm | **Trial Reel** (rotation R; shown to non-followers first) | reel template, instagramData type TRIAL_REEL |
-| Fri | 7:00am | Engagement / list post (rotation B, CAROUSEL when it's a list) | #p5, growth-posts #rk1, ph2 |
+| Fri | 7:00am | **SCHOOL SHOWDOWN** carousel (two Florida schools, people vote in the comments; see "School Showdowns") — every 3rd week swap in a Rotation B list post | templates/showdown-posts.html (sd1–sd6) |
 | Fri | 6:00pm | **VOICEOVER Reel** (at least 1/week, owner loves these: AI voice + word-by-word captions, 25–40s) | reel/voiceover-reel.html (see templates/README.md "Voiceover Reels") |
 | Sat | 7:00am | Scholarship of the week | growth-posts #sc1 |
 | Sun | 7:00am | Rotation C | ck1 / pr1 / pr2 |
@@ -36,6 +39,18 @@ Cover slide (slide 1) must pass the "would a Florida parent stop scrolling?" tes
 5. No clutter: wordmark small, no paragraphs, high contrast; photo covers need a dark overlay behind the text.
 Slide 2 = second cover (it's what re-shown carousels open on): restate the hook as a promise ("Here's exactly what changed for the Class of 2028") plus the first useful fact. Middle slides: one idea per slide, big text, numbered. Last slide: save/send ask + "Free newsletter, link in bio". Aim for 6–10 slides. Write 3 cover options for every carousel and pick the strongest; note the runner-up in the Log so a later Reel or trial Reel can test it.
 Note: Instagram suggests carousels with music can reach more people, but Metricool cannot attach music to carousels, so scheduled carousels go out without it. That is fine.
+
+## School Showdowns (Fridays, Oct 9) — built for comments
+Pit two Florida schools against each other on something seniors actually care about, then ask people to vote by commenting one word. Opinion is the fun part; every FACT on the slides is verified on each school's official site (athletics site for stadium facts, admissions/housing/student-life pages for the rest) and the source is named on the slide.
+- Topics: game-day atmosphere, college town (Gainesville vs Tallahassee), dorms, dining hall, prettiest campus, beach/outdoors access, school traditions, homecoming, study spots, campus size, distance from home ("2 hours from Tampa"), cost (in-state tuition, from official sites), honors college, study abroad.
+- Matchups (rotate, don't repeat a pair within 6 weeks): UF vs FSU, UCF vs USF, FIU vs FAU, UNF vs UWF, FGCU vs New College, FAMU vs FSU (same city!), UF vs UCF, USF vs FSU, plus "state school vs private" (e.g. UM, Stetson, Rollins) once in a while. Bracket weeks around big moments (e.g. "Florida's best college town" bracket over 4 Fridays).
+- Layout (templates/showdown-posts.html): sd1 split-photo cover with VS + one-line question (max ~8 words); sd2 second cover; sd3/sd4 one school each with a big verified stat + 2–3 verified bullets + source; sd5 vote slide with two one-word comment answers (e.g. SWAMP / DOAK); sd6 save + follow + photo credits + "College Plan is not affiliated with these schools".
+- Caption: the question as the hook line, "Comment SWAMP or DOAK 👇", one line tying it to planning (campus visits, applying), "Free newsletter, link in bio", hashtags, then a "Photo credits:" line repeating the credits.
+- Follow-up: the next Monday 8:15am Story can announce the winner by comment count (count comments with Metricool analytics/the post if available; otherwise skip the result).
+- Game day / school spirit is OK here as CAMPUS LIFE. Still never: recruiting, athletes, team records/rivalry trash talk, betting, or logos used as graphics.
+
+## Real school photos (Oct 9)
+For posts about a real school, use REAL photos (never AI images of real campuses). Get them with the "Find photos" GitHub Action: push photoreq/<name>.txt with lines "<slug> | <search terms> | <max>" (e.g. "ucf-campus | University of Central Florida campus | 6"), wait ~90s, git pull, then LOOK at photos/commons/<slug>/contact.jpg and pick the best (packed stadiums, sunny campus icons, people having fun). Every photo is from Wikimedia Commons under a license that allows reuse with credit (CC0/public domain/CC BY/CC BY-SA, listed in credits.json). Credit each one used on the last slide AND in the caption: "Title" by Artist (License), and note "text added". Prefer sharp, well-lit, crowd-filled photos; skip blurry, empty, or construction shots. Photos already fetched: uf-stadium, fsu-stadium, uf-campus, fsu-campus.
 
 ## Collab posts
 See COLLABS.md (who to pitch, offers, DM templates, tracker). When a partner has agreed (listed as "Agreed" in the COLLABS.md tracker with a verified @handle), build the Collab post in that week's matching feed slot and schedule it with instagramData.collaborators [{"username":"<handle>","deleted":false}]. Put "with @handle" on the cover slide. Never add a collaborator who hasn't agreed.
@@ -155,6 +170,7 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - 2026-10-08: TikTok launch batch: 17 posts Oct 8-17 (4 videos, 13 photo posts/carousels).
 - 2026-10-08: Roadmaps launch scheduled: Story Oct 8 9pm; voiceover Reel Oct 12 12pm; Senior carousel Oct 13 7:30pm + Story 8:45pm; Freshman carousel Oct 15 7:30pm + Story 8:45pm.
 - 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
+- 2026-10-09: NEW SERIES: Friday School Showdowns (sample UF vs FSU game day built in instagram/sample-showdown-uf-fsu/, not scheduled yet — owner reviewing). Real photos via Find photos action (photos/commons/). Brand pillars added.
 - 2026-10-09: PLAN CHANGE: 6 Reels/week (added Mon 6pm carousel-remix Reel + Wed 6pm Reel), carousel cover rules, spacing rule (1 feed post/day), Collab outreach started (COLLABS.md).
 - 2026-10-09: RESCHEDULED everything pending Oct 9–18 to the new times (feed 7:00am, Reels/trial Reels 6:00pm, roadmap teaser Stories 7:30am, Oct 14 checker Story 6pm, TikToks 9:30am/11am/8pm). Oct 9 essay joke post went at 10:00am (morning had passed). Older Log lines below still show the original times.
 - 2026-12-04/09/11/17 8:30pm: decision-day posts already scheduled (UCF, USF, UF ED, FSU) — instagram/2026-12-decisions/. Re-verify each release date the week before; if a date moves, update the post in Metricool.
