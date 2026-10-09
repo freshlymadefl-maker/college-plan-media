@@ -30,6 +30,12 @@ Owner's rule (Oct 9): feed posts go out in the MORNING at 7:00am; Reels go out i
 Industry benchmarks (Socialinsider/Metricool/Buffer roundups, 2026) agree: carousels get the highest engagement rate (~9–10% vs ~6–7% for Reels), ~2x the saves, 2–3x the DM shares and ~3x the profile visits of Reels. Reels reach 3–5x more accounts, mostly non-followers. So: carousels turn viewers into followers, Reels bring in new viewers. Keep BOTH — 4–5 carousels + 6 Reels a week — and recycle every winning carousel into a Reel (Monday remix slot). For an account under ~5K followers, lean on Reels for reach; never drop the carousels.
 Instagram (per Adam Mosseri) may re-show a carousel to people who scrolled past, starting on SLIDE 2. So slide 2 must work as a second cover.
 
+## First comment (Oct 9 — owner request)
+Every feed post and Reel gets a scheduled first comment from @college.plan via Metricool's firstCommentText field. It goes up the moment the post publishes and gives people an easy place to jump in. Make it a short, playful prompt that matches the post, never a repeat of the caption: Showdowns repeat the vote words plus a bonus question ("Vote here 👇 SWAMP or DOAK? Bonus points for your best game-day memory 🏟️"); quizzes say "No peeking! Drop your score 👇"; info posts ask one easy question ("What grade is your student in? 👇"); GUIDE posts say "Comment GUIDE here and we'll DM you the cheat sheet 📩". Never invent fake replies or pretend to be a parent. (Metricool can't schedule replies to other people's comments, since those don't exist yet. The owner replies by hand.)
+
+## Guess the Florida campus (fun quiz format, Oct 9)
+templates/weeks/2026-10-09-guess-the-campus.html: cover → 3 rounds (one real Commons photo each + 4 choices, no name or sign visible in the photo) → answers slide → "comment your score" slide with credits. Use about once a month in the Thursday or Sunday slot, or as a bonus evening post. Each round's answer comes from the photo's Commons title/description.
+
 ## Carousel rules (the cover decides everything)
 Cover slide (slide 1) must pass the "would a Florida parent stop scrolling?" test:
 1. ONE big line, max ~8 words, readable at thumbnail size. Lead with the payoff or the stakes, not the topic. ("Bright Futures just got harder to get" beats "Bright Futures update".)
@@ -173,6 +179,7 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - 2026-10-08: TikTok launch batch: 17 posts Oct 8-17 (4 videos, 13 photo posts/carousels).
 - 2026-10-08: Roadmaps launch scheduled: Story Oct 8 9pm; voiceover Reel Oct 12 12pm; Senior carousel Oct 13 7:30pm + Story 8:45pm; Freshman carousel Oct 15 7:30pm + Story 8:45pm.
 - 2026-10-08 Thu LAUNCH BLAST 10:00–11:10am (moved forward from Oct 13–18, so those evening slots are now OPEN for the Oct 11 routine to fill): newsletter promo (pr2), scholarship Benacquisto, myth vs fact FFAA, photo quote group chat, UF stats, checker promo (tl2), FAFSA vs FFAA carousel, NEW welcome/start-here post (wl1 — owner should pin it). Oct 14 7:45pm teaser Story now shows ts2 (checker) since the FAFSA carousel already ran. Still on their original days: Oct 12 deadlines, Oct 13 Reel, Oct 14 Hillsborough, Oct 18 trial Reel.
+- 2026-10-09 Fri 6pm: BONUS QUIZ — Guess the Florida campus (UF Auditorium, FSU Legacy Fountain, FAU Parliament Hall) instagram/2026-10-09-guess-the-campus/. First comments added to all 5 Showdowns + this quiz.
 - 2026-11-13 Fri 7am: SHOWDOWN — FSU vs UCF Greek life (NOLES/KNIGHTS) instagram/2026-11-13-showdown-fsu-ucf/
 - 2026-11-06 Fri 7am: SHOWDOWN — UF vs USF future doctors (GATORS/BULLS; USF 7-year B.S./M.D.) instagram/2026-11-06-showdown-uf-usf/
 - 2026-10-30 Fri 7am: SHOWDOWN — FIU vs FAU dorm life (PANTHERS/OWLS) instagram/2026-10-30-showdown-fiu-fau/
