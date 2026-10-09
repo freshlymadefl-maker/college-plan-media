@@ -1,0 +1,56 @@
+{
+ "folder": "2026-11-13-showdown-fsu-ucf",
+ "question": "Best Greek life: FSU or UCF?",
+ "vote_q": "Where would you rush?",
+ "vote_note": "Tag a senior who's already counting down to recruitment. 🏛️",
+ "not_affiliated": "FSU or UCF or any fraternity or sorority",
+ "a": {
+  "label": "FSU",
+  "sub": "Tallahassee",
+  "cover": "photos/commons/fsu-greek/3.jpg",
+  "name": "Florida State University",
+  "short": "FSU",
+  "place": "Tallahassee",
+  "color": "#782F40",
+  "photo": "photos/commons/fsu-campus/5.jpg",
+  "big": "7,000+",
+  "bigsmall": "members",
+  "bullets": [
+   "50+ chapters across 5 councils",
+   "Panhellenic (sorority) recruitment happens before fall classes start",
+   "Last year: 60,000+ service hours and $850K+ given to charity"
+  ],
+  "source": "fsl.fsu.edu",
+  "vote": "NOLES"
+ },
+ "b": {
+  "label": "UCF",
+  "sub": "Orlando",
+  "cover": "photos/commons/ucf-student-union/4.jpg",
+  "name": "University of Central Florida",
+  "short": "UCF",
+  "place": "Orlando",
+  "color": "#B08D2E",
+  "photo": "photos/commons/ucf-student-union/1.jpg",
+  "big": "40+",
+  "bigsmall": "chapters",
+  "bullets": [
+   "Panhellenic recruitment: the week before fall classes",
+   "GPA to join: 2.5 (2.75 for IFC fraternities)",
+   "New-member costs range from $300 to $3,000 depending on the chapter"
+  ],
+  "source": "fsl.sswb.ucf.edu",
+  "vote": "KNIGHTS"
+ },
+ "second": {
+  "photo": "photos/commons/fsu-campus/5.jpg",
+  "pill": "Thinking about rushing?",
+  "title": "Greek life, by the numbers. 🏛️",
+  "lead": "Here's how fraternity and sorority life compares, straight from each school's own pages. Then vote."
+ },
+ "credits": [
+  "\"Alpha Chi Omega, Tallahassee, Florida\" by The Bushranger (CC BY-SA 4.0)",
+  "\"Landis Green of Florida State University\" by Looking for an A (CC BY-SA 4.0)",
+  "\"UCF Student Union\" (2 photos) by elisfkc from Orlando, FL (CC BY-SA 2.0)"
+ ]
+}

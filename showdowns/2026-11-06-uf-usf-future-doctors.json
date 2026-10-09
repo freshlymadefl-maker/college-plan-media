@@ -1,0 +1,56 @@
+{
+ "folder": "2026-11-06-showdown-uf-usf",
+ "question": "Best Florida school for future doctors?",
+ "vote_q": "Where would you start pre-med?",
+ "vote_note": "Send this to a parent of a future doctor. 🩺",
+ "not_affiliated": "UF or USF",
+ "a": {
+  "label": "UF",
+  "sub": "Gainesville",
+  "cover": "photos/commons/uf-health/3.jpg",
+  "name": "University of Florida",
+  "short": "UF",
+  "place": "Gainesville",
+  "color": "#0021A5",
+  "photo": "photos/commons/uf-health/2.jpg",
+  "big": "6",
+  "bigsmall": "health colleges",
+  "bullets": [
+   "UF College of Medicine + UF Health Shands, the flagship hospital, in Gainesville",
+   "Pre-health advising for students from their first semester",
+   "Its old BS/MD (Medical Honors Program) no longer takes applications"
+  ],
+  "source": "ufhealth.org, advising.ufl.edu, mhp.med.ufl.edu",
+  "vote": "GATORS"
+ },
+ "b": {
+  "label": "USF",
+  "sub": "Tampa",
+  "cover": "photos/commons/usf-health/1.jpg",
+  "name": "University of South Florida",
+  "short": "USF",
+  "place": "Tampa",
+  "color": "#006747",
+  "photo": "photos/commons/usf-health/1.jpg",
+  "big": "7-year",
+  "bigsmall": "B.S./M.D. path",
+  "bullets": [
+   "3 years in the Judy Genshaft Honors College + 4 at the Morsani College of Medicine",
+   "For students starting right after high school: 4.0 weighted GPA + 1500 SAT or 34 ACT, biomedical sciences major",
+   "Hospital partner: Tampa General Hospital"
+  ],
+  "source": "usf.edu/honors, usf.edu/health",
+  "vote": "BULLS"
+ },
+ "second": {
+  "photo": "photos/commons/uf-health/2.jpg",
+  "pill": "Pre-med seniors",
+  "title": "Want to be a doctor? This one's for you. 🩺",
+  "lead": "Both have a medical school and a big health system. Only one has a 7-year path you can qualify for straight out of high school."
+ },
+ "credits": [
+  "\"UF Shands\" by WillMcC (CC BY-SA 3.0)",
+  "\"UF Shands ARB\" by William M (CC BY-SA 3.0)",
+  "\"USF Health Morsani College of Medicine\" by Chiefmiz (CC BY-SA 4.0)"
+ ]
+}

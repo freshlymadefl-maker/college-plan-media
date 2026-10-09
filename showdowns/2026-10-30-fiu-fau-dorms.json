@@ -1,0 +1,57 @@
+{
+ "folder": "2026-10-30-showdown-fiu-fau",
+ "question": "Best dorm life in South Florida?",
+ "vote_q": "Where would you live?",
+ "vote_note": "Tag a senior who's already picking out dorm decor. 🛏️",
+ "not_affiliated": "FIU or FAU",
+ "a": {
+  "label": "FIU",
+  "sub": "Miami",
+  "cover": "photos/commons/fiu-campus/6.jpg",
+  "name": "Florida International University",
+  "short": "FIU",
+  "place": "Modesto Maidique Campus · Miami",
+  "color": "#081E3F",
+  "photo": "photos/commons/fiu-campus/2.jpg",
+  "big": "8",
+  "bigsmall": "residence halls",
+  "bullets": [
+   "Panther Hall: suite-style and just for first-year students (392 residents)",
+   "First-years don't have to live on campus, but FIU encourages it",
+   "Last cycle's priority housing deadline: April 10 (after the $200 admissions deposit)"
+  ],
+  "source": "housing.fiu.edu",
+  "vote": "PANTHERS"
+ },
+ "b": {
+  "label": "FAU",
+  "sub": "Boca Raton",
+  "cover": "photos/commons/fau-campus/5.jpg",
+  "name": "Florida Atlantic University",
+  "short": "FAU",
+  "place": "Boca Raton",
+  "color": "#CC0000",
+  "photo": "photos/commons/fau-campus/3.jpg",
+  "big": "4,000+",
+  "bigsmall": "students on campus",
+  "bullets": [
+   "9 apartment and suite-style residence halls",
+   "No live-on requirement at the Boca campus (Wilkes Honors College excepted)",
+   "Newest: Talon Hall (fall 2026) with a sun deck, fire pit, grills and free laundry"
+  ],
+  "source": "fau.edu",
+  "vote": "OWLS"
+ },
+ "second": {
+  "photo": "photos/commons/fau-campus/3.jpg",
+  "pill": "Seniors, settle this",
+  "title": "Neither school makes freshmen live on campus. 👀",
+  "lead": "So would your senior choose to? Here's what each one offers."
+ },
+ "credits": [
+  "\"FIU students walking\" by Eduardo Merille (CC BY-SA 2.0)",
+  "\"FIU ChemistryPhysics\" by Comayagua99 (CC BY-SA 3.0)",
+  "\"FAU Parliament Hall\" by Kmgcoolguy4 (CC BY-SA 3.0)",
+  "\"Innovation Village Apartments\" by Owl2Doc (CC BY-SA 3.0)"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "folder": "2026-10-23-showdown-ucf-usf",
+ "question": "Which campus has more to do?",
+ "vote_q": "Which campus wins?",
+ "vote_note": "Tag a senior who'd join every club, or a parent who still talks about their college days. 😄",
+ "not_affiliated": "UCF or USF",
+ "a": {
+  "label": "UCF",
+  "sub": "Orlando",
+  "cover": "photos/commons/ucf-student-union/4.jpg",
+  "name": "University of Central Florida",
+  "short": "UCF",
+  "place": "Orlando",
+  "color": "#B08D2E",
+  "photo": "photos/commons/ucf-student-union/1.jpg",
+  "big": "670+",
+  "bigsmall": "student orgs",
+  "bullets": [
+   "Knight-Thon: UCF's largest student-run philanthropy, all for Orlando Health Arnold Palmer Hospital for Children",
+   "Free kayak, canoe and paddleboard rentals at Lake Claire with your student ID",
+   "Club count covers all UCF campuses"
+  ],
+  "source": "osi.ucf.edu, rwc.sswb.ucf.edu",
+  "vote": "KNIGHTS"
+ },
+ "b": {
+  "label": "USF",
+  "sub": "Tampa",
+  "cover": "photos/commons/usf-campus/1.jpg",
+  "name": "University of South Florida",
+  "short": "USF",
+  "place": "Tampa",
+  "color": "#006747",
+  "photo": "photos/commons/usf-campus/1.jpg",
+  "big": "700+",
+  "bigsmall": "student orgs",
+  "bullets": [
+   "Bull Market: vendors and student groups outside the Marshall Student Center every Wednesday, for 25+ years",
+   "Canoes, kayaks and paddleboards at Riverfront Park on the Hillsborough River, plus Moonlight Canoeing"
+  ],
+  "source": "usf.edu",
+  "vote": "BULLS"
+ },
+ "second": {
+  "photo": "photos/commons/ucf-student-union/1.jpg",
+  "pill": "Seniors, settle this",
+  "title": "Clubs, lakes and a weekly market. 🎉",
+  "lead": "College isn't just class. Here's what each campus offers when you're not studying. Then vote."
+ },
+ "credits": [
+  "\"UCF Student Union\" (2 photos) by elisfkc from Orlando, FL (CC BY-SA 2.0)",
+  "\"USF Marshall Center Running of the Bulls\" by Rick DeBow (public domain)"
+ ]
+}

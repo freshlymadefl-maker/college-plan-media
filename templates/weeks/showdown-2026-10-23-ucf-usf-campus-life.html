@@ -1,0 +1,64 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --gold:#B5A21F; --ink:#2A3D54; --muted:#5E7186; --a:#2F6FD6; --b:#9B2335; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.s { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; background:var(--navy); color:#fff; }
+.bg { position:absolute; inset:0; background:var(--img) center/cover no-repeat; }
+.shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,31,56,.82) 0%, rgba(8,31,56,.35) 38%, rgba(8,31,56,.35) 60%, rgba(8,31,56,.9) 100%); }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:12px 26px; }
+.foot { position:absolute; left:80px; right:80px; bottom:60px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:44px; }
+.swipe { font-family:'Poppins'; font-weight:700; font-size:30px; background:#fff; color:var(--navy); border-radius:999px; padding:14px 30px; }
+.src { position:absolute; left:80px; right:80px; bottom:128px; font-size:21px; color:#C9D6E4; }
+/* sd1 split cover */
+.split { position:absolute; inset:0; display:flex; }
+.split > div { flex:1; background:var(--img) center/cover no-repeat; }
+.split > div:first-child { border-right:10px solid #fff; }
+.vs { position:absolute; left:50%; top:52%; transform:translate(-50%,-50%); width:170px; height:170px; border-radius:50%; background:var(--gold); color:#fff; font-family:'Poppins'; font-weight:800; font-size:76px; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 40px rgba(0,0,0,.45); border:8px solid #fff; }
+.cover-top { position:absolute; left:70px; right:70px; top:90px; text-align:center; }
+.cover-top h1 { font-family:'Poppins'; font-weight:800; font-size:96px; line-height:1.0; letter-spacing:-0.02em; margin-top:28px; text-shadow:0 4px 30px rgba(0,0,0,.5); }
+.labels { position:absolute; left:0; right:0; bottom:200px; display:flex; }
+.labels div { flex:1; text-align:center; font-family:'Poppins'; font-weight:700; font-size:52px; text-shadow:0 3px 20px rgba(0,0,0,.7); }
+.labels small { display:block; font-family:'Inter'; font-weight:500; font-size:28px; color:#E3EDF7; margin-top:4px; }
+/* text slides */
+.in { position:absolute; left:80px; right:80px; top:100px; }
+.in h2 { font-family:'Poppins'; font-weight:800; font-size:80px; line-height:1.02; letter-spacing:-0.02em; margin-top:26px; text-shadow:0 3px 24px rgba(0,0,0,.45); }
+.in p.lead { font-size:36px; line-height:1.4; color:#E3EDF7; margin-top:26px; max-width:880px; }
+.stat { position:absolute; left:80px; right:80px; bottom:190px; background:rgba(255,255,255,.96); color:var(--navy); border-radius:30px; padding:40px 48px; }
+.stat .big { font-family:'Poppins'; font-weight:800; font-size:92px; line-height:1; }
+.stat .big small { font-size:34px; font-weight:600; color:var(--muted); margin-left:12px; }
+.stat ul { list-style:none; padding:0; margin-top:22px; }
+.stat li { font-size:31px; line-height:1.35; color:var(--ink); padding-left:44px; position:relative; margin-top:12px; }
+.stat li::before { content:"✓"; position:absolute; left:0; top:0; font-weight:800; color:var(--blue); }
+/* vote slide */
+.solid { background:linear-gradient(160deg, var(--navy) 0%, #12406E 100%); }
+.vote { position:absolute; left:80px; right:80px; top:120px; text-align:center; }
+.vote h2 { font-family:'Poppins'; font-weight:800; font-size:88px; line-height:1.02; margin-top:30px; }
+.choices { display:flex; gap:36px; margin-top:70px; }
+.choices div { flex:1; background:#fff; color:var(--navy); border-radius:30px; padding:46px 20px; font-family:'Poppins'; font-weight:800; font-size:62px; }
+.choices div small { display:block; font-family:'Inter'; font-weight:500; font-size:28px; color:var(--muted); margin-top:10px; }
+.vote p { font-size:36px; line-height:1.4; color:#E3EDF7; margin-top:60px; }
+.credits { position:absolute; left:80px; right:80px; bottom:140px; font-size:20px; line-height:1.45; color:#AFC2D6; }
+</style></head><body>
+<div class="s" id="sd1"><div class="split"><div style="--img:url(../../photos/commons/ucf-student-union/4.jpg)"></div><div style="--img:url(../../photos/commons/usf-campus/1.jpg)"></div></div><div class="shade"></div>
+<div class="cover-top"><span class="pill">Florida school showdown</span><h1>Which campus has more to do?</h1></div><div class="vs">VS</div>
+<div class="labels"><div>UCF<small>Orlando</small></div><div>USF<small>Tampa</small></div></div>
+<div class="foot"><img src="../wordmark_white.png"><span class="swipe">Vote at the end →</span></div></div>
+<div class="s" id="sd2"><div class="bg" style="--img:url(../../photos/commons/ucf-student-union/1.jpg)"></div><div class="shade"></div>
+<div class="in"><span class="pill">Seniors, settle this</span><h2>Clubs, lakes and a weekly market. 🎉</h2><p class="lead">College isn&#x27;t just class. Here&#x27;s what each campus offers when you&#x27;re not studying. Then vote.</p></div>
+<div class="foot"><img src="../wordmark_white.png"><span class="swipe">Swipe →</span></div></div>
+<div class="s" id="sd3"><div class="bg" style="--img:url(../../photos/commons/ucf-student-union/1.jpg)"></div><div class="shade"></div>
+<div class="in"><span class="pill" style="background:#B08D2E">University of Central Florida</span><h2>UCF</h2><p class="lead">Orlando</p></div>
+<div class="stat"><div class="big">670+<small>student orgs</small></div><ul><li>Knight-Thon: UCF&#x27;s largest student-run philanthropy, all for Orlando Health Arnold Palmer Hospital for Children</li><li>Free kayak, canoe and paddleboard rentals at Lake Claire with your student ID</li><li>Club count covers all UCF campuses</li></ul></div>
+<div class="foot" style="bottom:50px"><span style="font-size:21px;color:#C9D6E4">Source: osi.ucf.edu, rwc.sswb.ucf.edu</span><span class="swipe">→</span></div></div>
+<div class="s" id="sd4"><div class="bg" style="--img:url(../../photos/commons/usf-campus/1.jpg)"></div><div class="shade"></div>
+<div class="in"><span class="pill" style="background:#006747">University of South Florida</span><h2>USF</h2><p class="lead">Tampa</p></div>
+<div class="stat"><div class="big">700+<small>student orgs</small></div><ul><li>Bull Market: vendors and student groups outside the Marshall Student Center every Wednesday, for 25+ years</li><li>Canoes, kayaks and paddleboards at Riverfront Park on the Hillsborough River, plus Moonlight Canoeing</li></ul></div>
+<div class="foot" style="bottom:50px"><span style="font-size:21px;color:#C9D6E4">Source: usf.edu</span><span class="swipe">→</span></div></div>
+<div class="s solid" id="sd5"><div class="vote"><span class="pill">Your vote</span><h2>Which campus wins?</h2>
+<div class="choices"><div>KNIGHTS<small>comment it 👇</small></div><div>BULLS<small>comment it 👇</small></div></div>
+<p>Tag a senior who&#x27;d join every club, or a parent who still talks about their college days. 😄</p></div><div class="foot"><img src="../wordmark_white.png"><span class="swipe">→</span></div></div>
+<div class="s solid" id="sd6"><div class="vote"><span class="pill">Next showdown?</span><h2>Save this + follow for more Florida matchups</h2>
+<p>Deadlines, Bright Futures and campus life for Florida families. Free newsletter, link in bio.</p></div>
+<div class="credits">Photos via Wikimedia Commons, text added: &quot;UCF Student Union&quot; (2 photos) by elisfkc from Orlando, FL (CC BY-SA 2.0); &quot;USF Marshall Center Running of the Bulls&quot; by Rick DeBow (public domain). College Plan is not affiliated with UCF or USF.</div>
+<div class="foot"><img src="../wordmark_white.png"><span style="font-family:'Poppins';font-weight:600;font-size:26px">@college.plan</span></div></div></body></html>
