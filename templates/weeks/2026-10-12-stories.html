@@ -1,0 +1,76 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Week of 2026-10-12: Stories (1080x1920) -->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --sky2:#D4E6F7; --gold:#B5A21F; --ink:#2A3D54; --muted:#5E7186; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.st { width:1080px; height:1920px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:var(--ink); padding:300px 90px 0; }
+.light { background: linear-gradient(165deg, #F4F9FE 0%, var(--sky) 50%, var(--sky2) 100%); }
+.dark { background: linear-gradient(165deg, #0E3359 0%, var(--navy) 60%, #081F38 100%); color:#fff; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:30px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:var(--gold); border-radius:999px; padding:14px 30px; }
+h1 { font-family:'Poppins'; font-weight:700; font-size:104px; line-height:1.0; letter-spacing:-0.02em; color:var(--navy); margin-top:40px; }
+.dark h1 { color:#fff; }
+h1 .lt { color:var(--blue); } .dark h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; color:#F1E27A; letter-spacing:0; }
+.big { white-space:nowrap; font-family:'Poppins'; font-weight:700; font-size:250px; line-height:.9; color:var(--navy); letter-spacing:-0.04em; margin-top:40px; }
+.big small { display:block; font-size:60px; letter-spacing:.12em; color:var(--blue); margin-top:10px; }
+.txt { font-size:46px; line-height:1.4; margin-top:40px; color:#3A4F66; }
+.dark .txt { color:#C9DAEC; }
+.card { background:#fff; border-radius:36px; padding:44px 48px; margin-top:50px; box-shadow:0 12px 40px rgba(11,42,74,.10); font-size:44px; line-height:1.35; color:var(--ink); }
+.card b { font-family:'Poppins'; color:var(--navy); }
+.foot { position:absolute; left:90px; right:90px; bottom:320px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:58px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:34px; letter-spacing:.06em; color:var(--navy); }
+.dark .foot .sw { color:#fff; }
+/* st3 photo */
+.photo { background: var(--img) center/cover no-repeat, var(--navy); color:#fff; }
+.photo .shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,31,56,.85) 0%, rgba(8,31,56,.55) 38%, rgba(8,31,56,0) 62%, rgba(8,31,56,.75) 100%); }
+.photo .in { position:relative; }
+.photo h1 { color:#fff; font-family:'Lora'; font-style:italic; font-weight:500; font-size:92px; line-height:1.15; letter-spacing:0; }
+.photo h1 .g { color:#F1E27A; }
+/* st4 teaser */
+.teaser { margin:50px auto 0; width:620px; border-radius:28px; overflow:hidden; box-shadow:0 30px 70px rgba(0,0,0,.35); transform:rotate(-2deg); }
+.teaser img { width:100%; display:block; }
+
+.dd{position:absolute;pointer-events:none;z-index:5}
+</style></head>
+<body>
+
+<!-- WED OCT 14 7:30am: st4 teaser for the Hillsborough carousel -->
+<div class="st light" id="st4w">
+  <span class="pill">New post</span>
+  <h1 style="font-size:88px">Hillsborough: free <span class="lt">college classes.</span></h1>
+  <div class="teaser" style="width:560px"><img src="../../instagram/doodled/2026-10-tools_cy1.png"></div>
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">TAP OUR PROFILE ↑</span></div>
+</div>
+
+<!-- WED OCT 14 8:15am: st2 did you know (UF) -->
+<div class="st dark" id="st2w">
+  <span class="pill">Did you know?</span>
+  <h1>UF only accepts <span class="g">the Common App.</span></h1>
+  <p class="txt">And every freshman applicant also fills out <b style="color:#fff">STARS</b>, UF's self-reported grades record. The Common App's courses-and-grades section doesn't replace it.</p>
+  <p class="txt" style="font-size:34px;color:#9FB6CF">Source: admissions.ufl.edu</p>
+  <img class="dd" src="../doodles/star-gold.svg" style="right:90px;top:280px;width:100px;transform:rotate(12deg)">
+  <div class="foot"><img src="../wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<!-- FRI OCT 16 8:15am: st1 countdown -->
+<div class="st light" id="st1f">
+  <span class="pill">Deadline countdown</span>
+  <div class="big">OCT 22<small>NEXT THURSDAY</small></div>
+  <div class="card"><b>UF Early Decision:</b> STARS, transcript and test scores due.<br><br><b>FSU Early Decision/Action:</b> application materials due.</div>
+  <p class="txt">Applied Oct 15? Check each portal this weekend for anything still missing.</p>
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SHARE WITH A SENIOR PARENT</span></div>
+</div>
+
+<!-- SAT OCT 17 8:15am: st3 photo -->
+<div class="st photo" id="st3s" style="--img:url(../../photos/florida-boardwalk-01.jpg)">
+  <div class="shade"></div>
+  <div class="in">
+    <span class="pill">Test day?</span>
+    <h1>Breakfast first. Then breathe. <span class="g">One score doesn't define them.</span></h1>
+  </div>
+  <div class="foot"><img src="../wordmark_white.png"><span class="sw" style="color:#fff">@college.plan</span></div>
+</div>
+
+</body></html>
