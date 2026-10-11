@@ -177,6 +177,7 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - TikTok needs a title on every post. Metricool can't add music to videos, so silent videos get a voiceover first (tts/ + ffmpeg, saved in tiktok/).
 
 ## Log (newest first — the weekly routine appends here)
+- 2026-10-11 TikTok cross-post (week Oct 12–18): added 6 — Oct 14 9pm BF 2028 Reel, Oct 15 8pm POV trial Reel, Oct 16 10:30am Swamp vs Doak (sd1–6 JPEG), Oct 16 8pm UF voiceover Reel, Oct 17 10:30am Jack Kent Cooke (jk1–6 JPEG), Oct 18 9:30am bingo (bg1 JPEG). Skipped as already on TikTok: Oct 11 to-do, Oct 12 deadlines, roadmaps Reel + carousels, Oct 13 October Reel (TikTok Oct 10), Oct 14 Hillsborough (TikTok Oct 10), Oct 18 checker trial Reel (same video as Oct 9 TikTok).
 - 2026-10-11 routine (week Oct 12–18). Already filled, skipped: Mon 7am deadlines, Mon 6pm Reel (roadmaps voiceover took the remix slot), Tue 7am (Senior Roadmap carousel took the school-stats slot; next stats school: FSU), Tue 6pm Reel, Wed 7am Hillsborough, Thu 7am Freshman Roadmap (took the Thu photo/fun slot), Fri 7am Showdown UF vs FSU, Sun 6pm trial Reel, Stories Mon/Tue/Thu. Analytics too small to pick a remix winner (no saves/shares yet); remixed the Bright Futures 2028 carousel by judgment on Wed.
 - 2026-10-18 Sun 8:15am: Story ts1 calendar, refreshed dates (instagram/2026-10-18-story-calendar/)
 - 2026-10-18 Sun 7am: FUN / Rotation C seasonal — "Florida senior parent bingo: October edition" single image, comment your number (instagram/2026-10-18-bingo/)
