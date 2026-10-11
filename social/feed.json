@@ -1,8 +1,24 @@
 {
- "updated": "2026-10-10T01:22Z",
+ "updated": "2026-10-11T01:19Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DeSiW0ACas9/",
+   "img": "social/img/DeSiW0ACas9.jpg",
+   "date": "20261009220306",
+   "label": "Oct 9",
+   "caption": "Friday quiz: guess the Florida campus \ud83e\udd14 One real photo, four choices, no Googling. Swipe, then comment A, B, C or D \ud83d\udc47",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
+  {
+   "url": "https://www.instagram.com/p/DeRrwNCDZi_/",
+   "img": "social/img/DeRrwNCDZi_.jpg",
+   "date": "20261009140558",
+   "label": "Oct 9",
+   "caption": "In fairness, it IS a really good title. \ud83d\ude02",
+   "type": "FEED_IMAGE"
+  },
   {
    "url": "https://www.instagram.com/p/DeQHwWtCB-Q/",
    "img": "social/img/DeQHwWtCB-Q.jpg",
@@ -49,22 +65,6 @@
    "date": "20261008143124",
    "label": "Oct 8",
    "caption": "October is loud. \ud83d\udce3",
-   "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DePIpXdiFFt/",
-   "img": "social/img/DePIpXdiFFt.jpg",
-   "date": "20261008142048",
-   "label": "Oct 8",
-   "caption": "Myth or fact? \ud83e\udd14",
-   "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DePHf9PiLNl/",
-   "img": "social/img/DePHf9PiLNl.jpg",
-   "date": "20261008141047",
-   "label": "Oct 8",
-   "caption": "Scholarship of the week \ud83c\udf93 Most Florida parents have never heard of this one.",
    "type": "FEED_IMAGE"
   }
  ]
