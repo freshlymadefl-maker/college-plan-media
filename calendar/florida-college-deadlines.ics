@@ -11,7 +11,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:5544606ce4746a11@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:UF Early Decision application due
@@ -28,7 +28,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:0dacc29013d29e76@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:FSU Early Decision & Early Action applications due
@@ -45,7 +45,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:1a05fd2f28d452eb@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:UCF Early Action application due
@@ -63,8 +63,25 @@ DESCRIPTION:Tomorrow: UCF Early Action application due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:7fdb5fc72dabb9bc@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:FAU Early Action application due
+DESCRIPTION:For: Seniors. Materials due Oct 22\; decisions Dec 4. Confirm
+  here: https://www.fau.edu/admissions/freshman/how-to-apply/deadlines/ |
+  More Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://www.fau.edu/admissions/freshman/how-to-apply/deadlines/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FAU Early Action application due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:afea4cf75be48afc@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Saturday PSAT/NMSQT option
@@ -81,8 +98,27 @@ DESCRIPTION:Tomorrow: Saturday PSAT/NMSQT option
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:75336e0e5d6d96b3@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:ACT national test date
+DESCRIPTION:For: Juniors & Seniors. Registration has closed. Next: Dec 12
+  (register by Nov 6). Confirm here: https://www.act.org/content/act/en/p
+ roducts-and-services/the-act/registration/test-dates.html | More Florida
+  deadlines every week: collegeplan.beehiiv.com
+URL:https://www.act.org/content/act/en/products-and-services/the-act/regi
+ stration/test-dates.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: ACT national test date
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:89a038dc035dc725@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:UF STARS due (Early Decision applicants)
@@ -98,8 +134,42 @@ DESCRIPTION:Tomorrow: UF STARS due (Early Decision applicants)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:645187fb145a1ae2@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:FSU Early Decision/Early Action materials due
+DESCRIPTION:For: Seniors. Test scores by Dec 1\; decisions Dec 17. Confir
+ m here: https://admissions.fsu.edu/deadlines | More Florida deadlines ev
+ ery week: collegeplan.beehiiv.com
+URL:https://admissions.fsu.edu/deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FSU Early Decision/Early Action materials due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7e74d816a6f96321@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:FAU Early Action materials due
+DESCRIPTION:For: Seniors. Last test scores Nov 20. Confirm here: https://
+ www.fau.edu/admissions/freshman/how-to-apply/deadlines/ | More Florida d
+ eadlines every week: collegeplan.beehiiv.com
+URL:https://www.fau.edu/admissions/freshman/how-to-apply/deadlines/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FAU Early Action materials due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:27a0fefcc11e6472@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Register for the Nov 7 SAT
@@ -116,7 +186,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:fea2ea187f29041e@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:UF Early Action application due
@@ -132,8 +202,98 @@ DESCRIPTION:Tomorrow: UF Early Action application due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:6332ad0e30ad14f4@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:University of Miami Early Decision I & Early Action due
+DESCRIPTION:For: Seniors. Financial aid forms due Nov 15. Confirm here: h
+ ttps://admissions.miami.edu/undergraduate/application-process/options-an
+ d-deadlines/index.html | More Florida deadlines every week: collegeplan.
+ beehiiv.com
+URL:https://admissions.miami.edu/undergraduate/application-process/option
+ s-and-deadlines/index.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: University of Miami Early Decision I & Early Action
+  due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ed3aff41683b2cf6@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:New College of Florida Early Action due
+DESCRIPTION:For: Seniors. Supporting documents due Nov 15\; decisions by 
+ Dec 15. Confirm here: https://www.ncf.edu/admissions/first-year-students
+ / | More Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://www.ncf.edu/admissions/first-year-students/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: New College of Florida Early Action due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:92f94826d858057c@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:FAMU Early Action due
+DESCRIPTION:For: Seniors. Materials due Nov 14\; decisions Dec 4. Confirm
+  here: https://admissions.famu.edu/student-types/freshman.php | More Flo
+ rida deadlines every week: collegeplan.beehiiv.com
+URL:https://admissions.famu.edu/student-types/freshman.php
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FAMU Early Action due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3547b8356925f0d0@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:FGCU Early Action due
+DESCRIPTION:For: Seniors. Supplemental items due Nov 15. Confirm here: ht
+ tps://www.fgcu.edu/admissionsandaid/undergraduateadmissions/applicationd
+ eadlines | More Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://www.fgcu.edu/admissionsandaid/undergraduateadmissions/applica
+ tiondeadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FGCU Early Action due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a48e8af3e2483190@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Stetson Early Decision due
+DESCRIPTION:For: Seniors. Binding. Confirm here: https://www.stetson.edu/
+ administration/admissions/application-types.php | More Florida deadlines
+  every week: collegeplan.beehiiv.com
+URL:https://www.stetson.edu/administration/admissions/application-types.p
+ hp
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Stetson Early Decision due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:2bcf87a167193df0@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:USF Early Action application due
@@ -151,8 +311,41 @@ DESCRIPTION:Tomorrow: USF Early Action application due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:be6e19e730a29ca4@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:FIU Early Action due (application + documents)
+DESCRIPTION:For: Seniors. Decisions Dec 10. Confirm here: https://admissi
+ ons.fiu.edu/how-to-apply/freshman-applicant/ | More Florida deadlines ev
+ ery week: collegeplan.beehiiv.com
+URL:https://admissions.fiu.edu/how-to-apply/freshman-applicant/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FIU Early Action due (application + documents)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bb7282261731be6d@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Register for the Nov 14 CLT (remote)
+DESCRIPTION:For: Juniors & Seniors. Confirm here: https://www.cltexam.com
+ /tests/clt/ | More Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://www.cltexam.com/tests/clt/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Register for the Nov 14 CLT (remote)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:8533d2a05c44461c@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Hillsborough College dual enrollment paperwork due (spring 2027)
@@ -171,8 +364,27 @@ DESCRIPTION:Tomorrow: Hillsborough College dual enrollment paperwork due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:9e6a339401f7ace9@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Register for the Dec 12 ACT
+DESCRIPTION:For: Juniors & Seniors. Late registration until Nov 29. Confi
+ rm here: https://www.act.org/content/act/en/products-and-services/the-ac
+ t/registration/test-dates.html | More Florida deadlines every week: coll
+ egeplan.beehiiv.com
+URL:https://www.act.org/content/act/en/products-and-services/the-act/regi
+ stration/test-dates.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Register for the Dec 12 ACT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:ec907b2dff2e2be2@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:SAT test day
@@ -189,7 +401,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ce64f96947609b8e@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:UF STARS due (Early Action applicants)
@@ -205,8 +417,44 @@ DESCRIPTION:Tomorrow: UF STARS due (Early Action applicants)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:99247970f0a11a49@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Jack Kent Cooke College Scholarship deadline
+DESCRIPTION:For: Seniors. Up to $55\,000/yr. 3.75+ unweighted GPA\, famil
+ y income up to $95\,000. Apply on the Common App. Confirm here: https://
+ www.jkcf.org/our-scholarships/college-scholarship-program/how-to-apply/ 
+ | More Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://www.jkcf.org/our-scholarships/college-scholarship-program/how
+ -to-apply/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Jack Kent Cooke College Scholarship deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ff9aad58dce09168@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Elks Most Valuable Student scholarship deadline
+DESCRIPTION:For: Seniors. 11:59pm Pacific. U.S. citizens. Confirm here: h
+ ttps://www.elks.org/scholars/scholarships/mvs.cfm | More Florida deadlin
+ es every week: collegeplan.beehiiv.com
+URL:https://www.elks.org/scholars/scholarships/mvs.cfm
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Elks Most Valuable Student scholarship deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:2a53a0f2a29ac0dc@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:UCF Early Action materials due
@@ -223,8 +471,42 @@ DESCRIPTION:Tomorrow: UCF Early Action materials due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:cde5576536471e41@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Stetson Early Action due
+DESCRIPTION:For: Seniors. Non-binding. Confirm here: https://www.stetson.
+ edu/administration/admissions/application-types.php | More Florida deadl
+ ines every week: collegeplan.beehiiv.com
+URL:https://www.stetson.edu/administration/admissions/application-types.p
+ hp
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Stetson Early Action due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:def59cd4105d4c99@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Rollins Early Decision I & Early Action due
+DESCRIPTION:For: Seniors. Confirm here: https://www.rollins.edu/apply/fir
+ st-time/ | More Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://www.rollins.edu/apply/first-time/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Rollins Early Decision I & Early Action due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:7ed6d6e14431c71a@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:USF Early Action materials due
@@ -241,8 +523,25 @@ DESCRIPTION:Tomorrow: USF Early Action materials due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:8e72f4496756554b@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:UNF priority deadline (application + materials)
+DESCRIPTION:For: Seniors. Decisions Dec 9. Confirm here: https://www.unf.
+ edu/admissions/deadlines.html | More Florida deadlines every week: colle
+ geplan.beehiiv.com
+URL:https://www.unf.edu/admissions/deadlines.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UNF priority deadline (application + materials)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:85852d59c33901c9@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Register for the Dec 5 SAT
@@ -258,8 +557,41 @@ DESCRIPTION:Tomorrow: Register for the Dec 5 SAT
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:ae3c3f4a5c71d92b@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:FSU Regular Decision application due
+DESCRIPTION:For: Seniors. Materials due Dec 8\; decisions Feb 18. Confirm
+  here: https://admissions.fsu.edu/deadlines | More Florida deadlines eve
+ ry week: collegeplan.beehiiv.com
+URL:https://admissions.fsu.edu/deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FSU Regular Decision application due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:98942d917ab26142@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Register for the Dec 8 CLT (remote)
+DESCRIPTION:For: Juniors & Seniors. Confirm here: https://www.cltexam.com
+ /tests/clt/ | More Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://www.cltexam.com/tests/clt/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Register for the Dec 8 CLT (remote)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:661990f02f67a5eb@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:UCF Early Action decisions released
@@ -277,7 +609,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:4a4e32cc7e0873e2@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:SAT test day
@@ -294,7 +626,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c9c84b565698e8f2@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:USF Early Action decisions released
@@ -312,7 +644,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:92c80f2ccf984516@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:UF Early Decision decisions released
@@ -327,8 +659,26 @@ DESCRIPTION:Tomorrow: UF Early Decision decisions released
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:2c32650938728253@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:ACT national test date
+DESCRIPTION:For: Juniors & Seniors. Confirm here: https://www.act.org/con
+ tent/act/en/products-and-services/the-act/registration/test-dates.html |
+  More Florida deadlines every week: collegeplan.beehiiv.com
+URL:https://www.act.org/content/act/en/products-and-services/the-act/regi
+ stration/test-dates.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: ACT national test date
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:046fe1ba881d36b4@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:USF Regular Decision application due
@@ -346,8 +696,43 @@ DESCRIPTION:Tomorrow: USF Regular Decision application due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:145128041f901323@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:FIU application deadline (all first-year applicants)
+DESCRIPTION:For: Seniors. Decisions Jan 21. Confirm here: https://admissi
+ ons.fiu.edu/how-to-apply/freshman-applicant/ | More Florida deadlines ev
+ ery week: collegeplan.beehiiv.com
+URL:https://admissions.fiu.edu/how-to-apply/freshman-applicant/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: FIU application deadline (all first-year applicants
+ )
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:998b50f5867929e6@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:UNF standard deadline (application + materials)
+DESCRIPTION:For: Seniors. Decisions Jan 13. Confirm here: https://www.unf
+ .edu/admissions/deadlines.html | More Florida deadlines every week: coll
+ egeplan.beehiiv.com
+URL:https://www.unf.edu/admissions/deadlines.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UNF standard deadline (application + materials)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:6ca4916a81e8d166@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:FSU Early Decision & Early Action decisions released
@@ -363,8 +748,27 @@ DESCRIPTION:Tomorrow: FSU Early Decision & Early Action decisions release
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:fa618b442eac292a@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:University of Miami Early Decision II & Regular Decision due
+DESCRIPTION:For: Seniors. Confirm here: https://admissions.miami.edu/unde
+ rgraduate/application-process/options-and-deadlines/index.html | More Fl
+ orida deadlines every week: collegeplan.beehiiv.com
+URL:https://admissions.miami.edu/undergraduate/application-process/option
+ s-and-deadlines/index.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: University of Miami Early Decision II & Regular Dec
+ ision due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:9fa47c4ab63fab81@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
 SUMMARY:USF Regular Decision materials due
@@ -382,8 +786,62 @@ DESCRIPTION:Tomorrow: USF Regular Decision materials due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:925049181110e982@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:UF Regular Decision application due
+DESCRIPTION:For: Seniors. STARS\, transcript and test scores due Jan 22\;
+  decisions Mar 19. Confirm here: https://admissions.ufl.edu/apply/freshm
+ an/deadlines | More Florida deadlines every week: collegeplan.beehiiv.co
+ m
+URL:https://admissions.ufl.edu/apply/freshman/deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UF Regular Decision application due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:78971d28fd80d131@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:UF Regular Decision materials due (STARS)
+DESCRIPTION:For: Seniors. Confirm here: https://admissions.ufl.edu/apply/
+ freshman/deadlines | More Florida deadlines every week: collegeplan.beeh
+ iiv.com
+URL:https://admissions.ufl.edu/apply/freshman/deadlines
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: UF Regular Decision materials due (STARS)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a1e89b31bf611a6b@collegeplan
+DTSTAMP:20261011T131839Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Register for the Feb 27 ACT
+DESCRIPTION:For: Juniors. Late registration until Feb 9. Confirm here: ht
+ tps://www.act.org/content/act/en/products-and-services/the-act/registrat
+ ion/test-dates.html | More Florida deadlines every week: collegeplan.bee
+ hiiv.com
+URL:https://www.act.org/content/act/en/products-and-services/the-act/regi
+ stration/test-dates.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Tomorrow: Register for the Feb 27 ACT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:686cd8935daa8033@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20270210
 DTEND;VALUE=DATE:20270211
 SUMMARY:USF Regular Decision decisions released
@@ -401,7 +859,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c66caebcc64b80f9@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20270219
 DTEND;VALUE=DATE:20270220
 SUMMARY:Register for the Mar 6 SAT
@@ -418,7 +876,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:915d27f3614bca9b@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270307
 SUMMARY:SAT test day
@@ -435,7 +893,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:14d5dee798694b5d@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:UCF Regular Decision application & materials due
@@ -453,7 +911,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e7d1117d0ed54444@collegeplan
-DTSTAMP:20261008T032640Z
+DTSTAMP:20261011T131839Z
 DTSTART;VALUE=DATE:20270831
 DTEND;VALUE=DATE:20270901
 SUMMARY:FFAA final deadline for the Class of 2027 (Bright Futures)

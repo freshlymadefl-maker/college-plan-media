@@ -21,11 +21,25 @@
     "src": "https://www.ucf.edu/admissions/undergraduate/question/when-is-the-application-deadline/"
   },
   {
+    "date": "2026-10-15",
+    "title": "FAU Early Action application due",
+    "who": "Seniors",
+    "note": "Materials due Oct 22; decisions Dec 4.",
+    "src": "https://www.fau.edu/admissions/freshman/how-to-apply/deadlines/"
+  },
+  {
     "date": "2026-10-17",
     "title": "Saturday PSAT/NMSQT option",
     "who": "Juniors",
-    "note": "Many schools give the PSAT/NMSQT during the school day instead (Oct 1\u201330). It's the National Merit qualifier.",
+    "note": "Many schools give the PSAT/NMSQT during the school day instead (Oct 1–30). It's the National Merit qualifier.",
     "src": "https://satsuite.collegeboard.org/psat-nmsqt"
+  },
+  {
+    "date": "2026-10-17",
+    "title": "ACT national test date",
+    "who": "Juniors & Seniors",
+    "note": "Registration has closed. Next: Dec 12 (register by Nov 6).",
+    "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
   },
   {
     "date": "2026-10-22",
@@ -33,6 +47,20 @@
     "who": "Seniors",
     "note": "Self-reported academic record.",
     "src": "https://admissions.ufl.edu/"
+  },
+  {
+    "date": "2026-10-22",
+    "title": "FSU Early Decision/Early Action materials due",
+    "who": "Seniors",
+    "note": "Test scores by Dec 1; decisions Dec 17.",
+    "src": "https://admissions.fsu.edu/deadlines"
+  },
+  {
+    "date": "2026-10-22",
+    "title": "FAU Early Action materials due",
+    "who": "Seniors",
+    "note": "Last test scores Nov 20.",
+    "src": "https://www.fau.edu/admissions/freshman/how-to-apply/deadlines/"
   },
   {
     "date": "2026-10-23",
@@ -49,11 +77,74 @@
     "src": "https://admissions.ufl.edu/"
   },
   {
+    "date": "2026-11-01",
+    "title": "University of Miami Early Decision I & Early Action due",
+    "who": "Seniors",
+    "note": "Financial aid forms due Nov 15.",
+    "src": "https://admissions.miami.edu/undergraduate/application-process/options-and-deadlines/index.html"
+  },
+  {
+    "date": "2026-11-01",
+    "title": "New College of Florida Early Action due",
+    "who": "Seniors",
+    "note": "Supporting documents due Nov 15; decisions by Dec 15.",
+    "src": "https://www.ncf.edu/admissions/first-year-students/"
+  },
+  {
+    "date": "2026-11-01",
+    "title": "FAMU Early Action due",
+    "who": "Seniors",
+    "note": "Materials due Nov 14; decisions Dec 4.",
+    "src": "https://admissions.famu.edu/student-types/freshman.php"
+  },
+  {
+    "date": "2026-11-01",
+    "title": "FGCU Early Action due",
+    "who": "Seniors",
+    "note": "Supplemental items due Nov 15.",
+    "src": "https://www.fgcu.edu/admissionsandaid/undergraduateadmissions/applicationdeadlines"
+  },
+  {
+    "date": "2026-11-01",
+    "title": "Stetson Early Decision due",
+    "who": "Seniors",
+    "note": "Binding.",
+    "src": "https://www.stetson.edu/administration/admissions/application-types.php"
+  },
+  {
     "date": "2026-11-02",
     "title": "USF Early Action application due",
     "who": "Seniors",
     "note": "Materials due Nov 16; decisions Dec 9.",
     "src": "https://usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx"
+  },
+  {
+    "date": "2026-11-02",
+    "title": "FIU Early Action due (application + documents)",
+    "who": "Seniors",
+    "note": "Decisions Dec 10.",
+    "src": "https://admissions.fiu.edu/how-to-apply/freshman-applicant/"
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Register for the Nov 14 CLT (remote)",
+    "who": "Juniors & Seniors",
+    "note": "",
+    "src": "https://www.cltexam.com/tests/clt/"
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Hillsborough College dual enrollment paperwork due (spring 2027)",
+    "who": "Hillsborough County students",
+    "note": "11:59pm. Late paperwork isn't accepted. Classes begin Jan 11.",
+    "src": "https://www.hcfl.edu/admissions/steps-enroll/dual-enrollment-and-early-admissions"
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Register for the Dec 12 ACT",
+    "who": "Juniors & Seniors",
+    "note": "Late registration until Nov 29.",
+    "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
   },
   {
     "date": "2026-11-07",
@@ -70,11 +161,39 @@
     "src": "https://admissions.ufl.edu/"
   },
   {
+    "date": "2026-11-11",
+    "title": "Jack Kent Cooke College Scholarship deadline",
+    "who": "Seniors",
+    "note": "Up to $55,000/yr. 3.75+ unweighted GPA, family income up to $95,000. Apply on the Common App.",
+    "src": "https://www.jkcf.org/our-scholarships/college-scholarship-program/how-to-apply/"
+  },
+  {
+    "date": "2026-11-12",
+    "title": "Elks Most Valuable Student scholarship deadline",
+    "who": "Seniors",
+    "note": "11:59pm Pacific. U.S. citizens.",
+    "src": "https://www.elks.org/scholars/scholarships/mvs.cfm"
+  },
+  {
     "date": "2026-11-15",
     "title": "UCF Early Action materials due",
     "who": "Seniors",
     "note": "",
     "src": "https://www.ucf.edu/admissions/undergraduate/question/when-is-the-application-deadline/"
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Stetson Early Action due",
+    "who": "Seniors",
+    "note": "Non-binding.",
+    "src": "https://www.stetson.edu/administration/admissions/application-types.php"
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Rollins Early Decision I & Early Action due",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://www.rollins.edu/apply/first-time/"
   },
   {
     "date": "2026-11-16",
@@ -84,11 +203,32 @@
     "src": "https://usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx"
   },
   {
+    "date": "2026-11-18",
+    "title": "UNF priority deadline (application + materials)",
+    "who": "Seniors",
+    "note": "Decisions Dec 9.",
+    "src": "https://www.unf.edu/admissions/deadlines.html"
+  },
+  {
     "date": "2026-11-20",
     "title": "Register for the Dec 5 SAT",
     "who": "Seniors & Juniors",
     "note": "Late registration until Nov 24.",
     "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
+  },
+  {
+    "date": "2026-12-01",
+    "title": "FSU Regular Decision application due",
+    "who": "Seniors",
+    "note": "Materials due Dec 8; decisions Feb 18.",
+    "src": "https://admissions.fsu.edu/deadlines"
+  },
+  {
+    "date": "2026-12-03",
+    "title": "Register for the Dec 8 CLT (remote)",
+    "who": "Juniors & Seniors",
+    "note": "",
+    "src": "https://www.cltexam.com/tests/clt/"
   },
   {
     "date": "2026-12-04",
@@ -119,11 +259,32 @@
     "src": "https://admissions.ufl.edu/"
   },
   {
+    "date": "2026-12-12",
+    "title": "ACT national test date",
+    "who": "Juniors & Seniors",
+    "note": "",
+    "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
+  },
+  {
     "date": "2026-12-16",
     "title": "USF Regular Decision application due",
     "who": "Seniors",
     "note": "Materials due Jan 15 (also the merit scholarship date).",
     "src": "https://usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx"
+  },
+  {
+    "date": "2026-12-16",
+    "title": "FIU application deadline (all first-year applicants)",
+    "who": "Seniors",
+    "note": "Decisions Jan 21.",
+    "src": "https://admissions.fiu.edu/how-to-apply/freshman-applicant/"
+  },
+  {
+    "date": "2026-12-16",
+    "title": "UNF standard deadline (application + materials)",
+    "who": "Seniors",
+    "note": "Decisions Jan 13.",
+    "src": "https://www.unf.edu/admissions/deadlines.html"
   },
   {
     "date": "2026-12-17",
@@ -133,11 +294,39 @@
     "src": "https://admissions.fsu.edu/"
   },
   {
+    "date": "2027-01-05",
+    "title": "University of Miami Early Decision II & Regular Decision due",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://admissions.miami.edu/undergraduate/application-process/options-and-deadlines/index.html"
+  },
+  {
     "date": "2027-01-15",
     "title": "USF Regular Decision materials due",
     "who": "Seniors",
     "note": "Submit by today for automatic merit scholarship consideration.",
     "src": "https://usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx"
+  },
+  {
+    "date": "2027-01-15",
+    "title": "UF Regular Decision application due",
+    "who": "Seniors",
+    "note": "STARS, transcript and test scores due Jan 22; decisions Mar 19.",
+    "src": "https://admissions.ufl.edu/apply/freshman/deadlines"
+  },
+  {
+    "date": "2027-01-22",
+    "title": "UF Regular Decision materials due (STARS)",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://admissions.ufl.edu/apply/freshman/deadlines"
+  },
+  {
+    "date": "2027-01-22",
+    "title": "Register for the Feb 27 ACT",
+    "who": "Juniors",
+    "note": "Late registration until Feb 9.",
+    "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
   },
   {
     "date": "2027-02-10",
@@ -173,12 +362,5 @@
     "who": "Seniors",
     "note": "No FFAA, no Bright Futures. Don't wait until now; file it during senior year.",
     "src": "https://www.floridastudentfinancialaidsg.org/"
-  },
-  {
-    "date": "2026-11-06",
-    "title": "Hillsborough College dual enrollment paperwork due (spring 2027)",
-    "who": "Hillsborough County students",
-    "note": "11:59pm. Late paperwork isn't accepted. Classes begin Jan 11.",
-    "src": "https://www.hcfl.edu/admissions/steps-enroll/dual-enrollment-and-early-admissions"
   }
 ]
