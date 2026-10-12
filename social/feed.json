@@ -1,8 +1,16 @@
 {
- "updated": "2026-10-11T01:19Z",
+ "updated": "2026-10-12T01:18Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DeT7ncPCYwU/",
+   "img": "social/img/DeT7ncPCYwU.jpg",
+   "date": "20261010110307",
+   "label": "Oct 10",
+   "caption": "Bright Futures can cover up to 100% of tuition at Florida public colleges and universities. But the requirements change by graduating class,",
+   "type": "FEED_IMAGE"
+  },
   {
    "url": "https://www.instagram.com/p/DeSiW0ACas9/",
    "img": "social/img/DeSiW0ACas9.jpg",
@@ -57,14 +65,6 @@
    "date": "20261008144045",
    "label": "Oct 8",
    "caption": "Florida School Spotlight: UF \ud83d\udc0a",
-   "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DePJ2noCDhO/",
-   "img": "social/img/DePJ2noCDhO.jpg",
-   "date": "20261008143124",
-   "label": "Oct 8",
-   "caption": "October is loud. \ud83d\udce3",
    "type": "FEED_IMAGE"
   }
  ]
