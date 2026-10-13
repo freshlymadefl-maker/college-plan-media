@@ -1,0 +1,109 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- College Plan NATIVE Reel engine (Oct 13 data check). 1080x1920, driven by window.setT(ms).
+     Load with ?cfg=<name> -> templates/reel/native/<name>.js (defines window.CFG). Render:
+       python3 templates/reel/render-fast.py "templates/reel/native-reel.html?cfg=<name>" out.mp4 <secs> 30
+       python3 scripts/add_music.py out.mp4 out-music.mp4
+     Rules this engine enforces: the HOOK is fully visible on frame 0 (no fade-in), things move every ~1s,
+     real photo backgrounds slowly zoom (looks like video, not a slide), text looks like native caption stickers.
+     CFG = { dur, bg:[{img, from, to}] | bg:'sky'|'navy', dim:0.35,
+             hook:{text, y, size},            // frame-0 sticker at top
+             items:[{t, text, kind:'white'|'gold'|'navy'|'big', y?, size?}],   // stacked stickers below the hook (or absolute y)
+             chat:{title, sub, y, h, msgs:[{t, side:'in'|'out', name?, text, typing?}]},
+             bingo:{title, cells:[...9], order:[indices], start, step},
+             doodles:[{n, x, y, w, rot, t?}], end:{t, text, sub} } -->
+<style>
+* { box-sizing:border-box; margin:0; }
+html,body { width:1080px; height:1920px; overflow:hidden; }
+body { font-family:'Inter',sans-serif; background:#0B2A4A; color:#0B2A4A; position:relative; }
+.bgw { position:absolute; inset:0; overflow:hidden; }
+.bgi { position:absolute; inset:-2%; background-size:cover; background-position:center; opacity:0; will-change:transform; }
+.dim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,31,56,.55) 0%, rgba(8,31,56,.15) 35%, rgba(8,31,56,.2) 65%, rgba(8,31,56,.65) 100%); }
+body.sky { background:linear-gradient(165deg,#F4F9FE 0%,#EAF3FB 50%,#D4E6F7 100%); }
+body.navy { background:linear-gradient(165deg,#0E3359 0%,#0B2A4A 55%,#081F38 100%); }
+.st { position:absolute; left:70px; right:70px; text-align:center; transform-origin:center; }
+.st span { display:inline; font-family:'Poppins'; font-weight:700; line-height:1.36; padding:6px 22px; border-radius:18px;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+.k-white span { background:#fff; color:#0B2A4A; }
+.k-gold span { background:#F1E27A; color:#0B2A4A; }
+.k-navy span { background:#0B2A4A; color:#fff; }
+.k-big span { background:transparent; color:#fff; padding:0; text-shadow:0 4px 24px rgba(0,0,0,.55), 0 0 2px rgba(0,0,0,.6); }
+.stack { position:absolute; left:70px; right:70px; display:flex; flex-direction:column; gap:26px; align-items:center; }
+.stack .st { position:relative; left:auto; right:auto; }
+.phone { position:absolute; left:90px; right:90px; background:#fff; border-radius:48px; box-shadow:0 30px 80px rgba(0,0,0,.35); overflow:hidden; display:flex; flex-direction:column; }
+.ph-top { text-align:center; padding:26px 0 18px; border-bottom:1px solid #E6EDF4; background:#F7F9FB; flex:none; }
+.ph-top .av { width:86px; height:86px; border-radius:50%; background:#D4E6F7; font-size:44px; display:flex; align-items:center; justify-content:center; margin:0 auto; }
+.ph-top b { display:block; font-family:'Poppins'; font-size:36px; margin-top:8px; color:#1d2733; }
+.ph-top small { font-size:22px; color:#8695A5; }
+.msgs { flex:1; padding:24px 30px 30px; display:flex; flex-direction:column; justify-content:flex-start; gap:14px; overflow:hidden; }
+.m { max-width:82%; font-size:48px; line-height:1.28; padding:18px 28px; border-radius:38px; transform-origin:bottom left; }
+.m.in { align-self:flex-start; background:#E9EDF2; color:#1d2733; border-bottom-left-radius:10px; }
+.m.out { align-self:flex-end; background:#3478F6; color:#fff; border-bottom-right-radius:10px; transform-origin:bottom right; }
+.nm { font-size:26px; color:#8695A5; margin:6px 0 -6px 18px; align-self:flex-start; }
+.typing span { display:inline-block; width:16px; height:16px; border-radius:50%; background:#9AA8B6; margin:0 4px; }
+.bingo { position:absolute; left:70px; right:70px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.bingo div { position:relative; background:#fff; border-radius:26px; height:270px; padding:20px; display:flex; align-items:center; justify-content:center; text-align:center; font-family:'Poppins'; font-weight:600; font-size:31px; line-height:1.2; color:#0B2A4A; box-shadow:0 8px 24px rgba(11,42,74,.12); }
+.bingo div.free { background:#0B2A4A; color:#F1E27A; flex-direction:column; font-size:36px; }
+.bingo div.free small { color:#fff; font-size:26px; font-weight:500; margin-top:6px; }
+.bingo i { position:absolute; inset:18px; border:10px solid #F05A28; border-radius:50%; opacity:0; transform:rotate(-12deg); }
+.dd { position:absolute; pointer-events:none; }
+.logo { position:absolute; left:0; right:0; bottom:110px; text-align:center; }
+.logo img { height:54px; }
+.ar { font-family:'Inter'; font-weight:700; }
+</style></head>
+<body>
+<div class="bgw" id="bgw"></div>
+<div id="root"></div>
+<div class="logo"><img id="logo" src="../wordmark_white.png"></div>
+<script>
+const q = new URLSearchParams(location.search).get('cfg');
+document.write('<script src="native/' + q + '.js"><\/script>');
+</script>
+<script>
+const C = window.CFG, R = document.getElementById('root'), E = [];
+function el(tag, cls, html, parent){ const d = document.createElement(tag); if (cls) d.className = cls; if (html != null) d.innerHTML = html; (parent||R).appendChild(d); return d; }
+function sticker(o, parent){ const d = el('div', 'st k-' + (o.kind||'white'), '<span>' + o.text + '</span>', parent);
+  d.style.fontSize = (o.size || 60) + 'px'; if (o.y != null) d.style.top = o.y + 'px'; return d; }
+// background
+if (typeof C.bg === 'string') { document.body.classList.add(C.bg); if (C.bg === 'sky') document.getElementById('logo').src = '../wordmark_navy.png'; }
+else (C.bg||[]).forEach(b => { const d = el('div','bgi',null,document.getElementById('bgw')); d.style.backgroundImage = 'url(' + b.img + ')'; if (b.pos) d.style.backgroundPosition = b.pos; E.push({d, bg:b}); });
+if (Array.isArray(C.bg)) { const dm = el('div','dim',null,document.getElementById('bgw')); if (C.dim != null) dm.style.opacity = C.dim; }
+// hook (frame 0)
+if (C.hook) { const h = sticker(Object.assign({kind:'white', y:220, size:66}, C.hook)); E.push({d:h, t:0}); }
+// stacked items
+if (C.items) { const s = el('div','stack'); s.style.top = (C.itemsTop || 760) + 'px';
+  C.items.forEach(o => { const d = o.y != null ? sticker(o) : sticker(o, s); E.push({d, t:o.t*1000, until:o.until!=null?o.until*1000:null}); }); }
+// chat
+if (C.chat) { const c = C.chat, p = el('div','phone'); p.style.top = (c.y||430) + 'px'; p.style.height = (c.h||1200) + 'px';
+  el('div','ph-top','<div class="av">' + (c.av||'🎓') + '</div><b>' + c.title + '</b><small>' + (c.sub||'') + '</small>', p);
+  const m = el('div','msgs',null,p); window._msgs = m;
+  c.msgs.forEach(x => { let ty = null;
+    if (x.name) { const n = el('div','nm',x.name,m); E.push({d:n, t:x.t*1000, plain:true}); }
+    if (x.typing) { ty = el('div','m in typing','<span></span><span></span><span></span>',m); E.push({d:ty, t:(x.t-0.6)*1000, until:x.t*1000, plain:true}); }
+    const d = el('div','m ' + x.side, x.text, m); E.push({d, t:x.t*1000}); }); }
+// bingo
+if (C.bingo) { const b = C.bingo, g = el('div','bingo'); g.style.top = (b.y||560) + 'px';
+  b.cells.forEach((txt,i) => { const d = el('div', i===4 ? 'free' : '', txt, g); const ring = el('i',null,null,d);
+    const k = b.order.indexOf(i); if (k >= 0) E.push({d:ring, t:(b.start + k*b.step)*1000, ring:true}); }); }
+(C.doodles||[]).forEach(o => { const d = el('img','dd'); d.src = '../doodles/' + o.n + '.svg';
+  Object.assign(d.style, {left:o.x+'px', top:o.y+'px', width:o.w+'px'}); d.dataset.rot = o.rot||0; E.push({d, t:(o.t||0)*1000, doodle:true}); });
+if (C.end) { const d = sticker(Object.assign({kind:'gold', y:1560, size:56}, {text:C.end.text + (C.end.sub ? '<br><small style="font-size:.72em">' + C.end.sub + '</small>' : ''), y:C.end.y})); E.push({d, t:C.end.t*1000}); }
+const ease = x => 1 - Math.pow(1 - Math.min(1, Math.max(0, x)), 3);
+window.setT = function(t){
+  E.forEach(e => {
+    if (e.bg) { const on = t >= e.bg.from*1000 && t < e.bg.to*1000; e.d.style.opacity = on ? 1 : 0;
+      const p = (t - e.bg.from*1000) / ((e.bg.to - e.bg.from)*1000); const z = e.bg.zoom || 0.12;
+      e.d.style.transform = 'scale(' + (1 + z*p) + ') translate(' + ((e.bg.pan||0)*p) + 'px,0)'; return; }
+    const on = t >= e.t && (e.until == null || t < e.until);
+    if (e.plain) { e.d.style.display = on ? '' : 'none'; return; }
+    if (e.ring) { const k = ease((t - e.t)/180); e.d.style.opacity = t >= e.t ? 1 : 0; e.d.style.transform = 'rotate(-12deg) scale(' + (1.5 - .5*k) + ')'; return; }
+    if (e.t <= 0) { e.d.style.display = on ? '' : 'none'; e.d.style.transform = e.doodle ? 'rotate(' + e.d.dataset.rot + 'deg)' : ''; return; }
+    e.d.style.display = on ? '' : 'none';
+    const k = ease((t - e.t)/160), s = 0.82 + 0.18*k;
+    e.d.style.transform = (e.doodle ? 'rotate(' + e.d.dataset.rot + 'deg) ' : '') + 'scale(' + s + ')'; e.d.style.opacity = Math.min(1, k*1.4);
+  });
+  if (window._msgs) window._msgs.scrollTop = window._msgs.scrollHeight;
+};
+setT(0);
+</script>
+</body></html>
