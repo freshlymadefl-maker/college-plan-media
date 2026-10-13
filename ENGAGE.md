@@ -29,3 +29,11 @@
 - On a parenting-teens post: "So true. Small monthly check-ins helped us way more than one big senior-year push."
 - On a local school/district post: "Thanks for sharing! Juniors: PSAT/NMSQT this month is also the National Merit qualifier."
 - On a scholarship post: "Saving this! Florida families: double-check the residency rules before applying, some are state-specific."
+
+## Owner growth moves (Oct 13 data check) — these move the needle more than anything Claude can schedule
+1. **Film 3–10 second clips of yourself** (no talking needed): an eye-roll, a deep breath at the laptop, a "reading the FAFSA instructions" face, a happy dance. Drop them in the shared folder or send them to Claude; they become the background of the funny Reels. Real faces were 90%+ of our first-week reach.
+2. **Keep the credited reposts, but max 2 a week and ask the creator first** (DM: "Can we share this with credit? Florida parents will love it"). They bring reach now, but Instagram limits accounts that mostly repost, and they don't build our own brand.
+3. **Boost one winner:** when one of our OWN Reels gets the best 24-hour view rate of the week, boost it $5–10/day for 3–4 days, audience = Florida, parents/ages 35–55, interests in college/parenting. Stop if cost per follow is over ~$1.
+4. **15 minutes a day:** reply to every comment within an hour; leave real, helpful comments on 5–10 posts from the accounts below; post a helpful answer (not a link) in 1–2 Florida parent Facebook groups using the weekly answer bank.
+5. **Send 3 collab pitches a week** from COLLABS.md. One "yes" from a Florida mom creator is worth weeks of posting.
+

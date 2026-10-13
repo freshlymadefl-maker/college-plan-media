@@ -5,30 +5,50 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 ## What makes College Plan different (owner, Oct 9) — every post should hit at least two
 1. **Funny + relatable** (parents laugh, tag, send). 2. **Educational** (save-worthy). 3. **Florida-specific** (Bright Futures, FFAA, our schools, our counties). 4. **Time-sensitive** (what's due now). Growth = engagement + entertainment: every feed post ends with ONE easy action (vote, comment a word, tag, send, save). Lots of pages cover college planning; ours wins by being the fun, Florida, right-now one.
 
-## Weekly calendar (7 feed posts + 6 Reels + 7 Stories)
+## DATA CHECK Oct 13 — what is actually working (read this before planning anything)
+First week of numbers (Oct 7–11, Metricool): followers 10 → 23. Daily reach 1,480 (Oct 8) → 331 → 126 → 13 (Oct 11).
+- **Feed photos and carousels reached 1–14 accounts each** (basically only our followers) and brought in 2 follows total across 18 posts. On TikTok, every photo post shows 0 views; videos got 13–46.
+- **What reached new people = funny, relatable Reels with real people in them** (the owner's credited reposts): 1,234 reach at 77% view rate, then 130–165 each. These are 90%+ of our reach.
+- **Our own Reels lost people in 2–3 seconds** (Bright Futures mistakes: 116 reach, 2.6s average watch, 12% view rate; checker: 13 reach, 8%). They opened like an ad (info first, hook faded in, 13–40s long).
+So, until the account has real reach: **Reels first, funny first, hook on frame 0, short.** Feed carousels drop to 3 a week (Showdown, scholarship, one time-sensitive/local carousel). Paid-product carousels go out at most every other week (they reach nobody yet) — the Oct 13/15 roadmap carousels were moved to Metricool DRAFTS (Oct 25 + Nov 1) for later. Re-check these numbers every Sunday (Metricool IGPO14 reach, IGRE11/IGRE23/IGRE24/IGRE28 for Reels, TKPO07 TikTok views) and log them below.
+
+## Weekly calendar (3 feed carousels + 10–11 Reels + 7 Stories) — updated Oct 13 after the data check
 Owner's rule (Oct 9): feed posts go out in the MORNING at 7:00am; Reels go out in the EVENING at 6:00pm. Nothing at midday or 7:30pm anymore (decision-day posts keep their release-night times).
 **Spacing rule:** max ONE feed post per day and at least 4 hours between any two Instagram posts (Stories excepted). Never batch-post several feed posts in one sitting again (the Oct 8 launch blast split reach 8 ways). A big moment gets its own day, or replaces that day's slot.
 | Day | Time (ET) | Slot | Template |
 |---|---|---|---|
-| Mon | 7:00am | "Don't miss" deadlines (CAROUSEL) | weekly-posts #p1 |
-| Mon | 6:00pm | **Carousel remix Reel** — last week's best carousel (most saves + shares in Metricool) turned into a 10–15s Reel | reel/reel-template.html |
-| Tue | 7:00am | Florida school stats (CAROUSEL: hook cover → stats → what it means) | weekly-posts #p2 |
-| Tue | 6:00pm | **Reel** (rotation R) | reel/reel-template.html |
-| Wed | 7:00am | Deep-dive CAROUSEL (rotation A) | #p3 + inner slides / ph2 cover |
-| Wed | 6:00pm | **Reel** (rotation R, or a 2nd carousel remix if one clearly won) | reel/reel-template.html |
-| Thu | 7:00am | Photo quote / reframe, fun post, or a Rotation B list/engagement post (rotate) | photo-posts #ph1 / fun-posts / #p5 |
-| Thu | 6:00pm | **Trial Reel** (rotation R; shown to non-followers first) | reel template, instagramData type TRIAL_REEL |
-| Fri | 7:00am | **SCHOOL SHOWDOWN** carousel (two Florida schools, people vote in the comments; see "School Showdowns") — every 3rd week swap in a Rotation B list post | templates/showdown-posts.html (sd1–sd6) |
-| Fri | 6:00pm | **VOICEOVER Reel** (at least 1/week, owner loves these: AI voice + word-by-word captions, 25–40s) | reel/voiceover-reel.html (see templates/README.md "Voiceover Reels") |
-| Sat | 7:00am | Scholarship of the week | growth-posts #sc1 |
-| Sun | 7:00am | Rotation C | ck1 / pr1 / pr2 |
-| Sun | 6:00pm | **Trial Reel** (rotation R) | reel template, instagramData type TRIAL_REEL |
-| Daily | 8:15am | **Story** (rotate st1 deadline countdown / st2 did-you-know / st3 photo reminder; on Wed add an st4 'New post' teaser at 7:30am, right after the carousel) | templates/story-posts.html |
-| TikTok | 9:30am / 8:00pm | Cross-posts: ~2.5h after the Instagram post they copy (morning ones ~9:30am, evening ones ~8:00pm), max 3/day | weekly TikTok task |
+| Mon | 7:00am | **FUNNY native Reel** (group chat / texting / POV / translation) | reel/native-reel.html |
+| Mon | 6:00pm | "Due this week" native list Reel (hook on frame 0, real campus photo) | reel/native-reel.html |
+| Tue | 7:00am | **FUNNY native Reel** | reel/native-reel.html |
+| Tue | 6:00pm | School stat reveal native Reel (real school photo, "UF's middle 50% SAT is…") | reel/native-reel.html |
+| Wed | 7:00am | CAROUSEL: Rotation A deep-dive OR county post (time-sensitive/local wins) | weekly-posts #p3 / tool-posts cy1–cy5 |
+| Wed | 6:00pm | Reel (rotation R, native style) | reel/native-reel.html |
+| Thu | 7:00am | **FUNNY native Reel** | reel/native-reel.html |
+| Thu | 6:00pm | **Trial Reel** (test a new hook/format on non-followers) | native-reel, instagramData type TRIAL_REEL |
+| Fri | 7:00am | **SCHOOL SHOWDOWN** carousel | templates/showdown-posts.html (sd1–sd6) |
+| Fri | 6:00pm | VOICEOVER Reel (max 30s, hook text on frame 0, no preamble — cut "here are 3 things…") | reel/voiceover-reel.html |
+| Sat | 7:00am | Scholarship of the week CAROUSEL | growth-posts #sc1 |
+| Sat | 6:00pm | **FUNNY native Reel** (campus-photo POVs work: tours, dorms, college towns) | reel/native-reel.html |
+| Sun | 7:00am | Relatable Reel (bingo, stress meter, this-or-that) — every other week a paid-product carousel instead | reel/native-reel.html (bingo) |
+| Sun | 6:00pm | **Trial Reel** | native-reel, TRIAL_REEL |
+| Daily | 8:15am | **Story** (st1 countdown / st2 did-you-know / st3 photo; product + tool mentions go here) | templates/story-posts.html |
+| TikTok | 9:30am / 8:00pm | Cross-posts of the Reels + Showdown/scholarship as slideshow VIDEOS (never photo posts), max 3/day | weekly TikTok task |
+Spacing rule still holds: at least 4 hours between Instagram posts (Stories excepted); never batch.
 
-## Format mix: carousels for followers, Reels for reach (checked Oct 2026)
-Industry benchmarks (Socialinsider/Metricool/Buffer roundups, 2026) agree: carousels get the highest engagement rate (~9–10% vs ~6–7% for Reels), ~2x the saves, 2–3x the DM shares and ~3x the profile visits of Reels. Reels reach 3–5x more accounts, mostly non-followers. So: carousels turn viewers into followers, Reels bring in new viewers. Keep BOTH — 4–5 carousels + 6 Reels a week — and recycle every winning carousel into a Reel (Monday remix slot). For an account under ~5K followers, lean on Reels for reach; never drop the carousels.
-Instagram (per Adam Mosseri) may re-show a carousel to people who scrolled past, starting on SLIDE 2. So slide 2 must work as a second cover.
+## Format mix (rewritten Oct 13 from OUR data, replaces the industry-benchmark version)
+Industry roundups say carousels win on engagement, but for an account our size Instagram shows carousels almost only to followers (ours reached 1–14 each). Reels are the only thing that reaches non-followers. So: 10–11 Reels + 3 carousels a week until we pass ~1,000 followers, then re-test. Every winning carousel still gets remixed into a Reel. Instagram (per Adam Mosseri) may re-show a carousel starting on SLIDE 2, so slide 2 must work as a second cover.
+
+## Native Reels (Oct 13) — the default Reel style now
+Engine: templates/reel/native-reel.html + one config per Reel in templates/reel/native/<name>.js (see the 8 examples: gc-october = group chat, texting-deadline = texting your senior, translations = says vs. means, tour-weather = photo POV with cuts, bingo = card that stamps itself, oct-4things / bf2028 / checker = hook + list over a real photo).
+Render: `python3 templates/reel/render-fast.py "templates/reel/native-reel.html?cfg=<name>" out-silent.mp4 <secs> 30 && python3 scripts/add_music.py out-silent.mp4 out.mp4` (~1 min). Preview frames first with Playwright (setT(ms)) and LOOK at them.
+Rules (from what worked):
+1. **The hook is fully on screen on frame 0** (no fade-in, no logo intro, no blank first second). It is also the cover/thumbnail.
+2. **7–10 seconds total.** Something new every ~1 second (a text bubble, a sticker, a photo cut). Short Reels get rewatched, which counts.
+3. **Funny or relatable first, the fact second.** Write it like a parent would text it: lowercase is fine, emoji fine, real situations (portal refreshing, "basically done", the group chat, 91° campus tours). Facts stay verified and go in the caption.
+4. **Looks like a person made it, not a brand:** native caption stickers, chat bubbles, real photos that slowly zoom. No navy slide decks for Reels.
+5. End with ONE ask on screen: "Send this to your group chat", "Tag your co-parent", "Save this".
+6. Real school photos only from photos/commons (credit in caption). Library music via audioConfiguration with videoVolume 0, our baked track for FB/TikTok.
+7. Faces win. Whenever the owner sends a 3–10 second clip of herself (reaction, eye-roll, "me reading the FAFSA instructions"), use it as the Reel background with text on top instead of a photo.
 
 ## First comment (Oct 9 — owner request)
 Every feed post and Reel gets a scheduled first comment from @college.plan via Metricool's firstCommentText field. It goes up the moment the post publishes and gives people an easy place to jump in. Make it a short, playful prompt that matches the post, never a repeat of the caption: Showdowns repeat the vote words plus a bonus question ("Vote here 👇 SWAMP or DOAK? Bonus points for your best game-day memory 🏟️"); quizzes say "No peeking! Drop your score 👇"; info posts ask one easy question ("What grade is your student in? 👇"); GUIDE posts say "Comment GUIDE here and we'll DM you the cheat sheet 📩". Never invent fake replies or pretend to be a parent. (Metricool can't schedule replies to other people's comments, since those don't exist yet. The owner replies by hand.)
@@ -61,6 +81,9 @@ Pit two Florida schools against each other on something seniors actually care ab
 ## Real school photos (Oct 9)
 For posts about a real school, use REAL photos (never AI images of real campuses). Get them with the "Find photos" GitHub Action: push photoreq/<name>.txt with lines "<slug> | <search terms> | <max>" (e.g. "ucf-campus | University of Central Florida campus | 6"), wait ~90s, git pull, then LOOK at photos/commons/<slug>/contact.jpg and pick the best (packed stadiums, sunny campus icons, people having fun). Every photo is from Wikimedia Commons under a license that allows reuse with credit (CC0/public domain/CC BY/CC BY-SA, listed in credits.json). Credit each one used on the last slide AND in the caption: "Title" by Artist (License), and note "text added". Prefer sharp, well-lit, crowd-filled photos; skip blurry, empty, or construction shots. Photos already fetched: uf-stadium, fsu-stadium, uf-campus, fsu-campus.
 
+## Doodles on every new post (owner, Oct 12: "add cute graphics like these to all our posts")
+Hand-drawn doodles (templates/doodles/: star, squiggle, burst, heart, plus, dots × gold, navy, orange, coral, mist, blue; preview templates/doodles/index.html; rules in templates/doodles/README.md). Every new carousel slide, Story and native Reel gets 2–5 of them, placed in the HTML (`<img class="dd" src="../doodles/<name>.svg" style="left/top/width/rotate">`, or the `doodles` array in a native Reel config) — ONLY in empty space: never over text, faces, numbers or the swipe chip. Vary colors (orange/coral/gold on light backgrounds, gold/mist on navy and photos). build_showdown.py adds them automatically. For an already-rendered PNG: `python3 scripts/add_doodles.py in.png out.png 3` and LOOK at the result.
+
 ## Collab posts
 See COLLABS.md (who to pitch, offers, DM templates, tracker). When a partner has agreed (listed as "Agreed" in the COLLABS.md tracker with a verified @handle), build the Collab post in that week's matching feed slot and schedule it with instagramData.collaborators [{"username":"<handle>","deleted":false}]. Put "with @handle" on the cover slide. Never add a collaborator who hasn't agreed.
 
@@ -89,19 +112,19 @@ See COLLABS.md (who to pitch, offers, DM templates, tracker). When a partner has
 4. "Week ahead" or seasonal photo post (ph2)
 
 ## Voiceover Reels (at least one every week — Friday 6pm)
-Faceless, AI voice (en-US-AvaNeural) + big word-by-word captions over soft Florida photos, gold section chips, end card pointing to a tool or the newsletter. Formats that work: "3 [Bright Futures/FAFSA/application] mistakes Florida parents make", "What [UF/FSU/UCF] actually looks for", "Explain [dual enrollment/STARS/the FFAA] in 30 seconds", "If your student is a junior, do these 3 things this month". Script 70–110 words, spell acronyms with spaces for the voice (F F A A), every fact verified. Caption repeats the key points in text + "sound on". isAiGenerated true. A second voiceover can replace a trial Reel when it's a strong topic.
+Max 30 seconds, the hook line big on frame 0 and no spoken preamble (start at "Number one…"; Oct 13 data: 38s voiceovers averaged 2.6s watched). Faceless, AI voice (en-US-AvaNeural) + big word-by-word captions over soft Florida photos, gold section chips, end card pointing to a tool or the newsletter. Formats that work: "3 [Bright Futures/FAFSA/application] mistakes Florida parents make", "What [UF/FSU/UCF] actually looks for", "Explain [dual enrollment/STARS/the FFAA] in 30 seconds", "If your student is a junior, do these 3 things this month". Script 70–110 words, spell acronyms with spaces for the voice (F F A A), every fact verified. Caption repeats the key points in text + "sound on". isAiGenerated true. A second voiceover can replace a trial Reel when it's a strong topic.
 
 ## Trial Reels
 Trial Reels are shown only to non-followers first, so use them to test new hooks/formats. Keep the two regular Reels for the strongest ideas. Instagram may move a trial Reel to the profile later if it performs.
 
-## Rotation R — Reels (10–15s, hook in first 2s, big text, end with "Save this + follow")
+## Rotation R — Reel topics (build them as NATIVE Reels: 7–10s, hook on frame 0 — see "Native Reels")
 - "X things to do before [month] ends" · "Florida deadline this week" · "Did you know (scholarship)" · school stat reveal ("UF's middle 50% SAT is…") · myth vs fact flip · "Things I wish I knew in 9th grade" style lists (written as College Plan, no personal persona)
-- Render: `python3 templates/reel/render-reel.py file.html out.mp4 13 30` (~1.5 min). Schedule as instagramData type REEL (showReelOnFeed true) + facebookData type REEL.
+- Render with the native engine (see "Native Reels"); the old reel-template.html slide style is retired for new Reels (it lost viewers in 2–3s). Schedule as instagramData type REEL (showReelOnFeed true) + facebookData type REEL.
 
 ## Music (Oct 9 — owner: "add music whenever possible, never on voiceover Reels")
 Two layers for every Reel/TikTok video WITHOUT a voiceover:
 1. **Baked-in music (all platforms).** templates/reel/render-reel.py now mixes one of our own original tracks into the video automatically (templates/reel/music/: sunny, breeze, bright — made by scripts/make_music.py, so no licensing issues; rotates by file name; pass a track name as the 5th arg to choose, or "none" to skip). For an existing silent video: `python3 scripts/add_music.py in.mp4 out.mp4 [track]`. This is what Facebook Reels and TikTok videos play.
-2. **Instagram library track (Instagram only).** Also attach instagramData.audioConfiguration {"audioId": "<numeric id>", "videoVolume": 0} — videoVolume 0 mutes our baked track on Instagram so only the library song plays (library audio links the Reel to that song's audio page = extra discovery). To find a track, send a search term as audioId (e.g. "upbeat acoustic", "happy instrumental", "chill lofi"); Metricool rejects it with candidate tracks; pick an upbeat, warm INSTRUMENTAL and retry with its numeric id. Rotate; don't reuse a track two weeks running. Used so far: 901455037857983 It's A Vibe, Giulio Cercato (Oct 14 Reel); 761736589642441 Be Happy (Instrumental), Afro Sound Machine (Oct 15 trial Reel); 989564276265815 Dancing In The Sun (Instrumental), Giulio Cercato (Oct 13 Reel); 1375070527788441 Cool Water (Instrumental), Afro Sound Machine (Oct 18 trial Reel). Other good candidates: 1274149560124013 Heros Journey (Instrumental), 209500281934992 Droplets Of Light, 948458014167219 Dandelion (Instrumental).
+2. **Instagram library track (Instagram only).** Also attach instagramData.audioConfiguration {"audioId": "<numeric id>", "videoVolume": 0} — videoVolume 0 mutes our baked track on Instagram so only the library song plays (library audio links the Reel to that song's audio page = extra discovery). To find a track, send a search term as audioId (e.g. "upbeat acoustic", "happy instrumental", "chill lofi"); Metricool rejects it with candidate tracks; pick an upbeat, warm INSTRUMENTAL and retry with its numeric id. Rotate; don't reuse a track two weeks running. Used so far: 901455037857983 It's A Vibe, Giulio Cercato (Oct 14 Reel); 761736589642441 Be Happy (Instrumental), Afro Sound Machine (Oct 15 trial Reel); 989564276265815 Dancing In The Sun (Instrumental), Giulio Cercato (Oct 13 Reel); 1375070527788441 Cool Water (Instrumental), Afro Sound Machine (Oct 18 trial Reel). Added Oct 13: 622819303274042 Good Time, Alex Blue (Oct 13 7am); 1326560949104401 Check This Out, Giulio Cercato (Oct 15 7am); 4283034138460390 Splash, The K Club (Oct 17 6pm); 1386811643506297 Home, Giulio Cercato (Oct 18 7am). Search "feel good" also returned 1579921342191993 Motive (Instrumental), 1347176186322399 Do Ma Thing, 1826195528219317 Take And Bake. Other good candidates: 1274149560124013 Heros Journey (Instrumental), 209500281934992 Droplets Of Light, 948458014167219 Dandelion (Instrumental).
 - Trending + clean (owner, Oct 9): songs WITH lyrics are fine, just never explicit. Use the most current-sounding, popular-style track you can find (vocal or instrumental). Checked Oct 9: the Metricool/Instagram music search only reaches Instagram's business-cleared library (a search for a chart hit like "Espresso" returns only library tracks) and shows no "trending" or explicit labels, so chart-topping songs can't be attached automatically and explicit content can't be filtered by a flag. So skip any track whose title or artist suggests explicit/adult content, profanity, drinking/partying, or "(Explicit)"/"(Dirty)" labels; when in doubt pick another. Keep it warm and family-friendly. Search terms that work: "upbeat pop", "feel good", "happy", "summer pop", "upbeat acoustic".
 - TikTok photo posts: tiktokData autoAddMusic true (TikTok rejects it on videos — videos rely on the baked track).
 - NEVER add music of either kind to voiceover Reels (render-fast.py with the voice mp3; never run add_music.py on them; no audioConfiguration).
@@ -110,7 +133,7 @@ Two layers for every Reel/TikTok video WITHOUT a voiceover:
 ## Scholarship of the week (Saturday)
 Prefer scholarships with an upcoming deadline or that Florida families miss. Mix Florida state programs (Benacquisto, FSAG, José Martí, Rosewood, Mary McLeod Bethune, First Generation Matching Grant, Children of deceased/disabled veterans, Florida Prepaid Project STARS) and national ones with real deadlines (verify the current cycle on the official site). Always: amount, who qualifies, deadline, official source.
 
-## Relatable / funny posts (2 a week — built for shares and tags)
+## Relatable / funny posts (4–5 a week, mostly as native Reels — built for shares and tags)
 Templates: templates/fun-posts.html — fn1 text thread, fn2 parent "post" quote card, fn3 "what they say vs. what it means", fn4 phone-notes list.
 - Thursday alternates: photo quote (ph1) one week, a fun post the next.
 - Friday Rotation B includes fun formats every other week.
@@ -174,9 +197,11 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 
 ## TikTok (connected 2026-10-08)
 - A separate Sunday 3:23pm task cross-posts the coming week's Instagram feed posts and Reels to TikTok (2-4 hours after Instagram, max 3/day, photo posts get TikTok auto-music).
-- TikTok needs a title on every post. Metricool can't add music to videos, so silent videos get a voiceover first (tts/ + ffmpeg, saved in tiktok/).
+- TikTok needs a title on every post. Metricool can't add music to videos, so videos get our baked-in music (scripts/add_music.py) or a voiceover.
+- **Videos only (Oct 13):** TikTok photo posts got 0 views in Metricool, videos got 13–46. Cross-post Reels as-is; turn carousels into slideshow videos with `python3 scripts/slideshow_video.py tiktok/<name>.mp4 2.4 slide1.png slide2.png ...` (blurred background, slow zoom, music). Skip single-image posts on TikTok unless they become a native Reel.
 
 ## Log (newest first — the weekly routine appends here)
+- 2026-10-13 DATA CHECK + REWORK of week Oct 13–18 (owner: "we're not getting any traction" → "rework everything that makes sense based on the data"). Instagram: Oct 13 7am roadmap carousel → native Reel "senior parent group chat in October" (music 622819303274042 Good Time, Alex Blue); Oct 13 6pm October Reel re-cut native (hook on frame 0, 8.5s); Oct 14 6pm BF 2028 re-cut native; Oct 15 7am freshman roadmap carousel → native Reel "texting my senior on Oct 15" (1326560949104401 Check This Out, Giulio Cercato); Oct 15 6pm trial Reel → "what my senior says vs. what it means" (POV deadline-day version retired); Oct 16 6pm UF voiceover v2 (preamble cut, hook on frame 0); NEW Oct 17 6pm Reel "touring Florida campuses in fall" (4283034138460390 Splash, The K Club); Oct 18 7am bingo image → animated bingo Reel (1386811643506297 Home, Giulio Cercato); Oct 18 6pm checker trial Reel re-cut native. Roadmap carousels (doodled) saved as Metricool DRAFTS dated Oct 25 + Nov 1. Kept: Oct 14 Hillsborough, Oct 16 Showdown, Oct 17 Jack Kent Cooke carousels. TikTok: all photo posts replaced with videos (gc-october, bf2028 moved to 8pm, texting, translations, Showdown + JKC slideshow videos, UF v2, tour-weather Oct 17 8pm, bingo, checker moved to Oct 18 8pm); UF stats, Benacquisto-slot and group-chat-reminder photo posts set to draft. Files: instagram/2026-10-native/, tiktok/showdown-uf-fsu.mp4, tiktok/jkc-scholarship.mp4.
 - 2026-10-11 TikTok cross-post (week Oct 12–18): added 6 — Oct 14 9pm BF 2028 Reel, Oct 15 8pm POV trial Reel, Oct 16 10:30am Swamp vs Doak (sd1–6 JPEG), Oct 16 8pm UF voiceover Reel, Oct 17 10:30am Jack Kent Cooke (jk1–6 JPEG), Oct 18 9:30am bingo (bg1 JPEG). Skipped as already on TikTok: Oct 11 to-do, Oct 12 deadlines, roadmaps Reel + carousels, Oct 13 October Reel (TikTok Oct 10), Oct 14 Hillsborough (TikTok Oct 10), Oct 18 checker trial Reel (same video as Oct 9 TikTok).
 - 2026-10-11 routine (week Oct 12–18). Already filled, skipped: Mon 7am deadlines, Mon 6pm Reel (roadmaps voiceover took the remix slot), Tue 7am (Senior Roadmap carousel took the school-stats slot; next stats school: FSU), Tue 6pm Reel, Wed 7am Hillsborough, Thu 7am Freshman Roadmap (took the Thu photo/fun slot), Fri 7am Showdown UF vs FSU, Sun 6pm trial Reel, Stories Mon/Tue/Thu. Analytics too small to pick a remix winner (no saves/shares yet); remixed the Bright Futures 2028 carousel by judgment on Wed.
 - 2026-10-18 Sun 8:15am: Story ts1 calendar, refreshed dates (instagram/2026-10-18-story-calendar/)
