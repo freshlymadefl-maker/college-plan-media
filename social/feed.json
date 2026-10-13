@@ -1,8 +1,24 @@
 {
- "updated": "2026-10-12T01:18Z",
+ "updated": "2026-10-13T01:19Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DeXr2ALiIpi/",
+   "img": "social/img/DeXr2ALiIpi.jpg",
+   "date": "20261011220232",
+   "label": "Oct 11",
+   "caption": "The secret to senior year not being a nightmare? Small steps every month. \ud83d\uddd3",
+   "type": "FEED_IMAGE"
+  },
+  {
+   "url": "https://www.instagram.com/p/DeWgVRniLOP/",
+   "img": "social/img/DeWgVRniLOP.jpg",
+   "date": "20261011110227",
+   "label": "Oct 11",
+   "caption": "Stop screenshotting deadlines \ud83d\udcf1",
+   "type": "FEED_IMAGE"
+  },
   {
    "url": "https://www.instagram.com/p/DeT7ncPCYwU/",
    "img": "social/img/DeT7ncPCYwU.jpg",
@@ -50,22 +66,6 @@
    "label": "Oct 8",
    "caption": "Most Florida parents hear about the FAFSA. Fewer hear about the FFAA, and that's the one that unlocks Bright Futures. \ud83d\udc40",
    "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/DePMEsDCML9/",
-   "img": "social/img/DePMEsDCML9.jpg",
-   "date": "20261008145059",
-   "label": "Oct 8",
-   "caption": "\"Does my kid even qualify for Bright Futures?\" \ud83e\udd14",
-   "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DePK7elCBQe/",
-   "img": "social/img/DePK7elCBQe.jpg",
-   "date": "20261008144045",
-   "label": "Oct 8",
-   "caption": "Florida School Spotlight: UF \ud83d\udc0a",
-   "type": "FEED_IMAGE"
   }
  ]
 }
