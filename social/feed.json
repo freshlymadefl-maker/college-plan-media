@@ -1,8 +1,16 @@
 {
- "updated": "2026-10-13T01:19Z",
+ "updated": "2026-10-14T01:19Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DeZFJ72iB3A/",
+   "img": "social/img/DeZFJ72iB3A.jpg",
+   "date": "20261012110257",
+   "label": "Oct 12",
+   "caption": "Save this one \ud83d\udccc Big week for Florida seniors (and juniors, too).",
+   "type": "FEED_IMAGE"
+  },
   {
    "url": "https://www.instagram.com/p/DeXr2ALiIpi/",
    "img": "social/img/DeXr2ALiIpi.jpg",
@@ -58,14 +66,6 @@
    "label": "Oct 8",
    "caption": "Hi, Florida parents \ud83d\udc4b Welcome to College Plan.",
    "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DePN6TciOTo/",
-   "img": "social/img/DePN6TciOTo.jpg",
-   "date": "20261008150647",
-   "label": "Oct 8",
-   "caption": "Most Florida parents hear about the FAFSA. Fewer hear about the FFAA, and that's the one that unlocks Bright Futures. \ud83d\udc40",
-   "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
 }
