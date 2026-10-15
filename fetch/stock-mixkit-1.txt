@@ -1,0 +1,10 @@
+clips/stock/mixkit-4790-1080.mp4 https://assets.mixkit.co/videos/4790/4790-1080.mp4
+clips/stock/mixkit-4790-720.mp4 https://assets.mixkit.co/videos/4790/4790-720.mp4
+clips/stock/mixkit-40349-1080.mp4 https://assets.mixkit.co/videos/40349/40349-1080.mp4
+clips/stock/mixkit-40349-720.mp4 https://assets.mixkit.co/videos/40349/40349-720.mp4
+clips/stock/mixkit-4874-1080.mp4 https://assets.mixkit.co/videos/4874/4874-1080.mp4
+clips/stock/mixkit-4874-720.mp4 https://assets.mixkit.co/videos/4874/4874-720.mp4
+clips/stock/mixkit-40421-1080.mp4 https://assets.mixkit.co/videos/40421/40421-1080.mp4
+clips/stock/mixkit-40421-720.mp4 https://assets.mixkit.co/videos/40421/40421-720.mp4
+clips/stock/mixkit-8717-1080.mp4 https://assets.mixkit.co/videos/8717/8717-1080.mp4
+clips/stock/mixkit-8717-720.mp4 https://assets.mixkit.co/videos/8717/8717-720.mp4
