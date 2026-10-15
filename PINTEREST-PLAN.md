@@ -1,0 +1,63 @@
+# Pinterest plan (FreshlyMadeFL Etsy shop + College Plan)
+
+Owner (Oct 15): "share frequently to Pinterest, no one is following us so we can just spew content. College Plan and also our Etsy listings." Also: "make pop culture funny videos/trends for our Etsy listings too, to share on all socials including Pinterest. I like the ones with music."
+
+## Accounts
+- One Pinterest account (freshlymadefl), connected in Metricool under the **College Plan brand, blogId 5183464** (timezone America/New_York). Both businesses pin from it.
+- Board IDs (use the numeric id as pinterestData.boardId):
+  - Money & Budget Planners: 1105985689682130289
+  - Small Business Spreadsheets: 1105985689682130299
+  - Pricing for Makers: 1105985689682130301
+  - Etsy Seller Tips: 1105985689682130302
+  - College Planning: 1105985689682134542
+- FreshlyMadeFL has NO Instagram/TikTok in Metricool yet. College products may also go on College Plan's Instagram/Facebook (see CONTENT-PLAN.md "Etsy products"); TikTok copies are made by the weekly TikTok cross-post task from Instagram Reels.
+
+## Links (pinLink)
+- Etsy shop: https://www.etsy.com/shop/FreshlyMadeFL
+- FSA Spend-Down Tracker: https://www.etsy.com/listing/4594157049 (board Money & Budget Planners)
+- Sinking Funds / Paycheck Savings Planner: https://www.etsy.com/listing/4594168525 (Money & Budget Planners)
+- Cake Pricing Calculator: https://www.etsy.com/listing/4594192409 (Pricing for Makers / Etsy Seller Tips)
+- Order Tracker: https://www.etsy.com/listing/4594198661 (Small Business Spreadsheets / Etsy Seller Tips)
+- Profit & Loss Spreadsheet: https://www.etsy.com/listing/4594773827 (Small Business Spreadsheets)
+- Candle Pricing Calculator: https://www.etsy.com/listing/4594778387 (Pricing for Makers / Etsy Seller Tips)
+- College Application Tracker: https://www.etsy.com/listing/4595734726 (College Planning)
+- Scholarship Tracker: NOT LIVE YET (check CONTENT-PLAN.md "Etsy products" for a URL; until then don't pin it)
+- Sorority Recruitment Resume + Prep Kit: NOT LIVE YET (same rule). When live, it gets its own new board only if the owner creates one; otherwise use College Planning.
+- College Plan newsletter (free cheat-sheet pins): https://collegeplan.beehiiv.com/
+Owner adds new listings over time: before each run, check CONTENT-PLAN.md "Etsy products" and this file for new URLs.
+
+## Daily slots (America/New_York), 5 pins a day
+| Time | What | Link |
+|---|---|---|
+| 7:00am | College Plan free cheat sheet (college topics) | newsletter |
+| 10:00am | College Plan pin: college Etsy product pin OR another cheat sheet | listing / newsletter |
+| 1:00pm | FreshlyMadeFL free cheat sheet (money, pricing, small business topics) | the matching listing |
+| 4:00pm | FreshlyMadeFL product pin (new headline + screenshot) or a VIDEO pin | listing |
+| 8:00pm | FreshlyMadeFL product pin | listing |
+Fill only EMPTY slots (check getScheduledPosts first). Some slots are already filled through late Oct / mid Nov.
+
+## Rules
+- Every pin is a NEW image: new headline, new screenshot or new topic. Never re-schedule an image that was already pinned (check pinterest/ folders + the Log). Same listing max once a day.
+- Facts: cheat-sheet content must be evergreen and verified (official sources: studentaid.gov, College Board, ACT, FTC, IRS, state agencies). If not sure, leave it out. Say "check with your plan / each college" where rules vary.
+- Product pin sticker numbers must be real values visible in the screenshot (pinterest/assets/win/). Never invent features, reviews, "bestseller" or sales numbers.
+- Proof points (owner, Oct 15): product pins/thumbnails show what it does for the buyer + a TRUE badge (math tested, info checked Oct 2026, scam guide included, no Canva needed).
+- Pop culture / trends: use trend FORMATS (POV, "nobody: / me:", "tell me you're a ___ without telling me", "things that just make sense", "the girls who get it", "rating ___ as a baker") with ORIGINAL words. Never song lyrics, movie/TV quotes, celebrity names or likenesses, copyrighted characters, brand names or logos. Nothing mean.
+- Titles under 100 characters, keyword first ("Cake Pricing Calculator: ..."). Description 2-4 sentences with natural keywords. Alt text on every pin.
+
+## Tools (run from the repo root; Playwright + Chromium are preinstalled)
+- pinterest/tools/fm_product_pins.py: FreshlyMadeFL product pins (palette per product from pinterest/tools/themes.py: fsa blush, sinking sage, cake peach, order lavender, pl sky, candle honey). Pass a JSON list or edit PINS.
+- pinterest/tools/fm_cheatsheets.py: FreshlyMadeFL cheat-sheet pins (checklist / steps / table / formula / example blocks).
+- pinterest/tools/cp_pins.py: College Plan look (navy, sky, gold, Lora italic) cheat sheets + college product pins.
+- Screenshots of every spreadsheet tab: pinterest/assets/win/ (fsa_, psp_ = sinking funds, bake_, ord_, pl_, candle_, college_, scholar_). Sorority kit pages: pinterest/assets/rush/.
+- Copy a tool to /tmp, replace its content lists with NEW content, set OUT to the right folder (pinterest/freshlymadefl or pinterest/collegeplan), run, then LOOK at every PNG/JPG with the Read tool (no overlaps, text inside the frame, readable at phone size).
+- Media URL: push, then https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/<commit sha>/<path>.
+
+## Videos (2 per week for Etsy listings, music on)
+- Engine: templates/reel/native-reel.html + a config in templates/reel/native/<name>.js (see CONTENT-PLAN.md "Native Reels": hook on frame 0, 7-10 seconds, something new every second, funny first, one ask at the end).
+- FreshlyMadeFL products: set logo:false, logoText:'FRESHLYMADEFL' in the config (hides the College Plan wordmark). Use a plain bg ('sky' or 'navy') or a background image made from pinterest/assets/win screenshots (1080x1920). No AI photos of food or products (owner dislikes the AI look).
+- Render: python3 templates/reel/render-fast.py "templates/reel/native-reel.html?cfg=<name>" /tmp/<name>-silent.mp4 <secs> 30 && python3 scripts/add_music.py /tmp/<name>-silent.mp4 pinterest/videos/<name>.mp4 (music is baked in, works on every network).
+- Schedule as a Pinterest pin with the mp4 as media (providers pinterest, pinterestData with board + title + link). If Metricool rejects video pins, keep the video, skip it on Pinterest and say so in the report.
+- College products (College App Tracker, Scholarship Tracker, Sorority kit): the same video may ALSO go out as an Instagram + Facebook Reel in an open 6:00pm slot, but only if no other Etsy product Reel is scheduled that week (CONTENT-PLAN.md rule: max one product Reel a week), with instagramData audioConfiguration {audioId, videoVolume 0} for library music.
+
+## Log (newest first)
+- 2026-10-15: Plan created. Already scheduled: FreshlyMadeFL product pins 8pm Oct 14 - Nov 12; FreshlyMadeFL cheat sheets 1pm Oct 15-26; College Plan pins 10am Oct 16-24. Weekly Pinterest task created.
