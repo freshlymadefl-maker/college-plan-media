@@ -6,6 +6,13 @@ Owner (Oct 15): "share frequently to Pinterest, no one is following us so we can
 - NON-college content (FreshlyMadeFL money, bakery, candle, small business, Etsy-seller products, cheat sheets and videos): **Pinterest ONLY.** Never on College Plan's Instagram, Facebook, TikTok, Stories, newsletter or website.
 - College-related content (College Plan posts and the college Etsy products: College Application Tracker, Scholarship Tracker, Sorority Recruitment kit, and any future college listing): **can go anywhere**: Instagram, Facebook, TikTok, Stories, Pinterest, newsletter mentions and the website, still following the posting rules and spacing in CONTENT-PLAN.md.
 
+- Owner (Oct 15): "share the Pinterest post to socials when it's college related." Every week, bundle that week's NEW college pins into ONE Instagram + Facebook Reel (render 1080x1920 versions with "link in bio" instead of "tap the link", stitch with ffmpeg, add music; example instagram/2026-10-amazon/). Use an open 6:00pm Reel slot. The Sunday TikTok task cross-posts it.
+
+## Amazon picks (owner's Amazon Associates storefront, tracking ID laurenfreshly-20)
+- The owner builds shoppable lists in her Amazon storefront with Amazon's own collage tool. We NEVER copy Amazon product photos into our own graphics (against the Associates rules). Our pins are drawn checklists in College Plan style: pinterest/tools/cp_amazon_pins.py (CTA env var: "Shop my picks: tap the link" for pins, "link in bio" for socials).
+- pinLink = the SmartLink https://t-sml.mtrbio.com/public/smartlink/collegeplan (it has a "Shop my college picks" button to the storefront). Every pin/post says "As an Amazon Associate I earn from qualifying purchases." (+ #ad on Instagram/Facebook/TikTok).
+- No brand names or product claims we can't check. Facts that vary (test rules, dorm banned items) point to the official source.
+
 ## Accounts
 - One Pinterest account (freshlymadefl), connected in Metricool under the **College Plan brand, blogId 5183464** (timezone America/New_York). Both businesses pin from it.
 - Board IDs (use the numeric id as pinterestData.boardId):
@@ -71,5 +78,6 @@ Real people on screen win. We can't repost, and we don't use AI people, so we us
 - Use it for College Plan funny Reels too, not only Etsy videos. First ones: pinterest/videos/meme-deadline-screenshot.mp4 (also an IG/FB Reel Wed Oct 28 6pm), meme-cake-saturday.mp4, meme-custom-order.mp4.
 
 ## Log (newest first)
+- 2026-10-15: Amazon picks: 7 checklist pins 7am Oct 19-25 (College Planning, link SmartLink) + Reel shopping-lists-reel.mp4 IG+FB Tue Oct 20 6pm (music Good Time 622819303274042).
 - 2026-10-15: Stock meme video pins scheduled 4pm: Oct 23 meme-deadline-screenshot (College Planning -> College App Tracker), Oct 24 meme-cake-saturday (Pricing for Makers -> Cake Pricing), Oct 25 meme-custom-order (Etsy Seller Tips -> Order Tracker). Pinterest accepts video pins through Metricool.
 - 2026-10-15: Plan created. Already scheduled: FreshlyMadeFL product pins 8pm Oct 14 - Nov 12; FreshlyMadeFL cheat sheets 1pm Oct 15-26; College Plan pins 10am Oct 16-24. Weekly Pinterest task created.
