@@ -52,12 +52,20 @@ Fill only EMPTY slots (check getScheduledPosts first). Some slots are already fi
 - Copy a tool to /tmp, replace its content lists with NEW content, set OUT to the right folder (pinterest/freshlymadefl or pinterest/collegeplan), run, then LOOK at every PNG/JPG with the Read tool (no overlaps, text inside the frame, readable at phone size).
 - Media URL: push, then https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/<commit sha>/<path>.
 
-## Videos (2 per week for Etsy listings, music on)
+## Videos (2 per week for Etsy listings, music on). PREFER the stock meme format (see "Stock meme videos" below); the native-reel engine is the backup.
 - Engine: templates/reel/native-reel.html + a config in templates/reel/native/<name>.js (see CONTENT-PLAN.md "Native Reels": hook on frame 0, 7-10 seconds, something new every second, funny first, one ask at the end).
 - FreshlyMadeFL products: set logo:false, logoText:'FRESHLYMADEFL' in the config (hides the College Plan wordmark). Use a plain bg ('sky' or 'navy') or a background image made from pinterest/assets/win screenshots (1080x1920). No AI photos of food or products (owner dislikes the AI look).
 - Render: python3 templates/reel/render-fast.py "templates/reel/native-reel.html?cfg=<name>" /tmp/<name>-silent.mp4 <secs> 30 && python3 scripts/add_music.py /tmp/<name>-silent.mp4 pinterest/videos/<name>.mp4 (music is baked in, works on every network).
 - Schedule as a Pinterest pin with the mp4 as media (providers pinterest, pinterestData with board + title + link). If Metricool rejects video pins, keep the video, skip it on Pinterest and say so in the report.
 - College products (College App Tracker, Scholarship Tracker, Sorority kit): the same video may ALSO go out as an Instagram + Facebook Reel in an open 6:00pm slot, but only if no other Etsy product Reel is scheduled that week (CONTENT-PLAN.md rule: max one product Reel a week), with instagramData audioConfiguration {audioId, videoVolume 0} for library music.
 
+## Stock meme videos (owner, Oct 15): the closest thing to the reposts that get our reach
+Real people on screen win. We can't repost, and we don't use AI people, so we use REAL free stock footage in the classic relatable meme layout: big caption on top, the clip as a big square, a yellow punchline that pops in, one ask at the end, music.
+- Tool: `python3 scripts/stock_meme.py <config.json>` then `python3 scripts/add_music.py <out>-silent.mp4 <out>.mp4` (configs: clip, start, dur 7-8, top, punch + punch_t, end + end_t, brand collegeplan|freshlymadefl, crop_x to keep the face in the square). LOOK at frames at 1s, 4s and 7s before scheduling.
+- Clip library: clips/stock/ (Mixkit). Get more by finding clips on mixkit.co search pages (e.g. mixkit.co/free-stock-video/<word>/), CHECKING each clip's page says "Mixkit Stock Video Free License" (skip "Restricted"), then pushing fetch/<name>.txt with lines "clips/stock/<name>.mp4 https://assets.mixkit.co/videos/<id>/<id>-720.mp4" (the Fetch images GitHub Action downloads them; wait ~75s, git pull). The free license allows social media marketing, no credit needed; never post a clip on its own, never resell it, never show the person in a way that mocks them or implies something sensitive about them (the joke is always on "me", the narrator).
+- Writing: first person ("me at 11pm...", "when the cute custom order..."), a real, specific moment, the punchline is the twist, the end card is the product or the ask. Original words only (no lyrics, quotes, celebrities, brands).
+- Use it for College Plan funny Reels too, not only Etsy videos. First ones: pinterest/videos/meme-deadline-screenshot.mp4 (also an IG/FB Reel Wed Oct 28 6pm), meme-cake-saturday.mp4, meme-custom-order.mp4.
+
 ## Log (newest first)
+- 2026-10-15: Stock meme video pins scheduled 4pm: Oct 23 meme-deadline-screenshot (College Planning -> College App Tracker), Oct 24 meme-cake-saturday (Pricing for Makers -> Cake Pricing), Oct 25 meme-custom-order (Etsy Seller Tips -> Order Tracker). Pinterest accepts video pins through Metricool.
 - 2026-10-15: Plan created. Already scheduled: FreshlyMadeFL product pins 8pm Oct 14 - Nov 12; FreshlyMadeFL cheat sheets 1pm Oct 15-26; College Plan pins 10am Oct 16-24. Weekly Pinterest task created.
