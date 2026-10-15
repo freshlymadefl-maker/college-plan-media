@@ -21,6 +21,7 @@ body { font-family:'Inter',sans-serif; background:#0B2A4A; color:#0B2A4A; positi
 .dim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,31,56,.55) 0%, rgba(8,31,56,.15) 35%, rgba(8,31,56,.2) 65%, rgba(8,31,56,.65) 100%); }
 body.sky { background:linear-gradient(165deg,#F4F9FE 0%,#EAF3FB 50%,#D4E6F7 100%); }
 body.navy { background:linear-gradient(165deg,#0E3359 0%,#0B2A4A 55%,#081F38 100%); }
+html.clear, body.clear { background:transparent !important; }  /* bg:'clear' = render text only, over a stock video (scripts/render_over_video.py) */
 .st { position:absolute; left:70px; right:70px; text-align:center; transform-origin:center; }
 .st span { display:inline; font-family:'Poppins'; font-weight:700; line-height:1.36; padding:6px 22px; border-radius:18px;
   -webkit-box-decoration-break:clone; box-decoration-break:clone; }
@@ -65,10 +66,11 @@ function el(tag, cls, html, parent){ const d = document.createElement(tag); if (
 function sticker(o, parent){ const d = el('div', 'st k-' + (o.kind||'white'), '<span>' + o.text + '</span>', parent);
   d.style.fontSize = (o.size || 60) + 'px'; if (o.y != null) d.style.top = o.y + 'px'; return d; }
 // background
+if (C.bg === 'clear') document.documentElement.classList.add('clear');
 if (typeof C.bg === 'string') { document.body.classList.add(C.bg); if (C.bg === 'sky') document.getElementById('logo').src = '../wordmark_navy.png'; }
+else (C.bg||[]).forEach(b => { const d = el('div','bgi',null,document.getElementById('bgw')); d.style.backgroundImage = 'url(' + b.img + ')'; if (b.pos) d.style.backgroundPosition = b.pos; E.push({d, bg:b}); });
 // FreshlyMadeFL (Etsy) videos: logo:false hides the College Plan wordmark; logoText shows a small text tag instead
 if (C.logo === false) { const lg = document.querySelector('.logo'); lg.innerHTML = C.logoText ? '<span style="font:800 34px Poppins;letter-spacing:6px;color:' + (C.logoColor||'#fff') + '">' + C.logoText + '</span>' : ''; }
-else (C.bg||[]).forEach(b => { const d = el('div','bgi',null,document.getElementById('bgw')); d.style.backgroundImage = 'url(' + b.img + ')'; if (b.pos) d.style.backgroundPosition = b.pos; E.push({d, bg:b}); });
 if (Array.isArray(C.bg)) { const dm = el('div','dim',null,document.getElementById('bgw')); if (C.dim != null) dm.style.opacity = C.dim; }
 // hook (frame 0)
 if (C.hook) { const h = sticker(Object.assign({kind:'white', y:220, size:66}, C.hook)); E.push({d:h, t:0}); }
