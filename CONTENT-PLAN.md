@@ -194,6 +194,10 @@ Status: LIVE since 2026-10-08 (Stripe connected).
 - Promo assets: templates/product-posts.html (sr1-5, fr1-5 carousels; rs1-3 Stories), templates/reel/roadmaps-reel.html (voiceover). Renders in instagram/2026-10-roadmaps/.
 - Once live: soft-mention in emails at most once a week (seniors email → Senior Roadmap; early email → Freshman Roadmap), one promo post every other week, never pushy. Free resources stay free.
 
+## WHERE THINGS GO (owner rule, Oct 15)
+- NON-college content (FreshlyMadeFL money, bakery, candle, small business, Etsy-seller products, cheat sheets and videos): **Pinterest ONLY.** Never on College Plan's Instagram, Facebook, TikTok, Stories, newsletter or website.
+- College-related content (College Plan posts and the college Etsy products: College Application Tracker, Scholarship Tracker, Sorority Recruitment kit, and any future college listing): **can go anywhere**: Instagram, Facebook, TikTok, Stories, Pinterest, newsletter mentions and the website, still following the posting rules and spacing in CONTENT-PLAN.md.
+
 ## Etsy products (sold in the FreshlyMadeFL Etsy shop, College Plan branded) — added 2026-10-14
 Why Etsy too: Etsy search brings buyers who have never heard of College Plan, and every download includes a link back to the newsletter. Social posts send our own audience to the Etsy listing (sales + reviews help it rank in Etsy search).
 - College Application Tracker (Excel + Google Sheets): $8.99, LIVE: https://www.etsy.com/listing/4595734726. Files + listing text: ~/college-kit (spreadsheet, College_Tracker_Guide.pdf, photos 01–07). National (not Florida-specific), so it fits any senior family. Guide tab info "checked October 2026"; re-check each August.

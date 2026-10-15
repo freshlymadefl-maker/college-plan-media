@@ -2,6 +2,10 @@
 
 Owner (Oct 15): "share frequently to Pinterest, no one is following us so we can just spew content. College Plan and also our Etsy listings." Also: "make pop culture funny videos/trends for our Etsy listings too, to share on all socials including Pinterest. I like the ones with music."
 
+## WHERE THINGS GO (owner rule, Oct 15)
+- NON-college content (FreshlyMadeFL money, bakery, candle, small business, Etsy-seller products, cheat sheets and videos): **Pinterest ONLY.** Never on College Plan's Instagram, Facebook, TikTok, Stories, newsletter or website.
+- College-related content (College Plan posts and the college Etsy products: College Application Tracker, Scholarship Tracker, Sorority Recruitment kit, and any future college listing): **can go anywhere**: Instagram, Facebook, TikTok, Stories, Pinterest, newsletter mentions and the website, still following the posting rules and spacing in CONTENT-PLAN.md.
+
 ## Accounts
 - One Pinterest account (freshlymadefl), connected in Metricool under the **College Plan brand, blogId 5183464** (timezone America/New_York). Both businesses pin from it.
 - Board IDs (use the numeric id as pinterestData.boardId):
