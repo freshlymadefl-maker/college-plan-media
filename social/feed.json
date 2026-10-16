@@ -1,8 +1,16 @@
 {
- "updated": "2026-10-14T01:19Z",
+ "updated": "2026-10-16T01:19Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DeeO1VNiIyR/",
+   "img": "social/img/DeeO1VNiIyR.jpg",
+   "date": "20261014110342",
+   "label": "Oct 14",
+   "caption": "Hillsborough parents \ud83d\udccd your student can take college classes for free while they're still in high school.",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DeZFJ72iB3A/",
    "img": "social/img/DeZFJ72iB3A.jpg",
@@ -58,14 +66,6 @@
    "label": "Oct 8",
    "caption": "\ud83d\udea8 Bright Futures update for the Class of 2028",
    "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/DePOXjUiA15/",
-   "img": "social/img/DePOXjUiA15.jpg",
-   "date": "20261008151102",
-   "label": "Oct 8",
-   "caption": "Hi, Florida parents \ud83d\udc4b Welcome to College Plan.",
-   "type": "FEED_IMAGE"
   }
  ]
 }
