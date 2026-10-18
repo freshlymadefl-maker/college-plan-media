@@ -78,6 +78,14 @@ Real people on screen win. We can't repost, and we don't use AI people, so we us
 - Use it for College Plan funny Reels too, not only Etsy videos. First ones: pinterest/videos/meme-deadline-screenshot.mp4 (also an IG/FB Reel Wed Oct 28 6pm), meme-cake-saturday.mp4, meme-custom-order.mp4.
 
 ## Log (newest first)
+- 2026-10-18 (weekly run, week Oct 19-25; only 6 Pinterest slots were open, all 7am/1pm and most 10am/8pm already filled):
+  - Oct 19: 4pm -> pin_order_6 "Which Order Is Due Today?" (Small Business Spreadsheets, Order Tracker)
+  - Oct 20: 4pm -> pin_sinking_6 "What's Left After You Save?" (Money & Budget Planners, Sinking Funds)
+  - Oct 21: 4pm -> VIDEO meme-deadlines-in-my-head.mp4 (stock meme, student-stack-of-books clip; College Planning, College App Tracker). Not on IG/FB: the Oct 21 6pm tracker Reel is already that week's product Reel.
+  - Oct 22: 4pm -> VIDEO fsa-cart.mp4 (native chat "me in December realizing our FSA money has a deadline", config templates/reel/native/fsa-cart.js; Money & Budget Planners, FSA tracker)
+  - Oct 24: 7:30pm -> pin_candle_6 "Candle Prices That Pay You, Too" (Pricing for Makers, Candle). Metricool kept moving an 8:00pm Oct 24 pin to 10:00pm (same happened to the P&L pin), so it went at 7:30pm.
+  - Oct 25: 10am -> cp_tracker_4 "Early Action or Early Decision?" (College Planning, College App Tracker)
+  - New screenshot crops for these live in pinterest/assets/win/crops/. Every product now has 6 pins; next week use new crops of other tabs (fsa_04/05, pl_04/05, bake_04/05, ord_04/05, psp_04/05, candle_04/05 regions) so screenshots don't repeat.
 - 2026-10-15: Amazon picks: 7 checklist pins 7am Oct 19-25 (College Planning, link SmartLink) + Reel shopping-lists-reel.mp4 IG+FB Tue Oct 20 6pm (music Good Time 622819303274042).
 - 2026-10-15: Stock meme video pins scheduled 4pm: Oct 23 meme-deadline-screenshot (College Planning -> College App Tracker), Oct 24 meme-cake-saturday (Pricing for Makers -> Cake Pricing), Oct 25 meme-custom-order (Etsy Seller Tips -> Order Tracker). Pinterest accepts video pins through Metricool.
 - 2026-10-15: Plan created. Already scheduled: FreshlyMadeFL product pins 8pm Oct 14 - Nov 12; FreshlyMadeFL cheat sheets 1pm Oct 15-26; College Plan pins 10am Oct 16-24. Weekly Pinterest task created.
