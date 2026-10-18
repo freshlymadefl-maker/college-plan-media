@@ -1,8 +1,16 @@
 {
- "updated": "2026-10-16T01:19Z",
+ "updated": "2026-10-18T01:19Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DejYap6CFim/",
+   "img": "social/img/DejYap6CFim.jpg",
+   "date": "20261016110338",
+   "label": "Oct 16",
+   "caption": "Best game day in Florida? \ud83c\udfdf\ufe0f The Swamp vs. Doak.",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DeeO1VNiIyR/",
    "img": "social/img/DeeO1VNiIyR.jpg",
@@ -58,14 +66,6 @@
    "label": "Oct 9",
    "caption": "In fairness, it IS a really good title. \ud83d\ude02",
    "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DeQHwWtCB-Q/",
-   "img": "social/img/DeQHwWtCB-Q.jpg",
-   "date": "20261008233213",
-   "label": "Oct 8",
-   "caption": "\ud83d\udea8 Bright Futures update for the Class of 2028",
-   "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
 }
