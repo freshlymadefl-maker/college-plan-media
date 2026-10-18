@@ -70,6 +70,13 @@
     "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
   },
   {
+    "date": "2026-10-27",
+    "title": "SAT late registration deadline (Nov 7 test)",
+    "who": "Juniors & seniors",
+    "note": "Late fee applies. Regular deadline is Oct 23.",
+    "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
+  },
+  {
     "date": "2026-11-01",
     "title": "UF Early Action application due",
     "who": "Seniors",
@@ -175,6 +182,13 @@
     "src": "https://www.elks.org/scholars/scholarships/mvs.cfm"
   },
   {
+    "date": "2026-11-14",
+    "title": "FAMU Early Action materials due",
+    "who": "Seniors",
+    "note": "EA application due Nov 1; decisions Dec 4.",
+    "src": "https://admissions.famu.edu/student-types/freshman.php"
+  },
+  {
     "date": "2026-11-15",
     "title": "UCF Early Action materials due",
     "who": "Seniors",
@@ -194,6 +208,27 @@
     "who": "Seniors",
     "note": "",
     "src": "https://www.rollins.edu/apply/first-time/"
+  },
+  {
+    "date": "2026-11-15",
+    "title": "FGCU Early Action supplemental items due",
+    "who": "Seniors",
+    "note": "EA application closed Nov 1; decisions in December.",
+    "src": "https://www.fgcu.edu/admissionsandaid/undergraduateadmissions/applicationdeadlines"
+  },
+  {
+    "date": "2026-11-15",
+    "title": "New College of Florida Early Action documents due",
+    "who": "Seniors",
+    "note": "Decisions by Dec 15.",
+    "src": "https://www.ncf.edu/admissions/first-year-students/"
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Florida Poly Early Action I deadline",
+    "who": "Seniors",
+    "note": "Early Action II is Jan 15.",
+    "src": "https://floridapoly.edu/admissions/undergraduate/"
   },
   {
     "date": "2026-11-16",
@@ -217,6 +252,13 @@
     "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
   },
   {
+    "date": "2026-11-29",
+    "title": "ACT late registration deadline (Dec 12 test)",
+    "who": "Juniors & seniors",
+    "note": "Regular deadline Nov 6 (11:59pm Central).",
+    "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
+  },
+  {
     "date": "2026-12-01",
     "title": "FSU Regular Decision application due",
     "who": "Seniors",
@@ -238,6 +280,20 @@
     "src": "https://www.ucf.edu/admissions/undergraduate/question/when-is-the-application-deadline/"
   },
   {
+    "date": "2026-12-04",
+    "title": "FAU Early Action decisions released",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://www.fau.edu/admissions/freshman/how-to-apply/deadlines/"
+  },
+  {
+    "date": "2026-12-04",
+    "title": "FAMU Early Action decisions released",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://admissions.famu.edu/student-types/freshman.php"
+  },
+  {
     "date": "2026-12-05",
     "title": "SAT test day",
     "who": "Seniors & Juniors",
@@ -252,6 +308,20 @@
     "src": "https://usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx"
   },
   {
+    "date": "2026-12-09",
+    "title": "UNF priority decisions released (5pm)",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://www.unf.edu/admissions/deadlines.html"
+  },
+  {
+    "date": "2026-12-10",
+    "title": "FIU Early Action decisions released",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://admissions.fiu.edu/how-to-apply/freshman-applicant/"
+  },
+  {
     "date": "2026-12-11",
     "title": "UF Early Decision decisions released",
     "who": "Seniors",
@@ -264,6 +334,13 @@
     "who": "Juniors & Seniors",
     "note": "",
     "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
+  },
+  {
+    "date": "2026-12-15",
+    "title": "Burger King Scholars application closes",
+    "who": "Seniors",
+    "note": "$1,000 to $60,000; opened Oct 15.",
+    "src": "https://www.burgerkingfoundation.org/programs/burger-king-sm-scholars"
   },
   {
     "date": "2026-12-16",
@@ -329,11 +406,25 @@
     "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
   },
   {
+    "date": "2027-01-22",
+    "title": "UF Early Action decisions released",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://admissions.ufl.edu/apply/freshman/deadlines"
+  },
+  {
     "date": "2027-02-10",
     "title": "USF Regular Decision decisions released",
     "who": "Seniors",
     "note": "",
     "src": "https://usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx"
+  },
+  {
+    "date": "2027-02-18",
+    "title": "FSU Regular Decision decisions released",
+    "who": "Seniors",
+    "note": "",
+    "src": "https://admissions.fsu.edu/first-year/apply"
   },
   {
     "date": "2027-02-19",
