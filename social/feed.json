@@ -1,8 +1,16 @@
 {
- "updated": "2026-10-18T01:19Z",
+ "updated": "2026-10-19T01:19Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/Del9L_xiGT3/",
+   "img": "social/img/Del9L_xiGT3.jpg",
+   "date": "20261017110313",
+   "label": "Oct 17",
+   "caption": "Up to $55,000 a year for college. Deadline: Nov 11. \ud83c\udf93",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DejYap6CFim/",
    "img": "social/img/DejYap6CFim.jpg",
@@ -58,14 +66,6 @@
    "label": "Oct 9",
    "caption": "Friday quiz: guess the Florida campus \ud83e\udd14 One real photo, four choices, no Googling. Swipe, then comment A, B, C or D \ud83d\udc47",
    "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/DeRrwNCDZi_/",
-   "img": "social/img/DeRrwNCDZi_.jpg",
-   "date": "20261009140558",
-   "label": "Oct 9",
-   "caption": "In fairness, it IS a really good title. \ud83d\ude02",
-   "type": "FEED_IMAGE"
   }
  ]
 }
