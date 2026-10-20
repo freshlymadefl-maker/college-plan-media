@@ -5,6 +5,34 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 ## What makes College Plan different (owner, Oct 9) — every post should hit at least two
 1. **Funny + relatable** (parents laugh, tag, send). 2. **Educational** (save-worthy). 3. **Florida-specific** (Bright Futures, FFAA, our schools, our counties). 4. **Time-sensitive** (what's due now). Growth = engagement + entertainment: every feed post ends with ONE easy action (vote, comment a word, tag, send, save). Lots of pages cover college planning; ours wins by being the fun, Florida, right-now one.
 
+## OWNER DIRECTION Oct 19 — post MORE, a full MIX, and real 9th/10th content (this overrides older notes below)
+Owner's words: "we are not posting enough and also not enough for freshman and sophomores. i want to post relevant helpful information that they can think about not just dates constantly" … "at least 2 pieces of content on every platform a day plus a story in instagram. keep a mix of all types … reels reels reels, carousels with music and reels with music … everything and anything else you can think of that would help this page grow through trust and enjoyment." She loved the 9th/10th idea bank below.
+
+**Volume floor (every day, no exceptions):** Instagram 3 posts (7:00am, 12:30pm, 6:00pm) + 1 Story (8:15am, more Stories are fine). Facebook at least 2 (it gets every IG feed post/Reel; on trial-Reel days the 12:30pm Reel covers it). TikTok 2–3 videos (9:30am, 3:00pm, 8:00pm). Pinterest keeps its own 5/day task. The old "nothing at midday" rule is retired: 12:30pm is now a daily Reel slot (7:00 → 12:30 → 6:00 keeps 4+ hours between posts).
+
+**The 12:30pm "PLAN NOW" slot = 9th & 10th grade parents, every day.** Evergreen, helpful things to think about, not deadlines. Native Reels (stock clip or chat format), 7–10s, hook on frame 0, music. Rotate the flavor: funny, sentimental, quick tip, myth vs. fact, conversation starters, an original uplifting line now and then.
+**Grade balance:** at least 1 in 3 of all posts each week is for 8th–10th grade parents. **Date balance:** no more than 1 in 3 posts is built around a deadline/date; the rest are evergreen (what to think about, how things work, feelings, fun).
+
+**The mix wheel (use every type every week):** funny/relatable · sentimental ("it goes so fast", first day vs. senior year) · simple shareable college-prep advice · "what you should be doing right now" by grade · reminders (log your hours, check your counselor meeting, save that award certificate) · Florida college admission stats (official sources) · deadlines (max 1 in 3) · myth vs. fact · quizzes/this-or-that · School Showdowns · scholarships · an original uplifting quote (occasionally; our own words, never a famous quote) · campus POVs · tool/newsletter mentions in Stories.
+
+**Carousels with music (owner ask):** Metricool can't attach music to an Instagram carousel. So every carousel ALSO goes out as a music slideshow Reel (scripts/slideshow_video.py with the slides, + an Instagram library track via audioConfiguration) on a later day, and on TikTok. That gives the carousel content music and Reel reach.
+
+**9th/10th idea bank (verify each fact again before use; sources noted):**
+- "Freshman year doesn't count" myth → the Bright Futures GPA uses the 16 core credits (English, math, science, social studies, world language), and those start in 9th grade. Honors/AP/IB/AICE/dual enrollment add .5 per year course (an A = 4.5). Source: Bright Futures Student Handbook ch. 1 (Aug 2026). ✅ used Oct 21
+- Two credits of the SAME world language for Florida's public universities (ASL counts). Source: Board of Governors Reg. 6.002; UF catalog ("second high school level"). ✅ used Oct 22
+- Paid work hours count for Bright Futures: Academic 100 volunteer OR 100 paid OR a 100-hour mix; Medallion 75 volunteer OR 100 paid OR a 100-hour mix. Districts approve activities + logging. Source: handbook ch. 1. ✅ used Oct 24
+- Gold Seal (Vocational/CAPE): volunteer hours go from 30 to 75 for students who entered 9th grade in 2024-25 or later (today's 9th, 10th and 11th graders). Source: handbook ch. 1.
+- Log hours as you go (forms per district; never say hours start the summer after 8th grade — "ask your district whether the summer before 9th counts").
+- What a 9th/10th grader should NOT stress about yet (SAT, college list, essays) vs. what matters (grades, rigor that fits, one activity they love, a teacher who knows them, sleep). ✅ sentimental version used Oct 23
+- AP vs. AICE vs. IB vs. dual enrollment: how to choose a path in 9th (weights above; dual enrollment is tuition-free with free books).
+- PSAT 8/9 and 10th-grade PSAT = practice; National Merit only counts junior year (verify on College Board each time).
+- Better dinner questions than "how was school?" (their answers point to majors + activities). ✅ used Oct 25
+- Summer ideas for 9th/10th graders (jobs, a free class, volunteering, reading) — "it doesn't have to be a fancy program".
+- Grade forgiveness: what retaking a class does for the high school GPA vs. how universities/Bright Futures may still see it (verify with FL DOE + one university before posting).
+- Start a "brag folder" now: awards, certificates, hours logs, a running activities list (makes senior year 10x easier).
+- Career/interest exploration: CAPE industry certifications, clubs, job shadowing.
+- Sentimental: "you'll blink and it's senior year" / "the year they stop needing you to drive them" — keep it warm, end with a save/tag ask.
+
 ## DATA CHECK Oct 13 — what is actually working (read this before planning anything)
 First week of numbers (Oct 7–11, Metricool): followers 10 → 23. Daily reach 1,480 (Oct 8) → 331 → 126 → 13 (Oct 11).
 - **Feed photos and carousels reached 1–14 accounts each** (basically only our followers) and brought in 2 follows total across 18 posts. On TikTok, every photo post shows 0 views; videos got 13–46.
@@ -13,7 +41,7 @@ First week of numbers (Oct 7–11, Metricool): followers 10 → 23. Daily reach 
 So, until the account has real reach: **Reels first, funny first, hook on frame 0, short.** Feed carousels drop to 3 a week (Showdown, scholarship, one time-sensitive/local carousel). Paid-product carousels go out at most every other week (they reach nobody yet) — the Oct 13/15 roadmap carousels were moved to Metricool DRAFTS (Oct 25 + Nov 1) for later. Re-check these numbers every Sunday (Metricool IGPO14 reach, IGRE11/IGRE23/IGRE24/IGRE28 for Reels, TKPO07 TikTok views) and log them below.
 
 ## Weekly calendar (3 feed carousels + 10–11 Reels + 7 Stories) — updated Oct 13 after the data check
-Owner's rule (Oct 9): feed posts go out in the MORNING at 7:00am; Reels go out in the EVENING at 6:00pm. Nothing at midday or 7:30pm anymore (decision-day posts keep their release-night times).
+Owner's rule (Oct 9, updated Oct 19): feed posts go out in the MORNING at 7:00am; Reels go out at 12:30pm (Plan Now, 9th/10th) and in the EVENING at 6:00pm. Nothing at 7:30pm (decision-day posts keep their release-night times).
 **Spacing rule:** max ONE feed post per day and at least 4 hours between any two Instagram posts (Stories excepted). Never batch-post several feed posts in one sitting again (the Oct 8 launch blast split reach 8 ways). A big moment gets its own day, or replaces that day's slot.
 | Day | Time (ET) | Slot | Template |
 |---|---|---|---|
@@ -31,8 +59,9 @@ Owner's rule (Oct 9): feed posts go out in the MORNING at 7:00am; Reels go out i
 | Sat | 6:00pm | **FUNNY native Reel** (campus-photo POVs work: tours, dorms, college towns) | reel/native-reel.html |
 | Sun | 7:00am | Relatable Reel (bingo, stress meter, this-or-that) — every other week a paid-product carousel instead | reel/native-reel.html (bingo) |
 | Sun | 6:00pm | **Trial Reel** | native-reel, TRIAL_REEL |
+| Daily | 12:30pm | **PLAN NOW Reel for 9th/10th grade parents** (evergreen; rotate funny / sentimental / tip / myth-fact / conversation starters / original uplifting line) — added Oct 19 | reel/native-reel.html (stock clip via scripts/render_over_video.py, or chat) |
 | Daily | 8:15am | **Story** (st1 countdown / st2 did-you-know / st3 photo; product + tool mentions go here) | templates/story-posts.html |
-| TikTok | 9:30am / 8:00pm | Cross-posts of the Reels + Showdown/scholarship as slideshow VIDEOS (never photo posts), max 3/day | weekly TikTok task |
+| TikTok | 9:30am / 3:00pm / 8:00pm | Cross-posts of the Reels (3:00pm = the 12:30pm Plan Now Reel) + Showdown/scholarship as slideshow VIDEOS (never photo posts), max 3/day | weekly TikTok task |
 Spacing rule still holds: at least 4 hours between Instagram posts (Stories excepted); never batch.
 
 ## Format mix (rewritten Oct 13 from OUR data, replaces the industry-benchmark version)
