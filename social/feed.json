@@ -1,8 +1,16 @@
 {
- "updated": "2026-10-19T01:19Z",
+ "updated": "2026-10-23T01:18Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DewQe0SiOrP/",
+   "img": "social/img/DewQe0SiOrP.jpg",
+   "date": "20261021110411",
+   "label": "Oct 21",
+   "caption": "Bright Futures takes 3 tests, not 2. \ud83d\udc40",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/Del9L_xiGT3/",
    "img": "social/img/Del9L_xiGT3.jpg",
@@ -58,14 +66,6 @@
    "label": "Oct 10",
    "caption": "Bright Futures can cover up to 100% of tuition at Florida public colleges and universities. But the requirements change by graduating class,",
    "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DeSiW0ACas9/",
-   "img": "social/img/DeSiW0ACas9.jpg",
-   "date": "20261009220306",
-   "label": "Oct 9",
-   "caption": "Friday quiz: guess the Florida campus \ud83e\udd14 One real photo, four choices, no Googling. Swipe, then comment A, B, C or D \ud83d\udc47",
-   "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
 }
