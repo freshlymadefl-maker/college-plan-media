@@ -1,5 +1,10 @@
 # Answer bank log (newest first)
 
+## 2026-10-25
+- Is it too late to apply Early Action to USF, and what's due when?
+- How is the Bright Futures GPA figured — do honors, AP and dual enrollment count extra?
+- Is it too late to sign my middle or high schooler up for Florida Prepaid?
+
 ## 2026-10-18
 - UF Early Action is Nov 1 — what is STARS (the old SSAR) and when does it have to be in?
 - Should my senior retake the SAT on Nov 7 for Bright Futures, and what score do they need?
