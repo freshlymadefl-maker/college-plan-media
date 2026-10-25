@@ -78,6 +78,16 @@ Real people on screen win. We can't repost, and we don't use AI people, so we us
 - Use it for College Plan funny Reels too, not only Etsy videos. First ones: pinterest/videos/meme-deadline-screenshot.mp4 (also an IG/FB Reel Wed Oct 28 6pm), meme-cake-saturday.mp4, meme-custom-order.mp4.
 
 ## Log (newest first)
+- 2026-10-25 (weekly run, week Oct 26-Nov 1; 27 open slots filled: all 7am/10am/4pm, 1pm Oct 27-Nov 1; 8pm and Oct 26 1pm were already filled). Media commit f82f9f2.
+  - Oct 26: 7am cp_fafsa_css (newsletter) | 10am cp_tracker_5 "Where Are App Fees Adding Up?" (College App Tracker) | 4pm pin_order_7 "Who Still Owes You Money?" (Small Business Spreadsheets, Order Tracker)
+  - Oct 27: 7am cp_visit | 10am cp_tour_qs | 1pm g13_candle_mistakes (Pricing for Makers, Candle) | 4pm pin_pl_6 "How Much to Save for Taxes?" (Small Business Spreadsheets, P&L)
+  - Oct 28: 7am cp_recs | 10am cp_tracker_6 "Your Whole College List on One Page" | 1pm g14_fsa_vs_hsa (Money & Budget, FSA) | 4pm VIDEO meme-cake-math.mp4 (stock meme, cake-scraper clip: "POV: you finally did the math on the cakes you've been selling" / "turns out I was paying customers to eat them"; Pricing for Makers, Cake)
+  - Oct 29: 7am cp_aid_offer | 10am cp_after_submit | 1pm g15_three_paychecks (Money & Budget, Sinking Funds) | 4pm pin_fsa_6 "How Much FSA Money Has No Plan Yet?" (Money & Budget, FSA)
+  - Oct 30: 7am cp_scams | 10am cp_ap_ib_de | 1pm g16_order_policy (Etsy Seller Tips, Order Tracker) | 4pm VIDEO meme-senior-yes.mp4 (stock meme, smiling-woman-phone-bed: "me: which of your colleges are due Nov 1? my senior: 'yes'" / "me, calmly opening the tracker instead of asking a 3rd time"; College Planning, College App Tracker). Not on IG/FB: the Oct 28 6pm meme-deadline-screenshot Reel is that week's product Reel.
+  - Oct 31: 7am cp_essay | 10am cp_brag | 1pm g17_money_routine (Small Business Spreadsheets, P&L) | 4pm pin_candle_7 "Pay Yourself in Every Candle" (Etsy Seller Tips, Candle)
+  - Nov 1: 7am cp_senior_months | 10am cp_tracker_7 "Cross Off Every Senior Task" | 1pm g18_cake_hidden (Pricing for Makers, Cake) | 4pm pin_sinking_7 "5 Savings Goals, 1 Paycheck Plan" (Money & Budget, Sinking Funds)
+  - Facts checked Oct 25: CSS Profile $25 first / $16 each additional (cssprofile.collegeboard.org); FTC scam signs (consumer.ftc.gov); aid offer terms (studentaid.gov); AP 1-5 + credit varies (apstudents.collegeboard.org); Common App 650 words; HSA rollover/portability (IRS Pub 969).
+  - New crops in pinterest/assets/win/crops/ (ord_02_glance, pl_02_glance, fsa_02_results, candle_02_yourpay, psp_02_results_full, college_02_glance, college_03_list, college_04_next). Product pins now have a check badge in the sub line (pass HTML in the sub field). Next week: try ord_05/pl_05/bake_04/candle_05/psp_04/fsa_04 regions and the college_05_guide tab.
 - 2026-10-18 (weekly run, week Oct 19-25; only 6 Pinterest slots were open, all 7am/1pm and most 10am/8pm already filled):
   - Oct 19: 4pm -> pin_order_6 "Which Order Is Due Today?" (Small Business Spreadsheets, Order Tracker)
   - Oct 20: 4pm -> pin_sinking_6 "What's Left After You Save?" (Money & Budget Planners, Sinking Funds)
