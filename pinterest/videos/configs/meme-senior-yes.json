@@ -1,0 +1,12 @@
+{
+ "clip": "clips/stock/smiling-woman-phone-bed.mp4",
+ "start": 1,
+ "dur": 7.8,
+ "top": "me: which of your colleges are due Nov 1?\nmy senior: \"yes\"",
+ "punch": "me, calmly opening the tracker instead of asking a 3rd time",
+ "punch_t": 2.6,
+ "end": "College Application Tracker\nEvery deadline in one place. Tap the link",
+ "end_t": 5.6,
+ "brand": "collegeplan",
+ "out": "pinterest/videos/meme-senior-yes-silent.mp4"
+}
