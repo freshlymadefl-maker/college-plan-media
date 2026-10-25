@@ -25,7 +25,7 @@ jobs:
           git config user.name "College Plan"
           git config user.email freshlymadefl@gmail.com
           git add -A newsletter
-          git diff --cached --quiet || (git commit -m "Newsletter send results" && git push)
+          git diff --cached --quiet && exit 0; git commit -m "Newsletter send results"; for i in 1 2 3 4 5; do git pull --rebase -q && git push && exit 0; sleep $((i*4)); done; exit 1
       - name: Fail if any email failed
         if: steps.send.outcome == 'failure'
         run: exit 1

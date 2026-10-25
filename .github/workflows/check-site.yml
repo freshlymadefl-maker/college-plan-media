@@ -51,4 +51,4 @@ jobs:
           JS
           node shot.js
           git config user.name "College Plan"; git config user.email freshlymadefl@gmail.com
-          git add -A check; git diff --cached --quiet || (git commit -m "Site check" && git pull --rebase && git push)
+          git add -A check; git diff --cached --quiet && exit 0; git commit -m "Site check"; for i in 1 2 3 4 5; do git pull --rebase -q && git push && exit 0; sleep $((i*4)); done; exit 1
