@@ -1,8 +1,24 @@
 {
- "updated": "2026-10-25T01:19Z",
+ "updated": "2026-10-26T01:19Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/De3-w-ViBZr/",
+   "img": "social/img/De3-w-ViBZr.jpg",
+   "date": "20261024110430",
+   "label": "Oct 24",
+   "caption": "Up to $30,000 for college. Due Nov 12. \ud83c\udf93",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
+  {
+   "url": "https://www.instagram.com/p/De1Z-smCHpT/",
+   "img": "social/img/De1Z-smCHpT.jpg",
+   "date": "20261023110323",
+   "label": "Oct 23",
+   "caption": "Which campus has more to do? \ud83c\udf89 UCF vs. USF.",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DewQe0SiOrP/",
    "img": "social/img/DewQe0SiOrP.jpg",
@@ -49,22 +65,6 @@
    "date": "20261011220232",
    "label": "Oct 11",
    "caption": "The secret to senior year not being a nightmare? Small steps every month. \ud83d\uddd3",
-   "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DeWgVRniLOP/",
-   "img": "social/img/DeWgVRniLOP.jpg",
-   "date": "20261011110227",
-   "label": "Oct 11",
-   "caption": "Stop screenshotting deadlines \ud83d\udcf1",
-   "type": "FEED_IMAGE"
-  },
-  {
-   "url": "https://www.instagram.com/p/DeT7ncPCYwU/",
-   "img": "social/img/DeT7ncPCYwU.jpg",
-   "date": "20261010110307",
-   "label": "Oct 10",
-   "caption": "Bright Futures can cover up to 100% of tuition at Florida public colleges and universities. But the requirements change by graduating class,",
    "type": "FEED_IMAGE"
   }
  ]
