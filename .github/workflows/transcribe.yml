@@ -13,19 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: pip install -q faster-whisper
       - name: Transcribe
-        run: |
-          python - <<'PY'
-          import glob, os
-          from faster_whisper import WhisperModel
-          m = WhisperModel("small.en", device="cpu", compute_type="int8")
-          for f in glob.glob("transcribe/*.wav"):
-              out = f[:-4] + ".txt"
-              if os.path.exists(out): continue
-              segs, _ = m.transcribe(f, vad_filter=True)
-              with open(out, "w") as o:
-                  for s in segs: o.write(f"[{s.start:5.1f}-{s.end:5.1f}] {s.text.strip()}\n")
-          PY
-          git rm -q transcribe/*.wav
+        run: python scripts/transcribe.py
       - name: Commit
         run: |
           git config user.name "College Plan"
