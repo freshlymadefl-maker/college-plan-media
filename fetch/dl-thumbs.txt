@@ -1,5 +1,0 @@
-warrior-kid/site/dl-1.png https://static.wixstatic.com/media/8bc9d7_8a9a63e5fca441e1b229e7bb839fb69e~mv2.png
-warrior-kid/site/dl-2.png https://static.wixstatic.com/media/8bc9d7_10fe30112ced4b6ca0facda82fa822ff~mv2.png
-warrior-kid/site/dl-3.png https://static.wixstatic.com/media/8bc9d7_ba4c3d0b77ba4fcfbd74afbb91b3507b~mv2.png
-warrior-kid/site/dl-4.png https://static.wixstatic.com/media/8bc9d7_09efc87cea6240b4b0dfc3c8c9af2e3e~mv2.png
-warrior-kid/site/dl-5.png https://static.wixstatic.com/media/8bc9d7_b1913b240c9d45eaba4e7b7d8e60b4dd~mv2.png
