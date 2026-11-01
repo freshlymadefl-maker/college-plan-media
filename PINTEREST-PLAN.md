@@ -2,6 +2,12 @@
 
 Owner (Oct 15): "share frequently to Pinterest, no one is following us so we can just spew content. College Plan and also our Etsy listings." Also: "make pop culture funny videos/trends for our Etsy listings too, to share on all socials including Pinterest. I like the ones with music."
 
+## DATA + CHANGE Nov 1 (read first)
+Metricool shows pin impressions Oct 15-20, then about 0 on every pin since Oct 22 (both businesses). The owner is checking the Pinterest app for any account notice. Until impressions come back:
+- College Plan pins link to a SPECIFIC useful page, never the bare home page: https://collegeplan.beehiiv.com/bright-futures-checker , https://collegeplan.beehiiv.com/calendar , https://collegeplan.beehiiv.com/bright-futures-gpa-calculator (once published) , or a published guide https://collegeplan.beehiiv.com/p/<slug> (check list_posts status published). Match the pin topic to the page.
+- Keyword-first titles that match what parents type ("Bright Futures requirements 2027", "Florida dual enrollment", "UF admission stats"), Florida in the title when the pin is Florida-specific.
+- Each Sunday, pull PIPO08 impressions for the past 14 days and log the daily total in the Log below.
+
 ## WHERE THINGS GO (owner rule, Oct 15)
 - NON-college content (FreshlyMadeFL money, bakery, candle, small business, Etsy-seller products, cheat sheets and videos): **Pinterest ONLY.** Never on College Plan's Instagram, Facebook, TikTok, Stories, newsletter or website.
 - College-related content (College Plan posts and the college Etsy products: College Application Tracker, Scholarship Tracker, Sorority Recruitment kit, and any future college listing): **can go anywhere**: Instagram, Facebook, TikTok, Stories, Pinterest, newsletter mentions and the website, still following the posting rules and spacing in CONTENT-PLAN.md.
