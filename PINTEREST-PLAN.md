@@ -19,6 +19,9 @@ Metricool shows pin impressions Oct 15-20, then about 0 on every pin since Oct 2
 - pinLink = the SmartLink https://t-sml.mtrbio.com/public/smartlink/collegeplan (it has a "Shop my college picks" button to the storefront). Every pin/post says "As an Amazon Associate I earn from qualifying purchases." (+ #ad on Instagram/Facebook/TikTok).
 - No brand names or product claims we can't check. Facts that vary (test rules, dorm banned items) point to the official source.
 
+- Storefront: https://www.amazon.com/shop/partyvibesdiy . Live (Nov 1): 6 Idea Lists (SAT + ACT Test Day Bag, College Visit Bag, Senior Year Study Desk Setup, Dorm Room Must-Haves, Gifts for College-Bound Seniors, Sorority Recruitment Bag) + 6 matching Collage posts (light-blue stripes; rush = purple). Built through the owner's Chrome with Amazon's own Idea List + Collage tools (products are added from Browse history, so open each product page first).
+- Collage style (owner, Nov 1): SPREAD the product images out to fill the whole canvas, little to no overlap, nothing touching the title, no empty corners.
+
 ## Accounts
 - One Pinterest account (freshlymadefl), connected in Metricool under the **College Plan brand, blogId 5183464** (timezone America/New_York). Both businesses pin from it.
 - Board IDs (use the numeric id as pinterestData.boardId):
