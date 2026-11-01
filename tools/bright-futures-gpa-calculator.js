@@ -47,7 +47,7 @@ root.innerHTML="<div id=\"cp-gpa\" style=\"font-family:Inter,Helvetica,Arial,san
       '<a class="cta" href="https://collegeplan.beehiiv.com" target="_top">Free weekly Florida tips for your student\'s grade</a>'+
       '<button type="button" class="cta share" id="gpa-share">Send to another parent</button>';
     document.getElementById('gpa-share').addEventListener('click',function(){
-      var u='https://collegeplan.beehiiv.com', t='Free Bright Futures GPA calculator for Florida parents';
+      var u='https://collegeplan.beehiiv.com/bright-futures-gpa-calculator', t='Free Bright Futures GPA calculator for Florida parents';
       if(navigator.share){navigator.share({title:t,text:t,url:u}).catch(function(){});}
       else if(navigator.clipboard){navigator.clipboard.writeText(t+': '+u);this.textContent='Link copied!';}
     });
