@@ -48,4 +48,16 @@ How to vet each lead (5 minutes on Instagram):
 ## Tracker
 | Date pitched | Account (@handle, verified in app) | Type | Offer | Status | Collab date |
 |---|---|---|---|---|---|
-| | | | | | |
+| | @tampabayparenting (Tampa Bay Parenting) | mom/parent | Florida deadline cheat sheet | To pitch (1st) | |
+| | @tampamama (Adventures of Tampa Mama) | mom/parent | Florida deadline cheat sheet | To pitch (1st) | |
+| | @admissions_untangled (Gerene Keesler, IECA, Tampa) | counselor | Ask a counselor carousel | To pitch (1st) | |
+| | @ospreyobserver (Brandon/FishHawk/Riverview/Valrico news) | local news | Free tool share / cheat sheet | To pitch | |
+| | @tbmomsblog (Tampa Bay Moms Blog; handle from a 3rd-party list, check in app) | mom/parent | Florida deadline cheat sheet | To pitch | |
+| | @tampahillslib (Tampa-Hillsborough library) | library | Free tool share (FAFSA/college night) | To pitch | |
+| | @hillsedufnd (Hillsborough Education Foundation) | nonprofit | Free tool share | To pitch | |
+| | Tampa Bay Moms Group (@tampabaymomsgroup? check in app) | mom/parent | Cheat sheet | Handle not confirmed | |
+| | Macaroni KID Brandon (email amandaswank@macaronikid.com) | family newsletter | Feature / tool share | Email, no IG | |
+| | LeCompte College Prep, Riverview (patty@lecomptecollegeprep.com) | counselor | Ask a counselor | Email, no IG | |
+| | Preble College Prep (kathy@preblecollegeprep.com) | tutor | Ask a tutor | Email, no IG | |
+| | Florida Test Prep (hello@fltestprep.com; advertises a score guarantee, owner to decide) | tutor | Ask a tutor | Email | |
+Leads researched Nov 1 from each org's own website (handles marked "check" came from a secondary source). Verify every handle in the Instagram app before tagging.
