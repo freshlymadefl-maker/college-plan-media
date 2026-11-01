@@ -1,5 +1,10 @@
 # Answer bank log (newest first)
 
+## 2026-11-01
+- How do we prove Florida residency so my senior gets in-state tuition?
+- When are Bright Futures service hours due, and how do they get turned in?
+- When do PSAT scores come out, and where do we find them?
+
 ## 2026-10-25
 - Is it too late to apply Early Action to USF, and what's due when?
 - How is the Bright Futures GPA figured — do honors, AP and dual enrollment count extra?
