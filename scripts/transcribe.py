@@ -1,4 +1,4 @@
-import glob, os, traceback, wave
+import glob, os, traceback, wave, json
 import numpy as np
 try:
     from faster_whisper import WhisperModel
@@ -6,7 +6,9 @@ try:
     for f in glob.glob("transcribe/*.wav"):
         out = f[:-4] + ".txt"
         w = wave.open(f); x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
-        segs, _ = m.transcribe(x, vad_filter=False)
+        segs, _ = m.transcribe(x, vad_filter=False, word_timestamps=True)
+        segs = list(segs)
+        json.dump([[wd.start, wd.end, wd.word] for s in segs for wd in (s.words or [])], open(f[:-4] + ".words.json", "w"))
         with open(out, "w") as o:
             for s in segs: o.write(f"[{s.start:5.1f}-{s.end:5.1f}] {s.text.strip()}\n")
         os.remove(f)
