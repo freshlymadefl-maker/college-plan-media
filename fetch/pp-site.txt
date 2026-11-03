@@ -1,0 +1,3 @@
+pottery-patch/library/site/home.html https://www.potterypatchstudio.com/
+pottery-patch/library/site/gallery.html https://www.potterypatchstudio.com/gallery
+pottery-patch/library/site/events.html https://www.potterypatchstudio.com/events
