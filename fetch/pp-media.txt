@@ -1,9 +1,0 @@
-pottery-patch/library/video/5783.mp4 https://drive.usercontent.google.com/download?id=1moHBhSqQR2wDdNjv9B0Ps-nKTJkC-cCX&export=download&confirm=t
-pottery-patch/library/video/5769.mp4 https://drive.usercontent.google.com/download?id=1WL2E3gbHGjEwnTjiBgNXPZxyjWM16AoJ&export=download&confirm=t
-pottery-patch/library/video/5776.mp4 https://drive.usercontent.google.com/download?id=1kDa-38doSPMB9VO8tDoGLX0NVz4J901d&export=download&confirm=t
-pottery-patch/library/video/5771.mp4 https://drive.usercontent.google.com/download?id=16T9pc6K_y_-BnCIdLlMTDnjPqwoNvMdZ&export=download&confirm=t
-pottery-patch/library/video/5780.mp4 https://drive.usercontent.google.com/download?id=1sgZZOLa4v6-65cW3PCjfDJ4uweMHWYag&export=download&confirm=t
-pottery-patch/library/video/5785.mp4 https://drive.usercontent.google.com/download?id=1twI2yL7YuayN84hL2wPGOPIww91G9DZD&export=download&confirm=t
-pottery-patch/library/photo/5754.jpg https://drive.usercontent.google.com/download?id=1RLRPf9D48WaPxdKXQBR458rG6lseGYd2&export=download&confirm=t
-pottery-patch/fonts/fredoka-600.woff2 https://cdn.jsdelivr.net/npm/@fontsource/fredoka@5.0.0/files/fredoka-latin-600-normal.woff2
-pottery-patch/fonts/fredoka-700.woff2 https://cdn.jsdelivr.net/npm/@fontsource/fredoka@5.0.0/files/fredoka-latin-700-normal.woff2
