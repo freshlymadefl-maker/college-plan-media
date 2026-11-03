@@ -87,6 +87,7 @@ Real people on screen win. We can't repost, and we don't use AI people, so we us
 - Use it for College Plan funny Reels too, not only Etsy videos. First ones: pinterest/videos/meme-deadline-screenshot.mp4 (also an IG/FB Reel Wed Oct 28 6pm), meme-cake-saturday.mp4, meme-custom-order.mp4.
 
 ## Log (newest first)
+- 2026-11-02: Amazon picks, teen gifts: cp_amz_teens 7am Nov 9, cp_amz_teens_2 7am Nov 11 (College Planning, link SmartLink) + Reel teen-gifts-reel.mp4 IG+FB Nov 10 6pm (music Good Time 622819303274042). Media hosted in Metricool, not yet in this repo.
 - 2026-11-01 (weekly run, week Nov 2-8; 28 open slots filled: all 7am/10am/1pm/4pm. 8pm was already filled every day). Media commit 87a6bf8. College Plan pins link to specific pages (Nov 1 rule).
   - Nov 2: 7am cp_fl_app_check (/p/florida-public-university-application-deadlines-2026-27) | 10am cp_tracker_8 "Which College App Is Due First?" (College App Tracker) | 1pm g19_fsa_terms (Money & Budget, FSA) | 4pm pin_pl_7 "Where Did the Money Go?" (Small Business Spreadsheets, P&L)
   - Nov 3: 7am cp_bf_levels (/p/florida-bright-futures-requirements-2027-2028-6ad3) | 10am cp_fafsa_ready (/p/fafsa-vs-ffaa-florida-financial-aid-forms-2027-28) | 1pm g20_gross_net (Small Business Spreadsheets, P&L) | 4pm VIDEO tracker-most.mp4 (native chat "asking my senior which college apps are done" / "most of them" / "what Jan 1 one"; config templates/reel/native/tracker-most.js; College Planning, College App Tracker). Not on IG/FB: no open 6pm slot Nov 2-8.
