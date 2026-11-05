@@ -1,5 +1,7 @@
 # Pottery Patch feed log (newest first)
 
+- 2026-11-14 | Reel 12.4s | photo cards on blurred bg, text bubbles | mugs/boot mug/flower bowl/cocoa + orange gingham end card | "Things we're thankful for this year" | mugs, boot_mug, flowerbowl, cocoa | new | Thanksgiving gratitude list
+- 2026-11-09 | Reel 17s | photo cards on blurred bg, text bubbles + source pills | shelves/girls/angel/teen/studio + pink dots end card | "Holiday stress season is here. Science has a suggestion" | shelves, girls, angel, teen, studio | new | creativity science facts (Drexel 2016/2017, J Pos Psych 2016)
 - 2026-11-07 | static | layout 1 (photo + color band) | icy blue #2b6cb0/#cfe8f7 | "Tiny hand now. Grandma's favorite gift forever." | Drive IMG_5776 handprint plate | new | gift-list format
 - 2026-11-05 | static | layout 2 (meme, approved sample) | blush #f9d3e0 / burgundy #7a1730 / orange #e8641e | "Girl math: if you painted it, the gift was basically free." | Drive IMG_5754 Locks of Love plate | new | girl math
 - 2026-11-04 | static | layout 4 (framed) | candy red #c8102e / cream / ice blue | "Cocoa season called. It wants a cuter mug." | Drive IMG_5769 cocoa mug | new | "___ called" format
