@@ -1,3 +1,0 @@
-warrior-kid/site/tiein-macmillan.jpg https://images.macmillan.com/folio-assets/macmillan_us_frontbookcovers_1000H/9781250471543.jpg
-warrior-kid/site/tiein-shop.jpg https://massivebookshop.com/cdn/shop/files/9781250471543-us-300.jpg
-warrior-kid/site/tiein-ol.jpg https://covers.openlibrary.org/b/isbn/9781250471543-L.jpg
