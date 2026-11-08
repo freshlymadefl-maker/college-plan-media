@@ -1,0 +1,57 @@
+ok instagram/2026-11-09-week/pn-exam-fees-silent.mp4
+ok instagram/2026-11-09-week/pn-exam-fees.mp4 music: sunny
+ok instagram/2026-11-09-week/pn-myth-bf-silent.mp4
+ok instagram/2026-11-09-week/pn-quit-silent.mp4
+ok instagram/2026-11-09-week/pn-myth-bf.mp4 music: bright
+ok instagram/2026-11-09-week/pn-quit.mp4 music: breeze
+ok instagram/2026-11-09-week/pn-thanksgiving-silent.mp4
+ok instagram/2026-11-09-week/pn-thanksgiving.mp4 music: sunny
+ok instagram/2026-11-09-week/pn-try-again-silent.mp4
+ok instagram/2026-11-09-week/pn-try-again.mp4 music: sunny
+ok instagram/2026-11-09-week/pn-course-requests-silent.mp4
+ok instagram/2026-11-09-week/pn-9th-vs-12th-silent.mp4
+ok instagram/2026-11-09-week/pn-course-requests.mp4 music: breeze
+ok instagram/2026-11-09-week/pn-9th-vs-12th.mp4 music: bright
+ok instagram/2026-11-09-week/due-nov9-silent.mp4
+ok instagram/2026-11-09-week/due-nov9.mp4 music: breeze
+ok instagram/2026-11-09-week/texting-fsu-silent.mp4
+ok instagram/2026-11-09-week/texting-fsu.mp4 music: breeze
+ok instagram/2026-11-09-week/gc-decisions-silent.mp4
+ok instagram/2026-11-09-week/gc-decisions.mp4 music: bright
+ok instagram/2026-11-09-week/thanksgiving-qs-silent.mp4
+ok instagram/2026-11-09-week/thanksgiving-qs.mp4 music: bright
+ok instagram/2026-11-09-week/usf-stats-silent.mp4
+ok instagram/2026-11-09-week/usf-stats.mp4 music: sunny
+[image2 @ 0x55cff92e8580] Could find no file with path 'instagram/2026-11-07-scholarship-jose-marti/jm{1,2,3,4,5,6,7}.png' and index in the range 0-4
+[in#0 @ 0x55cff92f7900] Error opening input: No such file or directory
+Error opening input file instagram/2026-11-07-scholarship-jose-marti/jm{1,2,3,4,5,6,7}.png.
+Error opening input files: No such file or directory
+[image2 @ 0x556c46428580] Could find no file with path 'instagram/2026-11-04-carousel-ap-ib-aice-de/ap{1,2,3,4,5,6,7,8}.png' and index in the range 0-4
+[in#0 @ 0x556c46437900] Error opening input: No such file or directory
+Error opening input file instagram/2026-11-04-carousel-ap-ib-aice-de/ap{1,2,3,4,5,6,7,8}.png.
+Error opening input files: No such file or directory
+Traceback (most recent call last):
+  File "/home/claude/college-plan-media/scripts/slideshow_video.py", line 13, in <module>
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-t", str(per), "-i", s, "-filter_complex", vf,
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    "-t", str(per), "-r", "30", "-c:v", "libx264", "-crf", "20", c], check=True); clips.append(c)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffmpeg', '-y', '-loglevel', 'error', '-loop', '1', '-t', '2.4', '-i', 'instagram/2026-11-07-scholarship-jose-marti/jm{1,2,3,4,5,6,7}.png', '-filter_complex', "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:2,eq=brightness=-0.12[bg];[0:v]scale=1080:-1,zoompan=z='1+0.0006*on':d=72:s=1080x1350:fps=30[fg];[bg][fg]overlay=0:(H-h)/2-40,format=yuv420p", '-t', '2.4', '-r', '30', '-c:v', 'libx264', '-crf', '20', '/tmp/tmprpnlrv_1/c0.mp4']' returned non-zero exit status 254.
+Traceback (most recent call last):
+  File "/home/claude/college-plan-media/scripts/slideshow_video.py", line 13, in <module>
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-t", str(per), "-i", s, "-filter_complex", vf,
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    "-t", str(per), "-r", "30", "-c:v", "libx264", "-crf", "20", c], check=True); clips.append(c)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffmpeg', '-y', '-loglevel', 'error', '-loop', '1', '-t', '2.4', '-i', 'instagram/2026-11-04-carousel-ap-ib-aice-de/ap{1,2,3,4,5,6,7,8}.png', '-filter_complex', "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:2,eq=brightness=-0.12[bg];[0:v]scale=1080:-1,zoompan=z='1+0.0006*on':d=72:s=1080x1350:fps=30[fg];[bg][fg]overlay=0:(H-h)/2-40,format=yuv420p", '-t', '2.4', '-r', '30', '-c:v', 'libx264', '-crf', '20', '/tmp/tmph0nnd_ah/c0.mp4']' returned non-zero exit status 254.
+ok /home/claude/college-plan-media/instagram/2026-11-09-week/meme-ucf-materials-silent.mp4
+ok /home/claude/college-plan-media/instagram/2026-11-09-week/meme-weekend-silent.mp4
+ok instagram/2026-11-09-week/meme-ucf-materials.mp4 music: sunny
+ok instagram/2026-11-09-week/meme-weekend.mp4 music: breeze
+ALLDONE
