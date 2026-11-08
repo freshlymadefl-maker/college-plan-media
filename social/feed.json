@@ -1,8 +1,24 @@
 {
- "updated": "2026-11-05T02:42Z",
+ "updated": "2026-11-08T02:18Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DfZj_l-CK2s/",
+   "img": "social/img/DfZj_l-CK2s.jpg",
+   "date": "20261106120333",
+   "label": "Nov 6",
+   "caption": "Best Florida school for future doctors? \ud83e\ude7a UF vs. USF.",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
+  {
+   "url": "https://www.instagram.com/p/DfUai-hiP8J/",
+   "img": "social/img/DfUai-hiP8J.jpg",
+   "date": "20261104120447",
+   "label": "Nov 4",
+   "caption": "4 free ways to earn college credit in a Florida high school \ud83c\udf93 (swipe before course registration)",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DfKAVg_HUus/",
    "img": "social/img/DfKAVg_HUus.jpg",
@@ -49,22 +65,6 @@
    "date": "20261023110323",
    "label": "Oct 23",
    "caption": "Which campus has more to do? \ud83c\udf89 UCF vs. USF.",
-   "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/DewQe0SiOrP/",
-   "img": "social/img/DewQe0SiOrP.jpg",
-   "date": "20261021110411",
-   "label": "Oct 21",
-   "caption": "Bright Futures takes 3 tests, not 2. \ud83d\udc40",
-   "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/Del9L_xiGT3/",
-   "img": "social/img/Del9L_xiGT3.jpg",
-   "date": "20261017110313",
-   "label": "Oct 17",
-   "caption": "Up to $55,000 a year for college. Deadline: Nov 11. \ud83c\udf93",
    "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
