@@ -259,6 +259,20 @@
   "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
  },
  {
+  "date": "2026-11-20",
+  "title": "Pinellas: SPC dual enrollment registration deadline (spring 2027, Pinellas County Schools students)",
+  "who": "8th-12th",
+  "note": "Private + home school students: Dec 15. $0 tuition + required textbooks.",
+  "src": "https://www.spcollege.edu/future-students/admissions/high-school-programs/dual-enrollment"
+ },
+ {
+  "date": "2026-11-24",
+  "title": "SAT late registration deadline (Dec 5 test)",
+  "who": "Juniors + seniors",
+  "note": "",
+  "src": "https://satsuite.collegeboard.org/dates/december-5-2026-sat-test-date"
+ },
+ {
   "date": "2026-11-29",
   "title": "ACT late registration deadline (Dec 12 test)",
   "who": "Juniors & seniors",
@@ -278,6 +292,13 @@
   "who": "Pasco & Hernando County students",
   "note": "New students apply online; then the counselor worksheet and online request form.",
   "src": "https://accelerated.phsc.edu/resources/dates"
+ },
+ {
+  "date": "2026-12-01",
+  "title": "Ron Brown Scholar Program application due",
+  "who": "Seniors",
+  "note": "$40,000 ($10,000/yr). Transcripts + recommendations due Dec 15.",
+  "src": "https://ronbrown.org/apply/faq/"
  },
  {
   "date": "2026-12-03",
@@ -313,6 +334,13 @@
   "who": "Seniors & Juniors",
   "note": "",
   "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
+ },
+ {
+  "date": "2026-12-08",
+  "title": "FSU Regular Decision materials due",
+  "who": "Seniors",
+  "note": "Application Dec 1.",
+  "src": "https://admissions.fsu.edu/first-year/apply"
  },
  {
   "date": "2026-12-09",
@@ -355,6 +383,13 @@
   "who": "Seniors",
   "note": "$1,000 to $60,000; opened Oct 15.",
   "src": "https://www.burgerkingfoundation.org/programs/burger-king-sm-scholars"
+ },
+ {
+  "date": "2026-12-15",
+  "title": "Pinellas: SPC dual enrollment deadline (private + home school students, spring 2027)",
+  "who": "8th-12th",
+  "note": "",
+  "src": "https://www.spcollege.edu/future-students/admissions/high-school-programs/dual-enrollment"
  },
  {
   "date": "2026-12-16",
@@ -411,6 +446,13 @@
   "who": "Seniors",
   "note": "STARS, transcript and test scores due Jan 22; decisions Mar 19.",
   "src": "https://admissions.ufl.edu/apply/freshman/deadlines"
+ },
+ {
+  "date": "2027-01-15",
+  "title": "USF Regular Decision materials + scholarship deadline",
+  "who": "Seniors",
+  "note": "Decisions Feb 10, 2027.",
+  "src": "https://www.usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx"
  },
  {
   "date": "2027-01-22",
