@@ -1,5 +1,10 @@
 # Answer bank log (newest first)
 
+## 2026-11-08
+- We already did the FAFSA. Do we also need the FFAA for Bright Futures?
+- FSU's regular deadline is Dec 1 — what's due and when do we hear back?
+- How much does Bright Futures actually pay? What's the difference between FAS and FMS?
+
 ## 2026-11-01
 - How do we prove Florida residency so my senior gets in-state tuition?
 - When are Bright Futures service hours due, and how do they get turned in?
