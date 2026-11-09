@@ -87,6 +87,7 @@ Real people on screen win. We can't repost, and we don't use AI people, so we us
 - Use it for College Plan funny Reels too, not only Etsy videos. First ones: pinterest/videos/meme-deadline-screenshot.mp4 (also an IG/FB Reel Wed Oct 28 6pm), meme-cake-saturday.mp4, meme-custom-order.mp4.
 
 ## Log (newest first)
+- 2026-11-09: Amazon picks, dorm-friendly college gifts: cp_amz_dorm_gifts 7am Nov 16, cp_amz_dorm_gifts_2 7am Nov 18 (College Planning, link SmartLink) + Reel dorm-gifts-reel.mp4 IG+FB Nov 17 6pm (music Good Time 622819303274042). Media in pinterest/collegeplan/ and instagram/2026-11-amazon/.
 - 2026-11-08 (weekly run, week Nov 9-15; 29 open slots filled, every Pinterest slot now full Nov 9-15). Media commit 100005669cffb586274349be89874f1a53cf2209. College Plan pins link to specific pages.
   - Nov 9: 10am cp_tracker_12 "Transcripts Sent? Fees Paid?" (College App Tracker) | 1pm g26_order_handoff (Small Business Spreadsheets, Order Tracker) | 4pm pin_fsa_8 "Did You Save That Receipt?" (Money & Budget, FSA)
   - Nov 10: 7am cp_sat_vs_act (/p/florida-juniors-winter-sat-act-dates-bright-futures-oct-12) | 10am cp_thanksgiving_qs (/calendar) | 1pm g27_price_per_cookie (Pricing for Makers, Cake) | 4pm VIDEO candle-17.mp4 (native POV "a customer says $17 is 'a lot' for a candle" / "cost to make one: $11.87" / "so $17 is the bargain"; config templates/reel/native/candle-17.js; Pricing for Makers, Candle)
