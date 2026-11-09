@@ -1,8 +1,16 @@
 {
- "updated": "2026-11-08T02:18Z",
+ "updated": "2026-11-09T02:18Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DfcI017CCq4/",
+   "img": "social/img/DfcI017CCq4.jpg",
+   "date": "20261107120406",
+   "label": "Nov 7",
+   "caption": "Hispanic Florida seniors: $2,000 a year for college \ud83c\udf93",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DfZj_l-CK2s/",
    "img": "social/img/DfZj_l-CK2s.jpg",
@@ -57,14 +65,6 @@
    "date": "20261024110430",
    "label": "Oct 24",
    "caption": "Up to $30,000 for college. Due Nov 12. \ud83c\udf93",
-   "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/De1Z-smCHpT/",
-   "img": "social/img/De1Z-smCHpT.jpg",
-   "date": "20261023110323",
-   "label": "Oct 23",
-   "caption": "Which campus has more to do? \ud83c\udf89 UCF vs. USF.",
    "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
