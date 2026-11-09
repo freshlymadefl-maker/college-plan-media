@@ -5,6 +5,38 @@ Goal right now: **followers**. Instagram's strongest signals for reaching new pe
 ## What makes College Plan different (owner, Oct 9) — every post should hit at least two
 1. **Funny + relatable** (parents laugh, tag, send). 2. **Educational** (save-worthy). 3. **Florida-specific** (Bright Futures, FFAA, our schools, our counties). 4. **Time-sensitive** (what's due now). Growth = engagement + entertainment: every feed post ends with ONE easy action (vote, comment a word, tag, send, save). Lots of pages cover college planning; ours wins by being the fun, Florida, right-now one.
 
+## OWNER DIRECTION Nov 9 — NO trial Reels + TRENDIER Reel formats and designs (read with the Nov 1 reset)
+**No trial Reels for now.** Instagram rejects them: "the account does not meet the trial reel follower requirement" (Nov 5 + Nov 8 both failed). Every Reel goes out as a regular REEL on Instagram + Facebook. The Thursday + Sunday "trial" slots become normal 6pm Reels used to TEST a new format (below). Re-check once the account has 1,000+ followers.
+
+Owner: "all our reels are kinda looking the same. I like them but can we do some trendier formats and/or designs sometimes?"
+Rules, every week:
+1. **Max 2 Reels a week in any one format** (texting, group chat, stock-clip caption+punchline, hook-plus-list over a photo, voiceover). They're good; they're just everywhere.
+2. **At least 4 Reels a week use a format from the Trend format bank below**, and at least 2 of those must be formats NOT used in the previous 2 weeks (check the Log; log the format name for every Reel).
+3. **Do trend research first** (WebSearch, "extended" at least once): what Reel/TikTok formats, templates, transitions and caption styles are trending THIS week for parents/moms/education creators. Adapt 1-2 of them in our own words and design. Log the trend + source. No song lyrics, movie/TV quotes, celebrity likenesses, other creators' exact wording, or brand logos/trade dress (make generic versions: "lock screen", "notes app", "year-in-review cards", never a real app's logo).
+4. **Rotate the LOOK, not just the format.** Each Reel picks one design style from the Look bank and the same look never runs 2 days in a row. Brand fonts (Poppins, Lora italic) stay; allowed accents: a handwritten font (Caveat / Caveat Brush via npm @fontsource), and seasonal palettes (Thanksgiving warm orange/cream, December red/green/gold, icy blue) alongside navy/blue/gold.
+5. Same hook rules as always: hook fully on screen on frame 0, 7-10 seconds, something new every second, one send/tag ask at the end, facts verified (caption).
+
+### Trend format bank (build each as a native Reel config or a small new HTML template in templates/reel/; save new templates so they can be reused)
+- **Lock-screen pile-up:** a phone lock screen; notifications stack up fast ("Portal: new document", "Mom: did you submit??", "Group chat (47)"), last one is the punchline.
+- **Notes-app list:** a plain notes page typing itself, cursor blinking ("things my 9th grader said this week that made me cry in the car").
+- **Search-bar autocomplete:** "how to get my teen to…" typing, suggestions drop down, the last suggestion is the joke or the tip.
+- **Weather forecast:** "Senior parent stress forecast this week" with a day-by-day row of icons (sun → storm on deadline day).
+- **Tier list:** items drop into S/A/B/C rows ("ranking senior year tasks by how much my kid procrastinates").
+- **Year-in-review cards:** bold full-color stat cards one per beat ("your 9th grade semester, recapped": 1 new friend group, 37 forgotten lunches…), generic design, no app branding.
+- **Expectation vs reality split screen** (two stock clips or photos, top/bottom).
+- **Zoom-in punch meme:** a photo, sudden zoom + shake on the punchline word.
+- **Receipt printing:** a receipt scrolls out ("Receipt: one week of senior year": 4 coffees, 1 essay draft, 2 meltdowns). Never invent real prices or fees.
+- **Kinetic typography:** one big word per beat filling the screen, cut to the music.
+- **"Senior parent math" / "things that just make sense"** caption-format jokes.
+- **Countdown / calendar flip:** days peel off to a real, verified date.
+- **Quiz with a timer bar:** "3 seconds: is this true?" then the answer.
+- **Scrapbook / photo-dump:** fast cuts of polaroids and taped photos with handwritten labels (stock or Commons photos only).
+- **Voice-memo / voicemail transcript:** "voicemail from grandma about Thanksgiving college questions" with an audio-wave graphic and captions (no fake real people).
+- **Checklist ASMR:** boxes tick off one by one in sync with the beat.
+
+### Look bank (rotate)
+Clean navy (our classic) · Scrapbook (kraft paper, tape, polaroids, Caveat handwriting, doodles) · Bold color-block (big flat color panels, oversized type, gold accents) · Phone UI (lock screen / notes / chat, light mode and dark mode) · Soft pastel (sky + cream, rounded cards) · Seasonal (Thanksgiving / December / Valentine's palettes) · Retro print (halftone dots, sticker labels, slightly off-register type).
+
 ## GROWTH RESET Nov 1 (owner: "so much good content, just no one is seeing it" — read this FIRST; it adds to the Oct 19 direction, the volume floor stays)
 DATA Oct 18–Nov 1 (Metricool): our own IG Reels are stuck at a 60–140 reach floor (Instagram's first test batch) and never break out: 0–1 shares and 0–1 saves on every Reel. Best own: "your 9th grader doesn't need a college list yet" 193, "you'll blink" 140, "UF STARS" 139, "due this week" 132, brag folder 128. The credited repost (@alexroeds, emotional) hit 1,189 with 10 shares. Followers ~40. TikTok: every video shows 0 views on the public profile even though posts are public (account-level problem; owner is checking the in-app Account status). Pinterest: pins got impressions Oct 15–20, then ~0 since Oct 22. Newsletter: 13 subscribers, 0 referrals; nothing sent since Oct 13 (3 weeks of drafts waiting).
 So the problem is distribution, not content. Instagram only pushes a Reel past the first batch when people SEND it. Every rule below exists to earn sends.
@@ -171,7 +203,7 @@ See COLLABS.md (who to pitch, offers, DM templates, tracker). When a partner has
 Max 30 seconds, the hook line big on frame 0 and no spoken preamble (start at "Number one…"; Oct 13 data: 38s voiceovers averaged 2.6s watched). Faceless, AI voice (en-US-AvaNeural) + big word-by-word captions over soft Florida photos, gold section chips, end card pointing to a tool or the newsletter. Formats that work: "3 [Bright Futures/FAFSA/application] mistakes Florida parents make", "What [UF/FSU/UCF] actually looks for", "Explain [dual enrollment/STARS/the FFAA] in 30 seconds", "If your student is a junior, do these 3 things this month". Script 70–110 words, spell acronyms with spaces for the voice (F F A A), every fact verified. Caption repeats the key points in text + "sound on". isAiGenerated true. A second voiceover can replace a trial Reel when it's a strong topic.
 
 ## Trial Reels
-Trial Reels are shown only to non-followers first, so use them to test new hooks/formats. Keep the two regular Reels for the strongest ideas. Instagram may move a trial Reel to the profile later if it performs.
+PAUSED (Nov 9): Instagram rejects trial Reels until the account meets its follower requirement. Use those slots for regular Reels that test a new format from the Trend format bank.
 
 ## Rotation R — Reel topics (build them as NATIVE Reels: 7–10s, hook on frame 0 — see "Native Reels")
 - "X things to do before [month] ends" · "Florida deadline this week" · "Did you know (scholarship)" · school stat reveal ("UF's middle 50% SAT is…") · myth vs fact flip · "Things I wish I knew in 9th grade" style lists (written as College Plan, no personal persona)
@@ -280,6 +312,7 @@ The API can't send on Lite. The Sunday routine saves the 3 weekly emails + the g
 - **Videos only (Oct 13):** TikTok photo posts got 0 views in Metricool, videos got 13–46. Cross-post Reels as-is; turn carousels into slideshow videos with `python3 scripts/slideshow_video.py tiktok/<name>.mp4 2.4 slide1.png slide2.png ...` (blurred background, slow zoom, music). Skip single-image posts on TikTok unless they become a native Reel.
 
 ## Log (newest first — the weekly routine appends here)
+- 2026-11-09: Trial Reels failed (follower requirement): Nov 12 6pm + Nov 15 6pm converted to regular IG+FB Reels; the failed Nov 5 Equitable scholarship Reel moved to Wed Nov 18 6pm and the Nov 8 county Reel to Tue Nov 17 12:30pm (both regular Reels). Owner asked for trendier Reel formats/designs: see OWNER DIRECTION Nov 9.
 - 2026-11-08 DATA (week Nov 1–7, Metricool; timestamps UTC): followers 62 → 65 (+3). Daily reach Nov 1–7: 146 / 232 / 344 / 134 / 227 / 226 / 222, ~95% non-followers. Carousels still followers-only: AP/IB 10, UF/USF Showdown 8, José Martí 6 reach; 0 saves/follows. WINNERS: (1) Mon 7am stock meme "so I'm done with college stuff, right?" 125 reach / 5.0s / 63.5% view rate / 1 save (best view rate yet); (2) PLAN NOW chat "first report card C" 119 / 5.6s / 45% / 1 save. Also strong: "extra hour" meme 131 / 4.3s / 57%; gc-november 122 / 4.9s / 46%; voiceover GPA 119 / 6.4s / 32% / 1 save; UCF stats 122 / 4.0s / 1 share. LOSERS: Pasco carousel slideshow Reel 14 reach / 1.1s / 9%; due-this-week list Reel 5 reach; PN "figuring it out WITH them" 14 / 2.0s / 7%; PN summer 109 / 2.3s / 18%. Plan Now 9th/10th avg ~98 reach / ~30% view rate vs. other Reels ~94 / ~38%. Own Reels avg watch ~3.9s (not under 3s). TikTok views 0. beehiiv: 13 subscribers (+0), 48% open rate, 0 orders; owner published the Nov 2 emails + UF/deadlines guides.
 - 2026-11-08 CHANGES because of the data: 2 stock memes (Mon 7am UCF SPARK, Sat 6pm FAFSA password) + 2 chats (group chat, texting) in the senior slots; all 7 Plan Now Reels over real stock clips; numbered SERIES started per the Growth Reset ("things nobody tells Florida 9th grade parents" part 1 + 2, "Florida parent myth #1"); carousel music slideshows moved to the two IG-only TRIAL slots (they flopped as main Reels); every Reel names who to send it to.
 - 2026-11-15 Sun: 7am REEL "Thanksgiving questions for senior parents, translated" (native/thanksgiving-qs.js; 1375070527788441 Cool Water). 8:15 Story st1 next week Nov 16–24 (s15). 12:30 PLAN NOW 9th/10th original uplifting "the goal isn't a perfect kid, it's a kid who knows how to try again" (mixkit-40349; 713277420607785 Breathe). 6pm TRIAL REEL José Martí carousel music slideshow (1051454999537982 Balearic Mood), comment GUIDE.
