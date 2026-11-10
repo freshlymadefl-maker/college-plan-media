@@ -1,8 +1,16 @@
 {
- "updated": "2026-11-09T02:18Z",
+ "updated": "2026-11-10T02:21Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DfetinfiBuz/",
+   "img": "social/img/DfetinfiBuz.jpg",
+   "date": "20261108120309",
+   "label": "Nov 8",
+   "caption": "Plan now, don't cram later \ud83d\udcda",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DfcI017CCq4/",
    "img": "social/img/DfcI017CCq4.jpg",
@@ -57,14 +65,6 @@
    "date": "20261025110309",
    "label": "Oct 25",
    "caption": "Senior year has a LOT of moving parts. So we mapped it out for you \ud83d\uddfa\ufe0f",
-   "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/De3-w-ViBZr/",
-   "img": "social/img/De3-w-ViBZr.jpg",
-   "date": "20261024110430",
-   "label": "Oct 24",
-   "caption": "Up to $30,000 for college. Due Nov 12. \ud83c\udf93",
    "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
