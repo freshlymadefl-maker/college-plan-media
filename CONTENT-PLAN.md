@@ -2,6 +2,9 @@
 
 Goal right now: **followers**. Instagram's strongest signals for reaching new people are **sends (DM shares)**, **saves**, and **Reel watch time**. Every post should be something a parent would send to another parent or save for later. Florida-specific, verified, original, no athletics.
 
+## HOLIDAY AMAZON PUSH Nov 12 - Dec 21 (owner, Nov 11) — see AMAZON-PLAN.md "HOLIDAY PUSH"
+Owner: "keep posting these amazon things a lot though esp with christmas coming up ... college student gifts, for the college student who has everything etc." Until Dec 21: the 6:00pm Reel on **Tue, Thu and Sun is an Amazon gift Reel** (made by the Amazon picks task, Mon + Thu runs; replaces the Tue school-stat reveal and the Thu/Sun format-test slots; it still uses a trend format + December look). Pinterest 10:00am = a daily gift pin. Extra gift Stories Mon + Fri 8:00pm. The daily posting routine must NOT fill those slots; if one is empty the evening before, fill it with a normal Reel. The 7:00am and 12:30pm slots stay College Plan content (Amazon is the side dish, not the page). After Dec 21, back to one Amazon Reel a week.
+
 ## What makes College Plan different (owner, Oct 9) — every post should hit at least two
 1. **Funny + relatable** (parents laugh, tag, send). 2. **Educational** (save-worthy). 3. **Florida-specific** (Bright Futures, FFAA, our schools, our counties). 4. **Time-sensitive** (what's due now). Growth = engagement + entertainment: every feed post ends with ONE easy action (vote, comment a word, tag, send, save). Lots of pages cover college planning; ours wins by being the fun, Florida, right-now one.
 
