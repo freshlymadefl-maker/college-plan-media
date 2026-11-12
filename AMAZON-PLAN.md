@@ -19,6 +19,14 @@ Why: last 30 days (Oct 12-Nov 10) = 82 clicks, 4 orders (~5% conversion, good). 
 **If Chrome isn't reachable:** still do ALL the socials using the gift lists that are already live (table below) with fresh angles; queue the new list theme under "Queued". Never skip the posts just because the new list couldn't be built.
 **Tracking:** if per-channel tracking IDs are listed under "Tracking IDs" below, use the Pinterest one in pin links and the Instagram/Facebook one in the SmartLink/storefront, so the Associates report splits clicks by channel.
 
+### MORE ON AMAZON ITSELF (owner, Nov 12: "we can put as much as we can")
+Amazon's storefront takes 4 kinds of content: Idea Lists, Photo posts (Collages count), Videos, Livestreams. Every run with Chrome reachable now does, after the new list + collage:
+1. **1 extra holiday Collage of an OLDER live list** (rotate through the "Live gift lists" table, then the 6 Nov 1 lists): December red/green colors, a new gift-style title (<=16 chars, e.g. "Teen Gift Ideas" -> "Teen Xmas Gifts"), same spread-out grid rule, description ending "From College Plan." Submit. Log which list was re-collaged so we don't repeat it within 2 weeks.
+2. **Fill missing list URLs** in the table (pins then link straight to the list).
+3. **Video test (once):** try uploading ONE gift Reel as a storefront video tied to the list's products. Amazon reviews videos and usually wants the real product on screen; ours show only a drawn checklist, so if it's rejected, log the reason and stop trying. If it's accepted, upload each new gift Reel there too.
+- Real product photos/videos (the owner holding or using a product) are what Amazon likes best and can show on product pages. If the owner drops clips or photos in the repo (photos/amazon/), post them as storefront Photos/Videos tagged to that product. Never use Amazon's own product images outside Amazon's tools.
+- Livestreams: owner only (needs her live).
+
 ### Holiday theme calendar (2 lists a week; if a row is done, take the next unused one)
 | Run | Theme (list title) | Collage title (<=16 chars) |
 |---|---|---|
