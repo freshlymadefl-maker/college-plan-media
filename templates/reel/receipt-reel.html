@@ -1,0 +1,73 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- RECEIPT PRINTING trend format (CONTENT-PLAN.md bank), December look. 1080x1920, driven by setT(ms).
+     Load with ?cfg=<name> -> templates/reel/receipt/<name>.js (window.CFG). Never real prices.
+     CFG = {dur, hook, title, sub, lines:[{t,l,r}], total:{t,l,r}, foot, end:{t,text,sub,send}}
+     Render: python3 templates/reel/render-fast.py "templates/reel/receipt-reel.html?cfg=<name>" out-silent.mp4 <secs> 30 -->
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{position:relative;font-family:'Inter',sans-serif;background:radial-gradient(circle at 50% 30%,#1E6B47 0%,#14513A 45%,#0C3626 100%)}
+.snow{position:absolute;border-radius:50%;background:#fff;opacity:.55}
+.hook{position:absolute;left:60px;right:60px;top:90px;text-align:center}
+.hook span{font-family:'Poppins';font-weight:700;font-size:62px;line-height:1.38;background:#fff;color:#8E1B1B;padding:6px 24px;border-radius:18px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.slot{position:absolute;left:150px;right:150px;height:34px;border-radius:17px;background:#0A2A1D;box-shadow:inset 0 6px 12px rgba(0,0,0,.5)}
+.clip{position:absolute;left:170px;right:170px;overflow:hidden}
+.paper{position:absolute;left:0;right:0;background:#FFFDF6;padding:44px 52px 60px;font-family:'DejaVu Sans Mono',monospace;color:#222;font-size:37px;line-height:1.35;
+ box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.paper:after{content:'';position:absolute;left:0;right:0;bottom:-18px;height:18px;background:linear-gradient(135deg,#FFFDF6 50%,transparent 50%) 0 0/36px 18px,linear-gradient(-135deg,#FFFDF6 50%,transparent 50%) 0 0/36px 18px}
+.c{text-align:center}.b{font-weight:700}
+.dash{border-top:4px dashed #999;margin:18px 0}
+.ln{display:flex;justify-content:space-between;gap:20px;margin:10px 0}
+.ln .r{flex:none;color:#1E6B47;font-weight:700}
+.ln .l small{display:block;font-size:28px;color:#777}
+.tot{font-size:44px}.tot .r{color:#8E1B1B}
+.end{position:absolute;left:60px;right:60px;top:600px;text-align:center;opacity:0}
+.end .big{font-family:'Poppins';font-weight:700;font-size:96px;line-height:1.1;color:#fff}
+.end .pill{display:inline-block;margin-top:40px;background:#E9C46A;color:#0C3626;font-family:'Poppins';font-weight:700;font-size:60px;padding:18px 46px;border-radius:999px}
+.end .send{margin-top:46px;font-family:'Poppins';font-weight:600;font-size:46px;color:#fff;line-height:1.3}
+.disc{position:absolute;left:0;right:0;bottom:70px;text-align:center;color:rgba(255,255,255,.75);font-size:26px}
+.bow{position:absolute;font-size:110px}
+</style></head><body>
+<div id="snow"></div>
+<div class="hook" id="hook"><span></span></div>
+<div class="slot" id="slot"></div>
+<div class="clip" id="clip"><div class="paper" id="paper"></div></div>
+<div class="end" id="end"><div class="big"></div><div class="pill"></div><div class="send"></div></div>
+<div class="disc">As an Amazon Associate I earn from qualifying purchases.</div>
+<script>
+const q=new URLSearchParams(location.search).get('cfg');
+document.write('<script src="receipt/'+q+'.js"><\/script>');
+</script>
+<script>
+const C=window.CFG;
+document.querySelector('#hook span').innerHTML=C.hook;
+const hookB=()=>document.getElementById('hook').getBoundingClientRect().bottom;
+let html=`<div class="c b">${C.title}</div><div class="c">${C.sub}</div><div class="dash"></div>`;
+C.lines.forEach((x,i)=>{html+=`<div class="ln" id="ln${i}"><span class="l">${x.l}</span><span class="r">${x.r}</span></div>`});
+html+=`<div class="dash"></div><div class="ln tot b" id="tot"><span class="l">${C.total.l}</span><span class="r">${C.total.r}</span></div><div class="c" style="margin-top:14px;color:#777;font-size:30px">${C.foot}</div>`;
+const P=document.getElementById('paper');P.innerHTML=html;
+const e=document.getElementById('end');e.querySelector('.big').innerHTML=C.end.text;e.querySelector('.pill').innerHTML=C.end.sub;e.querySelector('.send').innerHTML=C.end.send;
+// snow
+let s='';for(let i=0;i<46;i++){const r=4+((i*37)%9);s+=`<div class="snow" data-x="${(i*233)%1080}" data-y="${(i*397)%1920}" data-v="${40+(i*13)%70}" style="width:${r}px;height:${r}px"></div>`}
+document.getElementById('snow').innerHTML=s;
+let laid=false,slotY,clipTop,clipH,steps;
+function lay(){const hb=hookB()+50;slotY=hb;const sl=document.getElementById('slot');sl.style.top=slotY+'px';
+ clipTop=slotY+17;const cl=document.getElementById('clip');cl.style.top=clipTop+'px';clipH=1920-150-clipTop;cl.style.height=clipH+'px';
+ // y-offset (from paper top) of bottom of each part
+ const pt=P.getBoundingClientRect().top;
+ steps=C.lines.map((x,i)=>({t:x.t,h:document.getElementById('ln'+i).getBoundingClientRect().bottom-pt+20}));
+ steps.unshift({t:0,h:document.querySelector('.dash').getBoundingClientRect().bottom-pt+10});
+ steps.push({t:C.total.t,h:P.offsetHeight+18});laid=true;}
+function shown(t){let h=0;for(let i=0;i<steps.length;i++){const st=steps[i];const prev=i?steps[i-1].h:0;
+ if(t>=st.t){const k=st.t===0?1:Math.min(1,(t-st.t)/0.35);h=prev+(st.h-prev)*(1-Math.pow(1-k,3));}}return h;}
+window.setT=function(ms){if(!laid)lay();const t=ms/1000;
+ document.querySelectorAll('.snow').forEach(n=>{const y=(+n.dataset.y+ t*n.dataset.v)%1920;n.style.transform=`translate(${+n.dataset.x+Math.sin(t+ +n.dataset.y)*14}px,${y}px)`});
+ const sh=shown(t),h=Math.min(sh,clipH);const cl=document.getElementById('clip');cl.style.height=(h+2)+'px';
+ P.style.top=(sh>clipH?clipH-sh:0)+'px';
+ const k=t<C.end.t?0:Math.min(1,(t-C.end.t)/0.3);
+ ['clip','slot'].forEach(id=>document.getElementById(id).style.opacity=1-k);
+ document.getElementById('hook').style.opacity=1-k;
+ e.style.opacity=k;e.style.transform=`scale(${0.9+0.1*k})`;};
+setT(0);
+</script></body></html>
