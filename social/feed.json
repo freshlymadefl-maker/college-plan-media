@@ -1,8 +1,16 @@
 {
- "updated": "2026-11-12T02:18Z",
+ "updated": "2026-11-13T02:18Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DfmcQhlFUF8/",
+   "img": "social/img/DfmcQhlFUF8.jpg",
+   "date": "20261111120602",
+   "label": "Nov 11",
+   "caption": "Pinellas parents: free college classes. Register by Nov 20. \ud83d\udcda",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DfetinfiBuz/",
    "img": "social/img/DfetinfiBuz.jpg",
@@ -57,14 +65,6 @@
    "date": "20261028110459",
    "label": "Oct 28",
    "caption": "Pasco parents: free college classes for your high schooler. Apply by Dec 1 \ud83d\udcda",
-   "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/De6jixACCv7/",
-   "img": "social/img/De6jixACCv7.jpg",
-   "date": "20261025110309",
-   "label": "Oct 25",
-   "caption": "Senior year has a LOT of moving parts. So we mapped it out for you \ud83d\uddfa\ufe0f",
    "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
