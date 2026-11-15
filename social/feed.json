@@ -1,8 +1,16 @@
 {
- "updated": "2026-11-14T02:18Z",
+ "updated": "2026-11-15T02:18Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DfrlzthiMds/",
+   "img": "social/img/DfrlzthiMds.jpg",
+   "date": "20261113120559",
+   "label": "Nov 13",
+   "caption": "Best Greek life: FSU or UCF? \ud83c\udfdb\ufe0f",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DfmcQhlFUF8/",
    "img": "social/img/DfmcQhlFUF8.jpg",
@@ -57,14 +65,6 @@
    "date": "20261030110326",
    "label": "Oct 30",
    "caption": "Best dorm life in South Florida? \ud83d\udecf\ufe0f FIU vs. FAU.",
-   "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/DfCSHBGCB9Z/",
-   "img": "social/img/DfCSHBGCB9Z.jpg",
-   "date": "20261028110459",
-   "label": "Oct 28",
-   "caption": "Pasco parents: free college classes for your high schooler. Apply by Dec 1 \ud83d\udcda",
    "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
