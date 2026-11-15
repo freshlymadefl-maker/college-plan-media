@@ -511,6 +511,13 @@
   "src": "https://www.flsenate.gov/Laws/Statutes/2025/1009.72"
  },
  {
+  "date": "2027-04-16",
+  "title": "Register for the May 1 SAT",
+  "who": "Juniors",
+  "note": "Late registration until Apr 20.",
+  "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
+ },
+ {
   "date": "2027-05-01",
   "title": "UCF Regular Decision application & materials due",
   "who": "Seniors",
@@ -518,11 +525,32 @@
   "src": "https://www.ucf.edu/admissions/undergraduate/question/when-is-the-application-deadline/"
  },
  {
+  "date": "2027-05-01",
+  "title": "SAT test day",
+  "who": "Juniors",
+  "note": "",
+  "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
+ },
+ {
   "date": "2027-05-15",
   "title": "José Martí Scholarship: FAFSA must be processed",
   "who": "Seniors",
   "note": "The FAFSA must be processed error-free by May 15 for the José Martí Scholarship Challenge Grant (Rule 6A-20.023, F.A.C.).",
   "src": "https://www.flsenate.gov/Laws/Statutes/2025/1009.72"
+ },
+ {
+  "date": "2027-05-21",
+  "title": "Register for the June 5 SAT",
+  "who": "Juniors",
+  "note": "Late registration until May 25.",
+  "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
+ },
+ {
+  "date": "2027-06-05",
+  "title": "SAT test day",
+  "who": "Juniors",
+  "note": "",
+  "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
  },
  {
   "date": "2027-08-31",
