@@ -1,0 +1,57 @@
+{
+ "folder": "2026-11-20-showdown-uf-ucf",
+ "question": "Bigger campus energy: UF or UCF?",
+ "vote_q": "Which campus would you rather get lost on?",
+ "vote_note": "Tag a senior who still gets lost in the mall. 🗺️",
+ "not_affiliated": "UF or UCF",
+ "a": {
+  "label": "UF",
+  "sub": "Gainesville",
+  "cover": "photos/commons/uf-campus/2.jpg",
+  "name": "University of Florida",
+  "short": "UF",
+  "place": "Gainesville",
+  "color": "#0021A5",
+  "photo": "photos/commons/uf-campus/1.jpg",
+  "big": "2,000",
+  "bigsmall": "acres",
+  "bullets": [
+   "63,148 students (Fall 2025)",
+   "1,000+ buildings on the main campus",
+   "100+ undergraduate programs"
+  ],
+  "source": "news.ufl.edu (UF Facts)",
+  "vote": "GATORS"
+ },
+ "b": {
+  "label": "UCF",
+  "sub": "Orlando",
+  "cover": "photos/commons/ucf-student-union/4.jpg",
+  "name": "University of Central Florida",
+  "short": "UCF",
+  "place": "Orlando",
+  "color": "#B08D2E",
+  "photo": "photos/commons/ucf-student-union/2.jpg",
+  "big": "70,674",
+  "bigsmall": "students",
+  "bullets": [
+   "60,083 undergraduates (Fall 2025)",
+   "1,420-acre main campus",
+   "112 bachelor's degree programs"
+  ],
+  "source": "ucf.edu (UCF Facts 2025-26)",
+  "vote": "KNIGHTS"
+ },
+ "second": {
+  "photo": "photos/commons/uf-campus/5.jpg",
+  "pill": "Big school, big choice",
+  "title": "More acres or more people? 🏫",
+  "lead": "UF has the bigger campus. UCF has more students. Here's how they compare, straight from each school's own facts page. Then vote."
+ },
+ "credits": [
+  "\"Gville UF Auditorium04\" by Ebyabe (CC BY-SA 3.0)",
+  "\"UFHistoricBuildingBuckmanHall\" by Douglas Whitaker at en.wikipedia (CC BY 2.5)",
+  "\"Gville UF Buckman Hall01\" by Ebyabe (CC BY-SA 3.0)",
+  "\"UCF Student Union\" (2 photos) by elisfkc from Orlando, FL (CC BY-SA 2.0)"
+ ]
+}
