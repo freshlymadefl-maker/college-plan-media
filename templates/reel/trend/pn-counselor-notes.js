@@ -1,0 +1,10 @@
+window.CFG={mode:'notes',look:'pastel',dur:9.5,series:'Part 3',
+hook:{text:'things nobody tells Florida 9th grade parents:<br>you can ask for a counselor meeting 📝',size:52,y:170},
+title:'questions for the counselor',date:'November · 9th grade',
+lines:[{t:0.8,text:'1. are they in the right classes for Bright Futures?'},
+ {t:2.0,text:'2. which world language, 2 years in a row?'},
+ {t:3.2,text:'3. how does our district log service hours?'},
+ {t:4.4,text:'4. what should we think about for 10th grade?'},
+ {t:5.6,text:'5. who do I email if something feels off?'}],
+doodles:[{n:'heart-coral',x:900,y:1380,w:80,rot:10,t:5.6},{n:'star-orange',x:860,y:70,w:80,rot:-8}],
+end:{t:7.0,text:'Send to a 9th grade parent 💙',sub:'follow for Part 4',y:1530}};

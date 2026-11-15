@@ -1,0 +1,10 @@
+window.CFG={mode:'notes',look:'scrap',dur:9.5,
+hook:{text:'Thanksgiving break checklist for Florida seniors ✔️',size:56,y:170},
+title:'break to-do (realistic version)',date:'',
+lines:[{t:0.7,text:'FSU Regular Decision app (due Dec 1)',check:true,dur:0.6},
+ {t:1.8,text:'one scholarship essay draft',check:true,dur:0.5},
+ {t:2.9,text:'log in to every portal once',check:true,dur:0.5},
+ {t:4.0,text:'send any missing test scores',check:true,dur:0.5},
+ {t:5.1,text:'one full day of absolutely nothing',check:true,dur:0.6}],
+doodles:[{n:'heart-coral',x:880,y:1420,w:90,rot:10,t:5.1},{n:'star-gold',x:80,y:430,w:80,rot:-10}],
+end:{t:6.9,text:'Save + send to a senior parent 📌',y:1560}};

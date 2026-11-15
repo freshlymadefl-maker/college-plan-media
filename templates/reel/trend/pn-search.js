@@ -1,0 +1,10 @@
+window.CFG={mode:'search',look:'light',dur:9.5,
+hook:{text:'every 9th grade parent’s search history 🔍',size:58,y:180},
+query:'how to get my 9th grader to',typeFrom:-0.6,typeTo:1.0,
+sugg:[{t:1.2,text:'how to get my 9th grader to <b>talk to me</b>'},
+ {t:1.9,text:'how to get my 9th grader to <b>put the phone down</b>'},
+ {t:2.6,text:'how to get my 9th grader to <b>care about grades</b>'},
+ {t:3.3,text:'how to get my 9th grader to <b>tell me about their day</b>'},
+ {t:4.4,text:'try: <b>“what’s one class you’d keep if you could only keep one?”</b>',hl:true}],
+doodles:[{n:'star-orange',x:880,y:1360,w:80,rot:10,t:4.4},{n:'dots-coral',x:90,y:1380,w:90,rot:0}],
+end:{t:6.4,text:'their answer = a clue to future majors 💡',sub:'send to a parent who’s tired of “fine”',y:1420}};

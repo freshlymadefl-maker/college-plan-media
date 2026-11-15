@@ -1,0 +1,10 @@
+window.CFG={mode:'lock',look:'dark',dur:8.5,
+hook:{text:'a senior parent’s lock screen the week before Thanksgiving 📱',size:54,y:90},
+time:'6:47',date:'Tuesday, November 17',
+notifs:[{t:0.6,app:'GROUP CHAT (47)',icon:'💬',title:'Senior Moms 🎓',text:'has anyone heard anything from anywhere??'},
+ {t:1.6,app:'MESSAGES',icon:'👵',title:'Grandma',text:'what’s the name of the college again? I want to tell Linda'},
+ {t:2.6,app:'CALENDAR',icon:'📅',title:'Fri Nov 20',text:'Register for the Dec 5 SAT'},
+ {t:3.6,app:'MESSAGES',icon:'🧑‍🎓',title:'My senior',text:'can u pay the SAT thing 🙏'},
+ {t:4.6,app:'MESSAGES',icon:'🧑‍🎓',title:'My senior',text:'also what’s for Thanksgiving'}],
+doodles:[{n:'star-gold',x:930,y:560,w:70,rot:10,t:0.6}],
+end:{t:6.0,text:'Send to the parent with 99+ notifications 🔔',y:1590}};

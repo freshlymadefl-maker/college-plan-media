@@ -1,0 +1,12 @@
+window.CFG={mode:'weather',look:'colorblock',dur:9.5,
+hook:{text:'senior parent stress forecast:<br>Nov 16–22 ⛈️',size:62,y:150},
+title:'This week in a Florida senior house',sub:'chance of “did you send it?”: 100%',
+days:[{t:0.7,d:'MON',icon:'🌧️',note:'USF Early Action materials due',pct:'scattered portal refreshing'},
+ {t:1.6,d:'TUE',icon:'⛅',note:'calm-ish',pct:'nothing due. suspicious.'},
+ {t:2.5,d:'WED',icon:'⛈️',note:'UNF priority deadline',pct:'heavy group-chat activity'},
+ {t:3.4,d:'THU',icon:'🌤️',note:'catch your breath',pct:'light snacking'},
+ {t:4.3,d:'FRI',icon:'🌪️',note:'register for the Dec 5 SAT',pct:'late registration Nov 24'},
+ {t:5.2,d:'SAT',icon:'☀️',note:'scholarship essay… maybe',pct:'60% chance of sleeping in'},
+ {t:6.1,d:'SUN',icon:'🌈',note:'Thanksgiving break in sight',pct:'clearing by Wednesday'}],
+doodles:[{n:'burst-gold',x:900,y:40,w:110,rot:0},{n:'star-navy',x:70,y:1600,w:80,rot:-8,t:6.1}],
+end:{t:7.2,text:'Send this to the senior parent checking the radar 🌀',y:1560,c:'#0B2A4A'}};

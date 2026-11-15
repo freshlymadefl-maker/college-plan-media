@@ -1,0 +1,165 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- TREND FORMAT Reel engine (OWNER DIRECTION Nov 9 trend bank). 1080x1920, driven by window.setT(ms).
+     Load with ?cfg=<name> -> templates/reel/trend/<name>.js (window.CFG). Render:
+       python3 templates/reel/render-fast.py "templates/reel/trend-reel.html?cfg=<name>" out-silent.mp4 <secs> 30
+       python3 scripts/add_music.py out-silent.mp4 out.mp4
+     CFG = { mode:'weather'|'notes'|'lock'|'search'|'quiz'|'kinetic'|'tier', look:'colorblock'|'pastel'|'dark'|'light'|'retro'|'thanks'|'scrap',
+             dur, hook:{text,size,y}  (ALWAYS visible on frame 0), end:{t,text,sub}, doodles:[{n,x,y,w,rot,t}], series:'Part 3' (corner tag)
+             weather: {title, sub, days:[{t,d,icon,pct,note}]}
+             notes:   {title, date, lines:[{t,text,check}]}   (check:true = checklist ASMR, box ticks at t+0.45)
+             lock:    {time, date, notifs:[{t,app,icon,title,text}]}
+             search:  {query, typeFrom, typeTo, sugg:[{t,text,hl}]}
+             quiz:    {q, t0, t1, answer, why:[{t,text}]}
+             kinetic: {beats:[{t,text,size,c,bg}]}
+             tier:    {tiers:[{k,label,c}], items:[{t,tier,text}]} }  Generic UI only: no real app names/logos. -->
+<style>
+@font-face{font-family:'Caveat';src:url(../fonts/caveat-700.woff2);font-weight:400 800}
+@font-face{font-family:'Caveat Brush';src:url(../fonts/caveat-brush-400.woff2)}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{position:relative;font-family:'Inter',sans-serif;color:#0B2A4A}
+.hook{position:absolute;left:60px;right:60px;top:170px;text-align:center;z-index:20}
+.hook span{font-family:'Poppins';font-weight:700;font-size:60px;line-height:1.36;padding:6px 24px;border-radius:18px;-webkit-box-decoration-break:clone;box-decoration-break:clone;background:#fff;color:#0B2A4A}
+.series{position:absolute;left:60px;top:70px;z-index:21;font-family:'Poppins';font-weight:700;font-size:34px;padding:10px 24px;border-radius:999px;background:#0B2A4A;color:#F1E27A}
+.endc{position:absolute;left:70px;right:70px;top:1500px;text-align:center;z-index:22;opacity:0}
+.endc span{font-family:'Poppins';font-weight:700;font-size:52px;line-height:1.36;padding:8px 26px;border-radius:20px;background:#F1E27A;color:#0B2A4A;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.endc small{display:block;margin-top:22px;font-family:'Poppins';font-weight:600;font-size:36px;color:inherit}
+.logo{position:absolute;left:0;right:0;bottom:110px;text-align:center;z-index:5}.logo img{height:52px}
+.dd{position:absolute;pointer-events:none;z-index:15}
+.pop{transform-origin:center}
+/* LOOKS */
+body.colorblock{background:#F05A28}
+body.colorblock:before{content:'';position:absolute;left:0;right:0;top:0;height:640px;background:#0B2A4A}
+body.colorblock:after{content:'';position:absolute;left:0;right:0;bottom:0;height:420px;background:#F1E27A}
+body.pastel{background:linear-gradient(170deg,#FDF6EC 0%,#EAF3FB 60%,#DCEBF8 100%)}
+body.dark{background:radial-gradient(circle at 30% 20%,#2B3E63 0%,#141C2E 55%,#0A0F1A 100%);color:#fff}
+body.light{background:#F2F4F7}
+body.retro{background:#FFF1D6;background-image:radial-gradient(#E9C98E 2.2px,transparent 2.4px);background-size:22px 22px}
+body.thanks{background:linear-gradient(170deg,#FFF4E6 0%,#FBE3C6 100%)}
+body.scrap{background:#C9A77C;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px),radial-gradient(rgba(0,0,0,.06) 1px,transparent 1px);background-size:9px 9px,13px 13px}
+/* WEATHER */
+.wx{position:absolute;left:60px;right:60px;top:430px;background:#fff;border-radius:44px;padding:40px 44px;box-shadow:0 24px 60px rgba(0,0,0,.25);z-index:3}
+.wx h3{font-family:'Poppins';font-weight:800;font-size:46px;line-height:1.1;color:#0B2A4A}
+.wx .sub{font-size:28px;color:#6A7D92;margin-top:6px}
+.wx .row{display:grid;grid-template-columns:120px 110px 1fr;align-items:center;gap:18px;padding:18px 0;border-top:2px solid #EEF2F6}
+.wx .row b{font-family:'Poppins';font-weight:800;font-size:40px;color:#0B2A4A}
+.wx .row .ic{font-size:76px;line-height:1;text-align:center}
+.wx .row .nt{font-family:'Poppins';font-weight:600;font-size:33px;line-height:1.2;color:#0B2A4A}
+.wx .row .nt small{display:block;font-family:'Inter';font-weight:600;font-size:25px;color:#F05A28;margin-top:4px}
+/* NOTES */
+.note{position:absolute;left:80px;right:80px;top:480px;bottom:430px;background:#FFFDF5;border-radius:40px;padding:48px 52px;box-shadow:0 24px 60px rgba(11,42,74,.16);z-index:3}
+.note .bar{display:flex;justify-content:space-between;font-family:'Inter';font-weight:600;font-size:30px;color:#D9A300;margin-bottom:24px}
+.note h3{font-family:'Poppins';font-weight:800;font-size:50px;line-height:1.15;color:#1d2733}
+.note .dt{font-size:24px;color:#9AA6B2;margin:10px 0 26px}
+.note .ln{font-size:40px;line-height:1.32;color:#1d2733;margin-bottom:22px;display:flex;gap:20px;align-items:flex-start}
+.note .ln .bx{flex:none;width:52px;height:52px;border:4px solid #C9B27A;border-radius:12px;margin-top:2px;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:800;color:#fff}
+.note .ln .bx.on{background:#E2A400;border-color:#E2A400}
+.cur{display:inline-block;width:4px;height:44px;background:#D9A300;vertical-align:-8px;margin-left:3px}
+body.scrap .note{background:#FFFEF8;transform:rotate(-1.2deg);border-radius:6px;background-image:repeating-linear-gradient(#FFFEF8 0 58px,#DCE6F2 58px 60px)}
+body.scrap .note:before,body.scrap .note:after{content:'';position:absolute;top:-26px;width:210px;height:58px;background:rgba(241,226,122,.75);transform:rotate(-6deg)}
+body.scrap .note:before{left:60px}body.scrap .note:after{right:60px;transform:rotate(5deg)}
+body.scrap .note h3{font-family:'Caveat Brush','Caveat','Poppins';font-size:64px}
+body.scrap .note .ln{font-family:'Caveat','Inter';font-size:52px}
+/* LOCK */
+.lk{position:absolute;inset:0;z-index:2}
+.lk .tm{position:absolute;left:0;right:0;top:330px;text-align:center;font-family:'Inter';font-weight:300;font-size:200px;color:#fff;letter-spacing:-4px}
+.lk .dt{position:absolute;left:0;right:0;top:300px;text-align:center;font-family:'Inter';font-weight:600;font-size:36px;color:rgba(255,255,255,.85)}
+.stackn{position:absolute;left:46px;right:46px;top:580px;display:flex;flex-direction:column;gap:18px}
+.nf{background:rgba(255,255,255,.18);backdrop-filter:blur(20px);border-radius:36px;padding:24px 30px;color:#fff;display:grid;grid-template-columns:76px 1fr;gap:20px;align-items:start}
+body.light .nf{background:#fff;color:#1d2733;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.nf .ai{width:76px;height:76px;border-radius:18px;background:#5B8DC9;display:flex;align-items:center;justify-content:center;font-size:44px}
+.nf .hd{display:flex;justify-content:space-between;font-size:26px;opacity:.8;font-weight:600}
+.nf .tt{font-family:'Inter';font-weight:700;font-size:34px;margin-top:4px}
+.nf .tx{font-size:33px;line-height:1.3;margin-top:2px}
+/* SEARCH */
+.sr{position:absolute;left:60px;right:60px;top:560px;z-index:3}
+.sbox{background:#fff;border-radius:60px;padding:34px 44px;font-size:44px;display:flex;align-items:center;gap:24px;box-shadow:0 12px 40px rgba(0,0,0,.12);color:#1d2733}
+.sbox .mg{font-size:44px;opacity:.6}
+.sl{background:#fff;border-radius:0 0 40px 40px;margin:0 20px;box-shadow:0 12px 40px rgba(0,0,0,.10);overflow:hidden}
+.sg{padding:26px 40px;font-size:40px;line-height:1.25;border-top:2px solid #EEF1F5;display:flex;gap:22px;color:#1d2733}
+.sg i{font-style:normal;opacity:.45}
+.sg b{font-weight:700}
+.sg.hl{background:#FFF6C9}
+/* QUIZ */
+.qz{position:absolute;left:70px;right:70px;top:500px;text-align:center;z-index:3}
+.qz .q{background:#fff;border:6px solid #0B2A4A;border-radius:30px;padding:44px 40px;font-family:'Poppins';font-weight:700;font-size:58px;line-height:1.2;box-shadow:12px 12px 0 #F05A28;color:#0B2A4A}
+.qz .tf{display:flex;gap:30px;justify-content:center;margin-top:44px}
+.qz .tf div{font-family:'Poppins';font-weight:800;font-size:56px;padding:18px 44px;border-radius:999px;border:6px solid #0B2A4A;background:#fff}
+.qz .tbar{margin:44px auto 0;height:34px;border:5px solid #0B2A4A;border-radius:999px;overflow:hidden;background:#fff}
+.qz .tbar div{height:100%;background:#F05A28}
+.qz .ans{position:absolute;left:0;right:0;top:300px;font-family:'Poppins';font-weight:800;font-size:190px;color:#D7263D;transform:rotate(-8deg);text-shadow:6px 6px 0 #0B2A4A;opacity:0}
+.qz .why{margin-top:40px}
+.qz .why div{background:#0B2A4A;color:#fff;border-radius:24px;padding:24px 30px;font-size:38px;line-height:1.35;margin-top:20px;font-weight:600}
+/* KINETIC */
+.kb{position:absolute;left:60px;right:60px;top:560px;height:900px;display:flex;align-items:center;justify-content:center;text-align:center;z-index:3}
+.kb div{position:absolute;font-family:'Poppins';font-weight:800;line-height:1.02;letter-spacing:-.02em}
+/* TIER */
+.tl{position:absolute;left:40px;right:40px;top:480px;z-index:3}
+.tr{display:grid;grid-template-columns:150px 1fr;min-height:186px;margin-bottom:12px;border-radius:22px;overflow:hidden;background:rgba(255,255,255,.92)}
+.tr .lb{display:flex;align-items:center;justify-content:center;font-family:'Poppins';font-weight:800;font-size:64px;color:#0B2A4A;text-align:center;line-height:1}
+.tr .lb small{display:block;font-size:22px;font-weight:700;margin-top:4px}
+.tr .its{display:flex;flex-wrap:wrap;gap:12px;align-content:center;padding:14px 16px}
+.chip{font-family:'Poppins';font-weight:700;font-size:36px;line-height:1.15;background:#0B2A4A;color:#fff;border-radius:16px;padding:14px 20px}
+</style></head>
+<body>
+<div id="root"></div>
+<div class="logo"><img id="logo" src="../wordmark_navy.png"></div>
+<script>
+const q=new URLSearchParams(location.search).get('cfg');
+document.write('<script src="trend/'+q+'.js"><\/script>');
+</script>
+<script>
+const C=window.CFG,R=document.getElementById('root'),E=[];
+document.body.classList.add(C.look||'pastel');
+if(['dark','colorblock'].includes(C.look)) document.getElementById('logo').src='../wordmark_white.png';
+if(C.look==='colorblock'){document.querySelector('.logo').style.display='none'}
+function el(tag,cls,html,parent){const d=document.createElement(tag);if(cls)d.className=cls;if(html!=null)d.innerHTML=html;(parent||R).appendChild(d);return d;}
+function at(d,t,kind){E.push({d,t:t*1000,kind:kind||'pop'});return d;}
+const ease=x=>1-Math.pow(1-Math.min(1,Math.max(0,x)),3);
+// hook (frame 0)
+if(C.hook){const h=el('div','hook','<span>'+C.hook.text+'</span>');if(C.hook.size)h.querySelector('span').style.fontSize=C.hook.size+'px';if(C.hook.y!=null)h.style.top=C.hook.y+'px';
+  if(C.hook.bg){h.querySelector('span').style.background=C.hook.bg;h.querySelector('span').style.color=C.hook.c||'#fff'}
+  if(C.hook.until!=null)E.push({d:h,t:0,until:C.hook.until*1000,kind:'show'});}
+if(C.series){el('div','series',C.series)}
+const M=C.mode;
+if(M==='weather'){const w=el('div','wx','<h3>'+C.title+'</h3><div class="sub">'+(C.sub||'')+'</div>');
+  C.days.forEach(x=>at(el('div','row','<b>'+x.d+'</b><div class="ic">'+x.icon+'</div><div class="nt">'+x.note+(x.pct?'<small>'+x.pct+'</small>':'')+'</div>',w),x.t));}
+if(M==='notes'){const n=el('div','note','<div class="bar"><span>‹ Notes</span><span>Done</span></div><h3>'+C.title+'</h3><div class="dt">'+(C.date||'')+'</div>');
+  C.lines.forEach((x,i)=>{const ln=el('div','ln','',n);let bx=null;if(x.check){bx=el('div','bx','',ln)}const sp=el('span','',null,ln);
+    E.push({d:ln,t:x.t*1000,kind:'type',sp,text:x.text,bx,dur:(x.dur||Math.min(0.9,0.03*x.text.length))*1000});});}
+if(M==='lock'){const l=el('div','lk','<div class="dt">'+C.date+'</div><div class="tm">'+C.time+'</div>');const s=el('div','stackn',null,l);
+  C.notifs.forEach(x=>{const d=document.createElement('div');d.className='nf';d.innerHTML='<div class="ai">'+(x.icon||'💬')+'</div><div><div class="hd"><span>'+x.app+'</span><span>'+(x.ago||'now')+'</span></div><div class="tt">'+x.title+'</div><div class="tx">'+x.text+'</div></div>';s.prepend(d);at(d,x.t,'drop');});}
+if(M==='search'){const s=el('div','sr');const b=el('div','sbox','<span class="mg">🔍</span><span id="qq"></span><span class="cur"></span>',s);const l=el('div','sl',null,s);
+  E.push({kind:'q',t:0});C.sugg.forEach(x=>at(el('div','sg'+(x.hl?' hl':''),'<i>🔍</i><span>'+x.text+'</span>',l),x.t,'show'));}
+if(M==='quiz'){const z=el('div','qz','<div class="q">'+C.q+'</div><div class="tf"><div>TRUE</div><div>FALSE</div></div><div class="tbar"><div id="tb"></div></div><div class="ans">'+C.answer+'</div><div class="why"></div>');
+  E.push({kind:'timer',t:C.t0*1000});at(z.querySelector('.ans'),C.t1,'stamp');C.why.forEach(x=>at(el('div','',x.text,z.querySelector('.why')),x.t));}
+if(M==='kinetic'){const k=el('div','kb');C.beats.forEach((x,i)=>{const d=el('div','',x.text,k);d.style.fontSize=(x.size||150)+'px';d.style.color=x.c||'#0B2A4A';
+  if(x.bg){d.style.background=x.bg;d.style.padding='10px 34px';d.style.borderRadius='26px'}if(x.font)d.style.fontFamily=x.font;
+  const nx=C.beats[i+1];E.push({d,t:x.t*1000,until:nx?nx.t*1000:null,kind:'punch'});});}
+if(M==='tier'){const tl=el('div','tl');const rows={};C.tiers.forEach(x=>{const r=el('div','tr','<div class="lb" style="background:'+x.c+'">'+x.k+(x.label?'<small>'+x.label+'</small>':'')+'</div><div class="its"></div>',tl);rows[x.k]=r.querySelector('.its')});
+  C.items.forEach(x=>at(el('div','chip',x.text,rows[x.tier]),x.t,'drop'));}
+(C.doodles||[]).forEach(o=>{const d=el('img','dd');d.src='../doodles/'+o.n+'.svg';Object.assign(d.style,{left:o.x+'px',top:o.y+'px',width:o.w+'px'});d.dataset.rot=o.rot||0;E.push({d,t:(o.t||0)*1000,kind:'doodle'});});
+if(C.end){const e=el('div','endc','<span>'+C.end.text+'</span>'+(C.end.sub?'<small>'+C.end.sub+'</small>':''));if(C.end.y)e.style.top=C.end.y+'px';if(C.end.c)e.style.color=C.end.c;E.push({d:e,t:C.end.t*1000,kind:'pop'});}
+window.setT=function(t){
+  E.forEach(e=>{
+    if(e.kind==='q'){const n=Math.round(C.query.length*Math.min(1,Math.max(0,(t-C.typeFrom*1000)/((C.typeTo-C.typeFrom)*1000))));document.getElementById('qq').textContent=C.query.slice(0,n);
+      document.querySelector('.cur').style.opacity=(Math.floor(t/400)%2||t<C.typeTo*1000)?1:0;return;}
+    if(e.kind==='timer'){const p=Math.min(1,Math.max(0,(t-e.t)/((C.t1-C.t0)*1000)));document.getElementById('tb').style.width=(100-100*p)+'%';return;}
+    const on=t>=e.t&&(e.until==null||t<e.until);
+    if(e.kind==='show'){e.d.style.display=on?'':'none';return;}
+    if(e.kind==='type'){e.d.style.display=t>=e.t?'':'none';const k=Math.min(1,(t-e.t)/e.dur);const n=Math.round(e.text.length*k);
+      e.sp.innerHTML=e.text.slice(0,n)+(k<1&&t>=e.t?'<span class="cur"></span>':'');
+      if(e.bx){const ok=t>=e.t+e.dur+250;e.bx.classList.toggle('on',ok);e.bx.textContent=ok?'✓':'';e.bx.style.transform=ok?'scale('+(1.25-.25*ease((t-e.t-e.dur-250)/160))+')':''}return;}
+    e.d.style.display=on?'':'none';
+    if(e.t<=0&&e.kind!=='punch'){e.d.style.opacity=1;e.d.style.transform=e.kind==='doodle'?'rotate('+e.d.dataset.rot+'deg)':'';return;}
+    const k=ease((t-e.t)/(e.kind==='stamp'?140:180));
+    if(e.kind==='doodle'){e.d.style.opacity=Math.min(1,k*1.4);e.d.style.transform='rotate('+e.d.dataset.rot+'deg) scale('+(0.7+0.3*k)+')';return;}
+    if(e.kind==='drop'){e.d.style.opacity=Math.min(1,k*1.5);e.d.style.transform='translateY('+(-60*(1-k))+'px)';return;}
+    if(e.kind==='stamp'){e.d.style.opacity=t>=e.t?1:0;e.d.style.transform='rotate(-8deg) scale('+(1.8-.8*k)+')';return;}
+    if(e.kind==='punch'){const s=e.t<=0?1:(0.6+0.4*k)+(k>=1?0:0.08*Math.sin(k*Math.PI));e.d.style.transform='scale('+s+')';e.d.style.opacity=1;return;}
+    e.d.style.opacity=Math.min(1,k*1.4);e.d.style.transform='scale('+(0.82+0.18*k)+')';
+  });
+};
+setT(0);
+</script></body></html>

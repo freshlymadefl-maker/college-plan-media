@@ -1,0 +1,6 @@
+voice: en-US-AvaNeural
+rate: +6%
+Number one: Academic Scholars need one hundred volunteer service hours. Medallion Scholars need seventy-five.
+Number two: paid work counts. One hundred paid work hours, or a one-hundred-hour mix of paid and volunteer hours, works for either award.
+Number three: hours are earned during high school, and your school district approves the activities and how they're logged.
+So ask your counselor how your district tracks hours, and check your student's progress with our free Bright Futures checker. Link in bio.
