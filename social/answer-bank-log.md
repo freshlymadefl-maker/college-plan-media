@@ -1,5 +1,10 @@
 # Answer bank log (newest first)
 
+## 2026-11-15
+- We applied to UCF Early Action. When do we hear back, and what if we missed a deadline?
+- Is it too late to sign up for the Dec 5 SAT, and does it still count for Bright Futures?
+- Our FAFSA says our SAI is a number. Is that what we have to pay?
+
 ## 2026-11-08
 - We already did the FAFSA. Do we also need the FFAA for Bright Futures?
 - FSU's regular deadline is Dec 1 — what's due and when do we hear back?
