@@ -1,0 +1,10 @@
+window.CFG={mode:'search',look:'scrap',dur:9.5,
+hook:{text:'every senior parent’s search history in November 🔍',size:58,y:170},
+query:'how to get my senior to',typeFrom:-0.6,typeTo:1.0,
+sugg:[{t:1.2,text:'how to get my senior to <b>answer a text</b>'},
+ {t:1.9,text:'how to get my senior to <b>tell me which apps are done</b>'},
+ {t:2.6,text:'how to get my senior to <b>remember the January deadlines</b>'},
+ {t:3.3,text:'how to get my senior to <b>say more than “it’s fine”</b>'},
+ {t:4.4,text:'try: <b>one shared tracker so nobody has to ask</b>',hl:true}],
+doodles:[{n:'star-orange',x:880,y:1360,w:80,rot:10,t:4.4},{n:'dots-coral',x:90,y:1380,w:90,rot:0}],
+end:{t:6.2,text:'deadlines, to-dos and alerts in one sheet ✅',sub:'tap the link for the College Application Tracker',y:1490}};

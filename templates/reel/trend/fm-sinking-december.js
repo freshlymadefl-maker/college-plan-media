@@ -1,0 +1,11 @@
+window.CFG={mode:'lock',look:'light',dur:9,logo:false,logoText:'FRESHLYMADEFL',
+bg:'linear-gradient(170deg,#4E7A5A 0%,#2F5A3B 55%,#22402B 100%)',logoColor:'#FFE27A',logoBottom:56,
+hook:{text:'POV: it’s December and every “surprise” bill shows up at once',size:54,y:80,bg:'#FFE27A',c:'#22402B'},
+time:'7:12',date:'Tuesday, December 1',
+notifs:[{t:0.5,app:'CALENDAR',icon:'🎄',title:'Holiday gifts',text:'14 people still on the list'},
+ {t:1.4,app:'REMINDERS',icon:'🚗',title:'Car registration',text:'renews this month'},
+ {t:2.3,app:'MAIL',icon:'📦',title:'Yearly subscription',text:'your annual plan renews tomorrow'},
+ {t:3.2,app:'MESSAGES',icon:'🧒',title:'My kid',text:'the class party needs $15 by friday'},
+ {t:4.1,app:'BANK',icon:'🏦',title:'Account alert',text:'your balance is below your alert amount'}],
+doodles:[{n:'star-orange',x:960,y:1470,w:70,rot:10,t:0.5}],
+end:{t:5.4,text:'plot twist: none of these were surprises 🫠',sub:'a sinking fund for each one = a calm December 🎄<br>send this to your budget buddy',y:1545,c:'#fff'}};
