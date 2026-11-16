@@ -88,6 +88,7 @@ Real people on screen win. We can't repost, and we don't use AI people, so we us
 - Use it for College Plan funny Reels too, not only Etsy videos. First ones: pinterest/videos/meme-deadline-screenshot.mp4 (also an IG/FB Reel Wed Oct 28 6pm), meme-cake-saturday.mp4, meme-custom-order.mp4.
 
 ## Log (newest first)
+- 2026-11-16 (Amazon task, holiday push): gift pins 10am, board College Planning, SmartLink: Nov 17 cp_amz_senior_xmas "Christmas Gifts for High School Seniors Going to College" | Nov 18 cp_amz_teen_practical "Practical Christmas Gifts for Teens They'll Actually Use" | Nov 19 cp_amz_college_everything "Gifts for College Students Who Have Everything (Cozy Dorm Ideas)". Tool pinterest/tools/cp_amz_gifts_1116.py.
 - 2026-11-15 (weekly run, week Nov 16-22; 26 open slots filled: 7am Nov 17/19-22, all 1pm/4pm/8pm. 10am Nov 17-22 left EMPTY on purpose for the Amazon holiday gift pins; Nov 16 7am/10am + Nov 18 7am were already Amazon pins). Media commit 87ecda033a23f4bfd7027483e0121e853ecaddb5.
   - Nov 16: 1pm g33_price_per_serving (Pricing for Makers, Cake) | 4pm pin_fsa_10 "5 Numbers In, A Plan Out" (Money & Budget, FSA) | 8pm pin_order_9 "Deposits and Balances, Sorted" (Small Business Spreadsheets, Order)
   - Nov 17: 7am cp_tracker_16 "Every Senior Task Has a Countdown" (College App Tracker) | 1pm g34_receipts_keep (Small Business Spreadsheets, P&L) | 4pm pin_candle_10 "Know Your Cost Per Wick, Per Jar" (Pricing for Makers, Candle) | 8pm pin_sinking_10 "Watch Every Goal Grow" (Money & Budget, Sinking Funds)
