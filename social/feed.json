@@ -1,8 +1,16 @@
 {
- "updated": "2026-11-15T02:18Z",
+ "updated": "2026-11-16T02:18Z",
  "instagram": "https://www.instagram.com/college.plan/",
  "facebook": "https://www.facebook.com/1362425533621807",
  "posts": [
+  {
+   "url": "https://www.instagram.com/p/DfuKY-LCNq4/",
+   "img": "social/img/DfuKY-LCNq4.jpg",
+   "date": "20261114120408",
+   "label": "Nov 14",
+   "caption": "Black Florida seniors: a $40,000 scholarship, due Dec 1. \ud83c\udf93",
+   "type": "FEED_CAROUSEL_ALBUM"
+  },
   {
    "url": "https://www.instagram.com/p/DfrlzthiMds/",
    "img": "social/img/DfrlzthiMds.jpg",
@@ -57,14 +65,6 @@
    "date": "20261031110319",
    "label": "Oct 31",
    "caption": "A 2.5 GPA can apply for this $20,000 scholarship \ud83c\udf93",
-   "type": "FEED_CAROUSEL_ALBUM"
-  },
-  {
-   "url": "https://www.instagram.com/p/DfHbhpuFYMQ/",
-   "img": "social/img/DfHbhpuFYMQ.jpg",
-   "date": "20261030110326",
-   "label": "Oct 30",
-   "caption": "Best dorm life in South Florida? \ud83d\udecf\ufe0f FIU vs. FAU.",
    "type": "FEED_CAROUSEL_ALBUM"
   }
  ]
