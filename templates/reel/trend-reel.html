@@ -4,7 +4,7 @@
      Load with ?cfg=<name> -> templates/reel/trend/<name>.js (window.CFG). Render:
        python3 templates/reel/render-fast.py "templates/reel/trend-reel.html?cfg=<name>" out-silent.mp4 <secs> 30
        python3 scripts/add_music.py out-silent.mp4 out.mp4
-     CFG = { mode:'weather'|'notes'|'lock'|'search'|'quiz'|'kinetic'|'tier', look:'colorblock'|'pastel'|'dark'|'light'|'retro'|'thanks'|'scrap',
+     CFG = { mode:'weather'|'notes'|'lock'|'search'|'quiz'|'kinetic'|'tier', look:'colorblock'|'pastel'|'dark'|'light'|'retro'|'thanks'|'scrap'|'xmas' (December green + snow),
              dur, logo:false + logoText:'FRESHLYMADEFL' (FreshlyMadeFL videos), hook:{text,size,y}  (ALWAYS visible on frame 0), end:{t,text,sub}, doodles:[{n,x,y,w,rot,t}], series:'Part 3' (corner tag)
              weather: {title, sub, days:[{t,d,icon,pct,note}]}
              notes:   {title, date, lines:[{t,text,check}]}   (check:true = checklist ASMR, box ticks at t+0.45)
@@ -38,6 +38,9 @@ body.light{background:#F2F4F7}
 body.retro{background:#FFF1D6;background-image:radial-gradient(#E9C98E 2.2px,transparent 2.4px);background-size:22px 22px}
 body.thanks{background:linear-gradient(170deg,#FFF4E6 0%,#FBE3C6 100%)}
 body.scrap{background:#C9A77C;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px),radial-gradient(rgba(0,0,0,.06) 1px,transparent 1px);background-size:9px 9px,13px 13px}
+body.xmas{background:radial-gradient(rgba(255,255,255,.55) 3px,transparent 3.5px) 0 0/97px 113px,radial-gradient(rgba(255,255,255,.35) 2px,transparent 2.5px) 41px 57px/71px 83px,radial-gradient(circle at 50% 28%,#1E6B47 0%,#0C3626 75%);color:#fff}
+body.xmas .hook span{background:#FFFDF6;color:#9B1C1C}
+body.xmas .endc span{background:#E9C46A;color:#0C3626}
 /* WEATHER */
 .wx{position:absolute;left:60px;right:60px;top:430px;background:#fff;border-radius:44px;padding:40px 44px;box-shadow:0 24px 60px rgba(0,0,0,.25);z-index:3}
 .wx h3{font-family:'Poppins';font-weight:800;font-size:46px;line-height:1.1;color:#0B2A4A}
@@ -97,7 +100,7 @@ body.light .nf{background:#fff;color:#1d2733;box-shadow:0 10px 30px rgba(0,0,0,.
 /* TIER */
 .tl{position:absolute;left:40px;right:40px;top:480px;z-index:3}
 .tr{display:grid;grid-template-columns:150px 1fr;min-height:186px;margin-bottom:12px;border-radius:22px;overflow:hidden;background:rgba(255,255,255,.92)}
-.tr .lb{display:flex;align-items:center;justify-content:center;font-family:'Poppins';font-weight:800;font-size:64px;color:#0B2A4A;text-align:center;line-height:1}
+.tr .lb{display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Poppins';font-weight:800;font-size:64px;color:#0B2A4A;text-align:center;line-height:1}
 .tr .lb small{display:block;font-size:22px;font-weight:700;margin-top:4px}
 .tr .its{display:flex;flex-wrap:wrap;gap:12px;align-content:center;padding:14px 16px}
 .chip{font-family:'Poppins';font-weight:700;font-size:36px;line-height:1.15;background:#0B2A4A;color:#fff;border-radius:16px;padding:14px 20px}
@@ -112,7 +115,7 @@ document.write('<script src="trend/'+q+'.js"><\/script>');
 <script>
 const C=window.CFG,R=document.getElementById('root'),E=[];
 document.body.classList.add(C.look||'pastel');
-if(['dark','colorblock'].includes(C.look)) document.getElementById('logo').src='../wordmark_white.png';
+if(['dark','colorblock','xmas'].includes(C.look)) document.getElementById('logo').src='../wordmark_white.png';
 if(C.look==='colorblock'){document.querySelector('.logo').style.display='none'}
 if(C.bg){document.body.style.background=C.bg}
 if(C.logo===false){const lg=document.querySelector('.logo');lg.innerHTML=C.logoText?'<span style="font-family:Poppins;font-weight:800;font-size:34px;letter-spacing:6px;color:'+(C.logoColor||(['dark','colorblock'].includes(C.look)?'#fff':'#3B3355'))+'">'+C.logoText+'</span>':'';if(C.logoBottom!=null)lg.style.bottom=C.logoBottom+'px';}
