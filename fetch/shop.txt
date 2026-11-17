@@ -1,1 +1,0 @@
-warrior-kid/site/html/shop-products.json https://shop.warriorkid.com/products.json?limit=250
