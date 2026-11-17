@@ -1,0 +1,5 @@
+warrior-kid/site/html/squad.html https://www.warriorkid.com/squad
+warrior-kid/site/html/gai.html https://www.warriorkid.com/get-after-it
+warrior-kid/site/html/movie.html https://www.warriorkid.com/the-movie
+warrior-kid/site/html/authors.html https://www.warriorkid.com/the-authors
+warrior-kid/site/auj-nav.png https://static.wixstatic.com/media/8bc9d7_71d528a2b86f42b3af5d082064a69b52~mv2.png
