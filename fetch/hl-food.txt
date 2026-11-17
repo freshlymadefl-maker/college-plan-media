@@ -1,0 +1,5 @@
+warrior-kid/site/html/home.html https://www.warriorkid.com/
+warrior-kid/site/html/sitemap.xml https://www.warriorkid.com/sitemap.xml
+warrior-kid/site/jf-choc-front.jpg https://jockofuel.com/cdn/shop/files/CHOC_FRONT_a48ff137-662f-4f7c-b19c-661c0f9d5258.jpg?width=2000
+warrior-kid/site/jf-choc-kids.jpg https://jockofuel.com/cdn/shop/files/JF-Tetras-Web-ChocKids.jpg?width=2000
+warrior-kid/site/jf-flavor.png https://jockofuel.com/cdn/shop/files/ChocFlavor-WKShakes.png?width=2000
