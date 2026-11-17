@@ -1,0 +1,12 @@
+warrior-kid/site/w/auj.png https://static.wixstatic.com/media/8bc9d7_7ba5936e7abe42ad9d86520cad7a8c70~mv2.png
+warrior-kid/site/w/jocko-author.png https://static.wixstatic.com/media/8bc9d7_cc13c0ed31e24ef0bf894d73cff5309d~mv2.png
+warrior-kid/site/w/g1.png https://static.wixstatic.com/media/8bc9d7_1b6b5805607e4e839fa3c272406eb483~mv2.png
+warrior-kid/site/w/g2.png https://static.wixstatic.com/media/8bc9d7_56226676d9f142ed918df5afc39997cf~mv2.png
+warrior-kid/site/w/g3.png https://static.wixstatic.com/media/8bc9d7_66c8d1c64294426b97e73cea150c933a~mv2.png
+warrior-kid/site/w/g4.png https://static.wixstatic.com/media/8bc9d7_a54120d2caaf4d089a8fb13359c20a0a~mv2.png
+warrior-kid/site/w/g5.png https://static.wixstatic.com/media/8bc9d7_ff47479b6cb84aa38ad49959ad8bebea~mv2.png
+warrior-kid/site/w/girl-fun.png https://static.wixstatic.com/media/8bc9d7_f60af6f6a79d4ceb9af71558c7673e69~mv2.png
+warrior-kid/site/w/kidsgi.png https://static.wixstatic.com/media/8bc9d7_654fa229ad7441609f5efdc325e4bf9c~mv2.png
+warrior-kid/site/w/auj-q1.jpg https://static.wixstatic.com/media/8bc9d7_06def3cdf5064332b175402643809014f000.jpg
+warrior-kid/site/w/auj-q2.jpg https://static.wixstatic.com/media/8bc9d7_1bcdf85590bc4d509a993765bc079c5ef000.jpg
+warrior-kid/site/w/auj-vg.jpg https://static.wixstatic.com/media/8bc9d7_b0520b9630dd4cbd99064413383e660bf000.jpg
