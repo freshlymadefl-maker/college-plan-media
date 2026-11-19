@@ -1,0 +1,10 @@
+window.CFG={mode:'lock',look:'xmas',dur:9.5,
+hook:{text:'me: we\'re doing a SMALL<br>Christmas this year 🎄<br>my lock screen by Thanksgiving:',size:46,y:60},
+time:'7:12',date:'Sunday, November 22',
+notifs:[{t:0.6,app:'ORDER UPDATE',icon:'📦',title:'Shipped',text:'wearable blanket hoodie'},
+ {t:1.6,app:'MESSAGES',icon:'🧑‍🎓',title:'My college kid',text:'why is there a box with my name on it 👀'},
+ {t:2.6,app:'ORDER UPDATE',icon:'📦',title:'Delivered',text:'white noise machine + lap desk'},
+ {t:3.6,app:'MESSAGES',icon:'💬',title:'My husband',text:'I thought we said SMALL'},
+ {t:4.6,app:'ORDER UPDATE',icon:'📦',title:'Shipped',text:'bedside caddy (it\'s small, it counts)'}],
+doodles:[{n:'star-gold',x:940,y:1700,w:70,rot:10,t:0.6}],
+end:{t:6.2,text:'Shop my picks: link in bio 🛒',y:1590,sub:'send to the parent who also said "small"',c:'#fff'}};
