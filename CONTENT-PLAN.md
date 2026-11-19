@@ -136,6 +136,7 @@ Spacing rule still holds: at least 4 hours between Instagram posts (Stories exce
 Industry roundups say carousels win on engagement, but for an account our size Instagram shows carousels almost only to followers (ours reached 1–14 each). Reels are the only thing that reaches non-followers. So: 10–11 Reels + 3 carousels a week until we pass ~1,000 followers, then re-test. Every winning carousel still gets remixed into a Reel. Instagram (per Adam Mosseri) may re-show a carousel starting on SLIDE 2, so slide 2 must work as a second cover.
 
 ## Native Reels (Oct 13) — the default Reel style now
+- COVER: every Native Reel gets a custom cover via scripts/make_cover.py + videoThumbnailUrl (see "REEL COVERS" at the top).
 Engine: templates/reel/native-reel.html + one config per Reel in templates/reel/native/<name>.js (see the 8 examples: gc-october = group chat, texting-deadline = texting your senior, translations = says vs. means, tour-weather = photo POV with cuts, bingo = card that stamps itself, oct-4things / bf2028 / checker = hook + list over a real photo).
 Render: `python3 templates/reel/render-fast.py "templates/reel/native-reel.html?cfg=<name>" out-silent.mp4 <secs> 30 && python3 scripts/add_music.py out-silent.mp4 out.mp4` (~1 min). Preview frames first with Playwright (setT(ms)) and LOOK at them.
 Rules (from what worked):
