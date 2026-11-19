@@ -42,6 +42,15 @@ Rules, every week:
 ### Look bank (rotate)
 Clean navy (our classic) · Scrapbook (kraft paper, tape, polaroids, Caveat handwriting, doodles) · Bold color-block (big flat color panels, oversized type, gold accents) · Phone UI (lock screen / notes / chat, light mode and dark mode) · Soft pastel (sky + cream, rounded cards) · Seasonal (Thanksgiving / December / Valentine's palettes) · Retro print (halftone dots, sticker labels, slightly off-register type).
 
+## REEL COVERS (owner, Nov 19: "make sure you are choosing a good cover image to use for the reels? most of them are mostly blank") — EVERY Reel and TikTok video
+Why they looked blank: our formats BUILD on screen (empty checklist/tier list/search bar, kinetic words), so frame 0 is nearly empty, and the hook sits near the top where the profile grid's center crop cuts it off.
+Rule: every Instagram/Facebook Reel and every TikTok video gets a custom cover image.
+- Make it: `python3 scripts/make_cover.py <video.mp4> covers/<name>.jpg --t <seconds> --hook "<the on-screen hook>" [--kicker "<audience, e.g. 9th grade parents>"]`. Pick --t where the MOST content is on screen (fully built list/tier/checklist/thread), before the end card. It puts the hook big in the middle safe zone over a blurred frame, with the finished frame as a tilted card.
+- Carousel slideshows and videos whose first frame is already a designed title card: `--t 0.2 --frame` (that frame as-is).
+- LOOK at the JPG with Read (and picture a center 3:4 crop): hook big and readable, nothing blank or cut off.
+- Push it, then set info.videoThumbnailUrl = https://raw.githubusercontent.com/freshlymadefl-maker/college-plan-media/<commit sha>/covers/<name>.jpg on the Reel (IG + FB) and on its TikTok twin. Not for Stories or Pinterest pins (Metricool rejects it there). Confirm the response shows a static.metricool.com videoThumbnailUrl.
+- Nov 19: added covers to all 21 Reels/TikToks scheduled Nov 19-28 (covers/).
+
 ## GROWTH RESET Nov 1 (owner: "so much good content, just no one is seeing it" — read this FIRST; it adds to the Oct 19 direction, the volume floor stays)
 DATA Oct 18–Nov 1 (Metricool): our own IG Reels are stuck at a 60–140 reach floor (Instagram's first test batch) and never break out: 0–1 shares and 0–1 saves on every Reel. Best own: "your 9th grader doesn't need a college list yet" 193, "you'll blink" 140, "UF STARS" 139, "due this week" 132, brag folder 128. The credited repost (@alexroeds, emotional) hit 1,189 with 10 shares. Followers ~40. TikTok: every video shows 0 views on the public profile even though posts are public (account-level problem; owner is checking the in-app Account status). Pinterest: pins got impressions Oct 15–20, then ~0 since Oct 22. Newsletter: 13 subscribers, 0 referrals; nothing sent since Oct 13 (3 weeks of drafts waiting).
 So the problem is distribution, not content. Instagram only pushes a Reel past the first batch when people SEND it. Every rule below exists to earn sends.
