@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Optional CFG (Nov 22): bg, hookColor, disc (bottom line; default Amazon disclosure), pillBg, pillColor. FreshlyMadeFL: set disc to the wordmark text. -->
 <html><head><meta charset="utf-8">
 <!-- RECEIPT PRINTING trend format (CONTENT-PLAN.md bank), December look. 1080x1920, driven by setT(ms).
      Load with ?cfg=<name> -> templates/reel/receipt/<name>.js (window.CFG). Never real prices.
@@ -42,6 +43,10 @@ document.write('<script src="receipt/'+q+'.js"><\/script>');
 <script>
 const C=window.CFG;
 document.querySelector('#hook span').innerHTML=C.hook;
+if(C.bg) document.body.style.background=C.bg;
+if(C.hookColor) document.querySelector('#hook span').style.color=C.hookColor;
+if(C.disc!==undefined) document.querySelector('.disc').innerHTML=C.disc;
+if(C.pillBg){const pl=document.querySelector('.end .pill');pl.style.background=C.pillBg;if(C.pillColor)pl.style.color=C.pillColor;}
 const hookB=()=>document.getElementById('hook').getBoundingClientRect().bottom;
 let html=`<div class="c b">${C.title}</div><div class="c">${C.sub}</div><div class="dash"></div>`;
 C.lines.forEach((x,i)=>{html+=`<div class="ln" id="ln${i}"><span class="l">${x.l}</span><span class="r">${x.r}</span></div>`});

@@ -1,0 +1,10 @@
+window.CFG={mode:'notes',look:'pastel',dur:9.5,lnSize:46,
+hook:{text:'things my senior said were “done”<br>(a notes app investigation) 🔍',size:52,y:170},
+title:'“done” (fact-checked)',date:'senior year · November',
+lines:[{t:0.8,text:'the essay → <b>it’s a title</b>'},
+ {t:1.9,text:'asked for recs → <b>“thought about it”</b>'},
+ {t:3.0,text:'sent test scores → <b>to one school</b>'},
+ {t:4.1,text:'paid the app fee → <b>it’s in the cart</b>'},
+ {t:5.2,text:'the FAFSA → <b>read the email about it</b>'}],
+doodles:[{n:'star-orange',x:880,y:1380,w:80,rot:10,t:5.2},{n:'dots-coral',x:80,y:1400,w:90,rot:0}],
+end:{t:6.6,text:'now “done” means done ✅',sub:'a Ready count for every college<br>tap the link: College Application Tracker',y:1490}};
