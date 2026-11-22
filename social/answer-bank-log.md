@@ -1,5 +1,10 @@
 # Answer bank log (newest first)
 
+## 2026-11-22
+- We applied to UF Early Action. When do we hear back, and is it too late to apply Regular?
+- Is there a deadline for the FAFSA, or can we wait until spring?
+- Can my kid use Bright Futures at an out-of-state or private college?
+
 ## 2026-11-15
 - We applied to UCF Early Action. When do we hear back, and what if we missed a deadline?
 - Is it too late to sign up for the Dec 5 SAT, and does it still count for Bright Futures?
