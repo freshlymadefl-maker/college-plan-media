@@ -1,0 +1,87 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Faceless VOICEOVER Reel (1080x1920). Driven by window.setT(ms). Needs <name>.words.js (window.WORDS = cleaned word timings from the TTS action) and section markers in CFG.
+     Render: python3 render-reel.py voiceover-reel.html out.mp4 <secs> 30, then mux the mp3 with ffmpeg. -->
+<style>
+:root { --navy:#0B2A4A; --gold:#B5A21F; --gold2:#F1E27A; }
+* { box-sizing:border-box; margin:0; }
+body { width:1080px; height:1920px; overflow:hidden; background:#F05A28; font-family:'Inter',sans-serif; }
+body:before{content:'';position:absolute;left:0;right:0;top:0;height:800px;background:#0B2A4A} body:after{content:'';position:absolute;left:0;right:0;bottom:0;height:470px;background:#F1E27A;z-index:-0}
+.bg { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; will-change:transform,opacity; }
+.shade { position:absolute; inset:0; background:linear-gradient(180deg,rgba(8,31,56,.78) 0%,rgba(8,31,56,.25) 30%,rgba(8,31,56,.25) 55%,rgba(8,31,56,.85) 100%); }
+.top { position:absolute; left:70px; right:70px; top:250px; text-align:center; }
+.chip { position:relative; display:inline-block; font-family:'Poppins'; font-weight:700; font-size:34px; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:#F05A28; border-radius:999px; padding:14px 34px; }
+.top{z-index:3} .capbox{z-index:2} .cap{z-index:3} .foot{z-index:3} .end{z-index:10} img{position:relative;z-index:4}
+.title { margin-top:26px; font-family:'Poppins'; font-weight:700; font-size:78px; line-height:1.05; color:#fff; position:relative; }
+.title em { font-family:'Lora'; font-weight:500; color:#F1E27A; }
+.cap { position:absolute; left:60px; right:60px; top:1020px; text-align:center; font-family:'Poppins'; font-weight:800; font-size:92px; line-height:1.12; color:#0B2A4A; }
+.capbox { position:absolute; left:50px; right:50px; top:930px; height:420px; background:#fff; border-radius:48px; box-shadow:0 20px 60px rgba(11,42,74,.12); }
+.cap span { display:inline-block; margin:0 6px; }
+.cap span.on { color:#F05A28; }
+.foot { position:absolute; left:0; right:0; bottom:330px; text-align:center; }
+.foot img { height:62px; opacity:.95; }
+.end { position:absolute; inset:0; background:#F1E27A; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 90px; opacity:0; }
+.end h2 { font-family:'Poppins'; font-weight:700; font-size:96px; line-height:1.05; color:#0B2A4A; }
+.end h2 em { font-family:'Lora'; font-weight:500; color:#F05A28; }
+.end p { font-size:42px; color:#3A4F66; margin-top:30px; }
+.end .cta { margin-top:60px; background:#0B2A4A; color:#fff; font-family:'Poppins'; font-weight:700; font-size:46px; border-radius:24px; padding:30px 54px; }
+.end img { margin-top:70px; height:62px; }
+</style></head>
+<body>
+<div class="bg" id="bg0" style="display:none"></div>
+<div class="bg" id="bg1" style="display:none"></div>
+<div class="bg" id="bg2" style="display:none"></div>
+<div class="bg" id="bg3" style="display:none"></div>
+<div class="capbox"></div>
+<div class="top"><span class="chip" id="chip">Florida parents</span><div class="title" id="title"></div></div>
+<div class="cap" id="cap"></div>
+<img src="../doodles/burst-orange.svg" style="position:absolute;left:900px;top:120px;width:110px"><img src="../doodles/squiggle-coral.svg" style="position:absolute;left:80px;top:1530px;width:220px"><img src="../doodles/heart-coral.svg" style="position:absolute;left:900px;top:1430px;width:90px"><div class="foot"><img src="../wordmark_navy.png"></div>
+<div class="end" id="end"><h2 id="endh"></h2><p id="endp"></p><div class="cta" id="endc"></div><img src="../wordmark_navy.png"></div>
+<script src="test-options.words.js"></script>
+<script>
+// ---- per-video config ----
+const CFG = {
+  sections: [
+    { match: null,     chip: 'Florida parents · grades 9–11', title: 'SAT, ACT or CLT? <em>3 things to know</em> 📝', big:true },
+    { match: 'one',    chip: '#1 Colleges', title: 'Florida public universities <em>accept all 3</em>', delay:2 },
+    { match: 'two',    chip: '#2 Bright Futures', title: 'All 3 count. <em>You need just ONE score.</em>' },
+    { match: 'three',  chip: '#3 Class of 2028', title: 'Academic: SAT 1350 · <em>ACT 29 · CLT 96</em>' },
+    { match: 'So',     chip: 'Free tool', title: 'Bright Futures <em>checker</em>' },
+  ],
+  end: { h: 'Send this to a parent stuck on <em>“which test?”</em> 📝', p: 'Free Bright Futures checker + newsletter for Florida parents', cta: 'Link in bio', hold: 2200 },
+};
+let W = [], starts = [], total = 0;
+function load(){ W = window.WORDS;
+  starts = CFG.sections.map((s,i) => { if (!s.match) return 0; const k = W.findIndex((w,j) => j>0 && w.w.replace(/[^\w]/g,'') === s.match && (s.match==='So' || W[j-1].w==='Number')); return k<0?0:(s.match==='So'?k:k-1+(s.delay||0)); });
+  total = W[W.length-1].t + W[W.length-1].d;
+  document.getElementById('endh').innerHTML = CFG.end.h; document.getElementById('endp').textContent = CFG.end.p; document.getElementById('endc').textContent = CFG.end.cta; }
+load();
+// caption chunks: up to 3 words, never crossing a section start
+const chunks = []; { let cur = [];
+  W.forEach((w,i) => { if (starts.includes(i) && cur.length) { chunks.push(cur); cur = []; } cur.push(i); if (cur.length === 3) { chunks.push(cur); cur = []; } });
+  if (cur.length) chunks.push(cur); }
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+window.setT = function(t){
+  // section
+  let si = 0; starts.forEach((s,i) => { if (W[s] && t >= W[s].t - 150) si = i; });
+  const sec = CFG.sections[si];
+  document.getElementById('chip').textContent = sec.chip; document.getElementById('title').innerHTML = sec.title; document.getElementById('title').style.fontSize = sec.big ? '92px' : '';
+  // backgrounds: one per section (cycled), crossfade 600ms, slow zoom
+  for (let b=0; b<4; b++) {
+    const el = document.getElementById('bg'+b); const mine = (si % 4) === b;
+    const st = W[starts[si]] ? W[starts[si]].t - 150 : 0; const a = mine ? clamp((t - st)/600 + (si===0?1:0)) : 0;
+    el.style.opacity = a; el.style.transform = `scale(${1.04 + 0.06*clamp((t-st)/9000)})`;
+  }
+  // caption
+  let ci = -1; chunks.forEach((c,i) => { if (t >= W[c[0]].t - 200) ci = i; });
+  const cap = document.getElementById('cap');
+  if (ci >= 0) { const c = chunks[ci]; const lastEnd = W[c[c.length-1]].t + W[c[c.length-1]].d;
+    let cur = -1; c.forEach(i => { if (t >= W[i].t - 40) cur = i; });
+    cap.innerHTML = c.map(i => `<span class="${i === cur ? 'on' : ''}">${W[i].w.replace(/[.,]$/,'')}</span>`).join(' ');
+    cap.style.opacity = (ci === chunks.length-1 && t > lastEnd + 300) ? 0 : 1; }
+  // end card after the voice finishes
+  const e = clamp((t - total - 150)/400); const end = document.getElementById('end'); end.style.opacity = e;
+};
+setT(0);
+</script>
+</body></html>

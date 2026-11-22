@@ -1,0 +1,290 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Week of 2026-11-23 feed carousels: Wed Nov 25 Polk dual enrollment (pk1-pk7), Sat Nov 28 FSAG scholarship (fg1-fg8) -->
+<style>
+:root { --navy:#0B2A4A; --blue:#5B8DC9; --sky:#EAF3FB; --sky2:#D4E6F7; --gold:#B5A21F; --ink:#2A3D54; }
+* { box-sizing:border-box; margin:0; }
+body { background:#888; }
+.s { width:1080px; height:1350px; position:relative; overflow:hidden; font-family:'Inter',sans-serif; color:var(--ink);
+     background: linear-gradient(160deg, #F4F9FE 0%, var(--sky) 45%, var(--sky2) 100%); padding: 150px 96px 190px; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; }
+.s > * { flex-shrink:0; } .s .row, .s .grid2, .s .who, .s .steps, .s .cta { width:100%; }
+.s.dark { background: linear-gradient(160deg, #0E3359 0%, var(--navy) 60%, #081F38 100%); color:#fff; }
+.pill { display:inline-block; font-family:'Poppins'; font-weight:600; font-size:24px; letter-spacing:.14em; text-transform:uppercase;
+        color:var(--navy); background:#fff; border-radius:999px; padding:12px 26px; }
+.dark .pill { background: var(--gold); color:#fff; }
+h1 { max-width:820px; font-family:'Poppins'; font-weight:700; font-size:104px; line-height:1.0; letter-spacing:-0.02em; color:var(--navy); margin-top:48px; }
+h1 .lt { color:var(--blue); }
+h2 { font-family:'Poppins'; font-weight:700; font-size:76px; line-height:1.05; letter-spacing:-0.015em; color:var(--navy); margin-top:36px; }
+.dark h2 { color:#fff; max-width:760px; }
+h2 .lt { color:var(--blue); }
+.dark h2 .lt { color:#9EC2EA; }
+.serif { font-family:'Lora'; font-style:italic; font-weight:500; color:var(--gold); }
+.lede { font-size:38px; line-height:1.4; margin-top:36px; color:#3A4F66; max-width:860px; }
+.dark .lede { color:#C9DAEC; }
+.spark { position:absolute; }
+.foot { position:absolute; left:96px; right:96px; bottom:70px; display:flex; justify-content:space-between; align-items:center; }
+.foot img { height:46px; }
+.foot .sw { font-family:'Poppins'; font-weight:600; font-size:26px; color:var(--navy); letter-spacing:.06em; }
+.dark .foot .sw { color:#fff; }
+.num { position:absolute; right:96px; top:110px; font-family:'Poppins'; font-weight:600; font-size:24px; color:var(--blue); letter-spacing:.1em; }
+.row { display:grid; grid-template-columns: 1fr auto; align-items:center; background:#fff; border-radius:28px; padding:34px 40px; margin-top:26px; box-shadow: 0 8px 24px rgba(11,42,74,.07); }
+.row .lab { font-family:'Poppins'; font-weight:600; font-size:34px; color:var(--navy); line-height:1.15; }
+.row .lab small { display:block; font-family:'Inter'; font-weight:500; font-size:24px; color:#6A7D92; margin-top:6px; }
+.row .val { font-family:'Poppins'; font-weight:700; font-size:58px; color:var(--navy); white-space:nowrap; }
+.row .val .old { color:#9AAABB; text-decoration: line-through; font-weight:500; font-size:44px; margin-right:14px; }
+.row .val .arr { color:var(--gold); margin-right:14px; font-size:44px; }
+.row .val .same { font-size:34px; color:#6A7D92; font-weight:500; }
+.src { position:absolute; left:96px; bottom:140px; font-size:21px; color:#6A7D92; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:40px; }
+.card { background:#fff; border-radius:28px; padding:36px; box-shadow: 0 8px 24px rgba(11,42,74,.07); }
+.card .k { font-family:'Poppins'; font-weight:600; font-size:26px; color:var(--blue); letter-spacing:.08em; text-transform:uppercase; }
+.card .big { font-family:'Poppins'; font-weight:700; font-size:64px; color:var(--navy); margin-top:10px; line-height:1.05; }
+.card p { font-size:27px; line-height:1.4; color:#4A5D72; margin-top:12px; }
+.who { margin-top:34px; }
+.who .item { display:grid; grid-template-columns: 210px 1fr; gap:28px; padding:30px 0; border-bottom:2px solid rgba(11,42,74,.12); }
+.who .item:last-child { border-bottom:none; }
+.who .t { font-family:'Poppins'; font-weight:700; font-size:34px; color:var(--navy); line-height:1.15; }
+.who .t small { display:block; font-family:'Inter'; font-weight:500; font-size:22px; color:#6A7D92; margin-top:4px; }
+.who p { font-size:31px; line-height:1.4; color:#3A4F66; }
+.who b { color:var(--navy); }
+.steps { margin-top:40px; counter-reset: s; }
+.steps .st { display:grid; grid-template-columns: 76px 1fr; gap:26px; align-items:start; margin-bottom:34px; }
+.steps .st::before { counter-increment:s; content:counter(s); width:76px; height:76px; border-radius:50%; background:var(--navy); color:#fff; font-family:'Poppins'; font-weight:700; font-size:36px; display:flex; align-items:center; justify-content:center; }
+.steps .st h3 { font-family:'Poppins'; font-weight:600; font-size:38px; color:var(--navy); line-height:1.15; }
+.steps .st p { font-size:29px; line-height:1.4; color:#3A4F66; margin-top:8px; }
+.cta { margin-top:56px; background:#fff; color:var(--navy); border-radius:32px; padding:44px 48px; }
+.cta .t { font-family:'Poppins'; font-weight:700; font-size:50px; line-height:1.1; }
+.cta p { font-size:30px; line-height:1.4; color:#3A4F66; margin-top:16px; }
+.cta .bt { display:inline-block; margin-top:28px; background:var(--gold); color:#fff; font-family:'Poppins'; font-weight:600; font-size:32px; padding:18px 34px; border-radius:999px; }
+
+.dd{position:absolute;pointer-events:none;z-index:5}
+/* photo cover */
+.phc { padding:0; display:block; background: var(--img) center/cover no-repeat, var(--navy); }
+.phc .shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,31,56,.88) 0%, rgba(8,31,56,.70) 45%, rgba(8,31,56,.25) 75%, rgba(8,31,56,.80) 100%); }
+.phc .in { position:absolute; left:96px; right:96px; top:120px; }
+.phc .pill { background:var(--gold); color:#fff; }
+.phc h1 { color:#fff; font-size:118px; max-width:900px; }
+.phc h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; color:#F1E27A; letter-spacing:0; }
+.phc .lede { color:#E3EDF7; }
+.phc .foot .sw { color:#fff; }
+.chipsw { display:inline-block; background:#fff; color:var(--navy); font-family:'Poppins'; font-weight:700; font-size:30px; border-radius:999px; padding:16px 30px; }
+.big1 { font-family:'Poppins'; font-weight:700; font-size:150px; line-height:.95; color:var(--navy); margin-top:30px; letter-spacing:-0.03em; }
+.big1 small { display:block; font-size:40px; color:var(--blue); letter-spacing:0; margin-top:14px; }
+.chk { list-style:none; padding:0; margin-top:34px; width:100%; }
+.chk li { background:#fff; border-radius:26px; padding:28px 34px 28px 100px; margin-bottom:20px; font-family:'Poppins'; font-weight:600; font-size:36px; line-height:1.2; color:var(--navy); position:relative; box-shadow:0 8px 24px rgba(11,42,74,.07); }
+.chk li small { display:block; font-family:'Inter'; font-weight:500; font-size:25px; color:#6A7D92; margin-top:6px; }
+.chk li:before { content:"✓"; position:absolute; left:30px; top:26px; width:50px; height:50px; border-radius:50%; background:var(--gold); color:#fff; font-size:30px; display:flex; align-items:center; justify-content:center; }
+/* bingo */
+.bingo { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:34px; width:100%; }
+.bingo div { background:#fff; border-radius:24px; height:265px; padding:22px; display:flex; align-items:center; justify-content:center; text-align:center; font-family:'Poppins'; font-weight:600; font-size:29px; line-height:1.2; color:var(--navy); box-shadow:0 8px 24px rgba(11,42,74,.08); }
+.bingo div.free { flex-direction:column; background:var(--navy); color:#F1E27A; font-size:34px; }
+.bingo div.free small { display:block; color:#fff; font-size:24px; font-weight:500; margin-top:8px; }
+</style>
+<style>
+.cv { background: linear-gradient(160deg, #0E3359 0%, #0B2A4A 60%, #081F38 100%); color:#fff; justify-content:flex-start; padding-top:170px; }
+.cv h1 { color:#fff; font-size:128px; max-width:900px; }
+.cv h1 .g { font-family:'Lora'; font-style:italic; font-weight:500; color:#F1E27A; letter-spacing:0; }
+.cv .lede { color:#C9DAEC; }
+.cv .foot .sw { color:#fff; }
+.tri { display:flex; gap:22px; margin-top:60px; }
+.tri div { background:#fff; color:#0B2A4A; border-radius:26px; padding:26px 34px; font-family:'Poppins'; font-weight:700; font-size:58px; }
+.tri div.q { background:#F1E27A; }
+.tbl { width:100%; margin-top:36px; border-collapse:separate; border-spacing:0 16px; }
+.tbl th { font-family:'Poppins'; font-weight:600; font-size:26px; color:var(--blue); letter-spacing:.08em; text-transform:uppercase; text-align:left; padding:0 18px; }
+.tbl td { background:#fff; font-family:'Poppins'; font-weight:700; font-size:46px; color:var(--navy); padding:28px 18px; }
+.tbl td:first-child { border-radius:24px 0 0 24px; font-size:32px; line-height:1.15; padding-left:30px; }
+.tbl td:first-child small { display:block; font-family:'Inter'; font-weight:500; font-size:22px; color:#6A7D92; margin-top:4px; }
+.tbl td:last-child { border-radius:0 24px 24px 0; }
+.tbl td.d { font-size:40px; white-space:nowrap; }
+</style>
+<style>
+.blank { width:100%; margin-top:46px; }
+.blank div { display:flex; align-items:center; gap:24px; border-bottom:3px dashed rgba(255,255,255,.35); padding:16px 0; font-family:'Poppins'; font-weight:600; font-size:32px; color:rgba(255,255,255,.55); }
+.blank div b { width:56px; height:56px; border-radius:50%; background:rgba(255,255,255,.12); color:#F1E27A; display:flex; align-items:center; justify-content:center; font-size:28px; }
+.lim { display:grid; grid-template-columns: 1fr auto; gap:0; width:100%; margin-top:36px; }
+.lim > div { background:#fff; padding:30px 36px; margin-bottom:18px; font-family:'Poppins'; font-weight:600; font-size:36px; color:var(--navy); }
+.lim > div:nth-child(odd) { border-radius:26px 0 0 26px; } .lim > div:nth-child(even) { border-radius:0 26px 26px 0; color:var(--gold); font-size:44px; font-weight:700; text-align:right; }
+.lim small { display:block; font-family:'Inter'; font-weight:500; font-size:24px; color:#6A7D92; margin-top:4px; }
+.ex { margin-top:20px; width:100%; background:#FFF8D9; border:3px dashed #E3CF5A; border-radius:24px; padding:26px 32px; font-size:29px; line-height:1.4; color:#3A4F66; }
+.ex b { font-family:'Poppins'; color:var(--navy); }
+.schools { display:grid; grid-template-columns:1fr 1fr; gap:22px; width:100%; margin-top:40px; }
+.schools div { background:#fff; border-radius:28px; padding:34px 32px; box-shadow:0 8px 24px rgba(11,42,74,.07); font-family:'Poppins'; font-weight:700; font-size:40px; color:var(--navy); line-height:1.1; }
+.schools div small { display:block; font-family:'Inter'; font-weight:500; font-size:25px; color:#6A7D92; margin-top:10px; }
+</style>
+<style>.dark .who .t{color:#F1E27A}.dark .who .item{border-bottom-color:rgba(255,255,255,.15)} #fg2 .big1{font-size:124px}</style>
+</head><body>
+<!-- WED NOV 25 7am: COUNTY #4 Polk dual enrollment (pk1-pk7).
+ Covers: (1) "Polk parents: college classes at $0, in high school." PICKED (2) "Your Polk teen can start college before graduation" RUNNER-UP (3) "The Polk State deal most families miss" -->
+<div class="s cv" id="pk1">
+  <span class="pill">Polk County parents · grades 9–12</span>
+  <h1 style="font-size:120px">Polk parents: <span class="g">college classes at $0,</span> in high school.</h1>
+  <div class="tri"><div>3.0 GPA</div><div class="q">Polk State</div></div>
+  <p class="lede">Dual enrollment, explained in 60 seconds. Swipe.</p>
+  <img class="dd" src="../doodles/burst-gold.svg" style="right:80px;top:60px;width:110px">
+  <img class="dd" src="../doodles/star-mist.svg" style="right:130px;top:1080px;width:70px">
+  <div class="foot"><img src="../wordmark_white.png"><span class="chipsw">SWIPE →</span></div>
+</div>
+<div class="s" id="pk2">
+  <div class="num">02 / 07</div>
+  <span class="pill">Dual enrollment at Polk State</span>
+  <h2>Real college credit, <span class="lt">on a high school schedule</span></h2>
+  <div class="big1">$0<small>tuition for dual enrollment students</small></div>
+  <p class="lede">Polk State serves students from every Polk County public school, most area private schools and home education programs. Florida law also makes textbooks free for public school students.</p>
+  <div class="src" style="bottom:150px">Sources: polk.edu (Dual Enrollment &amp; Early Admission); s. 1007.271, Florida Statutes</div>
+  <img class="dd" src="../doodles/star-orange.svg" style="right:110px;top:200px;width:80px">
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s" id="pk3">
+  <div class="num">03 / 07</div>
+  <span class="pill">Who qualifies</span>
+  <h2>The <span class="lt">checklist</span></h2>
+  <ul class="chk">
+    <li>3.0 unweighted high school GPA</li>
+    <li>Approval from the school counselor</li>
+    <li>College-level placement scores<small>PERT, ACT or SAT (Polk State also lists alternative options)</small></li>
+    <li>Up to 11 college credits per term<small>as a part-time dual enrollment student</small></li>
+  </ul>
+  <div class="src" style="bottom:150px">Source: polk.edu, "Seven Steps to Admission" (Nov 2026)</div>
+  <img class="dd" src="../doodles/heart-coral.svg" style="right:110px;top:200px;width:76px">
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s" id="pk4">
+  <div class="num">04 / 07</div>
+  <span class="pill">Placement scores</span>
+  <h2>The minimum <span class="lt">college-ready scores</span></h2>
+  <table class="tbl">
+    <tr><th></th><th>PERT</th><th>ACT</th><th>SAT</th></tr>
+    <tr><td>Reading</td><td>106</td><td>19</td><td>490</td></tr>
+    <tr><td>Writing</td><td>103</td><td>17</td><td>–</td></tr>
+    <tr><td>Math<small>elementary algebra</small></td><td>114</td><td>19</td><td>480</td></tr>
+  </table>
+  <p class="lede" style="font-size:28px">Scores can't be older than 2 years from the first day of the term. SAT column = digital SAT.</p>
+  <div class="src" style="bottom:150px">Source: polk.edu, "Seven Steps to Admission" (Nov 2026)</div>
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s" id="pk5">
+  <div class="num">05 / 07</div>
+  <span class="pill">How to sign up</span>
+  <h2>5 steps, <span class="lt">start with the counselor</span></h2>
+  <div class="steps">
+    <div class="st"><div><h3>Apply online to Polk State</h3><p>Use the student's own Social Security number.</p></div></div>
+    <div class="st"><div><h3>Send placement scores</h3><p>PERT, or official ACT/SAT scores.</p></div></div>
+    <div class="st"><div><h3>Finish the online orientation</h3><p>Registration is on hold until it's done.</p></div></div>
+    <div class="st"><div><h3>Pick classes with the counselor</h3><p>Every semester (public schools use the DELTA portal).</p></div></div>
+    <div class="st"><div><h3>Get the textbooks</h3><p>Your school explains when and where.</p></div></div>
+  </div>
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s dark" id="pk6">
+  <div class="num" style="color:#9EC2EA">06 / 07</div>
+  <span class="pill">9th + 10th grade parents</span>
+  <h2>Not ready yet? <span class="lt">Plan now.</span></h2>
+  <div class="who">
+    <div class="item"><div class="t">GPA</div><p style="color:#C9DAEC">The <b style="color:#fff">3.0 unweighted</b> starts with 9th grade core grades.</p></div>
+    <div class="item"><div class="t">Scores</div><p style="color:#C9DAEC">Polk State lists <b style="color:#fff">PSAT and PreACT</b> among its alternative ways to show readiness. Ask which apply.</p></div>
+    <div class="item"><div class="t">Ask</div><p style="color:#C9DAEC">About Polk State's <b style="color:#fff">collegiate high schools</b>, too.</p></div>
+  </div>
+  <img class="dd" src="../doodles/burst-gold.svg" style="right:90px;top:200px;width:100px">
+  <div class="foot"><img src="../wordmark_white.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s cv" id="pk7">
+  <span class="pill">Save this</span>
+  <h1 style="font-size:104px">Send this to a <span class="g">Polk parent</span> in your group chat.</h1>
+  <p class="lede">Questions? Your school counselor, or Polk State's dual enrollment office (deregistration@polk.edu). Dates for spring 2027 come from your school, so ask this week.</p>
+  <p class="lede" style="font-size:28px;color:#9FB6CF">Free Florida college newsletter, link in bio. College Plan is not affiliated with Polk State College or Polk County Public Schools.</p>
+  <img class="dd" src="../doodles/heart-coral.svg" style="right:100px;top:90px;width:80px">
+  <img class="dd" src="../doodles/dots-mist.svg" style="right:120px;top:1000px;width:90px">
+  <div class="foot"><img src="../wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+
+<!-- SAT NOV 28 7am: SCHOLARSHIP Florida Student Assistance Grant (fg1-fg8), comment GUIDE.
+ Covers: (1) "Florida grant money. No essay. Just the FAFSA." PICKED (2) "The Florida grant that starts with one form" RUNNER-UP (3) "Up to $2,610 a year at UF. One form." -->
+<div class="s cv" id="fg1">
+  <span class="pill">Scholarship of the week · Seniors</span>
+  <h1 style="font-size:124px">Florida grant money. <span class="g">No essay.</span> Just the FAFSA.</h1>
+  <div class="tri"><div>FSAG</div><div class="q">need-based</div></div>
+  <p class="lede">The state grant a lot of families don't know they applied for. Swipe.</p>
+  <img class="dd" src="../doodles/burst-gold.svg" style="right:80px;top:60px;width:110px">
+  <img class="dd" src="../doodles/star-mist.svg" style="right:130px;top:1080px;width:70px">
+  <div class="foot"><img src="../wordmark_white.png"><span class="chipsw">SWIPE →</span></div>
+</div>
+<div class="s" id="fg2">
+  <div class="num">02 / 08</div>
+  <span class="pill">Florida Student Assistance Grant</span>
+  <h2>Florida's need-based grant, <span class="lt">FSAG for short</span></h2>
+  <div class="big1">$200–$2,610<small>a year, according to UF's financial aid office</small></div>
+  <p class="lede">A grant, so it's not paid back. Schools award it from their share of state funds.</p>
+  <div class="src" style="bottom:150px">Sources: sfa.ufl.edu; s. 1009.50, Florida Statutes</div>
+  <img class="dd" src="../doodles/star-orange.svg" style="right:110px;top:200px;width:80px">
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s" id="fg3">
+  <div class="num">03 / 08</div>
+  <span class="pill">Who qualifies</span>
+  <h2>The <span class="lt">checklist</span></h2>
+  <ul class="chk">
+    <li>Florida resident<small>UF: for 12 months before the school year starts</small></li>
+    <li>U.S. citizen or eligible noncitizen</li>
+    <li>Financial need<small>USF: Pell Grant eligible</small></li>
+    <li>Degree-seeking, 6+ credit hours<small>at a Florida public university or state college</small></li>
+  </ul>
+  <div class="src" style="bottom:150px">Sources: s. 1009.50, F.S.; sfa.ufl.edu; usf.edu; onestop.fiu.edu</div>
+  <img class="dd" src="../doodles/heart-coral.svg" style="right:110px;top:200px;width:76px">
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s" id="fg4">
+  <div class="num">04 / 08</div>
+  <span class="pill">How to apply</span>
+  <h2>There's no separate form. <span class="lt">It's the FAFSA.</span></h2>
+  <p class="lede">Every school we checked (UF, USF, FIU) says the FAFSA is required. USF says to file it by its published priority deadline.</p>
+  <div class="ex" style="margin-top:40px"><b>Why early matters:</b> each school gets a set amount of state money for FSAG, so priority dates count.</div>
+  <div class="src" style="bottom:150px">Sources: usf.edu; sfa.ufl.edu; s. 1009.50, F.S.</div>
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s" id="fg5">
+  <div class="num">05 / 08</div>
+  <span class="pill">How much</span>
+  <h2>It depends on <span class="lt">the school + the need</span></h2>
+  <div class="grid2">
+    <div class="card"><div class="k">UF lists</div><div class="big">$200–$2,610</div><p>per academic year</p></div>
+    <div class="card"><div class="k">FIU lists</div><div class="big">$2,200</div><p>a year max, full-time (less part-time)</p></div>
+  </div>
+  <p class="lede" style="font-size:30px">Your award letter shows the real number.</p>
+  <div class="src" style="bottom:150px">Sources: sfa.ufl.edu; onestop.fiu.edu</div>
+  <img class="dd" src="../doodles/star-gold.svg" style="right:110px;top:200px;width:80px">
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s dark" id="fg6">
+  <div class="num" style="color:#9EC2EA">06 / 08</div>
+  <span class="pill">Don't mix them up</span>
+  <h2>FSAG ≠ <span class="lt">Bright Futures</span></h2>
+  <div class="grid2">
+    <div class="card"><div class="k">FSAG</div><div class="big">Need</div><p>starts with the FAFSA</p></div>
+    <div class="card"><div class="k">Bright Futures</div><div class="big">Merit</div><p>starts with the FFAA</p></div>
+  </div>
+  <p class="lede">Most Florida seniors should file <b style="color:#fff">both forms.</b></p>
+  <img class="dd" src="../doodles/burst-gold.svg" style="right:90px;top:200px;width:100px">
+  <div class="foot"><img src="../wordmark_white.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s" id="fg7">
+  <div class="num">07 / 08</div>
+  <span class="pill">This week</span>
+  <h2>Over the long weekend, <span class="lt">do these 3:</span></h2>
+  <div class="steps">
+    <div class="st"><div><h3>File the 2027–28 FAFSA</h3><p>At StudentAid.gov. Student and parent each need an account.</p></div></div>
+    <div class="st"><div><h3>Look up each school's FAFSA priority date</h3><p>On its financial aid page.</p></div></div>
+    <div class="st"><div><h3>File the FFAA too</h3><p>That's the one for Bright Futures.</p></div></div>
+  </div>
+  <img class="dd" src="../doodles/star-gold.svg" style="right:110px;top:200px;width:80px">
+  <div class="foot"><img src="../wordmark_navy.png"><span class="sw">SWIPE →</span></div>
+</div>
+<div class="s cv" id="fg8">
+  <span class="pill">Free cheat sheet</span>
+  <h1 style="font-size:104px">Comment <span class="g">GUIDE</span> and we'll DM you our free cheat sheet.</h1>
+  <p class="lede">Send this to a senior parent who hasn't done the FAFSA yet.</p>
+  <p class="lede" style="font-size:26px;color:#9FB6CF">College Plan is not affiliated with the Florida Department of Education or any school. Amounts and rules vary by school and year; confirm with each financial aid office.</p>
+  <img class="dd" src="../doodles/heart-coral.svg" style="right:100px;top:90px;width:80px">
+  <img class="dd" src="../doodles/dots-mist.svg" style="right:120px;top:1000px;width:90px">
+  <div class="foot"><img src="../wordmark_white.png"><span class="sw">@college.plan</span></div>
+</div>
+</body></html>

@@ -12,7 +12,12 @@
              search:  {query, typeFrom, typeTo, sugg:[{t,text,hl}]}
              quiz:    {q, t0, t1, answer, why:[{t,text}]}
              kinetic: {beats:[{t,text,size,c,bg}]}
-             tier:    {tiers:[{k,label,c}], items:[{t,tier,text}]} }  Generic UI only: no real app names/logos. -->
+             tier:    {tiers:[{k,label,c}], items:[{t,tier,text}]}
+             yesbut:  {pairs:[{t,yes,tb,but}]}  (Nov 22: 'Yes... but' split trend)
+             flip:    {pages:[{t,mon,day,dow,label,sub}]}  countdown calendar flip
+             voicemail:{caller,icon,meta,len,lenS,vmDur,lines:[{t,text}]}
+             yir:     {cards:[{t,k,big,small,bg,c,bigSize}]}  year-in-review cards
+             math:    {lines:[{t,a,op,b,res,dr}]}  'parent math' }  Generic UI only: no real app names/logos. -->
 <style>
 @font-face{font-family:'Caveat';src:url(../fonts/caveat-700.woff2);font-weight:400 800}
 @font-face{font-family:'Caveat Brush';src:url(../fonts/caveat-brush-400.woff2)}
@@ -104,6 +109,47 @@ body.light .nf{background:#fff;color:#1d2733;box-shadow:0 10px 30px rgba(0,0,0,.
 .tr .lb small{display:block;font-size:22px;font-weight:700;margin-top:4px}
 .tr .its{display:flex;flex-wrap:wrap;gap:12px;align-content:center;padding:14px 16px}
 .chip{font-family:'Poppins';font-weight:700;font-size:36px;line-height:1.15;background:#0B2A4A;color:#fff;border-radius:16px;padding:14px 20px}
+/* YES BUT (split) */
+.yb{position:absolute;left:50px;right:50px;top:470px;z-index:3}
+.yb .pn{position:relative;border-radius:34px;padding:56px 44px 44px;min-height:440px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Poppins';font-weight:700;font-size:58px;line-height:1.18;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.yb .pn.y{background:#fff;color:#0B2A4A;margin-bottom:26px}.yb .pn.b{background:#0B2A4A;color:#fff}
+.yb .tag{position:absolute;top:-34px;left:40px;font-family:'Poppins';font-weight:800;font-size:46px;padding:6px 30px;border-radius:999px;transform:rotate(-4deg)}
+.yb .y .tag{background:#7BD389;color:#0B2A4A}.yb .b .tag{background:#F05A28;color:#fff}
+.yb .tx{position:absolute;left:44px;right:44px;top:50%;transform:translateY(-50%)}
+/* FLIP (countdown calendar) */
+.fl{position:absolute;left:150px;right:150px;top:470px;z-index:3;perspective:1600px}
+.fl .pg{position:absolute;left:0;right:0;top:0;height:700px;background:#FFFDF7;border-radius:34px;box-shadow:0 26px 60px rgba(0,0,0,.25);overflow:hidden;text-align:center;transform-origin:top center;backface-visibility:hidden}
+.fl .pg .mo{background:#D7263D;color:#fff;font-family:'Poppins';font-weight:800;font-size:56px;letter-spacing:6px;padding:26px 0}
+.fl .pg .dy{font-family:'Poppins';font-weight:800;font-size:290px;line-height:1;color:#0B2A4A;margin-top:24px}
+.fl .pg .dw{font-family:'Poppins';font-weight:700;font-size:44px;color:#6A7D92;margin-top:4px}
+.fl .pg .rings{position:absolute;top:-14px;left:0;right:0;display:flex;justify-content:space-around;padding:0 90px}
+.fl .lab{position:absolute;left:-90px;right:-90px;top:740px;text-align:center}
+.fl .lab div{display:inline-block;font-family:'Poppins';font-weight:700;font-size:50px;line-height:1.2;background:#0B2A4A;color:#fff;padding:18px 34px;border-radius:24px}
+.fl .lab small{display:block;font-family:'Inter';font-weight:700;font-size:34px;color:#F1E27A;margin-top:10px}
+/* VOICEMAIL */
+.vm{position:absolute;left:60px;right:60px;top:440px;z-index:3;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.14);border-radius:44px;padding:44px 44px 36px;color:#fff}
+body.light .vm,body.pastel .vm{background:#fff;color:#1d2733;border-color:#E3E8EF}
+.vm .who{display:flex;align-items:center;gap:26px}
+.vm .av{width:110px;height:110px;border-radius:50%;background:#5B8DC9;display:flex;align-items:center;justify-content:center;font-size:62px}
+.vm .nm{font-family:'Inter';font-weight:800;font-size:46px}.vm .mt{font-size:30px;opacity:.7;margin-top:4px}
+.vm .wave{display:flex;align-items:center;gap:7px;height:120px;margin:34px 0 10px}
+.vm .wave i{flex:1;background:#F1E27A;border-radius:6px;opacity:.35}
+.vm .wave i.on{opacity:1}
+.vm .vtl{display:flex;justify-content:space-between;font-size:28px;opacity:.7;margin-bottom:22px}
+.vm .tr2{font-size:24px;letter-spacing:3px;font-weight:800;opacity:.6;margin-bottom:14px}
+.vm .ln2{font-family:'Inter';font-weight:600;font-size:42px;line-height:1.32;margin-bottom:16px;opacity:.45}
+.vm .ln2.cur2{opacity:1}
+/* YEAR IN REVIEW CARDS */
+.yr{position:absolute;left:70px;right:70px;top:450px;height:1000px;z-index:3}
+.yr .cd{position:absolute;inset:0;border-radius:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px;box-shadow:0 26px 60px rgba(0,0,0,.2)}
+.yr .cd .k{font-family:'Inter';font-weight:800;font-size:34px;letter-spacing:4px;text-transform:uppercase;opacity:.8}
+.yr .cd .bg2{font-family:'Poppins';font-weight:800;font-size:230px;line-height:1;margin:24px 0}
+.yr .cd .sm{font-family:'Poppins';font-weight:700;font-size:58px;line-height:1.18}
+/* MATH */
+.mh{position:absolute;left:60px;right:60px;top:470px;z-index:3;display:flex;flex-direction:column;gap:26px}
+.mh .eq{background:#fff;border:5px solid #0B2A4A;border-radius:26px;padding:26px 34px;box-shadow:9px 9px 0 #0B2A4A;font-family:'Poppins';font-weight:700;font-size:46px;line-height:1.22;color:#0B2A4A}
+.mh .eq .op{color:#F05A28;font-weight:800;padding:0 8px}
+.mh .eq .rs{display:block;margin-top:8px;color:#D7263D;font-weight:800}
 </style></head>
 <body>
 <div id="root"></div>
@@ -144,6 +190,20 @@ if(M==='kinetic'){const k=el('div','kb');C.beats.forEach((x,i)=>{const d=el('div
   const nx=C.beats[i+1];E.push({d,t:x.t*1000,until:nx?nx.t*1000:null,kind:'punch'});});}
 if(M==='tier'){const tl=el('div','tl');const rows={};C.tiers.forEach(x=>{const r=el('div','tr','<div class="lb" style="background:'+x.c+'">'+x.k+(x.label?'<small>'+x.label+'</small>':'')+'</div><div class="its"></div>',tl);rows[x.k]=r.querySelector('.its')});
   C.items.forEach(x=>at(el('div','chip',x.text,rows[x.tier]),x.t,'drop'));}
+if(M==='yesbut'){const y=el('div','yb');const Y=el('div','pn y','<span class="tag">YES…</span>',y),B=el('div','pn b','<span class="tag">BUT…</span>',y);
+  C.pairs.forEach((x,i)=>{const nx=C.pairs[i+1];E.push({d:el('div','tx',x.yes,Y),t:x.t*1000,until:nx?nx.t*1000:null,kind:'pop'});E.push({d:el('div','tx',x.but,B),t:x.tb*1000,until:nx?nx.t*1000:null,kind:'pop'});});
+  if(C.pairs[0].t>0){}}
+if(M==='flip'){const f=el('div','fl');const lab=el('div','lab',null,f);
+  C.pages.forEach((x,i)=>{const nx=C.pages[i+1];const pg=el('div','pg','<div class="mo">'+x.mon+'</div><div class="dy">'+x.day+'</div><div class="dw">'+x.dow+'</div>',f);pg.style.zIndex=100-i;
+    E.push({d:pg,t:x.t*1000,until:nx?nx.t*1000:null,kind:'flip',nxt:nx?nx.t*1000:null});
+    E.push({d:el('div','',x.label+(x.sub?'<small>'+x.sub+'</small>':''),lab),t:x.t*1000+(i?150:0),until:nx?nx.t*1000:null,kind:'pop'});});}
+if(M==='voicemail'){const v=el('div','vm','<div class="who"><div class="av">'+(C.icon||'👵')+'</div><div><div class="nm">'+C.caller+'</div><div class="mt">'+(C.meta||'Voicemail')+'</div></div></div><div class="wave"></div><div class="vtl"><span id="vmt">0:00</span><span>'+(C.len||'0:47')+'</span></div><div class="tr2">TRANSCRIPT</div>');
+  const w=v.querySelector('.wave');for(let i=0;i<46;i++){const b=document.createElement('i');b.style.height=(22+Math.abs(Math.sin(i*1.7)*70+Math.cos(i*.6)*30))+'px';w.appendChild(b);}
+  E.push({kind:'vmw',t:0});
+  C.lines.forEach((x,i)=>{const nx=C.lines[i+1];const d=el('div','ln2',x.text,v);E.push({d,t:x.t*1000,cur:nx?nx.t*1000:1e9,kind:'vml'});});}
+if(M==='yir'){const y=el('div','yr');C.cards.forEach((x,i)=>{const nx=C.cards[i+1];const d=el('div','cd','<div class="k">'+(x.k||'')+'</div><div class="bg2">'+x.big+'</div><div class="sm">'+x.small+'</div>',y);
+  d.style.background=x.bg||'#F05A28';d.style.color=x.c||'#fff';if(x.bigSize)d.querySelector('.bg2').style.fontSize=x.bigSize+'px';E.push({d,t:x.t*1000,until:nx?nx.t*1000:null,kind:'slide'});});}
+if(M==='math'){const m=el('div','mh');C.lines.forEach(x=>{const d=el('div','eq',x.a+' <span class="op">'+(x.op||'+')+'</span> '+x.b,m);const r=el('span','rs','= '+x.res,d);at(d,x.t,'drop');at(r,x.t+(x.dr||0.7),'stamp2');});}
 (C.doodles||[]).forEach(o=>{const d=el('img','dd');d.src='../doodles/'+o.n+'.svg';Object.assign(d.style,{left:o.x+'px',top:o.y+'px',width:o.w+'px'});d.dataset.rot=o.rot||0;E.push({d,t:(o.t||0)*1000,kind:'doodle'});});
 if(C.end){const e=el('div','endc','<span>'+C.end.text+'</span>'+(C.end.sub?'<small>'+C.end.sub+'</small>':''));if(C.end.y)e.style.top=C.end.y+'px';if(C.end.c)e.style.color=C.end.c;E.push({d:e,t:C.end.t*1000,kind:'pop'});}
 window.setT=function(t){
@@ -151,6 +211,14 @@ window.setT=function(t){
     if(e.kind==='q'){const n=Math.round(C.query.length*Math.min(1,Math.max(0,(t-C.typeFrom*1000)/((C.typeTo-C.typeFrom)*1000))));document.getElementById('qq').textContent=C.query.slice(0,n);
       document.querySelector('.cur').style.opacity=(Math.floor(t/400)%2||t<C.typeTo*1000)?1:0;return;}
     if(e.kind==='timer'){const p=Math.min(1,Math.max(0,(t-e.t)/((C.t1-C.t0)*1000)));document.getElementById('tb').style.width=(100-100*p)+'%';return;}
+    if(e.kind==='vmw'){const bars=document.querySelectorAll('.vm .wave i');const p=Math.min(1,t/((C.vmDur||C.dur-1.5)*1000));bars.forEach((b,i)=>b.classList.toggle('on',i/bars.length<p));
+      const sec=Math.floor(p*(C.lenS||47));document.getElementById('vmt').textContent='0:'+String(sec).padStart(2,'0');return;}
+    if(e.kind==='vml'){e.d.style.display=t>=e.t?'':'none';e.d.classList.toggle('cur2',t>=e.t&&t<e.cur);return;}
+    if(e.kind==='flip'){const vis=t>=e.t-(e.t>0?300:0);e.d.style.display=vis?'':'none';if(!vis)return;
+      if(e.nxt!=null&&t>=e.nxt-260&&t<e.nxt){const k=(t-(e.nxt-260))/260;e.d.style.transform='rotateX('+(-95*k)+'deg)';e.d.style.opacity=1-k*.3}
+      else if(e.nxt!=null&&t>=e.nxt){e.d.style.display='none'}else{e.d.style.transform='';e.d.style.opacity=1}return;}
+    if(e.kind==='slide'){const on2=t>=e.t&&(e.until==null||t<e.until);e.d.style.display=on2?'':'none';if(!on2)return;const k=e.t<=0?1:ease((t-e.t)/220);e.d.style.transform='translateX('+(120*(1-k))+'px) rotate('+(3*(1-k))+'deg)';e.d.style.opacity=Math.min(1,k*1.5);return;}
+    if(e.kind==='stamp2'){e.d.style.display=t>=e.t?'':'none';const k=ease((t-e.t)/160);e.d.style.transform='scale('+(1.4-.4*k)+')';e.d.style.transformOrigin='left center';e.d.style.opacity=t>=e.t?1:0;return;}
     const on=t>=e.t&&(e.until==null||t<e.until);
     if(e.kind==='show'){e.d.style.display=on?'':'none';return;}
     if(e.kind==='type'){e.d.style.display=t>=e.t?'':'none';const k=Math.min(1,(t-e.t)/e.dur);const n=Math.round(e.text.length*k);
