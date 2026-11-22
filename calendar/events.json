@@ -301,6 +301,13 @@
   "src": "https://ronbrown.org/apply/faq/"
  },
  {
+  "date": "2026-12-01",
+  "title": "FSU Honors Program supplemental application closes",
+  "who": "Seniors applying to FSU",
+  "note": "Answer 'Yes' to the Honors question on the FSU application, then submit the Honors supplement (250–350 word response). Decisions Feb 18, 2027.",
+  "src": "https://honors.fsu.edu/admissions/first-year-applicants"
+ },
+ {
   "date": "2026-12-03",
   "title": "Register for the Dec 8 CLT (remote)",
   "who": "Juniors & Seniors",
@@ -427,6 +434,13 @@
   "src": "https://scholarshipamerica.org/scholarship/equitableexcellence/"
  },
  {
+  "date": "2026-12-22",
+  "title": "ACT scores: paper initial score release (Dec 12 test)",
+  "who": "Juniors + seniors",
+  "note": "Scores are released about 2–4 weeks after the test.",
+  "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
+ },
+ {
   "date": "2027-01-05",
   "title": "University of Miami Early Decision II & Regular Decision due",
   "who": "Seniors",
@@ -476,6 +490,13 @@
   "src": "https://admissions.ufl.edu/apply/freshman/deadlines"
  },
  {
+  "date": "2027-02-09",
+  "title": "ACT late registration deadline (Feb 27 test)",
+  "who": "Juniors + seniors",
+  "note": "11:59pm Central.",
+  "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
+ },
+ {
   "date": "2027-02-10",
   "title": "USF Regular Decision decisions released",
   "who": "Seniors",
@@ -490,11 +511,25 @@
   "src": "https://admissions.fsu.edu/first-year/apply"
  },
  {
+  "date": "2027-02-18",
+  "title": "FSU Honors Program decisions released",
+  "who": "Seniors",
+  "note": "",
+  "src": "https://honors.fsu.edu/admissions/first-year-applicants"
+ },
+ {
   "date": "2027-02-19",
   "title": "Register for the Mar 6 SAT",
   "who": "Juniors",
   "note": "",
   "src": "https://satsuite.collegeboard.org/sat/dates-deadlines"
+ },
+ {
+  "date": "2027-02-27",
+  "title": "ACT national test date",
+  "who": "Juniors + seniors",
+  "note": "",
+  "src": "https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html"
  },
  {
   "date": "2027-03-06",
