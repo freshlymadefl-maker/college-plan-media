@@ -1,0 +1,38 @@
+{
+ "folder": "2026-11-27-showdown-usf-fsu",
+ "pill": "Florida school showdown",
+ "question": "Honors college showdown: USF or FSU?",
+ "vote_q": "Which honors program would your student pick?",
+ "vote_note": "Applying to FSU Honors? The supplemental application closes Dec 1. 📝",
+ "not_affiliated": "USF or FSU",
+ "a": {
+  "label": "USF", "sub": "Tampa",
+  "cover": "photos/commons/usf-campus/1.jpg",
+  "name": "Judy Genshaft Honors College", "short": "USF", "place": "Tampa + St. Petersburg",
+  "color": "#006747", "photo": "photos/commons/usf-campus/1.jpg",
+  "big": "19", "bigsmall": "students max per honors class",
+  "bullets": ["~625 new honors students planned in Tampa (2027)", "$2,000 in scholarships for every honors student", "Separate honors application required"],
+  "source": "usf.edu/honors", "vote": "BULLS"
+ },
+ "b": {
+  "label": "FSU", "sub": "Tallahassee",
+  "cover": "photos/commons/fsu-campus/3.jpg",
+  "name": "University Honors Program", "short": "FSU", "place": "Tallahassee",
+  "color": "#782F40", "photo": "photos/commons/fsu-campus/6.jpg",
+  "big": "800+", "bigsmall": "honors students (Fall 2025)",
+  "bullets": ["Honors housing in 2 residence halls", "Supplemental application closes Dec 1, 2026", "No. 1 in Florida, according to College Transitions (2026)"],
+  "source": "honors.fsu.edu, news.fsu.edu", "vote": "NOLES"
+ },
+ "second": {
+  "photo": "photos/commons/fsu-campus/1.jpg",
+  "pill": "Small classes vs. big community",
+  "title": "Both need a separate honors application 📝",
+  "lead": "Smaller honors classes or a bigger honors class with its own dorms? Here's how they compare, from each school's own site. Then vote."
+ },
+ "credits": [
+  "\"USF Marshall Center Running of the Bulls\" by Rick DeBow (public domain)",
+  "\"Legacy Fountain of Florida State University\" by Looking for an A (CC BY-SA 4.0)",
+  "\"Gray Street entrance to Florida State University\" by The Bushranger (CC BY-SA 4.0)",
+  "\"Florida State University residence halls\" by Sirberus at English Wikipedia (public domain)"
+ ]
+}
