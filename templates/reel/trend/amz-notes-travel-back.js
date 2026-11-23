@@ -1,0 +1,11 @@
+window.CFG={mode:'notes',look:'xmas',dur:10,lnSize:40,
+hook:{text:'my college kid packing to go back<br>after Thanksgiving 🦃✈️<br>(a notes app investigation)',size:48,y:150},
+title:'their bag → my edits',date:'Thanksgiving weekend',
+lines:[{t:0.8,text:'full-size shampoo → <b>leakproof travel bottles</b>'},
+ {t:1.8,text:'toiletries in a grocery bag → <b>clear toiletry bag</b>'},
+ {t:2.8,text:'clothes in a pillowcase → <b>packing cubes</b>'},
+ {t:3.8,text:'naps on the tray table → <b>neck pillow</b>'},
+ {t:4.8,text:'phone at 4% → <b>slim portable charger</b>'},
+ {t:5.8,text:'one giant cord knot → <b>cord pouch</b>'}],
+doodles:[{n:'star-gold',x:900,y:1420,w:70,rot:10,t:5.8}],
+end:{t:7.0,text:'Shop my picks: link in bio 🛒',sub:'the winter break travel kit<br>(check TSA.gov for liquid rules)',y:1500,c:'#fff'}};
