@@ -1,0 +1,146 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Cozy Little Finds: "A Very Cozy Christmas" vintage-campy holiday look (owner, Nov 23 2026:
+     "perfect combo of classy and funny and vintage"). 1080x1350 carousel slides.
+     Render: python3 cozy-little-finds/templates/render.py  (?s=cover|list|joke|sheet) -->
+<style>
+@font-face{font-family:Fraunces;src:url(../fonts/Fraunces.ttf);font-weight:100 900}
+@font-face{font-family:Fraunces;font-style:italic;src:url(../fonts/Fraunces-Italic.ttf);font-weight:100 900}
+@font-face{font-family:DMSans;src:url(../fonts/DMSans.ttf);font-weight:100 900}
+:root{--red:#B3261E;--deep:#6E1414;--cream:#F6EBD9;--gold:#D4A84B;--pine:#1F4D3A;--teal:#2F7F86;--ink:#2A1A14;--pink:#E8A0A8}
+*{margin:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Fraunces;color:var(--ink);position:relative;background:var(--cream)}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:block}
+/* film grain + warm fade on every slide */
+.grain{position:absolute;inset:-10px;pointer-events:none;z-index:50;opacity:.28;mix-blend-mode:multiply;
+ background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .25  0 0 0 0 .18  0 0 0 .9 0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>")}
+.fade{position:absolute;inset:0;pointer-events:none;z-index:49;background:radial-gradient(ellipse at 50% 45%,rgba(255,236,200,0) 55%,rgba(90,40,20,.38) 100%)}
+.handle{position:absolute;bottom:40px;left:0;right:0;text-align:center;font:600 26px DMSans;letter-spacing:5px;text-transform:uppercase;z-index:40}
+
+/* COVER: tinsel curtain */
+#cover{background:linear-gradient(#3a0f12,#1d0a0b)}
+#tinsel{position:absolute;inset:0}
+#tinsel i{position:absolute;top:-20px;width:7px;border-radius:0 0 4px 4px;opacity:.92}
+#cover .lights{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse 560px 420px at 50% 600px,rgba(25,6,8,.88),rgba(25,6,8,.6) 60%,transparent 100%),radial-gradient(circle at 20% 70%,rgba(255,220,150,.35),transparent 30%),radial-gradient(circle at 80% 30%,rgba(255,180,190,.25),transparent 30%)}
+#cover h1{position:absolute;left:0;right:0;top:400px;text-align:center;color:#FFF8EC;font-weight:900;font-size:168px;line-height:.92;letter-spacing:-3px;
+ font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;text-shadow:0 6px 0 rgba(0,0,0,.25),0 0 40px rgba(0,0,0,.55);z-index:5}
+#cover h1 em{font-style:italic;font-weight:600;font-size:120px;color:var(--gold);display:block;letter-spacing:-1px}
+#cover .kick{position:absolute;top:250px;left:0;right:0;text-align:center;z-index:5}
+#cover .kick span{background:var(--cream);color:var(--deep);font:700 28px DMSans;letter-spacing:6px;padding:12px 26px;border-radius:40px;text-transform:uppercase}
+#cover .sub{position:absolute;top:1010px;left:0;right:0;text-align:center;color:#FFF3DF;font-style:italic;font-weight:400;font-size:46px;z-index:5;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+#cover .handle{color:#FFF3DF}
+
+/* LIST: cream paper, plaid band */
+#list .plaid{position:absolute;left:0;right:0;top:0;height:150px;
+ background:repeating-linear-gradient(90deg,rgba(31,77,58,.55) 0 22px,transparent 22px 60px,rgba(0,0,0,.25) 60px 66px,transparent 66px 120px),
+ repeating-linear-gradient(0deg,rgba(31,77,58,.55) 0 22px,transparent 22px 60px,rgba(0,0,0,.25) 60px 66px,transparent 66px 120px),var(--red)}
+#list .plaid.b{top:auto;bottom:0;height:90px}
+#list .card{position:absolute;left:70px;right:70px;top:210px;bottom:150px;background:#FFF9EF;border:3px solid var(--deep);border-radius:6px;padding:60px 64px;box-shadow:12px 12px 0 var(--deep)}
+#list h2{font-weight:900;font-size:84px;line-height:.95;color:var(--red);letter-spacing:-2px;font-variation-settings:"SOFT" 100,"WONK" 1}
+#list h2 em{font-weight:500;color:var(--pine)}
+#list .rule{height:3px;background:var(--gold);margin:34px 0 26px;width:180px}
+#list ol{list-style:none;counter-reset:n}
+#list li{counter-increment:n;display:flex;gap:26px;align-items:baseline;margin:0 0 30px}
+#list li:before{content:counter(n,decimal-leading-zero);font:900 italic 44px Fraunces;color:var(--gold);min-width:66px}
+#list li b{display:block;font-weight:800;font-size:44px;line-height:1.05}
+#list li span{display:block;font:italic 400 32px Fraunces;color:#6b4a3a;margin-top:6px}
+#list .handle{color:#FFF3DF;bottom:28px}
+
+/* JOKE: velvet red, gold scalloped frame, deadpan line */
+#joke{background:radial-gradient(circle at 50% 35%,#C0322A,#5E1010 80%)}
+#joke .frame{position:absolute;left:90px;right:90px;top:230px;height:640px;border:10px double var(--gold);border-radius:30px;background:rgba(0,0,0,.12)}
+#joke .frame:after{content:"";position:absolute;inset:18px;border:2px dotted rgba(212,168,75,.8);border-radius:18px}
+#joke .q{position:absolute;left:150px;right:150px;top:230px;height:640px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#FFF5E6;font-weight:400;font-style:italic;font-size:62px;line-height:1.12;text-align:center}
+#joke .q b{font-style:normal;font-weight:900;color:#FFD98A;font-variation-settings:"SOFT" 100,"WONK" 1}
+#joke .ornl,#joke .ornr{position:absolute;top:960px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 6%,#e2463b 14%,#8d1410 75%)}
+#joke .ornl:before,#joke .ornr:before{content:"";position:absolute;left:44px;top:-22px;width:32px;height:26px;background:linear-gradient(#e7d3a0,#9c7b33);border-radius:4px}
+#joke .ornl{left:300px}#joke .ornr{right:300px}
+#joke .tag{position:absolute;top:1060px;left:0;right:0;text-align:center;color:#FFE7B8;font:700 26px DMSans;letter-spacing:5px;text-transform:uppercase}
+#joke .handle{color:#FFE7B8}
+
+/* SHEET: brand look reference */
+#sheet{padding:70px}
+#sheet h3{font-weight:900;font-size:76px;color:var(--red);letter-spacing:-2px;font-variation-settings:"SOFT" 100,"WONK" 1}
+#sheet p.lead{font:italic 400 34px Fraunces;color:#6b4a3a;margin:8px 0 40px}
+#sheet .sw{display:flex;gap:18px;margin-bottom:40px}
+#sheet .sw div{flex:1;height:150px;border-radius:14px;display:flex;align-items:flex-end;padding:12px;font:600 20px DMSans;color:#fff;border:2px solid rgba(0,0,0,.1)}
+#sheet .type{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:36px}
+#sheet .type div{background:#FFF9EF;border-radius:14px;padding:26px;border:2px solid #e6d5bb}
+#sheet .type small{font:700 20px DMSans;letter-spacing:3px;color:#9c7b33;text-transform:uppercase;display:block;margin-bottom:8px}
+#sheet ul{font:400 30px DMSans;line-height:1.45;padding-left:30px}
+#sheet ul b{color:var(--red)}
+</style></head><body>
+
+<section class="slide" id="cover">
+ <div id="tinsel"></div><div class="lights"></div>
+ <div class="kick"><span>the gift edit</span></div>
+ <h1>A Very<br>Cozy<em>Little Christmas</em></h1>
+ <div class="sub">tacky? maybe. thoughtful? absolutely.</div>
+ <div class="handle">@cozylittlefindsdaily</div>
+</section>
+
+<section class="slide" id="list">
+ <div class="plaid"></div>
+ <div class="card">
+  <h2>Gifts for the friend<br><em>who is a little extra</em></h2>
+  <div class="rule"></div>
+  <ol>
+   <li><div><b>Ornament earrings</b><span>subtle is for January</span></div></li>
+   <li><div><b>Velvet throw pillow</b><span>to match her personality</span></div></li>
+   <li><div><b>Retro glass tumblers</b><span>eggnog deserves crystal</span></div></li>
+   <li><div><b>Sparkle tights</b><span>for "just a casual dinner"</span></div></li>
+   <li><div><b>Tinsel garland</b><span>no such thing as too much</span></div></li>
+  </ol>
+ </div>
+ <div class="plaid b"></div>
+ <div class="handle">shop my finds · link in bio</div>
+</section>
+
+<section class="slide" id="joke">
+ <div class="frame"></div>
+ <div class="q"><div>Me, explaining that the <b>fourth</b> throw blanket is a <b>completely different texture.</b></div></div>
+ <div class="ornl"></div><div class="ornr"></div>
+ <div class="tag" style="top:1140px">a very cozy christmas · vol. 1</div>
+ <div class="handle" style="bottom:30px;font-size:22px">@cozylittlefindsdaily</div>
+</section>
+
+<section class="slide" id="sheet">
+ <h3>A Very Cozy Christmas</h3>
+ <p class="lead">the look: classy, a little campy, very vintage. Nov 23 – Dec 31.</p>
+ <div class="sw">
+  <div style="background:#B3261E">Santa red<br>#B3261E</div>
+  <div style="background:#6E1414">Velvet<br>#6E1414</div>
+  <div style="background:#D4A84B">Tinsel gold<br>#D4A84B</div>
+  <div style="background:#1F4D3A">Pine<br>#1F4D3A</div>
+  <div style="background:#2F7F86">Retro teal<br>#2F7F86</div>
+  <div style="background:#F6EBD9;color:#2A1A14">Eggnog<br>#F6EBD9</div>
+ </div>
+ <div class="type">
+  <div><small>Headlines</small><span style="font:900 64px Fraunces;font-variation-settings:'SOFT' 100,'WONK' 1;color:#B3261E">Fraunces Black</span></div>
+  <div><small>Punchlines</small><span style="font:italic 500 60px Fraunces;color:#1F4D3A">Fraunces Italic</span></div>
+ </div>
+ <ul>
+  <li><b>Cover</b> = tinsel, sparkle, a big soft retro serif title.</li>
+  <li><b>Voice</b> = deadpan and a little dramatic; the joke is in the small italic line.</li>
+  <li><b>Texture</b> = film grain + warm faded edges on everything.</li>
+  <li><b>Patterns</b> = red/green plaid, velvet, gold double frames, ornaments.</li>
+  <li><b>Photos</b> = your own styled flat-lays or licensed vintage photos only; never repost other accounts' images.</li>
+ </ul>
+</section>
+
+<div class="fade"></div><div class="grain"></div>
+<script>
+const s=new URLSearchParams(location.search).get('s')||'cover';
+document.getElementById(s).classList.add('on');
+if(s==='sheet'){document.querySelector('.fade').style.display='none'}
+// tinsel curtain: seeded random strands
+let seed=7;const r=()=>(seed=(seed*16807)%2147483647)/2147483647;
+const cols=['#E7E3DA','#C9C4BA','#F1D27A','#D4A84B','#F1D27A','#B3261E','#E0525A','#2F7F86','#6FB7BE','#E8A0A8','#3E8E5E'];
+const T=document.getElementById('tinsel');
+for(let i=0;i<260;i++){const e=document.createElement('i');const c=cols[Math.floor(r()*cols.length)];
+ e.style.left=(r()*1090-5)+'px';e.style.height=(180+r()*r()*1150)+'px';e.style.width=(3+r()*7)+'px';
+ e.style.background='repeating-linear-gradient(180deg,'+c+' 0 7px,rgba(255,255,255,.7) 7px 8px,'+c+' 8px 23px,rgba(0,0,0,.18) 23px 24px)';
+ e.style.transform='rotate('+(r()*3-1.5)+'deg)';e.style.opacity=.55+r()*.45;T.appendChild(e)}
+</script></body></html>
