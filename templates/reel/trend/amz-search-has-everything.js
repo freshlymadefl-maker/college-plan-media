@@ -1,0 +1,12 @@
+window.CFG={mode:'search',look:'xmas',dur:10,
+hook:{text:'me at midnight shopping for the college kid who “doesn’t need anything” 🔍🎄',size:56,y:150},
+query:'gifts for a college kid who',typeFrom:-0.6,typeTo:0.9,
+sugg:[{t:1.1,text:'…<b>is always cold</b> → heated throw'},
+ {t:1.8,text:'…<b>can’t sleep in the dorm</b> → sleep mask'},
+ {t:2.5,text:'…<b>loves movie night</b> → mini projector'},
+ {t:3.2,text:'…<b>has 9 cords everywhere</b> → cable tray'},
+ {t:3.9,text:'…<b>has never ironed</b> → travel steamer'},
+ {t:4.6,text:'…<b>lives on tea + ramen</b> → kettle'},
+ {t:5.6,text:'found it: <b>the “has everything” gift list</b>',hl:true}],
+doodles:[{n:'star-gold',x:930,y:1720,w:70,rot:10,t:5.6}],
+end:{t:7.0,text:'Shop my picks: link in bio 🛒',sub:'6 gifts for the college kid who has everything<br>(check housing rules for small appliances)',y:1500,c:'#fff'}};
